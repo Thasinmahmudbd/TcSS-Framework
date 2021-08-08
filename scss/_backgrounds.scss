@@ -1,0 +1,10 @@
+/* background colors */
+.bg{
+    &_rose_white{background-color: $rose_white};
+    &_hof_white{background-color: $hof_white};
+    &_gray{background-color: $gray};
+    &_dark{background-color: $dark};
+    &_dark_gray{background-color: $dark_gray};
+    &_dark_ash{background-color: $dark_ash};
+    &_pure_black{background-color: $pure_black};
+}

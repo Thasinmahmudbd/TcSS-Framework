@@ -1,0 +1,259 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=MonteCarlo&family=Montserrat:wght@100;300;400;500;700;900&family=Nunito:wght@300;400;700;900&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+
+/* font lato */
+.lato{
+    font-family: 'Lato', sans-serif;
+    &_thin{
+        font-family: 'Lato', sans-serif;
+        font-weight: $thin;
+    }
+    &_light{
+        font-family: 'Lato', sans-serif;
+        font-weight: $light;
+    }
+    &_regular{
+        font-family: 'Lato', sans-serif;
+        font-weight: $regular;
+    }
+    &_bold{
+        font-family: 'Lato', sans-serif;
+        font-weight: $bold;
+    }
+    &_bolder{
+        font-family: 'Lato', sans-serif;
+        font-weight: $bolder;
+    }
+}
+
+
+
+
+/* font monteCarlo */
+.monteCarlo{
+    font-family: 'MonteCarlo', cursive;
+}
+
+
+
+
+/* font montserrat */
+.montserrat{
+    font-family: 'Montserrat', sans-serif;
+    &_thin{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $thin;
+    }
+    &_light{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $light;
+    }
+    &_regular{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $regular;
+    }
+    &_medium{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $medium;
+    }
+    &_bold{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $bold;
+    }
+    &_bolder{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: $bolder;
+    }
+}
+
+
+
+
+/* font nunito */
+.nunito{
+    font-family: 'Nunito', sans-serif;
+    &_light{
+        font-family: 'Nunito', sans-serif;
+        font-weight: $light;
+    }
+    &_regular{
+        font-family: 'Nunito', sans-serif;
+        font-weight: $regular;
+    }
+    &_bold{
+        font-family: 'Nunito', sans-serif;
+        font-weight: $bold;
+    }
+    &_bolder{
+        font-family: 'Nunito', sans-serif;
+        font-weight: $bolder;
+    }
+}
+
+
+
+
+/* font openSans */
+.openSans{
+    font-family: 'Open Sans', sans-serif;
+    &_light{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $light;
+    }
+    &_regular{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $regular;
+    }
+    &_bold{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: $bold;
+    }
+}
+
+
+
+
+/* font roboto */
+.roboto{
+    font-family: 'Roboto', sans-serif;
+    &_thin{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $thin;
+    }
+    &_light{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $light;
+    }
+    &_regular{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $regular;
+    }
+    &_medium{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $medium;
+    }
+    &_bold{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $bold;
+    }
+    &_bolder{
+        font-family: 'Roboto', sans-serif;
+        font-weight: $bolder;
+    }
+}
+
+
+
+
+/* font size */
+.fS{
+    &_h{font-size: $half;}
+    &_tq{font-size: $three_quarter;}
+    &_1{font-size: $one;}
+    &_1_h{font-size: $one + $half;}
+    &_2{font-size: $two;}
+    &_2_h{font-size: $two + $half;}
+    &_3{font-size: $three;}
+    &_3_h{font-size: $three + $half;}
+    &_4{font-size: $four;}
+    &_4_h{font-size: $four + $half;}
+    &_5{font-size: $five;}
+    &_5_h{font-size: $five + $half;}
+    &_6{font-size: $six;}
+    &_6_h{font-size: $six + $half;}
+    &_7{font-size: $seven;}
+    &_7_h{font-size: $seven + $half;}
+    &_8{font-size: $eight;}
+    &_8_h{font-size: $eight + $half;}
+    &_9{font-size: $nine;}
+    &_9_h{font-size: $nine + $half;}
+    &_10{font-size: $ten;}
+    &_10_h{font-size: $ten + $half;}
+    &_11{font-size: $eleven;}
+    &_11_h{font-size: $eleven + $half;}
+    &_12{font-size: $twelve;}
+    &_12_h{font-size: $twelve + $half;}
+    &_13{font-size: $thirteen;}
+    &_13_h{font-size: $thirteen + $half;}
+    &_14{font-size: $fourteen;}
+    &_14_h{font-size: $fourteen + $half;}
+    &_15{font-size: $fifteen;}
+    &_15_h{font-size: $fifteen + $half;}
+    &_16{font-size: $sixteen;}
+    &_16_h{font-size: $sixteen + $half;}
+    &_17{font-size: $seventeen;}
+    &_17_h{font-size: $seventeen + $half;}
+    &_18{font-size: $eighteen;}
+    &_18_h{font-size: $eighteen + $half;}
+    &_19{font-size: $nineteen;}
+    &_19_h{font-size: $nineteen + $half;}
+    &_20{font-size: $twenty;}
+    &_20_h{font-size: $twenty + $half;}
+}
+
+
+
+
+/* color */
+.clr{
+    &_white{color:#ffffff;}
+    &_basic{color:#3b3838;}
+    &_blue{color:#0939d6;}
+    &_danger{color:#FF0000;}
+    &_success{color:#45f248;}
+    &_alert{color:#fff222;}
+    &_link{color:#338bd5;}
+}
+
+
+
+
+/* alignment */
+.text{
+    &_center{
+        text-align: center;
+    }
+    &_right{
+        text-align: right;
+    }
+    &_left{
+        text-align: left;
+    }
+    &_justify{
+        text-align: justify;
+    }
+}
+
+
+
+
+/* decoration */
+.text{
+    &_dashed{
+        text-decoration: dashed;
+    }
+    &_dotted{
+        text-decoration: dotted;
+    }
+    &_line_through{
+        text-decoration: line-through;
+    }
+    &_decoration_none{
+        text-decoration: none;
+    }
+    &_overline{
+        text-decoration: overline;
+    }
+    &_underline{
+        text-decoration: underline;
+    }
+    &_wavy{
+        text-decoration: wavy;
+    }
+}
+
+
