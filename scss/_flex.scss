@@ -1,0 +1,43 @@
+/* display */
+.flex{display:flex;}
+
+
+
+
+/* flex-direction */
+.flex_direction{
+    &_row{
+        flex-direction: row;
+    }
+    &_rev_row{
+        flex-direction: row-reverse;
+    }
+    &_col{
+        flex-direction: column;
+    }
+    &_rev_col{
+        flex-direction: column-reverse;
+    }
+    &_unset{
+        flex-direction: unset;
+    }
+}
+
+
+
+
+/* wrap */
+.wrap{
+    flex-wrap: wrap;
+}
+.no_wrap{
+    flex-wrap: nowrap;
+}
+.rev_wrap{
+    flex-wrap: wrap-reverse;
+}
+
+
+
+
+

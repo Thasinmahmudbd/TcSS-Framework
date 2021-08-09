@@ -1,0 +1,132 @@
+/* justify content */
+.justify_content{
+    &_start{
+        justify-content: start;
+    }
+    &_flex_start{
+        justify-content: flex-start;
+    }
+    &_center{
+        justify-content: center;
+    }
+    &_end{
+        justify-content: end;
+    }
+    &_flex_end{
+        justify-content: flex-end;
+    }
+    &_left{
+        justify-items: left;
+    }
+    &_right{
+        justify-items: right;
+    }
+    &_space_around{
+        justify-content: space-around;
+    }
+    &_space_between{
+        justify-content: space-between;
+    }
+    &_space_evenly{
+        justify-content: space-evenly;
+    }
+    &_stretch{
+        justify-content: stretch;
+    }
+    &_normal{
+        justify-content: normal;
+    }
+    &_unset{
+        justify-content: unset;
+    }
+}
+
+
+
+
+
+
+/* justify self */
+.justify_self{
+    &_start{
+        justify-self: start;
+    }
+    &_flex_start{
+        justify-self: flex-start;
+    }
+    &_center{
+        justify-self: center;
+    }
+    &_end{
+        justify-self: end;
+    }
+    &_flex_end{
+        justify-self: flex-end;
+    }
+    &_left{
+        justify-items: left;
+    }
+    &_right{
+        justify-items: right;
+    }
+    &_stretch{
+        justify-self: stretch;
+    }
+    &_baseline{
+        justify-self: baseline;
+    }
+    &_auto{
+        justify-self: auto;
+    }
+    &_normal{
+        justify-self: normal;
+    }
+    &_unset{
+        justify-self: unset;
+    }
+    
+}
+
+
+
+
+/* justify item */
+.justify_items{
+    &_start{
+        justify-items: start;
+    }
+    &_flex_start{
+        justify-items: flex-start;
+    }
+    &_center{
+        justify-items: center;
+    }
+    &_end{
+        justify-items: end;
+    }
+    &_flex_end{
+        justify-items: flex-end;
+    }
+    &_left{
+        justify-items: left;
+    }
+    &_right{
+        justify-items: right;
+    }
+    &_stretch{
+        justify-items: stretch;
+    }
+    &_baseline{
+        justify-items: baseline;
+    }
+    &_auto{
+        justify-items: auto;
+    }
+    &_normal{
+        justify-items: normal;
+    }
+    &_unset{
+        justify-items: unset;
+    }
+    
+}
