@@ -150,7 +150,7 @@
 
 
 /* font size */
-.fS{
+.font_size{
     &_h{font-size: $half;}
     &_tq{font-size: $three_quarter;}
     &_1{font-size: $one;}
@@ -199,7 +199,7 @@
 
 
 /* color */
-.clr{
+.color{
     &_white{color:#ffffff;}
     &_basic{color:#3b3838;}
     &_blue{color:#0939d6;}
@@ -225,6 +225,7 @@
     }
     &_justify{
         text-align: justify;
+        text-justify: inter-word;
     }
 }
 
@@ -257,3 +258,58 @@
 }
 
 
+
+
+
+/* overflow */
+.overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+/* text transform */
+.capitalize{text-transform: capitalize;}
+.uppercase{text-transform: uppercase;}
+.lowercase{text-transform: lowercase;}
+
+
+
+
+/* line height */
+.line_height{
+    &_1_0{line-height: 1;}
+    &_1_1{line-height: 1.1;}
+    &_1_2{line-height: 1.2;}
+    &_1_3{line-height: 1.3;}
+    &_1_4{line-height: 1.4;}
+    &_1_5{line-height: 1.5;}
+    &_1_6{line-height: 1.6;}
+    &_1_7{line-height: 1.7;}
+    &_1_8{line-height: 1.8;}
+    &_1_9{line-height: 1.9;}
+    &_2_0{line-height: 2.0;}
+}
+
+
+
+
+/* white spacing */
+.pre_white_space{white-space: pre;}
+.normal_white_space{white-space: normal;}
+.nowrap_white_space{white-space: nowrap;}
+
+
+
+/* modes */
+.horizontal_mode_tb{writing-mode: horizontal-tb;}
+.vertical_mode_lr{writing-mode: vertical-lr;}
+.vertical_mode_rl{writing-mode: vertical-rl;}
+
+
+
+/* selection block */
+.block_selection{user-select: none;}

@@ -1,0 +1,15 @@
+/* block */
+.block{display: block;}
+
+/* inline */
+.inline{
+    display: inline;
+    /* block inline */
+    &_block{display: inline-block;}
+}
+
+/* table*/
+.table{display: table;}
+
+/* none */
+.none{display: none;}

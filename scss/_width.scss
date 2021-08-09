@@ -1,0 +1,88 @@
+/* width */
+.width{
+    &_0_per{width: 0%;}
+    &_5_per{width: 5%;}
+    &_10_per{width: 10%;}
+    &_15_per{width: 15%;}
+    &_20_per{width: 20%;}
+    &_25_per{width: 25%;}
+    &_30_per{width: 30%;}
+    &_35_per{width: 35%;}
+    &_40_per{width: 40%;}
+    &_45_per{width: 45%;}
+    &_50_per{width: 50%;}
+    &_55_per{width: 55%;}
+    &_60_per{width: 60%;}
+    &_65_per{width: 65%;}
+    &_70_per{width: 70%;}
+    &_75_per{width: 75%;}
+    &_80_per{width: 80%;}
+    &_85_per{width: 85%;}
+    &_90_per{width: 90%;}
+    &_95_per{width: 95%;}
+    &_100_per{width: 100%;}
+
+    &_0_vw{width: 0vw;}
+    &_5_vw{width: 5vw;}
+    &_10_vw{width: 10vw;}
+    &_15_vw{width: 15vw;}
+    &_20_vw{width: 20vw;}
+    &_25_vw{width: 25vw;}
+    &_30_vw{width: 30vw;}
+    &_35_vw{width: 35vw;}
+    &_40_vw{width: 40vw;}
+    &_45_vw{width: 45vw;}
+    &_50_vw{width: 50vw;}
+    &_55_vw{width: 55vw;}
+    &_60_vw{width: 60vw;}
+    &_65_vw{width: 65vw;}
+    &_70_vw{width: 70vw;}
+    &_75_vw{width: 75vw;}
+    &_80_vw{width: 80vw;}
+    &_85_vw{width: 85vw;}
+    &_90_vw{width: 90vw;}
+    &_95_vw{width: 95vw;}
+    &_100_vw{width: 100vw;}
+
+    &_0{width: $px_0;}
+    &_5{width: $px_5;}
+    &_10{width: $px_10;}
+    &_15{width: $px_15;}
+    &_20{width: $px_20;}
+    &_25{width: $px_25;}
+    &_30{width: $px_30;}
+    &_35{width: $px_35;}
+    &_40{width: $px_40;}
+    &_45{width: $px_45;}
+    &_50{width: $px_50;}
+    &_55{width: $px_55;}
+    &_60{width: $px_60;}
+    &_65{width: $px_65;}
+    &_70{width: $px_70;}
+    &_75{width: $px_75;}
+    &_80{width: $px_80;}
+    &_85{width: $px_85;}
+    &_90{width: $px_90;}
+    &_95{width: $px_95;}
+    &_100{width: $px_100;}
+    &_125{width: $px_100 + $px_25;}
+    &_150{width: $px_100 + $px_50;}
+    &_175{width: $px_100 + $px_75;}
+    &_200{width: $px_100 + $px_100;}
+    &_225{width: $px_100 + $px_100 + $px_25;}
+    &_250{width: $px_100 + $px_100 + $px_50;}
+    &_275{width: $px_100 + $px_100 + $px_75;}
+    &_300{width: $px_100 + $px_100 + $px_100;}
+    &_325{width: $px_100 + $px_100 + $px_100 + $px_25;}
+    &_350{width: $px_100 + $px_100 + $px_100 + $px_50;}
+    &_375{width: $px_100 + $px_100 + $px_100 + $px_75;}
+    &_400{width: $px_100 + $px_100 + $px_100 + $px_100;}
+    &_425{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
+    &_450{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
+    &_475{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
+    &_500{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
+    &_525{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
+    &_550{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
+    &_575{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
+    &_600{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
+}

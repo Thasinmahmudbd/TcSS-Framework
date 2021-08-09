@@ -1,0 +1,23 @@
+/* opacity */
+.opacity{
+    &_0_0{opacity: 0;}
+    &_0_1{opacity: 0.1;}
+    &_0_2{opacity: 0.2;}
+    &_0_3{opacity: 0.3;}
+    &_0_4{opacity: 0.4;}
+    &_0_5{opacity: 0.5;}
+    &_0_6{opacity: 0.6;}
+    &_0_7{opacity: 0.7;}
+    &_0_8{opacity: 0.8;}
+    &_0_9{opacity: 0.9;}
+    &_1_0{opacity: 1;}
+}
+
+
+/* visibility */
+.visible{
+    visibility: visible;
+}
+.invisible{
+    visibility: hidden;
+}
