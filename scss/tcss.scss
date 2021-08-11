@@ -1,4 +1,12 @@
+/* variables */
 @import './variables';
+@import './mixins';
+
+/* elements */
+@import './navbar';
+@import './patterns';
+
+/* basics */
 @import './padding';
 @import './margin';
 @import './fonts';
@@ -21,3 +29,10 @@
 @import './height';
 @import './display';
 @import './cursor';
+
+
+/* reset */
+body{
+    padding:0px;
+    margin:0px;
+}

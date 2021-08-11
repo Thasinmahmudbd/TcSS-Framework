@@ -1,5 +1,6 @@
 /* border size all */
 .border_size_a{
+    &_0{border: $px_0;}
     &_1{border: $px_1;}
     &_2{border: $px_2;}
     &_3{border: $px_3;}
@@ -27,6 +28,7 @@
 
 /* border size top */
 .border_size_t{
+    &_0{border-top: $px_0;}
     &_1{border-top: $px_1;}
     &_2{border-top: $px_2;}
     &_3{border-top: $px_3;}
@@ -54,6 +56,7 @@
 
 /* border size right */
 .border_size_r{
+    &_0{border-right: $px_0;}
     &_1{border-right: $px_1;}
     &_2{border-right: $px_2;}
     &_3{border-right: $px_3;}
@@ -81,6 +84,7 @@
 
 /* border size bottom */
 .border_size_b{
+    &_0{border-bottom: $px_0;}
     &_1{border-bottom: $px_1;}
     &_2{border-bottom: $px_2;}
     &_3{border-bottom: $px_3;}
@@ -109,6 +113,7 @@
 
 /* border size left */
 .border_size_l{
+    &_0{border-left: $px_0;}
     &_1{border-left: $px_1;}
     &_2{border-left: $px_2;}
     &_3{border-left: $px_3;}
@@ -285,4 +290,54 @@
     &_80_per{border-radius: 80%;}
     &_90_per{border-radius: 90%;}
     &_100_per{border-radius: 100%;}
+}
+
+
+
+
+/* border none */
+.border{
+    &_none{
+        border: none;
+    }
+    &_l_none{
+        border-left: none;
+    }
+    &_r_none{
+        border-right: none;
+    }
+    &_t_none{
+        border-top: none;
+    }
+    &_b_none{
+        border-bottom: none;
+    }
+}
+
+
+
+
+
+/* only border */
+.only_border{
+    &_l{
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    &_r{
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+    }
+    &_t{
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    &_b{
+        border-left: none;
+        border-right: none;
+        border-top: none;
+    }
 }

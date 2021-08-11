@@ -1,10 +1,16 @@
 /* background colors */
 .bg{
-    &_rose_white{background-color: $rose_white};
-    &_hof_white{background-color: $hof_white};
-    &_gray{background-color: $gray};
-    &_dark{background-color: $dark};
-    &_dark_gray{background-color: $dark_gray};
-    &_dark_ash{background-color: $dark_ash};
-    &_pure_black{background-color: $pure_black};
+    &_rose_white{@include disable_pattern; background-color: $rose_white;}
+    &_hof_white{@include disable_pattern; background-color: $hof_white;}
+
+    &_gray{@include disable_pattern; background-color: $gray;}
+    &_dark{@include disable_pattern; background-color: $dark;}
+    &_dark_gray{@include disable_pattern; background-color: $dark_gray;}
+    &_dark_ash{@include disable_pattern; background-color: $dark_ash;}
+    &_pure_black{@include disable_pattern; background-color: $pure_black;}
+    &_thasin{@include disable_pattern; background-color: $thasin;}
+    &_thasin_2{@include disable_pattern; background-color: $thasin_2;}
+
+    &_pure_blue{@include disable_pattern; background-color: $pure_blue;}
+
 }

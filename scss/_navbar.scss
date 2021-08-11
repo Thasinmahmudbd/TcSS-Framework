@@ -1,0 +1,143 @@
+/* navigation bars */
+
+.nav{
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    align-content: center;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    background-color: $thasin_2;
+    transition: 200ms ease-in;
+    @media only screen and (max-width: 1000px) {
+        grid-template-columns: 100px 1fr 100px;
+        transition: 200ms ease-in;
+    }
+}
+
+.img_logo{
+    display: grid;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+
+}
+
+.text_logo{
+    display: grid;
+    align-self: center;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+
+}
+
+.search_bar{
+    display: grid;
+    align-self: center;
+    grid-template-columns: 1fr 50px;
+    height: 30px;
+}
+
+.search_field{
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+}
+
+.search_btn{
+    text-align: center;
+    border-radius: 0px 15px 15px 0px;
+    background-color: $sky;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.search_btn:hover{
+    background-color: #1e6bb4;
+    transition: 200ms ease-in;
+}
+
+.main_links{
+    display:inline-block;
+}
+
+.main_link{
+    display:grid;
+    height:60px;
+    padding: $zero $one;
+    float: right;
+    align-content:center;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 200ms ease-in;
+    @media only screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.main_link:hover{
+    border-bottom: 1px solid $sky;
+    background-color: rgba(0, 0, 0, 0.329);
+    transition: 200ms ease-in;
+}
+
+.hamburger{
+    display: none;
+    height:60px;
+    padding: $zero $one;
+    float: right;
+    align-content:center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 200ms ease-in;
+    @media only screen and (max-width: 1000px) {
+        display: grid;
+    }
+}
+
+.hamburger:hover{
+    transform: rotate(360deg);
+    transition: 200ms ease-in;
+}
+
+.drop_down{
+    position: relative;
+}
+
+.sub_links{
+    display: grid;
+    position: absolute;
+    top: -1000px;
+    right: 0px;
+    width: 700px;
+    background-color: $sky;
+    z-index: -1;
+    transition: 400ms ease-in-out;
+}
+
+.sub_link{
+    text-align: right;
+    color: #ffffff;
+    padding: $half $one;
+    text-decoration: none;
+    border-bottom: 1px solid $thasin_2;
+}
+
+.sub_link:hover{
+    background-color: rgba(0, 0, 0, 0.329);
+    transition: 200ms ease-in;
+}
+
+.drop_down:hover .sub_links{
+    top: 60px;
+    transition: 400ms ease-in-out;
+}
