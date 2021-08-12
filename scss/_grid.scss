@@ -1,12 +1,12 @@
 /* display */
-.grid{
+.disGrid{
     display:grid;
 }
 
 
 
 /* grid-template-columns */
-.grid_col{
+.gridCol{
     &_1_size_1{
         display:grid;
         grid-template-columns: 1fr;
@@ -89,7 +89,7 @@
 
 
 /* grid-template-rows */
-.grid_row{
+.gridRow{
     &_1_size_1{
         display:grid;
         grid-template-rows: 1fr;
@@ -171,7 +171,7 @@
 
 
 /* grid-gap */
-.grid_gap{
+.gridGap{
     &_q{
         display:grid;
         grid-gap: $quarter;
@@ -210,7 +210,7 @@
 
 
 /* grid-row-gap */
-.grid_row_gap{
+.gridRowGap{
     &_q{
         display:grid;
         grid-row-gap: $quarter;
@@ -251,7 +251,7 @@
 
 
 /* grid-column-gap */
-.grid_col_gap{
+.gridColGap{
     &_q{
         display:grid;
         grid-column-gap: $quarter;

@@ -1,24 +1,24 @@
 /* display */
-.flex{display:flex;}
+.disFlex{display:flex;}
 
 
 
 
 /* flex-direction */
-.flex_direction{
-    &_row{
+.flexDir{
+    &Row{
         flex-direction: row;
     }
-    &_rev_row{
+    &RevRow{
         flex-direction: row-reverse;
     }
-    &_col{
+    &Col{
         flex-direction: column;
     }
-    &_rev_col{
+    &RevCol{
         flex-direction: column-reverse;
     }
-    &_unset{
+    &Unset{
         flex-direction: unset;
     }
 }
@@ -27,14 +27,16 @@
 
 
 /* wrap */
-.wrap{
-    flex-wrap: wrap;
-}
-.no_wrap{
-    flex-wrap: nowrap;
-}
-.rev_wrap{
-    flex-wrap: wrap-reverse;
+.flex{
+    &Wrap{
+        flex-wrap: wrap;
+    }
+    &NoWrap{
+        flex-wrap: nowrap;
+    }
+    &RevWrap{
+        flex-wrap: wrap-reverse;
+    }
 }
 
 

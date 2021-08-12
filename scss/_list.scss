@@ -1,22 +1,23 @@
 /* list style */
 
 .list{
-    &_in{list-style-position: inside;}
-    &_out{list-style-position: outside;}
-    &_disc{list-style-type: disc;}
-    &_armenian{list-style-type: armenian;}
-    &_disc{list-style-type: circle;}
-    &_square{list-style-type: square;}
-    &_decimal{list-style-type: decimal;}
-    &_decimal_from_0{list-style-type: decimal-leading-zero;}
-    &_georgian{list-style-type: georgian;}
-    &_lower_alpha{list-style-type: lower-alpha;}
-    &_lower_greek{list-style-type: lower-greek;}
-    &_lower_latin{list-style-type: lower-latin;}
-    &_lower_roman{list-style-type: lower-roman;}
-    &_upper_alpha{list-style-type: upper-alpha;}
-    &_upper_latin{list-style-type: upper-latin;}
-    &_upper_roman{list-style-type: upper-roman;}
-    &_none{list-style-type: none;}
-    &_unset{list-style-type: unset;}
+    &In{list-style-position: inside;}
+    &Out{list-style-position: outside;}
+    &Disc{list-style-type: disc;}
+    &Armenian{list-style-type: armenian;}
+    &Circle{list-style-type: circle;}
+    &Square{list-style-type: square;}
+    &Dec{list-style-type: decimal;}
+    &DecFrom_0{list-style-type: decimal-leading-zero;}
+    &Georgian{list-style-type: georgian;}
+    &LowerAlpha{list-style-type: lower-alpha;}
+    &LowerGreek{list-style-type: lower-greek;}
+    &LowerLatin{list-style-type: lower-latin;}
+    &LowerRoman{list-style-type: lower-roman;}
+    &UpperAlpha{list-style-type: upper-alpha;}
+    &UpperLatin{list-style-type: upper-latin;}
+    &UpperRoman{list-style-type: upper-roman;}
+    &None{list-style-type: none;}
+    &Unset{list-style-type: unset;}
 }
+

@@ -1,42 +1,42 @@
 /* align content */
-.align_content{
-    &_start{
+.alignContent{
+    &Start{
         align-content: start;
     }
-    &_flex_start{
+    &FlexStart{
         align-content: flex-start;
     }
-    &_center{
+    &Center{
         align-content: center;
     }
-    &_end{
+    &End{
         align-content: end;
     }
-    &_flex_end{
+    &FlexEnd{
         align-content: flex-end;
     }
-    &_space_around{
+    &SpaceAround{
         align-content: space-around;
     }
-    &_space_between{
+    &SpaceBetween{
         align-content: space-between;
     }
-    &_space_evenly{
+    &SpaceEvenly{
         align-content: space-evenly;
     }
-    &_stretch{
+    &Stretch{
         align-content: stretch;
     }
-    &_baseline{
+    &Baseline{
         align-content: baseline;
     }
-    &_auto{
+    &Auto{
         align-content: auto;
     }
-    &_normal{
+    &Normal{
         align-content: normal;
     }
-    &_unset{
+    &Unset{
         align-content: unset;
     }
     
@@ -48,35 +48,35 @@
 
 
 /* align self */
-.align_self{
-    &_start{
+.alignSelf{
+    &Start{
         align-self: start;
     }
-    &_flex_start{
+    &FlexStart{
         align-self: flex-start;
     }
-    &_center{
+    &Center{
         align-self: center;
     }
-    &_end{
+    &End{
         align-self: end;
     }
-    &_flex_end{
+    &FlexEnd{
         align-self: flex-end;
     }
-    &_stretch{
+    &Stretch{
         align-self: stretch;
     }
-    &_baseline{
+    &Baseline{
         align-self: baseline;
     }
-    &_auto{
+    &Auto{
         align-self: auto;
     }
-    &_normal{
+    &Normal{
         align-self: normal;
     }
-    &_unset{
+    &Unset{
         align-self: unset;
     }
     
@@ -86,32 +86,32 @@
 
 
 /* align item */
-.align_items{
-    &_start{
+.alignItems{
+    &Start{
         align-items: start;
     }
-    &_flex_start{
+    &FlexStart{
         align-items: flex-start;
     }
-    &_center{
+    &Center{
         align-items: center;
     }
-    &_end{
+    &End{
         align-items: end;
     }
-    &_flex_end{
+    &FlexEnd{
         align-items: flex-end;
     }
-    &_stretch{
+    &Stretch{
         align-items: stretch;
     }
-    &_baseline{
+    &Baseline{
         align-items: baseline;
     }
-    &_normal{
+    &Normal{
         align-items: normal;
     }
-    &_unset{
+    &Unset{
         align-items: unset;
     }
     

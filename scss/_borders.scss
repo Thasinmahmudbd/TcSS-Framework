@@ -1,5 +1,5 @@
 /* border size all */
-.border_size_a{
+.borSize{
     &_0{border: $px_0;}
     &_1{border: $px_1;}
     &_2{border: $px_2;}
@@ -27,7 +27,7 @@
 
 
 /* border size top */
-.border_size_t{
+.borSizeT{
     &_0{border-top: $px_0;}
     &_1{border-top: $px_1;}
     &_2{border-top: $px_2;}
@@ -55,7 +55,7 @@
 
 
 /* border size right */
-.border_size_r{
+.borSizeR{
     &_0{border-right: $px_0;}
     &_1{border-right: $px_1;}
     &_2{border-right: $px_2;}
@@ -83,7 +83,7 @@
 
 
 /* border size bottom */
-.border_size_b{
+.borSizeB{
     &_0{border-bottom: $px_0;}
     &_1{border-bottom: $px_1;}
     &_2{border-bottom: $px_2;}
@@ -112,7 +112,7 @@
 
 
 /* border size left */
-.border_size_l{
+.borSizeL{
     &_0{border-left: $px_0;}
     &_1{border-left: $px_1;}
     &_2{border-left: $px_2;}
@@ -140,19 +140,21 @@
 
 
 /* border color */
-.border_color{
-    &_white{border-color: $white;}
-    &_pure_black{border-color: $pure_black;}
-    &_gray{border-color: $gray;}
-    &_dark{border-color: $dark;}
-    &_dark_gray{border-color: $dark_gray;}
-    &_dark_ash{border-color: $dark_ash;}
-    &_dark_blue{border-color: $dark_blue;}
-    &_sky{border-color: $sky;}
-    &_danger{border-color: $danger;}
-    &_success{border-color: $success;}
-    &_alert{border-color: $alert;}
-    &_gold{border-color: $gold;}
+.borClr{
+    &White{border-color: $white;}
+    &PureBlack{border-color: $pureBlack;}
+    &Gray{border-color: $gray;}
+    &Dark{border-color: $dark;}
+    &DarkGray{border-color: $darkGray;}
+    &DarkAsh{border-color: $darkAsh;}
+    &DarkBlue{border-color: $darkBlue;}
+    &Sky{border-color: $sky;}
+    &Danger{border-color: $danger;}
+    &Success{border-color: $success;}
+    &Alert{border-color: $alert;}
+    &Gold{border-color: $gold;}
+    &Thasin{border-color: $thasin;}
+    &Thasin_2{border-color: $thasin_2;}
 }
 
 
@@ -160,19 +162,21 @@
 
 
 /* border top color */
-.border_top_color{
-    &_white{border-top-color: $white;}
-    &_pure_black{border-top-color: $pure_black;}
-    &_gray{border-top-color: $gray;}
-    &_dark{border-top-color: $dark;}
-    &_dark_gray{border-top-color: $dark_gray;}
-    &_dark_ash{border-top-color: $dark_ash;}
-    &_dark_blue{border-top-color: $dark_blue;}
-    &_sky{border-top-color: $sky;}
-    &_danger{border-top-color: $danger;}
-    &_success{border-top-color: $success;}
-    &_alert{border-top-color: $alert;}
-    &_gold{border-top-color: $gold;}
+.borClrT{
+    &White{border-top-color: $white;}
+    &PureBlack{border-top-color: $pureBlack;}
+    &Gray{border-top-color: $gray;}
+    &Dark{border-top-color: $dark;}
+    &DarkGray{border-top-color: $darkGray;}
+    &DarkAsh{border-top-color: $darkAsh;}
+    &DarkBlue{border-top-color: $darkBlue;}
+    &Sky{border-top-color: $sky;}
+    &Danger{border-top-color: $danger;}
+    &Success{border-top-color: $success;}
+    &Alert{border-top-color: $alert;}
+    &Gold{border-top-color: $gold;}
+    &Thasin{border-top-color: $thasin;}
+    &Thasin_2{border-top-color: $thasin_2;}
 }
 
 
@@ -180,19 +184,21 @@
 
 
 /* border right color */
-.border_right_color{
-    &_white{border-right-color: $white;}
-    &_pure_black{border-right-color: $pure_black;}
-    &_gray{border-right-color: $gray;}
-    &_dark{border-right-color: $dark;}
-    &_dark_gray{border-right-color: $dark_gray;}
-    &_dark_ash{border-right-color: $dark_ash;}
-    &_dark_blue{border-right-color: $dark_blue;}
-    &_sky{border-right-color: $sky;}
-    &_danger{border-right-color: $danger;}
-    &_success{border-right-color: $success;}
-    &_alert{border-right-color: $alert;}
-    &_gold{border-right-color: $gold;}
+.borClrR{
+    &White{border-right-color: $white;}
+    &PureBlack{border-right-color: $pureBlack;}
+    &Gray{border-right-color: $gray;}
+    &Dark{border-right-color: $dark;}
+    &DarkGray{border-right-color: $darkGray;}
+    &DarkAsh{border-right-color: $darkAsh;}
+    &DarkBlue{border-right-color: $darkBlue;}
+    &Sky{border-right-color: $sky;}
+    &Danger{border-right-color: $danger;}
+    &Success{border-right-color: $success;}
+    &Alert{border-right-color: $alert;}
+    &Gold{border-right-color: $gold;}
+    &Thasin{border-right-color: $thasin;}
+    &Thasin_2{border-right-color: $thasin_2;}
 }
 
 
@@ -201,19 +207,21 @@
 
 
 /* border bottom color */
-.border_bottom_color{
-    &_white{border-bottom-color: $white;}
-    &_pure_black{border-bottom-color: $pure_black;}
-    &_gray{border-bottom-color: $gray;}
-    &_dark{border-bottom-color: $dark;}
-    &_dark_gray{border-bottom-color: $dark_gray;}
-    &_dark_ash{border-bottom-color: $dark_ash;}
-    &_dark_blue{border-bottom-color: $dark_blue;}
-    &_sky{border-bottom-color: $sky;}
-    &_danger{border-bottom-color: $danger;}
-    &_success{border-bottom-color: $success;}
-    &_alert{border-bottom-color: $alert;}
-    &_gold{border-bottom-color: $gold;}
+.borClrB{
+    &White{border-bottom-color: $white;}
+    &PureBlack{border-bottom-color: $pureBlack;}
+    &Gray{border-bottom-color: $gray;}
+    &Dark{border-bottom-color: $dark;}
+    &DarkGray{border-bottom-color: $darkGray;}
+    &DarkAsh{border-bottom-color: $darkAsh;}
+    &DarkBlue{border-bottom-color: $darkBlue;}
+    &Sky{border-bottom-color: $sky;}
+    &Danger{border-bottom-color: $danger;}
+    &Success{border-bottom-color: $success;}
+    &Alert{border-bottom-color: $alert;}
+    &Gold{border-bottom-color: $gold;}
+    &Thasin{border-bottom-color: $thasin;}
+    &Thasin_2{border-bottom-color: $thasin_2;}
 }
 
 
@@ -222,19 +230,21 @@
 
 
 /* border left color */
-.border_left_color{
-    &_white{border-left-color: $white;}
-    &_pure_black{border-left-color: $pure_black;}
-    &_gray{border-left-color: $gray;}
-    &_dark{border-left-color: $dark;}
-    &_dark_gray{border-left-color: $dark_gray;}
-    &_dark_ash{border-left-color: $dark_ash;}
-    &_dark_blue{border-left-color: $dark_blue;}
-    &_sky{border-left-color: $sky;}
-    &_danger{border-left-color: $danger;}
-    &_success{border-left-color: $success;}
-    &_alert{border-left-color: $alert;}
-    &_gold{border-left-color: $gold;}
+.borClrL{
+    &White{border-left-color: $white;}
+    &PureBlack{border-left-color: $pureBlack;}
+    &Gray{border-left-color: $gray;}
+    &Dark{border-left-color: $dark;}
+    &DarkGray{border-left-color: $darkGray;}
+    &DarkAsh{border-left-color: $darkAsh;}
+    &DarkBlue{border-left-color: $darkBlue;}
+    &Sky{border-left-color: $sky;}
+    &Danger{border-left-color: $danger;}
+    &Success{border-left-color: $success;}
+    &Alert{border-left-color: $alert;}
+    &Gold{border-left-color: $gold;}
+    &Thasin{border-left-color: $thasin;}
+    &Thasin_2{border-left-color: $thasin_2;}
 }
 
 
@@ -242,23 +252,23 @@
 
 
 /* border style */
-.border_style{
-    &_dotted{border-style: dotted;}
-    &_dashed{border-style: dashed;}
-    &_double{border-style: double;}
-    &_groove{border-style: groove;}
-    &_solid{border-style: solid;}
-    &_unset{border-style: unset;}
-    &_ridge{border-style: ridge;}
-    &_inset{border-style: inset;}
-    &_outset{border-style: outset;}
-    &_hidden{border-style: hidden;}
+.borStyle{
+    &Dotted{border-style: dotted;}
+    &Dashed{border-style: dashed;}
+    &Double{border-style: double;}
+    &Groove{border-style: groove;}
+    &Solid{border-style: solid;}
+    &Unset{border-style: unset;}
+    &Ridge{border-style: ridge;}
+    &Inset{border-style: inset;}
+    &Outset{border-style: outset;}
+    &Hidden{border-style: hidden;}
 }
 
 
 
-/* border radius */
-.border_rad{
+/* border radius all */
+.borRad{
     &_5{border-radius: $px_5;}
     &_10{border-radius: $px_10;}
     &_15{border-radius: $px_15;}
@@ -280,36 +290,189 @@
     &_95{border-radius: $px_95;}
     &_100{border-radius: $px_100;}
 
-    &_10_per{border-radius: 10%;}
-    &_20_per{border-radius: 20%;}
-    &_30_per{border-radius: 30%;}
-    &_40_per{border-radius: 40%;}
-    &_50_per{border-radius: 50%;}
-    &_60_per{border-radius: 60%;}
-    &_70_per{border-radius: 70%;}
-    &_80_per{border-radius: 80%;}
-    &_90_per{border-radius: 90%;}
-    &_100_per{border-radius: 100%;}
+    &_10Per{border-radius: 10%;}
+    &_20Per{border-radius: 20%;}
+    &_30Per{border-radius: 30%;}
+    &_40Per{border-radius: 40%;}
+    &_50Per{border-radius: 50%;}
+    &_60Per{border-radius: 60%;}
+    &_70Per{border-radius: 70%;}
+    &_80Per{border-radius: 80%;}
+    &_90Per{border-radius: 90%;}
+    &_100Per{border-radius: 100%;}
 }
 
 
 
 
+/* border radius top */
+.borRadT{
+    &_5{border-radius: $px_5 $px_0 $px_0 $px_0;}
+    &_10{border-radius: $px_10 $px_0 $px_0 $px_0;}
+    &_15{border-radius: $px_15 $px_0 $px_0 $px_0;}
+    &_20{border-radius: $px_20 $px_0 $px_0 $px_0;}
+    &_25{border-radius: $px_25 $px_0 $px_0 $px_0;}
+    &_30{border-radius: $px_30 $px_0 $px_0 $px_0;}
+    &_35{border-radius: $px_35 $px_0 $px_0 $px_0;}
+    &_40{border-radius: $px_40 $px_0 $px_0 $px_0;}
+    &_45{border-radius: $px_45 $px_0 $px_0 $px_0;}
+    &_50{border-radius: $px_50 $px_0 $px_0 $px_0;}
+    &_55{border-radius: $px_55 $px_0 $px_0 $px_0;}
+    &_60{border-radius: $px_60 $px_0 $px_0 $px_0;}
+    &_65{border-radius: $px_65 $px_0 $px_0 $px_0;}
+    &_70{border-radius: $px_70 $px_0 $px_0 $px_0;}
+    &_75{border-radius: $px_75 $px_0 $px_0 $px_0;}
+    &_80{border-radius: $px_80 $px_0 $px_0 $px_0;}
+    &_85{border-radius: $px_85 $px_0 $px_0 $px_0;}
+    &_90{border-radius: $px_90 $px_0 $px_0 $px_0;}
+    &_95{border-radius: $px_95 $px_0 $px_0 $px_0;}
+    &_100{border-radius: $px_100 $px_0 $px_0 $px_0;}
+
+    &_10Per{border-radius: 10% 0% 0% 0%;}
+    &_20Per{border-radius: 20% 0% 0% 0%;}
+    &_30Per{border-radius: 30% 0% 0% 0%;}
+    &_40Per{border-radius: 40% 0% 0% 0%;}
+    &_50Per{border-radius: 50% 0% 0% 0%;}
+    &_60Per{border-radius: 60% 0% 0% 0%;}
+    &_70Per{border-radius: 70% 0% 0% 0%;}
+    &_80Per{border-radius: 80% 0% 0% 0%;}
+    &_90Per{border-radius: 90% 0% 0% 0%;}
+    &_100Per{border-radius: 100% 0% 0% 0%;}
+}
+
+
+
+
+/* border radius right */
+.borRadR{
+    &_5{border-radius: $px_0 $px_5 $px_0 $px_0;}
+    &_10{border-radius: $px_0 $px_10 $px_0 $px_0;}
+    &_15{border-radius: $px_0 $px_15 $px_0 $px_0;}
+    &_20{border-radius: $px_0 $px_20 $px_0 $px_0;}
+    &_25{border-radius: $px_0 $px_25 $px_0 $px_0;}
+    &_30{border-radius: $px_0 $px_30 $px_0 $px_0;}
+    &_35{border-radius: $px_0 $px_35 $px_0 $px_0;}
+    &_40{border-radius: $px_0 $px_40 $px_0 $px_0;}
+    &_45{border-radius: $px_0 $px_45 $px_0 $px_0;}
+    &_50{border-radius: $px_0 $px_50 $px_0 $px_0;}
+    &_55{border-radius: $px_0 $px_55 $px_0 $px_0;}
+    &_60{border-radius: $px_0 $px_60 $px_0 $px_0;}
+    &_65{border-radius: $px_0 $px_65 $px_0 $px_0;}
+    &_70{border-radius: $px_0 $px_70 $px_0 $px_0;}
+    &_75{border-radius: $px_0 $px_75 $px_0 $px_0;}
+    &_80{border-radius: $px_0 $px_80 $px_0 $px_0;}
+    &_85{border-radius: $px_0 $px_85 $px_0 $px_0;}
+    &_90{border-radius: $px_0 $px_90 $px_0 $px_0;}
+    &_95{border-radius: $px_0 $px_95 $px_0 $px_0;}
+    &_100{border-radius: $px_0 $px_100 $px_0 $px_0;}
+
+    &_10Per{border-radius: 0% 10% 0% 0%;}
+    &_20Per{border-radius: 0% 20% 0% 0%;}
+    &_30Per{border-radius: 0% 30% 0% 0%;}
+    &_40Per{border-radius: 0% 40% 0% 0%;}
+    &_50Per{border-radius: 0% 50% 0% 0%;}
+    &_60Per{border-radius: 0% 60% 0% 0%;}
+    &_70Per{border-radius: 0% 70% 0% 0%;}
+    &_80Per{border-radius: 0% 80% 0% 0%;}
+    &_90Per{border-radius: 0% 90% 0% 0%;}
+    &_100Per{border-radius: 0% 100% 0% 0%;}
+}
+
+
+
+
+
+/* border radius bottom */
+.borRadB{
+    &_5{border-radius: $px_0 $px_0 $px_5 $px_0;}
+    &_10{border-radius: $px_0 $px_0 $px_10 $px_0;}
+    &_15{border-radius: $px_0 $px_0 $px_15 $px_0;}
+    &_20{border-radius: $px_0 $px_0 $px_20 $px_0;}
+    &_25{border-radius: $px_0 $px_0 $px_25 $px_0;}
+    &_30{border-radius: $px_0 $px_0 $px_30 $px_0;}
+    &_35{border-radius: $px_0 $px_0 $px_35 $px_0;}
+    &_40{border-radius: $px_0 $px_0 $px_40 $px_0;}
+    &_45{border-radius: $px_0 $px_0 $px_45 $px_0;}
+    &_50{border-radius: $px_0 $px_0 $px_50 $px_0;}
+    &_55{border-radius: $px_0 $px_0 $px_55 $px_0;}
+    &_60{border-radius: $px_0 $px_0 $px_60 $px_0;}
+    &_65{border-radius: $px_0 $px_0 $px_65 $px_0;}
+    &_70{border-radius: $px_0 $px_0 $px_70 $px_0;}
+    &_75{border-radius: $px_0 $px_0 $px_75 $px_0;}
+    &_80{border-radius: $px_0 $px_0 $px_80 $px_0;}
+    &_85{border-radius: $px_0 $px_0 $px_85 $px_0;}
+    &_90{border-radius: $px_0 $px_0 $px_90 $px_0;}
+    &_95{border-radius: $px_0 $px_0 $px_95 $px_0;}
+    &_100{border-radius: $px_0 $px_0 $px_100 $px_0;}
+
+    &_10Per{border-radius: 0% 0% 10% 0%;}
+    &_20Per{border-radius: 0% 0% 20% 0%;}
+    &_30Per{border-radius: 0% 0% 30% 0%;}
+    &_40Per{border-radius: 0% 0% 40% 0%;}
+    &_50Per{border-radius: 0% 0% 50% 0%;}
+    &_60Per{border-radius: 0% 0% 60% 0%;}
+    &_70Per{border-radius: 0% 0% 70% 0%;}
+    &_80Per{border-radius: 0% 0% 80% 0%;}
+    &_90Per{border-radius: 0% 0% 90% 0%;}
+    &_100Per{border-radius: 0% 0% 100% 0%;}
+}
+
+
+
+
+
+/* border radius left */
+.borRadL{
+    &_5{border-radius: $px_0 $px_0 $px_0 $px_5;}
+    &_10{border-radius: $px_0 $px_0 $px_0 $px_10;}
+    &_15{border-radius: $px_0 $px_0 $px_0 $px_15;}
+    &_20{border-radius: $px_0 $px_0 $px_0 $px_20;}
+    &_25{border-radius: $px_0 $px_0 $px_0 $px_25;}
+    &_30{border-radius: $px_0 $px_0 $px_0 $px_30;}
+    &_35{border-radius: $px_0 $px_0 $px_0 $px_35;}
+    &_40{border-radius: $px_0 $px_0 $px_0 $px_40;}
+    &_45{border-radius: $px_0 $px_0 $px_0 $px_45;}
+    &_50{border-radius: $px_0 $px_0 $px_0 $px_50;}
+    &_55{border-radius: $px_0 $px_0 $px_0 $px_55;}
+    &_60{border-radius: $px_0 $px_0 $px_0 $px_60;}
+    &_65{border-radius: $px_0 $px_0 $px_0 $px_65;}
+    &_70{border-radius: $px_0 $px_0 $px_0 $px_70;}
+    &_75{border-radius: $px_0 $px_0 $px_0 $px_75;}
+    &_80{border-radius: $px_0 $px_0 $px_0 $px_80;}
+    &_85{border-radius: $px_0 $px_0 $px_0 $px_85;}
+    &_90{border-radius: $px_0 $px_0 $px_0 $px_90;}
+    &_95{border-radius: $px_0 $px_0 $px_0 $px_95;}
+    &_100{border-radius: $px_0 $px_0 $px_0 $px_100;}
+
+    &_10Per{border-radius: 0% 0% 0% 10%;}
+    &_20Per{border-radius: 0% 0% 0% 20%;}
+    &_30Per{border-radius: 0% 0% 0% 30%;}
+    &_40Per{border-radius: 0% 0% 0% 40%;}
+    &_50Per{border-radius: 0% 0% 0% 50%;}
+    &_60Per{border-radius: 0% 0% 0% 60%;}
+    &_70Per{border-radius: 0% 0% 0% 70%;}
+    &_80Per{border-radius: 0% 0% 0% 80%;}
+    &_90Per{border-radius: 0% 0% 0% 90%;}
+    &_100Per{border-radius: 0% 0% 0% 100%;}
+}
+
+
+
+
+
 /* border none */
-.border{
-    &_none{
-        border: none;
-    }
-    &_l_none{
+.borNone{
+    border: none;
+    &L{
         border-left: none;
     }
-    &_r_none{
+    &R{
         border-right: none;
     }
-    &_t_none{
+    &T{
         border-top: none;
     }
-    &_b_none{
+    &B{
         border-bottom: none;
     }
 }
@@ -319,23 +482,23 @@
 
 
 /* only border */
-.only_border{
-    &_l{
+.borOnly{
+    &L{
         border-right: none;
         border-top: none;
         border-bottom: none;
     }
-    &_r{
+    &R{
         border-left: none;
         border-top: none;
         border-bottom: none;
     }
-    &_t{
+    &T{
         border-left: none;
         border-right: none;
         border-bottom: none;
     }
-    &_b{
+    &B{
         border-left: none;
         border-right: none;
         border-top: none;

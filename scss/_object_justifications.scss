@@ -1,42 +1,42 @@
 /* justify content */
-.justify_content{
-    &_start{
+.justifyContent{
+    &Start{
         justify-content: start;
     }
-    &_flex_start{
+    &FlexStart{
         justify-content: flex-start;
     }
-    &_center{
+    &Center{
         justify-content: center;
     }
-    &_end{
+    &End{
         justify-content: end;
     }
-    &_flex_end{
+    &FlexEnd{
         justify-content: flex-end;
     }
-    &_left{
+    &Left{
         justify-items: left;
     }
-    &_right{
+    &Right{
         justify-items: right;
     }
-    &_space_around{
+    &SpaceAround{
         justify-content: space-around;
     }
-    &_space_between{
+    &SpaceBetween{
         justify-content: space-between;
     }
-    &_space_evenly{
+    &SpaceEvenly{
         justify-content: space-evenly;
     }
-    &_stretch{
+    &Stretch{
         justify-content: stretch;
     }
-    &_normal{
+    &Normal{
         justify-content: normal;
     }
-    &_unset{
+    &Unset{
         justify-content: unset;
     }
 }
@@ -47,41 +47,41 @@
 
 
 /* justify self */
-.justify_self{
-    &_start{
+.justifySelf{
+    &Start{
         justify-self: start;
     }
-    &_flex_start{
+    &FlexStart{
         justify-self: flex-start;
     }
-    &_center{
+    &Center{
         justify-self: center;
     }
-    &_end{
+    &End{
         justify-self: end;
     }
-    &_flex_end{
+    &FlexEnd{
         justify-self: flex-end;
     }
-    &_left{
+    &Left{
         justify-items: left;
     }
-    &_right{
+    &Right{
         justify-items: right;
     }
-    &_stretch{
+    &Stretch{
         justify-self: stretch;
     }
-    &_baseline{
+    &Baseline{
         justify-self: baseline;
     }
-    &_auto{
+    &Auto{
         justify-self: auto;
     }
-    &_normal{
+    &Normal{
         justify-self: normal;
     }
-    &_unset{
+    &Unset{
         justify-self: unset;
     }
     
@@ -91,41 +91,41 @@
 
 
 /* justify item */
-.justify_items{
-    &_start{
+.justifyItems{
+    &Start{
         justify-items: start;
     }
-    &_flex_start{
+    &FlexStart{
         justify-items: flex-start;
     }
-    &_center{
+    &Center{
         justify-items: center;
     }
-    &_end{
+    &End{
         justify-items: end;
     }
-    &_flex_end{
+    &FlexEnd{
         justify-items: flex-end;
     }
-    &_left{
+    &Left{
         justify-items: left;
     }
-    &_right{
+    &Right{
         justify-items: right;
     }
-    &_stretch{
+    &Stretch{
         justify-items: stretch;
     }
-    &_baseline{
+    &Baseline{
         justify-items: baseline;
     }
-    &_auto{
+    &Auto{
         justify-items: auto;
     }
-    &_normal{
+    &Normal{
         justify-items: normal;
     }
-    &_unset{
+    &Unset{
         justify-items: unset;
     }
     

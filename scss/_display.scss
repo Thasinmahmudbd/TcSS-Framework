@@ -1,15 +1,15 @@
 /* block */
-.block{display: block;}
+.disBlock{display: block;}
 
 /* inline */
-.inline{
+.disInline{
     display: inline;
     /* block inline */
-    &_block{display: inline-block;}
+    &Block{display: inline-block;}
 }
 
 /* table*/
-.table{display: table;}
+.disTable{display: table;}
 
 /* none */
-.none{display: none;}
+.disNone{display: none;}

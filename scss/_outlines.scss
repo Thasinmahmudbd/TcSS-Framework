@@ -1,5 +1,5 @@
 /* outline width */
-.outline_width{
+.olWidth{
     &_1{outline-width: $px_1;}
     &_2{outline-width: $px_2;}
     &_3{outline-width: $px_3;}
@@ -27,7 +27,7 @@
 
 
 /* outline offset */
-.outline_offset{
+.olOffset{
     &_1{outline-offset: $px_1;}
     &_2{outline-offset: $px_2;}
     &_3{outline-offset: $px_3;}
@@ -55,35 +55,35 @@
 
 
 /* outline color */
-.outline_color{
-    &_white{outline-color: $white;}
-    &_pure_black{outline-color: $pure_black;}
-    &_gray{outline-color: $gray;}
-    &_dark{outline-color: $dark;}
-    &_dark_gray{outline-color: $dark_gray;}
-    &_dark_ash{outline-color: $dark_ash;}
-    &_dark_blue{outline-color: $dark_blue;}
-    &_sky{outline-color: $sky;}
-    &_danger{outline-color: $danger;}
-    &_success{outline-color: $success;}
-    &_alert{outline-color: $alert;}
-    &_gold{outline-color: $gold;}
+.olClr{
+    &White{outline-color: $white;}
+    &PureBlack{outline-color: $pureBlack;}
+    &Gray{outline-color: $gray;}
+    &Dark{outline-color: $dark;}
+    &DarkGray{outline-color: $darkGray;}
+    &DarkAsh{outline-color: $darkAsh;}
+    &DarkBlue{outline-color: $darkBlue;}
+    &Sky{outline-color: $sky;}
+    &Danger{outline-color: $danger;}
+    &Success{outline-color: $success;}
+    &Alert{outline-color: $alert;}
+    &Gold{outline-color: $gold;}
 }
 
 
 
 /* outline style */
-.outline_style{
-    &_dotted{outline-style: dotted;}
-    &_dashed{outline-style: dashed;}
-    &_double{outline-style: double;}
-    &_groove{outline-style: groove;}
-    &_solid{outline-style: solid;}
-    &_unset{outline-style: unset;}
-    &_ridge{outline-style: ridge;}
-    &_inset{outline-style: inset;}
-    &_outset{outline-style: outset;}
-    &_hidden{outline-style: hidden;}
+.olStyle{
+    &Dotted{outline-style: dotted;}
+    &Dashed{outline-style: dashed;}
+    &Double{outline-style: double;}
+    &Groove{outline-style: groove;}
+    &Solid{outline-style: solid;}
+    &Unset{outline-style: unset;}
+    &Ridge{outline-style: ridge;}
+    &Inset{outline-style: inset;}
+    &Outset{outline-style: outset;}
+    &Hidden{outline-style: hidden;}
 }
 
 

@@ -1,16 +1,16 @@
 /* background colors */
 .bg{
-    &_rose_white{@include disable_pattern; background-color: $rose_white;}
-    &_hof_white{@include disable_pattern; background-color: $hof_white;}
+    &RoseWhite{@include disable_pattern; background-color: $roseWhite;}
+    &HofWhite{@include disable_pattern; background-color: $hofWhite;}
 
-    &_gray{@include disable_pattern; background-color: $gray;}
-    &_dark{@include disable_pattern; background-color: $dark;}
-    &_dark_gray{@include disable_pattern; background-color: $dark_gray;}
-    &_dark_ash{@include disable_pattern; background-color: $dark_ash;}
-    &_pure_black{@include disable_pattern; background-color: $pure_black;}
-    &_thasin{@include disable_pattern; background-color: $thasin;}
-    &_thasin_2{@include disable_pattern; background-color: $thasin_2;}
+    &Gray{@include disable_pattern; background-color: $gray;}
+    &Dark{@include disable_pattern; background-color: $dark;}
+    &DarkGray{@include disable_pattern; background-color: $darkGray;}
+    &DarkAsh{@include disable_pattern; background-color: $darkAsh;}
+    &PureBlack{@include disable_pattern; background-color: $pureBlack;}
+    &Thasin{@include disable_pattern; background-color: $thasin;}
+    &Thasin_2{@include disable_pattern; background-color: $thasin_2;}
 
-    &_pure_blue{@include disable_pattern; background-color: $pure_blue;}
-
+    &PureBlue{@include disable_pattern; background-color: $pureBlue;}
+    &Sky{@include disable_pattern; background-color: $sky;}
 }

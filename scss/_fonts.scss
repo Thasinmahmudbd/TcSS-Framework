@@ -8,23 +8,23 @@
 /* font lato */
 .lato{
     font-family: 'Lato', sans-serif;
-    &_thin{
+    &Thin{
         font-family: 'Lato', sans-serif;
         font-weight: $thin;
     }
-    &_light{
+    &Light{
         font-family: 'Lato', sans-serif;
         font-weight: $light;
     }
-    &_regular{
+    &Regular{
         font-family: 'Lato', sans-serif;
         font-weight: $regular;
     }
-    &_bold{
+    &Bold{
         font-family: 'Lato', sans-serif;
         font-weight: $bold;
     }
-    &_bolder{
+    &Bolder{
         font-family: 'Lato', sans-serif;
         font-weight: $bolder;
     }
@@ -44,27 +44,27 @@
 /* font montserrat */
 .montserrat{
     font-family: 'Montserrat', sans-serif;
-    &_thin{
+    &Thin{
         font-family: 'Montserrat', sans-serif;
         font-weight: $thin;
     }
-    &_light{
+    &Light{
         font-family: 'Montserrat', sans-serif;
         font-weight: $light;
     }
-    &_regular{
+    &Regular{
         font-family: 'Montserrat', sans-serif;
         font-weight: $regular;
     }
-    &_medium{
+    &Medium{
         font-family: 'Montserrat', sans-serif;
         font-weight: $medium;
     }
-    &_bold{
+    &Bold{
         font-family: 'Montserrat', sans-serif;
         font-weight: $bold;
     }
-    &_bolder{
+    &Bolder{
         font-family: 'Montserrat', sans-serif;
         font-weight: $bolder;
     }
@@ -76,19 +76,19 @@
 /* font nunito */
 .nunito{
     font-family: 'Nunito', sans-serif;
-    &_light{
+    &Light{
         font-family: 'Nunito', sans-serif;
         font-weight: $light;
     }
-    &_regular{
+    &Regular{
         font-family: 'Nunito', sans-serif;
         font-weight: $regular;
     }
-    &_bold{
+    &Bold{
         font-family: 'Nunito', sans-serif;
         font-weight: $bold;
     }
-    &_bolder{
+    &Bolder{
         font-family: 'Nunito', sans-serif;
         font-weight: $bolder;
     }
@@ -100,15 +100,15 @@
 /* font openSans */
 .openSans{
     font-family: 'Open Sans', sans-serif;
-    &_light{
+    &Light{
         font-family: 'Open Sans', sans-serif;
         font-weight: $light;
     }
-    &_regular{
+    &Regular{
         font-family: 'Open Sans', sans-serif;
         font-weight: $regular;
     }
-    &_bold{
+    &Bold{
         font-family: 'Open Sans', sans-serif;
         font-weight: $bold;
     }
@@ -120,27 +120,27 @@
 /* font roboto */
 .roboto{
     font-family: 'Roboto', sans-serif;
-    &_thin{
+    &Thin{
         font-family: 'Roboto', sans-serif;
         font-weight: $thin;
     }
-    &_light{
+    &Light{
         font-family: 'Roboto', sans-serif;
         font-weight: $light;
     }
-    &_regular{
+    &Regular{
         font-family: 'Roboto', sans-serif;
         font-weight: $regular;
     }
-    &_medium{
+    &Medium{
         font-family: 'Roboto', sans-serif;
         font-weight: $medium;
     }
-    &_bold{
+    &Bold{
         font-family: 'Roboto', sans-serif;
         font-weight: $bold;
     }
-    &_bolder{
+    &Bolder{
         font-family: 'Roboto', sans-serif;
         font-weight: $bolder;
     }
@@ -150,7 +150,7 @@
 
 
 /* font size */
-.font_size{
+.fSize{
     &_h{font-size: $half;}
     &_tq{font-size: $three_quarter;}
     &_1{font-size: $one;}
@@ -199,29 +199,29 @@
 
 
 /* color */
-.color{
-    &_white{color:#ffffff;}
-    &_black{color:#000000;}
-    &_basic{color:#3b3838;}
-    &_blue{color:#0939d6;}
-    &_danger{color:#FF0000;}
-    &_success{color:#45f248;}
-    &_alert{color:#fff222;}
-    &_link{color:#338bd5;}
+.clr{
+    &White{color:#ffffff;}
+    &Black{color:#000000;}
+    &Basic{color:#3b3838;}
+    &Blue{color:#0939d6;}
+    &Danger{color:#FF0000;}
+    &Success{color:#45f248;}
+    &Alert{color:#fff222;}
+    &Sky{color:#338bd5;}
 }
 
 
 
 
 /* alignment */
-.text{
+.txt{
     &_center{
         text-align: center;
     }
-    &_right{
+    &Right{
         text-align: right;
     }
-    &_left{
+    &Left{
         text-align: left;
     }
     &_justify{
@@ -234,17 +234,17 @@
 
 
 /* decoration */
-.text{
+.txtDecor{
     &_dashed{
         text-decoration: dashed;
     }
     &_dotted{
         text-decoration: dotted;
     }
-    &_line_through{
+    &LineThrough{
         text-decoration: line-through;
     }
-    &_decoration_none{
+    &_none{
         text-decoration: none;
     }
     &_overline{
@@ -281,7 +281,7 @@
 
 
 /* line height */
-.line_height{
+.lineHeight{
     &_1_0{line-height: 1;}
     &_1_1{line-height: 1.1;}
     &_1_2{line-height: 1.2;}
@@ -299,18 +299,18 @@
 
 
 /* white spacing */
-.pre_white_space{white-space: pre;}
-.normal_white_space{white-space: normal;}
-.nowrap_white_space{white-space: nowrap;}
+.preWhiteSpace{white-space: pre;}
+.normalWhiteSpace{white-space: normal;}
+.noWrapWhiteSpace{white-space: nowrap;}
 
 
 
 /* modes */
-.horizontal_mode_tb{writing-mode: horizontal-tb;}
-.vertical_mode_lr{writing-mode: vertical-lr;}
-.vertical_mode_rl{writing-mode: vertical-rl;}
+.horModeTb{writing-mode: horizontal-tb;}
+.verModeLr{writing-mode: vertical-lr;}
+.verModeRl{writing-mode: vertical-rl;}
 
 
 
 /* selection block */
-.block_selection{user-select: none;}
+.blockSelectNone{user-select: none;}

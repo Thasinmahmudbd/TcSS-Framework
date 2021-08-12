@@ -1,17 +1,17 @@
 /* over flow */
-.overflow_{
-    &_hidden{overflow:hidden;}
-    &_scroll{overflow:scroll;}
-    &_auto{overflow:auto;}
-    &_visible{overflow:visible;}
+.of{
+    &Hidden{overflow:hidden;}
+    &Scroll{overflow:scroll;}
+    &Auto{overflow:auto;}
+    &Visible{overflow:visible;}
 
-    &_x_hidden{overflow-x:hidden;}
-    &_x_scroll{overflow-x:scroll;}
-    &_x_auto{overflow-x:auto;}
-    &_x_visible{overflow-x:visible;}
+    &HiddenX{overflow-x:hidden;}
+    &ScrollX{overflow-x:scroll;}
+    &AutoX{overflow-x:auto;}
+    &VisibleX{overflow-x:visible;}
 
-    &_y_hidden{overflow-y:hidden;}
-    &_y_scroll{overflow-y:scroll;}
-    &_y_auto{overflow-y:auto;}
-    &_y_visible{overflow-y:visible;}
+    &HiddenY{overflow-y:hidden;}
+    &ScrollY{overflow-y:scroll;}
+    &AutoY{overflow-y:auto;}
+    &VisibleY{overflow-y:visible;}
 }

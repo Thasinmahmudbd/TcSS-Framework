@@ -1,7 +1,7 @@
 /* page break */
-.page_break{
-    &_after{page-break-after: always;}
+.pageBrk{
+    &A{page-break-after: always;}
 }
-.page_break{
-    &_before{page-break-before: always;}
+.pageBrk{
+    &B{page-break-before: always;}
 }
