@@ -1,9 +1,14 @@
+/* font awsome*/
+@import './fontawsome';
+
 /* variables */
 @import './variables';
 @import './mixins';
 
 /* elements */
 @import './navbar';
+@import './shelf_menu';
+@import './title';
 @import './patterns';
 
 /* basics */
@@ -29,9 +34,15 @@
 @import './height';
 @import './display';
 @import './cursor';
+@import './hover';
+@import './gap';
 
 
 /* reset */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding:0px;
     margin:0px;

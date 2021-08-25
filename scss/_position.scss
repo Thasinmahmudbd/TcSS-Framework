@@ -8,6 +8,7 @@
 
 /* right */
 .right{
+    &_0{right: $px_0;}
     &_5{right: $px_5;}
     &_10{right: $px_10;}
     &_15{right: $px_15;}
@@ -55,6 +56,7 @@
 
 /* left */
 .left{
+    &_0{left: $px_0;}
     &_5{left: $px_5;}
     &_10{left: $px_10;}
     &_15{left: $px_15;}
@@ -103,6 +105,7 @@
 
 /* top */
 .top{
+    &_0{top: $px_0;}
     &_5{top: $px_5;}
     &_10{top: $px_10;}
     &_15{top: $px_15;}
@@ -152,6 +155,7 @@
 
 /* bottom */
 .bottom{
+    &_0{bottom: $px_0;}
     &_5{bottom: $px_5;}
     &_10{bottom: $px_10;}
     &_15{bottom: $px_15;}

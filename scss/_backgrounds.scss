@@ -13,4 +13,7 @@
 
     &PureBlue{@include disable_pattern; background-color: $pureBlue;}
     &Sky{@include disable_pattern; background-color: $sky;}
+
+    &Gold{@include disable_pattern; background-color: $gold;}
+    &SandyBrown{@include disable_pattern; background-color: $sandyBrown;}
 }

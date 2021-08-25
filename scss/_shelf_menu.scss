@@ -1,0 +1,56 @@
+/* Shelf Menu */
+
+.shelfOrange{
+        display:grid;
+        grid-gap: $quarter;
+        border-right: 5px solid $sandyBrown;
+        text-align: right;
+    &Btn{
+        text-decoration: none;
+        margin: 0rem .2rem;
+        color:#000000;
+        font-size: 1rem;
+        background-color: #eeefff;
+        padding:.5rem;
+        position: relative;
+        transition: 200ms ease-in;
+    }
+    &Btn::after{
+        content: " ";
+        background-color: $sandyBrown;
+        padding: 2px 5px;
+        position: absolute;
+        right: -5px;
+        top: 18px;
+    }
+    &Btn:hover{
+        font-weight: bold;
+        transition: 200ms ease-in;
+    }
+    &Btn:active{
+        font-weight: bold;
+        transition: 200ms ease-in;
+    }
+    &SubBtn{
+        text-decoration: none;
+        margin: 0rem .2rem;
+        color:#000000;
+        font-size: .9rem;
+        background-color: #fff;
+        padding: .2rem .5rem;
+        position: relative;
+        transition: 200ms ease-in;
+    }
+    &SubBtn::after{
+        content: " ";
+        background-color: $gold;
+        padding: 2px 5px;
+        position: absolute;
+        right: -5px;
+        top: 12px;
+    }
+    &SubBtn:hover{
+        font-weight: bold;
+        transition: 200ms ease-in;
+    }
+}

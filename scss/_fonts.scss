@@ -213,9 +213,37 @@
 
 
 
+/* highlights */
+.highlight{
+    &Success{
+        background-color: #45f248;
+        @include highlight;
+    }
+    &Danger{
+        background-color: #FF0000;
+        @include highlight;
+    }
+    &Alert{
+        background-color: #fff222;
+        @include highlight;
+        color: #000000;
+    }
+    &Link{
+        background-color: #338bd5;
+        @include highlight;
+    }
+    &Black{
+        background-color: #3b3838;
+        @include highlight;
+    }
+}
+
+
+
+
 /* alignment */
 .txt{
-    &_center{
+    &Center{
         text-align: center;
     }
     &Right{
@@ -224,7 +252,7 @@
     &Left{
         text-align: left;
     }
-    &_justify{
+    &Justify{
         text-align: justify;
         text-justify: inter-word;
     }
@@ -235,25 +263,25 @@
 
 /* decoration */
 .txtDecor{
-    &_dashed{
+    &Dashed{
         text-decoration: dashed;
     }
-    &_dotted{
+    &Dotted{
         text-decoration: dotted;
     }
     &LineThrough{
         text-decoration: line-through;
     }
-    &_none{
+    &None{
         text-decoration: none;
     }
-    &_overline{
+    &Overline{
         text-decoration: overline;
     }
-    &_underline{
+    &Underline{
         text-decoration: underline;
     }
-    &_wavy{
+    &Wavy{
         text-decoration: wavy;
     }
 }
@@ -314,3 +342,12 @@
 
 /* selection block */
 .blockSelectNone{user-select: none;}
+
+
+
+/* link */
+.link{
+    text-decoration: none;
+    color: $pureBlue;
+    font-weight: bold;
+}

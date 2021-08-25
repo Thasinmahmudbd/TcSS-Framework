@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- design -->
     <link rel="stylesheet" href="./css/tcss.min.css">
+    <link rel="stylesheet" href="./prism/prism.css">
+
+    <!-- script -->
+    <script src="./prism/prism.js"></script>
+
     <title>TcSS Mini [version 0.1]</title>
+    <!-- favicon 
+    <link rel="icon" type="image/png" href="../media/>-->
+
 </head>
-<body class="nunitoRegular bgThasin">
 
-<div class="bgThasin_2">
+<body class="nunitoRegular ofHiddenX">
 
-    <div class="nav bgThasin_2">
 
-        <!--<img class="imgLogo" src="../media/Thasin.jpg" alt="">-->
 
-        <p class="txtLogo clrWhite">TM</p>
 
-        <form class="searchBar" action="">
 
-            <input class="searchField" type="text">
-            <button class="searchBtn clrWhite" type="input"><i class="fas fa-search"></i></button>
 
-        </form>
+
+
+
+
+
+<!--navbar start-->
+
+<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10">
+
+    <div class="nav bgSandyBrown w_75Per m_a">
+
+        <p class="txtLogo clrWhite posAbs fSize_2">TcSS</p>
+
+        <span></span>
+        <span></span>
 
         <div class="mainLinks">
 
-            <a class="mainLink clrWhite" href="">main 1</a>
-
-            <div class="dropDown">
-                <a class="mainLink clrWhite" href="">main 2</a>
-                <div class="subLinks bgSky">
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 1</a>
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 2</a>
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 3</a>
-                </div>
-            </div> 
-
-            <a class="mainLink clrWhite" href="">main 3</a>
-            <a class="mainLink clrWhite" href="">main 4</a>
-            <a class="mainLink clrWhite" href="">main 5</a>
-
-            <div class="dropDown">
-                <a class="mainLink clrWhite" href="">main 6</a>
-                <div class="subLinks bgSky">
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 1</a>
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 2</a>
-                    <a class="subLink clrWhite borClrBThasin_2" href="#">sub 3</a>
-                </div>
-            </div> 
+            <a class="mainLink clrWhite hoverEff_5" href="">Portfolio</a>
+            <a class="mainLink clrWhite hoverEff_5" href="">TScRIPT</a>
+            <a class="mainLink clrWhite hoverEff_5" href="">TFrAMES</a>
 
             <a class="hamburger" href=""><i class="fas fa-bars"></i></a>
 
@@ -60,6 +55,426 @@
     </div>
 
 </div>
+
+<!--navbar end-->
+
+
+
+
+
+
+
+<div class="largeGap p_1_h"></div>
+
+
+
+
+<!--body start-->
+
+<div class="gridCol_2_size_3_7 gridGap_2 w_75Per m_a">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--shelf menu start-->
+
+    <div class="displayBlock">
+
+        <div class="shelfOrange">
+
+            <a href="#" class="shelfOrangeBtn" >Introduction</a>
+            <a href="#" class="shelfOrangeBtn" >Basic</a>
+
+            <a href="#nav" class="shelfOrangeBtn" >Navbar</a>
+                    <a href="#logo" class="shelfOrangeSubBtn" >Logo</a>
+                    <a href="#searchBar" class="shelfOrangeSubBtn" >Search Bar</a>
+                    <a href="#navBtnMain" class="shelfOrangeSubBtn" >Nav Buttons (Main)</a>
+                    <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
+                    <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
+
+
+        </div>
+
+    </div>
+
+    <!--shelf menu end-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--content start-->
+
+    <div class="content">
+
+
+
+
+
+
+
+
+
+<!-- navbar description start -->
+
+        <div>
+
+            <h2 class="titleL" id="nav">Navbar</h2>
+
+            <p class="txtJustify lineHeight_1_5">This is a customizable Navigation bar, consisting of three important sections, which are logo, search bar & navigation buttons. The default is pretty bland, but customization is possible using the <a class="link" href="#Basic">Basic</a> classes. In order to access navbar, use <span class="highlightBlack">class="nav"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="nav"> //navbar start
+
+                </code>
+
+            </pre>
+
+
+
+    <!-- logo start -->
+            
+            <div class="largeGap p_1_h" id="logo"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Logo:</li>
+
+            <!-- image logo -->
+
+            <p class="txtJustify lineHeight_1_5">Logos can be image or text. In order to access image logo, use <span class="highlightBlack">class="imgLogo"</span></p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;img class="imgLogo" src="" alt="">
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <img class="imgLogo" src="../media/Thasin.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- text logo -->
+
+            <p class="txtJustify lineHeight_1_5">In order to access text logo, use <span class="highlightBlack">class="txtLogo"</span></p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="txtLogo">TcSS&lt;/p>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <p class="txtLogo">TcSS</p>
+                </div>
+            </div>
+
+            <!-- no logo -->
+
+            <p class="txtJustify lineHeight_1_5">In case logo is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;span>&lt;/span>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <span></span>
+                </div>
+            </div>
+
+    <!-- logo end -->
+
+
+
+
+    <!-- search bar start -->
+
+            <div class="largeGap p_1_h" id="searchBar"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Search Bar:</li>
+
+            <!-- if search bar present -->
+
+            <p class="txtJustify lineHeight_1_5">Search bar slot is in the middle. In order to access search bar, use <span class="highlightBlack">class="searchBar"</span> to style search field, use <span class="highlightBlack">class="searchField"</span> to style search button, use <span class="highlightBlack">class="searchBtn"</span></p>
+
+            <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;form class="searchBar" action="">
+                
+                        &lt;input class="searchField" type="text">
+                        &lt;button class="searchBtn clrWhite" type="input">
+                            &lt;i class="fas fa-search">&lt;/i>
+                        &lt;/button>
+                
+                    &lt;/form>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <p class="txtLogo">TcSS</p>
+                    <form class="searchBar" action="">
+                        <input class="searchField" type="text">
+                        <button class="searchBtn clrWhite" type="input">
+                            <i class="fas fa-search"></i>
+                        </button>                   
+                    </form>
+                </div>
+            </div>
+
+            <!-- if search bar absent -->
+
+            <p class="txtJustify lineHeight_1_5">In case search bar is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
+
+            <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;span>&lt;/span>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <p class="txtLogo">TcSS</p>
+                    <span></span>
+                </div>
+            </div>
+
+    <!-- search bar end -->
+
+
+
+
+
+
+
+
+    <!-- main nav btn start -->
+
+            <div class="largeGap p_1_h" id="navBtnMain"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Nav Buttons (Main):</li>
+
+            <p class="txtJustify lineHeight_1_5">In order to access div that holds all the main buttons, use <span class="highlightBlack">class="mainLinks"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink"</span></p>
+
+            <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="mainLinks"> //main links start
+                
+                        &lt;a class="mainLink" href="">main 1&lt;/a>
+                        &lt;a class="mainLink" href="">main 2&lt;/a>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <p class="txtLogo">TcSS</p>
+                    <form class="searchBar" action="">
+                        <input class="searchField" type="text">
+                        <button class="searchBtn clrWhite" type="input">
+                            <i class="fas fa-search"></i>
+                        </button>                   
+                    </form>
+                    <div class="mainLinks">
+                        <a class="mainLink" href="">main 1</a>
+                        <a class="mainLink" href="">main 2</a>
+                    </div>
+                </div>
+            </div>
+
+    <!-- main nav btn end -->
+
+
+
+
+
+
+
+    <!-- sub nav btn start -->
+
+            <div class="largeGap p_1_h" id="navBtnSub"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL" id="navBtnSub">Nav Buttons (Sub):</li>
+
+            <p class="txtJustify lineHeight_1_5">Sub buttons will always be contained by a main button. they will only appear when container main button is hovered. <span class="highlightBlack">class="dropDown"</span> is used for positioning. In order to access div that holds all the sub buttons, use <span class="highlightBlack">class="subLinks"</span> to put style on a single button, use <span class="highlightBlack">class="subLink"</span></p>
+
+            <pre data-start="7" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="dropDown">
+                        &lt;a class="mainLink" href="">main 3&lt;/a>
+                        &lt;div class="subLinks">
+                            &lt;a class="subLink" href="#">sub 1&lt;/a>
+                            &lt;a class="subLink" href="#">sub 2&lt;/a>
+                            &lt;a class="subLink" href="#">sub 3&lt;/a>
+                        &lt;/div>
+                    &lt;/div> 
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="nav">
+                    <p class="txtLogo">TcSS</p>
+                    <form class="searchBar" action="">
+                        <input class="searchField" type="text">
+                        <button class="searchBtn clrWhite" type="input">
+                            <i class="fas fa-search"></i>
+                        </button>                   
+                    </form>
+                    <div class="mainLinks">
+                        <div class="dropDown">
+                            <a class="mainLink" href="">main 3</a>
+                            <div class="subLinks">
+                                <a class="subLink" href="#">sub 1</a>
+                                <a class="subLink" href="#">sub 2</a>
+                                <a class="subLink" href="#">sub 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- sub nav btn end -->
+
+
+
+
+
+
+
+
+
+    <!-- hamburger btn start -->
+
+            <div class="largeGap p_1_h" id="hamBtn"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL" id="hamBtn">Hamburger Menu Button:</li>
+
+            <p class="txtJustify lineHeight_1_5">Hamburger menu button will appear only when screen size is bellow 1000px. In order to access hamburger menu buttons, use <span class="highlightBlack">class="hamburger"</span></p>
+
+            <pre data-start="15" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                            &lt;a class="hamburger" href="">&lt;i class="fas fa-bars">&lt;/i>&lt;/a>
+                
+                    &lt;/div> //main links end
+                
+                    &lt;/div> //navbar end
+
+                </code>
+
+            </pre>
+
+    <!-- hamburger btn end -->
+
+            <!-- full preview -->
+            <a target="_blank" href="navbar.html" class="txtDecorNone clrBlue">Click me to see full preview</a>
+
+        </div>
+
+<!-- navbar description end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--content end-->
+
+</div>
+
+<!--body end-->
 
 </body>
 </html>

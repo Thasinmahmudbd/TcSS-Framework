@@ -1,0 +1,38 @@
+.hoverEff{
+    &_1:hover{
+        background-color: transparent;
+        border-bottom: 1px solid $darkGray;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.hoverEff{
+    &_2:hover{
+        background-color: transparent;
+        border-bottom: 1px solid $dimWhite;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.hoverEff{
+    &_3:hover{
+        border-bottom: 1px solid $sky;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.hoverEff{
+    &_4:hover{
+        background-color: transparent;
+        text-decoration: underline;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.hoverEff{
+    &_5:hover{
+        background-color: transparent;
+        font-size: 16px;
+        transition: 200ms ease-in-out;
+    }
+}

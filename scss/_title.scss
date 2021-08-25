@@ -1,0 +1,33 @@
+/* title */
+
+.title{
+    &R{
+        @include titleCommon;
+        text-align: right;
+    }
+    &L{
+        @include titleCommon;
+    }
+    &C{
+        @include titleCommon;
+        text-align: center;
+    }
+}
+
+
+
+/* sub title */
+
+.subTitle{
+    &R{
+        @include subTitleCommon;
+        text-align: right;
+    }
+    &L{
+        @include subTitleCommon;
+    }
+    &C{
+        @include subTitleCommon;
+        text-align: center;
+    }
+}

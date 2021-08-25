@@ -12,6 +12,31 @@
 
 
 
+/* title mixin */
+@mixin titleCommon {
+    font-size: 1.8rem;
+    margin: 0px;
+    border-bottom: 2px solid #3B3838;
+    font-weight: bold;
+}
+@mixin subTitleCommon {
+    font-size: 1.2rem;
+    margin: 0px;
+    list-style: none;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+
+
+/* highlight mixin */
+@mixin highlight {
+    padding:$quarter;
+    color:#fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 
 
 

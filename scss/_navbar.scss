@@ -86,7 +86,6 @@
 }
 
 .mainLink:hover{
-    border-bottom: 1px solid $sky;
     background-color: rgba(0, 0, 0, 0.329);
     transition: 200ms ease-in;
 }
@@ -98,7 +97,7 @@
     float: right;
     align-content:center;
     text-decoration: none;
-    color: #ffffff;
+    color: #3b3838;
     font-size: 18px;
     transition: 200ms ease-in;
     @media only screen and (max-width: 1000px) {
@@ -118,11 +117,11 @@
 .subLinks{
     display: grid;
     position: absolute;
-    top: -1000px;
-    right: 0px;
+    z-index: 5;
+    top: 60px;
+    right: -1000px;
     width: 700px;
     background-color: #ccc;
-    z-index: -1;
     transition: 400ms ease-in-out;
 }
 
@@ -140,6 +139,6 @@
 }
 
 .dropDown:hover .subLinks{
-    top: 60px;
+    right: 0px;
     transition: 400ms ease-in-out;
 }
