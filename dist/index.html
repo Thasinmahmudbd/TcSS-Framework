@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="nunitoRegular ofHiddenX">
+<body class="nunitoRegular ofHiddenX scrlNone">
 
 
 
@@ -37,7 +37,7 @@
 
     <div class="nav bgSandyBrown w_75Per m_a">
 
-        <p class="txtLogo clrWhite posAbs fSize_2">TcSS</p>
+        <h1 class="txtLogo posAbs negTop_13 fSize_2"><a class="clrWhite txtDecorNone disGrid alignSelfCenter" href="index.html">TcSS</a></h1>
 
         <span></span>
         <span></span>
@@ -45,6 +45,7 @@
         <div class="mainLinks">
 
             <a class="mainLink clrWhite hoverEff_5" href="">Portfolio</a>
+            <a class="mainLink clrWhite hoverEff_5" href="colors.html">Colors</a>
             <a class="mainLink clrWhite hoverEff_5" href="">TScRIPT</a>
             <a class="mainLink clrWhite hoverEff_5" href="">TFrAMES</a>
 
@@ -64,7 +65,7 @@
 
 
 
-<div class="largeGap p_1_h"></div>
+<div class="largeGap p_1_h" id="intro"></div>
 
 
 
@@ -93,8 +94,27 @@
 
         <div class="shelfOrange">
 
-            <a href="#" class="shelfOrangeBtn" >Introduction</a>
-            <a href="#" class="shelfOrangeBtn" >Basic</a>
+            <a href="#intro" class="shelfOrangeBtn" >Introduction</a>
+            <a href="#basic" class="shelfOrangeBtn" >Basic</a>
+
+                    <a href="#padding" class="shelfOrangeSubBtn" >Padding</a>
+                    <a href="#paddingTop" class="shelfOrangeSubBtn" >Padding Top</a>
+                    <a href="#paddingRight" class="shelfOrangeSubBtn" >Padding Right</a>
+                    <a href="#paddingBottom" class="shelfOrangeSubBtn" >Padding Bottom</a>
+                    <a href="#paddingLeft" class="shelfOrangeSubBtn" >Padding Left</a>
+
+                    <span class="smallGap"></span>
+
+                    <a href="#margin" class="shelfOrangeSubBtn" >Margin</a>
+                    <a href="#marginTop" class="shelfOrangeSubBtn" >Margin Top</a>
+                    <a href="#marginRight" class="shelfOrangeSubBtn" >Margin Right</a>
+                    <a href="#marginBottom" class="shelfOrangeSubBtn" >Margin Bottom</a>
+                    <a href="#marginLeft" class="shelfOrangeSubBtn" >Margin Left</a>
+                    <a href="#marginAuto" class="shelfOrangeSubBtn" >Margin Auto</a>
+
+                    <a href="#" class="shelfOrangeSubBtn" ></a>
+                    <a href="#" class="shelfOrangeSubBtn" ></a>
+                    <a href="#" class="shelfOrangeSubBtn" ></a>
 
             <a href="#nav" class="shelfOrangeBtn" >Navbar</a>
                     <a href="#logo" class="shelfOrangeSubBtn" >Logo</a>
@@ -132,14 +152,386 @@
 
 
 
+<!-- intro start -->
+
+        <div class="disGrid">
+
+            <div class="gridCol_2_size_9_1">
+                <p class="m_0"><b class="fSize_1_h">Hi,</b> welcome to the framework,</p>
+                <a class="txtRight txtDecorNone" href=""><b class="highlightSuccess"> v 0.1</b></a>
+            </div>
+
+            <!--<img class="justifySelfCenter" src="../media/logo.jpg" alt="TcSS" width="50%">-->
+
+            <video class="justifySelfCenter" autoplay loop muted src="../media/video/TcSS_VID_LOGO_WHITE.mp4" type="video/mp4" width="45%"></video>
+
+            <p class="txtJustify lineHeight_1_7">TcSS stands for <b>Thasin's Cascading Style Sheet.</b> This is a free to use CSS framework made by Sass (Syntactically Awesome Style Sheets). Read the documentation to understand about the predefined classes. </p>
+            
+            <div class="gridCol_2_size_2_8 gridGap_1">
+
+                <img class="borRad_100 alignSelfCenter" src="../media/Thasin.jpg" alt="" width="100%">
+
+                <p class="m_0 txtJustify lineHeight_1_6"><b>Hi, I'm Thasin.</b> <br>This is a short note, most of the UI component are already made in advance. All the default styles of previously made UI components are modifiable. You can also write you own CSS and include them in the project, doing so will override all predefined UI components. Check the Basic portion to get yourself acquainted with the framework. Enjoy &#128522;</p>
+
+            </div>
+
+        </div>
+
+        <div class="largeGap p_5_h"></div>
+
+<!-- intro end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+<!-- basic -->
+
+        <div>
+
+            <div class="largeGap p_1_h" id="basic"></div>
+
+            <h2 class="titleL">Basic</h2>
+
+            <p class="txtJustify lineHeight_1_7">You can do anything and everything using the basic classes. Read the documentation to learn about the fixed classes. This will save you a huge amount of time. You won't have to create, link or write any external CSS in your project. Then again fixed classes can be easily overwritten at anytime using css, so no need to worry.</p>
+
+    <!-- padding all around-->
+
+            <div class="largeGap p_1_h" id="padding"></div>
+
+            <li class="subTitleL">Padding:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add padding all around your markup using <span class="highlightBlack">class="p_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b>. The unit is <b>"rem"</b> unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="p_0"> &lt;/div> //this div has 0 rem padding all around.
+                    &lt;div class="p_1"> &lt;/div> //this div has 1 rem padding all around.
+                    &lt;div class="p_2"> &lt;/div> //this div has 2 rem padding all around.
+                    ......
+                    ......
+                    &lt;div class="p_18"> &lt;/div> //this div has 18 rem padding all around.
+                    &lt;div class="p_19"> &lt;/div> //this div has 19 rem padding all around.
+                    &lt;div class="p_20"> &lt;/div> //this div has 20 rem padding all around.
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">For floating values we can use <b>_q, _h, _tq</b> which are respectively adding <b>.25, .50, .75</b> to the integer value of <span class="highlightBlack">#</span> After adding floating point extensions the classes will look something like these <span class="highlightBlack">class="p_#_q"</span> <span class="highlightBlack">class="p_#_h"</span> <span class="highlightBlack">class="p_#_tq"</span>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="p_5_q"> &lt;/div> //this div has 5.25 rem padding all around.
+                    &lt;div class="p_5_h"> &lt;/div> //this div has 5.5 rem padding all around.
+                    &lt;div class="p_5_tq"> &lt;/div> //this div has 5.75 rem padding all around.
+
+                </code>
+
+            </pre>
+
+    <!-- padding all around end -->
+
+    <!-- padding top -->
+
+            <div class="largeGap p_1_h" id="paddingTop"></div>
+
+            <li class="subTitleL">Padding Top:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add padding on top of your markup using <span class="highlightBlack">class="pt_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="pt_5"> &lt;/div> //this div has 5 rem padding on top.
+                    &lt;div class="pt_5_q"> &lt;/div> //this div has 5.25 rem padding on top.
+                    &lt;div class="pt_5_h"> &lt;/div> //this div has 5.5 rem padding on top.
+                    &lt;div class="pt_5_tq"> &lt;/div> //this div has 5.75 rem padding on top.
+
+                </code>
+
+            </pre>
+
+    <!-- padding top end -->
+
+    <!-- padding right -->
+
+            <div class="largeGap p_1_h" id="paddingRight"></div>
+
+            <li class="subTitleL">Padding Right:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add padding on the right side of your markup using <span class="highlightBlack">class="pr_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="pr_5"> &lt;/div> //this div has 5 rem padding on the right.
+                    &lt;div class="pr_5_q"> &lt;/div> //this div has 5.25 rem padding on the right.
+                    &lt;div class="pr_5_h"> &lt;/div> //this div has 5.5 rem padding on the right.
+                    &lt;div class="pr_5_tq"> &lt;/div> //this div has 5.75 rem padding on the right.
+
+                </code>
+
+            </pre>
+
+    <!-- padding right end -->
+
+    <!-- padding bottom -->
+
+            <div class="largeGap p_1_h" id="paddingBottom"></div>
+
+            <li class="subTitleL">Padding Bottom:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add padding on the right side of your markup using <span class="highlightBlack">class="pb_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="pb_5"> &lt;/div> //this div has 5 rem padding on the bottom.
+                    &lt;div class="pb_5_q"> &lt;/div> //this div has 5.25 rem padding on the bottom.
+                    &lt;div class="pb_5_h"> &lt;/div> //this div has 5.5 rem padding on the bottom.
+                    &lt;div class="pb_5_tq"> &lt;/div> //this div has 5.75 rem padding on the bottom.
+
+                </code>
+
+            </pre>
+
+    <!-- padding bottom end -->
+
+    <!-- padding left -->
+
+            <div class="largeGap p_1_h" id="paddingLeft"></div>
+
+            <li class="subTitleL">Padding Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add padding on the left side of your markup using <span class="highlightBlack">class="pl_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="pl_5"> &lt;/div> //this div has 5 rem padding on the left.
+                    &lt;div class="pl_5_q"> &lt;/div> //this div has 5.25 rem padding on the left.
+                    &lt;div class="pl_5_h"> &lt;/div> //this div has 5.5 rem padding on the left.
+                    &lt;div class="pl_5_tq"> &lt;/div> //this div has 5.75 rem padding on the left.
+
+                </code>
+
+            </pre>
+
+    <!-- padding left end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- margin all around-->
+
+            <div class="largeGap p_1_h" id="margin"></div>
+
+            <li class="subTitleL">Margin:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add margin all around your markup using <span class="highlightBlack">class="m_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b>. The unit is <b>"rem"</b> unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="m_0"> &lt;/div> //this div has 0 rem margin all around.
+                    &lt;div class="m_1"> &lt;/div> //this div has 1 rem margin all around.
+                    &lt;div class="m_2"> &lt;/div> //this div has 2 rem margin all around.
+                    ......
+                    ......
+                    &lt;div class="m_18"> &lt;/div> //this div has 18 rem margin all around.
+                    &lt;div class="m_19"> &lt;/div> //this div has 19 rem margin all around.
+                    &lt;div class="m_20"> &lt;/div> //this div has 20 rem margin all around.
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">For floating values we can use <b>_q, _h, _tq</b> which are respectively adding <b>.25, .50, .75</b> to the integer value of <span class="highlightBlack">#</span> After adding floating point extensions the classes will look something like these <span class="highlightBlack">class="m_#_q"</span> <span class="highlightBlack">class="m_#_h"</span> <span class="highlightBlack">class="m_#_tq"</span>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="m_5_q"> &lt;/div> //this div has 5.25 rem margin all around.
+                    &lt;div class="m_5_h"> &lt;/div> //this div has 5.5 rem margin all around.
+                    &lt;div class="m_5_tq"> &lt;/div> //this div has 5.75 rem margin all around.
+
+                </code>
+
+            </pre>
+
+    <!-- margin all around end -->
+
+    <!-- margin top -->
+
+            <div class="largeGap p_1_h" id="marginTop"></div>
+
+            <li class="subTitleL">Margin Top:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add margin on top of your markup using <span class="highlightBlack">class="mt_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="mt_5"> &lt;/div> //this div has 5 rem margin on top.
+                    &lt;div class="mt_5_q"> &lt;/div> //this div has 5.25 rem margin on top.
+                    &lt;div class="mt_5_h"> &lt;/div> //this div has 5.5 rem margin on top.
+                    &lt;div class="mt_5_tq"> &lt;/div> //this div has 5.75 rem margin on top.
+
+                </code>
+
+            </pre>
+
+    <!-- margin top end -->
+
+    <!-- margin right -->
+
+            <div class="largeGap p_1_h" id="marginRight"></div>
+
+            <li class="subTitleL">Margin Right:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add margin on the right side of your markup using <span class="highlightBlack">class="mr_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="mr_5"> &lt;/div> //this div has 5 rem margin on the right.
+                    &lt;div class="mr_5_q"> &lt;/div> //this div has 5.25 rem margin on the right.
+                    &lt;div class="mr_5_h"> &lt;/div> //this div has 5.5 rem margin on the right.
+                    &lt;div class="mr_5_tq"> &lt;/div> //this div has 5.75 rem margin on the right.
+
+                </code>
+
+            </pre>
+
+    <!-- margin right end -->
+
+    <!-- margin bottom -->
+
+            <div class="largeGap p_1_h" id="marginBottom"></div>
+
+            <li class="subTitleL">Margin Bottom:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add margin on the right side of your markup using <span class="highlightBlack">class="mb_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="mb_5"> &lt;/div> //this div has 5 rem margin on the bottom.
+                    &lt;div class="mb_5_q"> &lt;/div> //this div has 5.25 rem margin on the bottom.
+                    &lt;div class="mb_5_h"> &lt;/div> //this div has 5.5 rem margin on the bottom.
+                    &lt;div class="mb_5_tq"> &lt;/div> //this div has 5.75 rem margin on the bottom.
+
+                </code>
+
+            </pre>
+
+    <!-- margin bottom end -->
+
+    <!-- margin left -->
+
+            <div class="largeGap p_1_h" id="marginLeft"></div>
+
+            <li class="subTitleL">Margin Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add margin on the left side of your markup using <span class="highlightBlack">class="ml_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="ml_5"> &lt;/div> //this div has 5 rem margin on the left.
+                    &lt;div class="ml_5_q"> &lt;/div> //this div has 5.25 rem margin on the left.
+                    &lt;div class="ml_5_h"> &lt;/div> //this div has 5.5 rem margin on the left.
+                    &lt;div class="ml_5_tq"> &lt;/div> //this div has 5.75 rem margin on the left.
+
+                </code>
+
+            </pre>
+
+    <!-- margin left end -->
+
+    <!-- margin auto -->
+
+            <div class="largeGap p_1_h" id="marginAuto"></div>
+
+            <li class="subTitleL">Margin Auto:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add auto margin on your markup using <span class="highlightBlack">class="m_a"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="m_a"> &lt;/div> //this div has auto margin.
+
+                </code>
+
+            </pre>
+
+    <!-- margin auto end -->
+
+
+
+
+
+
+
+        </div>
+
+        <div class="largeGap p_5_h"></div>
+
+<!-- basic end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
 
 <!-- navbar description start -->
 
         <div>
 
-            <h2 class="titleL" id="nav">Navbar</h2>
+            <div class="largeGap p_1_h" id="nav"></div>
 
-            <p class="txtJustify lineHeight_1_5">This is a customizable Navigation bar, consisting of three important sections, which are logo, search bar & navigation buttons. The default is pretty bland, but customization is possible using the <a class="link" href="#Basic">Basic</a> classes. In order to access navbar, use <span class="highlightBlack">class="nav"</span></p>
+            <h2 class="titleL">Navbar</h2>
+
+            <p class="txtJustify lineHeight_1_7">This is a customizable Navigation bar, consisting of three important sections, which are logo, search bar & navigation buttons. The default is pretty bland, but customization is possible using the <a class="link" href="#basic">Basic</a> classes. In order to access navbar, use <span class="highlightBlack">class="nav"</span></p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -163,7 +555,7 @@
 
             <!-- image logo -->
 
-            <p class="txtJustify lineHeight_1_5">Logos can be image or text. In order to access image logo, use <span class="highlightBlack">class="imgLogo"</span></p>
+            <p class="txtJustify lineHeight_1_7">Logos can be image or text. In order to access image logo, use <span class="highlightBlack">class="imgLogo"</span></p>
 
             <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -186,7 +578,7 @@
 
             <!-- text logo -->
 
-            <p class="txtJustify lineHeight_1_5">In order to access text logo, use <span class="highlightBlack">class="txtLogo"</span></p>
+            <p class="txtJustify lineHeight_1_7">In order to access text logo, use <span class="highlightBlack">class="txtLogo"</span></p>
 
             <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -209,7 +601,7 @@
 
             <!-- no logo -->
 
-            <p class="txtJustify lineHeight_1_5">In case logo is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
+            <p class="txtJustify lineHeight_1_7">In case logo is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
 
             <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -245,7 +637,7 @@
 
             <!-- if search bar present -->
 
-            <p class="txtJustify lineHeight_1_5">Search bar slot is in the middle. In order to access search bar, use <span class="highlightBlack">class="searchBar"</span> to style search field, use <span class="highlightBlack">class="searchField"</span> to style search button, use <span class="highlightBlack">class="searchBtn"</span></p>
+            <p class="txtJustify lineHeight_1_7">Search bar slot is in the middle. In order to access search bar, use <span class="highlightBlack">class="searchBar"</span> to style search field, use <span class="highlightBlack">class="searchField"</span> to style search button, use <span class="highlightBlack">class="searchBtn"</span></p>
 
             <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -281,7 +673,7 @@
 
             <!-- if search bar absent -->
 
-            <p class="txtJustify lineHeight_1_5">In case search bar is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
+            <p class="txtJustify lineHeight_1_7">In case search bar is not required, use <span class="highlightBlack">span tag</span> as placeholder for grid template.</p>
 
             <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -320,7 +712,7 @@
 
             <li class="subTitleL">Nav Buttons (Main):</li>
 
-            <p class="txtJustify lineHeight_1_5">In order to access div that holds all the main buttons, use <span class="highlightBlack">class="mainLinks"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink"</span></p>
+            <p class="txtJustify lineHeight_1_7">In order to access div that holds all the main buttons, use <span class="highlightBlack">class="mainLinks"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink"</span></p>
 
             <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -370,7 +762,7 @@
 
             <li class="subTitleL" id="navBtnSub">Nav Buttons (Sub):</li>
 
-            <p class="txtJustify lineHeight_1_5">Sub buttons will always be contained by a main button. they will only appear when container main button is hovered. <span class="highlightBlack">class="dropDown"</span> is used for positioning. In order to access div that holds all the sub buttons, use <span class="highlightBlack">class="subLinks"</span> to put style on a single button, use <span class="highlightBlack">class="subLink"</span></p>
+            <p class="txtJustify lineHeight_1_7">Sub buttons will always be contained by a main button. They will only appear when container main button is hovered. <span class="highlightBlack">class="dropDown"</span> is used for positioning. In order to access div that holds all the sub buttons, use <span class="highlightBlack">class="subLinks"</span> to put style on a single button, use <span class="highlightBlack">class="subLink"</span></p>
 
             <pre data-start="7" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -432,7 +824,7 @@
 
             <li class="subTitleL" id="hamBtn">Hamburger Menu Button:</li>
 
-            <p class="txtJustify lineHeight_1_5">Hamburger menu button will appear only when screen size is bellow 1000px. In order to access hamburger menu buttons, use <span class="highlightBlack">class="hamburger"</span></p>
+            <p class="txtJustify lineHeight_1_7">Hamburger menu button will appear only when screen size is bellow 1000px. In order to access hamburger menu buttons, use <span class="highlightBlack">class="hamburger"</span></p>
 
             <pre data-start="15" style="white-space:pre-wrap;" class="language-html line-numbers">
 

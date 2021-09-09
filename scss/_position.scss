@@ -5,195 +5,46 @@
 .posStat{position: static;}
 .posStik{position: sticky;}
 
+    $Limit: 1000;
 
-/* right */
-.right{
-    &_0{right: $px_0;}
-    &_5{right: $px_5;}
-    &_10{right: $px_10;}
-    &_15{right: $px_15;}
-    &_20{right: $px_20;}
-    &_25{right: $px_25;}
-    &_30{right: $px_30;}
-    &_35{right: $px_35;}
-    &_40{right: $px_40;}
-    &_45{right: $px_45;}
-    &_50{right: $px_50;}
-    &_55{right: $px_55;}
-    &_60{right: $px_60;}
-    &_65{right: $px_65;}
-    &_70{right: $px_70;}
-    &_75{right: $px_75;}
-    &_80{right: $px_80;}
-    &_85{right: $px_85;}
-    &_90{right: $px_90;}
-    &_95{right: $px_95;}
-    &_100{right: $px_100;}
-    &_125{right: $px_100 + $px_25;}
-    &_150{right: $px_100 + $px_50;}
-    &_175{right: $px_100 + $px_75;}
-    &_200{right: $px_100 + $px_100;}
-    &_225{right: $px_100 + $px_100 + $px_25;}
-    &_250{right: $px_100 + $px_100 + $px_50;}
-    &_275{right: $px_100 + $px_100 + $px_75;}
-    &_300{right: $px_100 + $px_100 + $px_100;}
-    &_325{right: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{right: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{right: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{right: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{right: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}
+    @for $hook from 0 through $Limit {
+
+        /* top */
+
+        .top_#{$hook} {
+            top: (0px + $hook);
+        }
+        .negTop_#{$hook} {
+            top: (0px - $hook);
+        }
+
+        /* right */
+
+        .right_#{$hook} {
+            right: (0px + $hook);
+        }
+        .negRight_#{$hook} {
+            right: (0px - $hook);
+        }
+
+        /* bottom */
+
+        .bottom_#{$hook} {
+            bottom: (0px + $hook);
+        }
+        .negBottom_#{$hook} {
+            bottom: (0px - $hook);
+        }
+
+        /* left */
+
+        .left_#{$hook} {
+            left: (0px + $hook);
+        }
+        .negLeft_#{$hook} {
+            left: (0px - $hook);
+        }
+
+    }
 
 
-
-
-/* left */
-.left{
-    &_0{left: $px_0;}
-    &_5{left: $px_5;}
-    &_10{left: $px_10;}
-    &_15{left: $px_15;}
-    &_20{left: $px_20;}
-    &_25{left: $px_25;}
-    &_30{left: $px_30;}
-    &_35{left: $px_35;}
-    &_40{left: $px_40;}
-    &_45{left: $px_45;}
-    &_50{left: $px_50;}
-    &_55{left: $px_55;}
-    &_60{left: $px_60;}
-    &_65{left: $px_65;}
-    &_70{left: $px_70;}
-    &_75{left: $px_75;}
-    &_80{left: $px_80;}
-    &_85{left: $px_85;}
-    &_90{left: $px_90;}
-    &_95{left: $px_95;}
-    &_100{left: $px_100;}
-    &_125{left: $px_100 + $px_25;}
-    &_150{left: $px_100 + $px_50;}
-    &_175{left: $px_100 + $px_75;}
-    &_200{left: $px_100 + $px_100;}
-    &_225{left: $px_100 + $px_100 + $px_25;}
-    &_250{left: $px_100 + $px_100 + $px_50;}
-    &_275{left: $px_100 + $px_100 + $px_75;}
-    &_300{left: $px_100 + $px_100 + $px_100;}
-    &_325{left: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{left: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{left: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{left: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{left: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}
-
-
-
-
-
-/* top */
-.top{
-    &_0{top: $px_0;}
-    &_5{top: $px_5;}
-    &_10{top: $px_10;}
-    &_15{top: $px_15;}
-    &_20{top: $px_20;}
-    &_25{top: $px_25;}
-    &_30{top: $px_30;}
-    &_35{top: $px_35;}
-    &_40{top: $px_40;}
-    &_45{top: $px_45;}
-    &_50{top: $px_50;}
-    &_55{top: $px_55;}
-    &_60{top: $px_60;}
-    &_65{top: $px_65;}
-    &_70{top: $px_70;}
-    &_75{top: $px_75;}
-    &_80{top: $px_80;}
-    &_85{top: $px_85;}
-    &_90{top: $px_90;}
-    &_95{top: $px_95;}
-    &_100{top: $px_100;}
-    &_125{top: $px_100 + $px_25;}
-    &_150{top: $px_100 + $px_50;}
-    &_175{top: $px_100 + $px_75;}
-    &_200{top: $px_100 + $px_100;}
-    &_225{top: $px_100 + $px_100 + $px_25;}
-    &_250{top: $px_100 + $px_100 + $px_50;}
-    &_275{top: $px_100 + $px_100 + $px_75;}
-    &_300{top: $px_100 + $px_100 + $px_100;}
-    &_325{top: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{top: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{top: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{top: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{top: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}
-
-
-
-
-
-
-/* bottom */
-.bottom{
-    &_0{bottom: $px_0;}
-    &_5{bottom: $px_5;}
-    &_10{bottom: $px_10;}
-    &_15{bottom: $px_15;}
-    &_20{bottom: $px_20;}
-    &_25{bottom: $px_25;}
-    &_30{bottom: $px_30;}
-    &_35{bottom: $px_35;}
-    &_40{bottom: $px_40;}
-    &_45{bottom: $px_45;}
-    &_50{bottom: $px_50;}
-    &_55{bottom: $px_55;}
-    &_60{bottom: $px_60;}
-    &_65{bottom: $px_65;}
-    &_70{bottom: $px_70;}
-    &_75{bottom: $px_75;}
-    &_80{bottom: $px_80;}
-    &_85{bottom: $px_85;}
-    &_90{bottom: $px_90;}
-    &_95{bottom: $px_95;}
-    &_100{bottom: $px_100;}
-    &_125{bottom: $px_100 + $px_25;}
-    &_150{bottom: $px_100 + $px_50;}
-    &_175{bottom: $px_100 + $px_75;}
-    &_200{bottom: $px_100 + $px_100;}
-    &_225{bottom: $px_100 + $px_100 + $px_25;}
-    &_250{bottom: $px_100 + $px_100 + $px_50;}
-    &_275{bottom: $px_100 + $px_100 + $px_75;}
-    &_300{bottom: $px_100 + $px_100 + $px_100;}
-    &_325{bottom: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{bottom: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{bottom: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{bottom: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{bottom: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}

@@ -1,88 +1,26 @@
 /* height */
-.h{
-    &_0Per{height: 0%;}
-    &_5Per{height: 5%;}
-    &_10Per{height: 10%;}
-    &_15Per{height: 15%;}
-    &_20Per{height: 20%;}
-    &_25Per{height: 25%;}
-    &_30Per{height: 30%;}
-    &_35Per{height: 35%;}
-    &_40Per{height: 40%;}
-    &_45Per{height: 45%;}
-    &_50Per{height: 50%;}
-    &_55Per{height: 55%;}
-    &_60Per{height: 60%;}
-    &_65Per{height: 65%;}
-    &_70Per{height: 70%;}
-    &_75Per{height: 75%;}
-    &_80Per{height: 80%;}
-    &_85Per{height: 85%;}
-    &_90Per{height: 90%;}
-    &_95Per{height: 95%;}
-    &_100Per{height: 100%;}
 
-    &_0vw{height: 0vw;}
-    &_5vw{height: 5vw;}
-    &_10vw{height: 10vw;}
-    &_15vw{height: 15vw;}
-    &_20vw{height: 20vw;}
-    &_25vw{height: 25vw;}
-    &_30vw{height: 30vw;}
-    &_35vw{height: 35vw;}
-    &_40vw{height: 40vw;}
-    &_45vw{height: 45vw;}
-    &_50vw{height: 50vw;}
-    &_55vw{height: 55vw;}
-    &_60vw{height: 60vw;}
-    &_65vw{height: 65vw;}
-    &_70vw{height: 70vw;}
-    &_75vw{height: 75vw;}
-    &_80vw{height: 80vw;}
-    &_85vw{height: 85vw;}
-    &_90vw{height: 90vw;}
-    &_95vw{height: 95vw;}
-    &_100vw{height: 100vw;}
+    $limit: 100;
 
-    &_0{height: $px_0;}
-    &_5{height: $px_5;}
-    &_10{height: $px_10;}
-    &_15{height: $px_15;}
-    &_20{height: $px_20;}
-    &_25{height: $px_25;}
-    &_30{height: $px_30;}
-    &_35{height: $px_35;}
-    &_40{height: $px_40;}
-    &_45{height: $px_45;}
-    &_50{height: $px_50;}
-    &_55{height: $px_55;}
-    &_60{height: $px_60;}
-    &_65{height: $px_65;}
-    &_70{height: $px_70;}
-    &_75{height: $px_75;}
-    &_80{height: $px_80;}
-    &_85{height: $px_85;}
-    &_90{height: $px_90;}
-    &_95{height: $px_95;}
-    &_100{height: $px_100;}
-    &_125{height: $px_100 + $px_25;}
-    &_150{height: $px_100 + $px_50;}
-    &_175{height: $px_100 + $px_75;}
-    &_200{height: $px_100 + $px_100;}
-    &_225{height: $px_100 + $px_100 + $px_25;}
-    &_250{height: $px_100 + $px_100 + $px_50;}
-    &_275{height: $px_100 + $px_100 + $px_75;}
-    &_300{height: $px_100 + $px_100 + $px_100;}
-    &_325{height: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{height: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{height: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{height: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{height: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}
+    @for $hook from 0 through $limit {
+        .h_#{$hook}Per {
+            height: (0% + $hook);
+        }
+
+        .maxH_#{$hook}Per {
+            max-height: (0% + $hook);
+        }
+
+        .h_#{$hook}vh {
+            height: (0vh + $hook);
+        }
+    }
+    
+    $pxLimit: 1000;
+
+    @for $hook from 0 through $pxLimit {
+        .h_#{$hook} {
+            height: (0px + $hook);
+        }
+    }
+

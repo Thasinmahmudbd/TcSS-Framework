@@ -1,495 +1,95 @@
 /* auto margin */
 .m_a{margin: auto;}
 
-/*********************************************************/
-/*********************  ALL AROUND  **********************/
-/*********************************************************/
+/* margin px */
 
-/* margins all around full */
-.m_0{margin: $zero;}
-.m_1{margin: $one;}
-.m_2{margin: $two;}
-.m_3{margin: $three;}
-.m_4{margin: $four;}
-.m_5{margin: $five;}
-.m_6{margin: $six;}
-.m_7{margin: $seven;}
-.m_8{margin: $eight;}
-.m_9{margin: $nine;}
-.m_10{margin: $ten;}
-.m_11{margin: $eleven;}
-.m_12{margin: $twelve;}
-.m_13{margin: $thirteen;}
-.m_14{margin: $fourteen;}
-.m_15{margin: $fifteen;}
-.m_16{margin: $sixteen;}
-.m_17{margin: $seventeen;}
-.m_18{margin: $eighteen;}
-.m_19{margin: $nineteen;}
-.m_20{margin: $twenty;}
+$pxlimit: 1000;
 
-/* margins all around quarter */
-.m_q{margin: $quarter;}
-.m_1_q{margin: $one + $quarter;}
-.m_2_q{margin: $two + $quarter;}
-.m_3_q{margin: $three + $quarter;}
-.m_4_q{margin: $four + $quarter;}
-.m_5_q{margin: $five + $quarter;}
-.m_6_q{margin: $six + $quarter;}
-.m_7_q{margin: $seven + $quarter;}
-.m_8_q{margin: $eight + $quarter;}
-.m_9_q{margin: $nine + $quarter;}
-.m_10_q{margin: $ten + $quarter;}
-.m_11_q{margin: $eleven + $quarter;}
-.m_12_q{margin: $twelve + $quarter;}
-.m_13_q{margin: $thirteen + $quarter;}
-.m_14_q{margin: $fourteen + $quarter;}
-.m_15_q{margin: $fifteen + $quarter;}
-.m_16_q{margin: $sixteen + $quarter;}
-.m_17_q{margin: $seventeen + $quarter;}
-.m_18_q{margin: $eighteen + $quarter;}
-.m_19_q{margin: $nineteen + $quarter;}
-.m_20_q{margin: $twenty + $quarter;}
+@for $hook from 0 through $pxlimit {
+    .m_#{$hook}px {
+        margin: (0px + $hook);
+    }
+    .mt_#{$hook}px {
+        margin-top: (0px + $hook);
+    }
+    .mr_#{$hook}px {
+        margin-right: (0px + $hook);
+    }
+    .mb_#{$hook}px {
+        margin-bottom: (0px + $hook);
+    }
+    .ml_#{$hook}px {
+        margin-left: (0px + $hook);
+    }
+}
 
-/* margins all around half */
-.m_h{margin: $half;}
-.m_1_h{margin: $one + $half;}
-.m_2_h{margin: $two + $half;}
-.m_3_h{margin: $three + $half;}
-.m_4_h{margin: $four + $half;}
-.m_5_h{margin: $five + $half;}
-.m_6_h{margin: $six + $half;}
-.m_7_h{margin: $seven + $half;}
-.m_8_h{margin: $eight + $half;}
-.m_9_h{margin: $nine + $half;}
-.m_10_h{margin: $ten + $half;}
-.m_11_h{margin: $eleven + $half;}
-.m_12_h{margin: $twelve + $half;}
-.m_13_h{margin: $thirteen + $half;}
-.m_14_h{margin: $fourteen + $half;}
-.m_15_h{margin: $fifteen + $half;}
-.m_16_h{margin: $sixteen + $half;}
-.m_17_h{margin: $seventeen + $half;}
-.m_18_h{margin: $eighteen + $half;}
-.m_19_h{margin: $nineteen + $half;}
-.m_20_h{margin: $twenty + $half;}
+/* margin rem */
 
-/* margins all around three quarter */
-.m_tq{margin: $three_quarter;}
-.m_1_tq{margin: $one + $three_quarter;}
-.m_2_tq{margin: $two + $three_quarter;}
-.m_3_tq{margin: $three + $three_quarter;}
-.m_4_tq{margin: $four + $three_quarter;}
-.m_5_tq{margin: $five + $three_quarter;}
-.m_6_tq{margin: $six + $three_quarter;}
-.m_7_tq{margin: $seven + $three_quarter;}
-.m_8_tq{margin: $eight + $three_quarter;}
-.m_9_tq{margin: $nine + $three_quarter;}
-.m_10_tq{margin: $ten + $three_quarter;}
-.m_11_tq{margin: $eleven + $three_quarter;}
-.m_12_tq{margin: $twelve + $three_quarter;}
-.m_13_tq{margin: $thirteen + $three_quarter;}
-.m_14_tq{margin: $fourteen + $three_quarter;}
-.m_15_tq{margin: $fifteen + $three_quarter;}
-.m_16_tq{margin: $sixteen + $three_quarter;}
-.m_17_tq{margin: $seventeen + $three_quarter;}
-.m_18_tq{margin: $eighteen + $three_quarter;}
-.m_19_tq{margin: $nineteen + $three_quarter;}
-.m_20_tq{margin: $twenty + $three_quarter;}
+$remlimit: 100;
 
+@for $hook from 0 through $remlimit {
+    .m_#{$hook} {
+        margin: (0rem + $hook);
+    }
+    .mt_#{$hook} {
+        margin-top: (0rem + $hook);
+    }
+    .mr_#{$hook} {
+        margin-right: (0rem + $hook);
+    }
+    .mb_#{$hook} {
+        margin-bottom: (0rem + $hook);
+    }
+    .ml_#{$hook} {
+        margin-left: (0rem + $hook);
+    }
 
+    .m_#{$hook}_q {
+        margin: ($quarter + $hook);
+    }
+    .mt_#{$hook}_q {
+        margin-top: ($quarter + $hook);
+    }
+    .mr_#{$hook}_q {
+        margin-right: ($quarter + $hook);
+    }
+    .mb_#{$hook}_q {
+        margin-bottom: ($quarter + $hook);
+    }
+    .ml_#{$hook}_q {
+        margin-left: ($quarter + $hook);
+    }
 
+    .m_#{$hook}_h {
+        margin: ($half + $hook);
+    }
+    .mt_#{$hook}_h {
+        margin-top: ($half + $hook);
+    }
+    .mr_#{$hook}_h {
+        margin-right: ($half + $hook);
+    }
+    .mb_#{$hook}_h {
+        margin-bottom: ($half + $hook);
+    }
+    .ml_#{$hook}_h {
+        margin-left: ($half + $hook);
+    }
 
-/*********************************************************/
-/*************************  top  *************************/
-/*********************************************************/
-
-/* margins top full */
-.mt_0{margin-top: $zero;}
-.mt_1{margin-top: $one;}
-.mt_2{margin-top: $two;}
-.mt_3{margin-top: $three;}
-.mt_4{margin-top: $four;}
-.mt_5{margin-top: $five;}
-.mt_6{margin-top: $six;}
-.mt_7{margin-top: $seven;}
-.mt_8{margin-top: $eight;}
-.mt_9{margin-top: $nine;}
-.mt_10{margin-top: $ten;}
-.mt_11{margin-top: $eleven;}
-.mt_12{margin-top: $twelve;}
-.mt_13{margin-top: $thirteen;}
-.mt_14{margin-top: $fourteen;}
-.mt_15{margin-top: $fifteen;}
-.mt_16{margin-top: $sixteen;}
-.mt_17{margin-top: $seventeen;}
-.mt_18{margin-top: $eighteen;}
-.mt_19{margin-top: $nineteen;}
-.mt_20{margin-top: $twenty;}
-
-/* margins top quarter */
-.mt_q{margin-top: $quarter;}
-.mt_1_q{margin-top: $one + $quarter;}
-.mt_2_q{margin-top: $two + $quarter;}
-.mt_3_q{margin-top: $three + $quarter;}
-.mt_4_q{margin-top: $four + $quarter;}
-.mt_5_q{margin-top: $five + $quarter;}
-.mt_6_q{margin-top: $six + $quarter;}
-.mt_7_q{margin-top: $seven + $quarter;}
-.mt_8_q{margin-top: $eight + $quarter;}
-.mt_9_q{margin-top: $nine + $quarter;}
-.mt_10_q{margin-top: $ten + $quarter;}
-.mt_11_q{margin-top: $eleven + $quarter;}
-.mt_12_q{margin-top: $twelve + $quarter;}
-.mt_13_q{margin-top: $thirteen + $quarter;}
-.mt_14_q{margin-top: $fourteen + $quarter;}
-.mt_15_q{margin-top: $fifteen + $quarter;}
-.mt_16_q{margin-top: $sixteen + $quarter;}
-.mt_17_q{margin-top: $seventeen + $quarter;}
-.mt_18_q{margin-top: $eighteen + $quarter;}
-.mt_19_q{margin-top: $nineteen + $quarter;}
-.mt_20_q{margin-top: $twenty + $quarter;}
-
-/* margins top half */
-.mt_h{margin-top: $half;}
-.mt_1_h{margin-top: $one + $half;}
-.mt_2_h{margin-top: $two + $half;}
-.mt_3_h{margin-top: $three + $half;}
-.mt_4_h{margin-top: $four + $half;}
-.mt_5_h{margin-top: $five + $half;}
-.mt_6_h{margin-top: $six + $half;}
-.mt_7_h{margin-top: $seven + $half;}
-.mt_8_h{margin-top: $eight + $half;}
-.mt_9_h{margin-top: $nine + $half;}
-.mt_10_h{margin-top: $ten + $half;}
-.mt_11_h{margin-top: $eleven + $half;}
-.mt_12_h{margin-top: $twelve + $half;}
-.mt_13_h{margin-top: $thirteen + $half;}
-.mt_14_h{margin-top: $fourteen + $half;}
-.mt_15_h{margin-top: $fifteen + $half;}
-.mt_16_h{margin-top: $sixteen + $half;}
-.mt_17_h{margin-top: $seventeen + $half;}
-.mt_18_h{margin-top: $eighteen + $half;}
-.mt_19_h{margin-top: $nineteen + $half;}
-.mt_20_h{margin-top: $twenty + $half;}
-
-/* margins top three quarter */
-.mt_tq{margin-top: $three_quarter;}
-.mt_1_tq{margin-top: $one + $three_quarter;}
-.mt_2_tq{margin-top: $two + $three_quarter;}
-.mt_3_tq{margin-top: $three + $three_quarter;}
-.mt_4_tq{margin-top: $four + $three_quarter;}
-.mt_5_tq{margin-top: $five + $three_quarter;}
-.mt_6_tq{margin-top: $six + $three_quarter;}
-.mt_7_tq{margin-top: $seven + $three_quarter;}
-.mt_8_tq{margin-top: $eight + $three_quarter;}
-.mt_9_tq{margin-top: $nine + $three_quarter;}
-.mt_10_tq{margin-top: $ten + $three_quarter;}
-.mt_11_tq{margin-top: $eleven + $three_quarter;}
-.mt_12_tq{margin-top: $twelve + $three_quarter;}
-.mt_13_tq{margin-top: $thirteen + $three_quarter;}
-.mt_14_tq{margin-top: $fourteen + $three_quarter;}
-.mt_15_tq{margin-top: $fifteen + $three_quarter;}
-.mt_16_tq{margin-top: $sixteen + $three_quarter;}
-.mt_17_tq{margin-top: $seventeen + $three_quarter;}
-.mt_18_tq{margin-top: $eighteen + $three_quarter;}
-.mt_19_tq{margin-top: $nineteen + $three_quarter;}
-.mt_20_tq{margin-top: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/************************  RIGHT  ************************/
-/*********************************************************/
-
-/* margins right full */
-.mr_0{margin-right: $zero;}
-.mr_1{margin-right: $one;}
-.mr_2{margin-right: $two;}
-.mr_3{margin-right: $three;}
-.mr_4{margin-right: $four;}
-.mr_5{margin-right: $five;}
-.mr_6{margin-right: $six;}
-.mr_7{margin-right: $seven;}
-.mr_8{margin-right: $eight;}
-.mr_9{margin-right: $nine;}
-.mr_10{margin-right: $ten;}
-.mr_11{margin-right: $eleven;}
-.mr_12{margin-right: $twelve;}
-.mr_13{margin-right: $thirteen;}
-.mr_14{margin-right: $fourteen;}
-.mr_15{margin-right: $fifteen;}
-.mr_16{margin-right: $sixteen;}
-.mr_17{margin-right: $seventeen;}
-.mr_18{margin-right: $eighteen;}
-.mr_19{margin-right: $nineteen;}
-.mr_20{margin-right: $twenty;}
-
-/* margins right quarter */
-.mr_q{margin-right: $quarter;}
-.mr_1_q{margin-right: $one + $quarter;}
-.mr_2_q{margin-right: $two + $quarter;}
-.mr_3_q{margin-right: $three + $quarter;}
-.mr_4_q{margin-right: $four + $quarter;}
-.mr_5_q{margin-right: $five + $quarter;}
-.mr_6_q{margin-right: $six + $quarter;}
-.mr_7_q{margin-right: $seven + $quarter;}
-.mr_8_q{margin-right: $eight + $quarter;}
-.mr_9_q{margin-right: $nine + $quarter;}
-.mr_10_q{margin-right: $ten + $quarter;}
-.mr_11_q{margin-right: $eleven + $quarter;}
-.mr_12_q{margin-right: $twelve + $quarter;}
-.mr_13_q{margin-right: $thirteen + $quarter;}
-.mr_14_q{margin-right: $fourteen + $quarter;}
-.mr_15_q{margin-right: $fifteen + $quarter;}
-.mr_16_q{margin-right: $sixteen + $quarter;}
-.mr_17_q{margin-right: $seventeen + $quarter;}
-.mr_18_q{margin-right: $eighteen + $quarter;}
-.mr_19_q{margin-right: $nineteen + $quarter;}
-.mr_20_q{margin-right: $twenty + $quarter;}
-
-/* margins right half */
-.mr_h{margin-right: $half;}
-.mr_1_h{margin-right: $one + $half;}
-.mr_2_h{margin-right: $two + $half;}
-.mr_3_h{margin-right: $three + $half;}
-.mr_4_h{margin-right: $four + $half;}
-.mr_5_h{margin-right: $five + $half;}
-.mr_6_h{margin-right: $six + $half;}
-.mr_7_h{margin-right: $seven + $half;}
-.mr_8_h{margin-right: $eight + $half;}
-.mr_9_h{margin-right: $nine + $half;}
-.mr_10_h{margin-right: $ten + $half;}
-.mr_11_h{margin-right: $eleven + $half;}
-.mr_12_h{margin-right: $twelve + $half;}
-.mr_13_h{margin-right: $thirteen + $half;}
-.mr_14_h{margin-right: $fourteen + $half;}
-.mr_15_h{margin-right: $fifteen + $half;}
-.mr_16_h{margin-right: $sixteen + $half;}
-.mr_17_h{margin-right: $seventeen + $half;}
-.mr_18_h{margin-right: $eighteen + $half;}
-.mr_19_h{margin-right: $nineteen + $half;}
-.mr_20_h{margin-right: $twenty + $half;}
-
-/* margins right three quarter */
-.mr_tq{margin-right: $three_quarter;}
-.mr_1_tq{margin-right: $one + $three_quarter;}
-.mr_2_tq{margin-right: $two + $three_quarter;}
-.mr_3_tq{margin-right: $three + $three_quarter;}
-.mr_4_tq{margin-right: $four + $three_quarter;}
-.mr_5_tq{margin-right: $five + $three_quarter;}
-.mr_6_tq{margin-right: $six + $three_quarter;}
-.mr_7_tq{margin-right: $seven + $three_quarter;}
-.mr_8_tq{margin-right: $eight + $three_quarter;}
-.mr_9_tq{margin-right: $nine + $three_quarter;}
-.mr_10_tq{margin-right: $ten + $three_quarter;}
-.mr_11_tq{margin-right: $eleven + $three_quarter;}
-.mr_12_tq{margin-right: $twelve + $three_quarter;}
-.mr_13_tq{margin-right: $thirteen + $three_quarter;}
-.mr_14_tq{margin-right: $fourteen + $three_quarter;}
-.mr_15_tq{margin-right: $fifteen + $three_quarter;}
-.mr_16_tq{margin-right: $sixteen + $three_quarter;}
-.mr_17_tq{margin-right: $seventeen + $three_quarter;}
-.mr_18_tq{margin-right: $eighteen + $three_quarter;}
-.mr_19_tq{margin-right: $nineteen + $three_quarter;}
-.mr_20_tq{margin-right: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/***********************  bottom  ************************/
-/*********************************************************/
-
-/* margins bottom full */
-.mb_0{margin-bottom: $zero;}
-.mb_1{margin-bottom: $one;}
-.mb_2{margin-bottom: $two;}
-.mb_3{margin-bottom: $three;}
-.mb_4{margin-bottom: $four;}
-.mb_5{margin-bottom: $five;}
-.mb_6{margin-bottom: $six;}
-.mb_7{margin-bottom: $seven;}
-.mb_8{margin-bottom: $eight;}
-.mb_9{margin-bottom: $nine;}
-.mb_10{margin-bottom: $ten;}
-.mb_11{margin-bottom: $eleven;}
-.mb_12{margin-bottom: $twelve;}
-.mb_13{margin-bottom: $thirteen;}
-.mb_14{margin-bottom: $fourteen;}
-.mb_15{margin-bottom: $fifteen;}
-.mb_16{margin-bottom: $sixteen;}
-.mb_17{margin-bottom: $seventeen;}
-.mb_18{margin-bottom: $eighteen;}
-.mb_19{margin-bottom: $nineteen;}
-.mb_20{margin-bottom: $twenty;}
-
-/* margins bottom quarter */
-.mb_q{margin-bottom: $quarter;}
-.mb_1_q{margin-bottom: $one + $quarter;}
-.mb_2_q{margin-bottom: $two + $quarter;}
-.mb_3_q{margin-bottom: $three + $quarter;}
-.mb_4_q{margin-bottom: $four + $quarter;}
-.mb_5_q{margin-bottom: $five + $quarter;}
-.mb_6_q{margin-bottom: $six + $quarter;}
-.mb_7_q{margin-bottom: $seven + $quarter;}
-.mb_8_q{margin-bottom: $eight + $quarter;}
-.mb_9_q{margin-bottom: $nine + $quarter;}
-.mb_10_q{margin-bottom: $ten + $quarter;}
-.mb_11_q{margin-bottom: $eleven + $quarter;}
-.mb_12_q{margin-bottom: $twelve + $quarter;}
-.mb_13_q{margin-bottom: $thirteen + $quarter;}
-.mb_14_q{margin-bottom: $fourteen + $quarter;}
-.mb_15_q{margin-bottom: $fifteen + $quarter;}
-.mb_16_q{margin-bottom: $sixteen + $quarter;}
-.mb_17_q{margin-bottom: $seventeen + $quarter;}
-.mb_18_q{margin-bottom: $eighteen + $quarter;}
-.mb_19_q{margin-bottom: $nineteen + $quarter;}
-.mb_20_q{margin-bottom: $twenty + $quarter;}
-
-/* margins bottom half */
-.mb_h{margin-bottom: $half;}
-.mb_1_h{margin-bottom: $one + $half;}
-.mb_2_h{margin-bottom: $two + $half;}
-.mb_3_h{margin-bottom: $three + $half;}
-.mb_4_h{margin-bottom: $four + $half;}
-.mb_5_h{margin-bottom: $five + $half;}
-.mb_6_h{margin-bottom: $six + $half;}
-.mb_7_h{margin-bottom: $seven + $half;}
-.mb_8_h{margin-bottom: $eight + $half;}
-.mb_9_h{margin-bottom: $nine + $half;}
-.mb_10_h{margin-bottom: $ten + $half;}
-.mb_11_h{margin-bottom: $eleven + $half;}
-.mb_12_h{margin-bottom: $twelve + $half;}
-.mb_13_h{margin-bottom: $thirteen + $half;}
-.mb_14_h{margin-bottom: $fourteen + $half;}
-.mb_15_h{margin-bottom: $fifteen + $half;}
-.mb_16_h{margin-bottom: $sixteen + $half;}
-.mb_17_h{margin-bottom: $seventeen + $half;}
-.mb_18_h{margin-bottom: $eighteen + $half;}
-.mb_19_h{margin-bottom: $nineteen + $half;}
-.mb_20_h{margin-bottom: $twenty + $half;}
-
-/* margins bottom three quarter */
-.mb_tq{margin-bottom: $three_quarter;}
-.mb_1_tq{margin-bottom: $one + $three_quarter;}
-.mb_2_tq{margin-bottom: $two + $three_quarter;}
-.mb_3_tq{margin-bottom: $three + $three_quarter;}
-.mb_4_tq{margin-bottom: $four + $three_quarter;}
-.mb_5_tq{margin-bottom: $five + $three_quarter;}
-.mb_6_tq{margin-bottom: $six + $three_quarter;}
-.mb_7_tq{margin-bottom: $seven + $three_quarter;}
-.mb_8_tq{margin-bottom: $eight + $three_quarter;}
-.mb_9_tq{margin-bottom: $nine + $three_quarter;}
-.mb_10_tq{margin-bottom: $ten + $three_quarter;}
-.mb_11_tq{margin-bottom: $eleven + $three_quarter;}
-.mb_12_tq{margin-bottom: $twelve + $three_quarter;}
-.mb_13_tq{margin-bottom: $thirteen + $three_quarter;}
-.mb_14_tq{margin-bottom: $fourteen + $three_quarter;}
-.mb_15_tq{margin-bottom: $fifteen + $three_quarter;}
-.mb_16_tq{margin-bottom: $sixteen + $three_quarter;}
-.mb_17_tq{margin-bottom: $seventeen + $three_quarter;}
-.mb_18_tq{margin-bottom: $eighteen + $three_quarter;}
-.mb_19_tq{margin-bottom: $nineteen + $three_quarter;}
-.mb_20_tq{margin-bottom: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/*************************  LEFT  ************************/
-/*********************************************************/
-
-/* margins left full */
-.ml_0{margin-left: $zero;}
-.ml_1{margin-left: $one;}
-.ml_2{margin-left: $two;}
-.ml_3{margin-left: $three;}
-.ml_4{margin-left: $four;}
-.ml_5{margin-left: $five;}
-.ml_6{margin-left: $six;}
-.ml_7{margin-left: $seven;}
-.ml_8{margin-left: $eight;}
-.ml_9{margin-left: $nine;}
-.ml_10{margin-left: $ten;}
-.ml_11{margin-left: $eleven;}
-.ml_12{margin-left: $twelve;}
-.ml_13{margin-left: $thirteen;}
-.ml_14{margin-left: $fourteen;}
-.ml_15{margin-left: $fifteen;}
-.ml_16{margin-left: $sixteen;}
-.ml_17{margin-left: $seventeen;}
-.ml_18{margin-left: $eighteen;}
-.ml_19{margin-left: $nineteen;}
-.ml_20{margin-left: $twenty;}
-
-/* margins left quarter */
-.ml_q{margin-left: $quarter;}
-.ml_1_q{margin-left: $one + $quarter;}
-.ml_2_q{margin-left: $two + $quarter;}
-.ml_3_q{margin-left: $three + $quarter;}
-.ml_4_q{margin-left: $four + $quarter;}
-.ml_5_q{margin-left: $five + $quarter;}
-.ml_6_q{margin-left: $six + $quarter;}
-.ml_7_q{margin-left: $seven + $quarter;}
-.ml_8_q{margin-left: $eight + $quarter;}
-.ml_9_q{margin-left: $nine + $quarter;}
-.ml_10_q{margin-left: $ten + $quarter;}
-.ml_11_q{margin-left: $eleven + $quarter;}
-.ml_12_q{margin-left: $twelve + $quarter;}
-.ml_13_q{margin-left: $thirteen + $quarter;}
-.ml_14_q{margin-left: $fourteen + $quarter;}
-.ml_15_q{margin-left: $fifteen + $quarter;}
-.ml_16_q{margin-left: $sixteen + $quarter;}
-.ml_17_q{margin-left: $seventeen + $quarter;}
-.ml_18_q{margin-left: $eighteen + $quarter;}
-.ml_19_q{margin-left: $nineteen + $quarter;}
-.ml_20_q{margin-left: $twenty + $quarter;}
-
-/* margins left half */
-.ml_h{margin-left: $half;}
-.ml_1_h{margin-left: $one + $half;}
-.ml_2_h{margin-left: $two + $half;}
-.ml_3_h{margin-left: $three + $half;}
-.ml_4_h{margin-left: $four + $half;}
-.ml_5_h{margin-left: $five + $half;}
-.ml_6_h{margin-left: $six + $half;}
-.ml_7_h{margin-left: $seven + $half;}
-.ml_8_h{margin-left: $eight + $half;}
-.ml_9_h{margin-left: $nine + $half;}
-.ml_10_h{margin-left: $ten + $half;}
-.ml_11_h{margin-left: $eleven + $half;}
-.ml_12_h{margin-left: $twelve + $half;}
-.ml_13_h{margin-left: $thirteen + $half;}
-.ml_14_h{margin-left: $fourteen + $half;}
-.ml_15_h{margin-left: $fifteen + $half;}
-.ml_16_h{margin-left: $sixteen + $half;}
-.ml_17_h{margin-left: $seventeen + $half;}
-.ml_18_h{margin-left: $eighteen + $half;}
-.ml_19_h{margin-left: $nineteen + $half;}
-.ml_20_h{margin-left: $twenty + $half;}
-
-/* margins left three quarter */
-.ml_tq{margin-left: $three_quarter;}
-.ml_1_tq{margin-left: $one + $three_quarter;}
-.ml_2_tq{margin-left: $two + $three_quarter;}
-.ml_3_tq{margin-left: $three + $three_quarter;}
-.ml_4_tq{margin-left: $four + $three_quarter;}
-.ml_5_tq{margin-left: $five + $three_quarter;}
-.ml_6_tq{margin-left: $six + $three_quarter;}
-.ml_7_tq{margin-left: $seven + $three_quarter;}
-.ml_8_tq{margin-left: $eight + $three_quarter;}
-.ml_9_tq{margin-left: $nine + $three_quarter;}
-.ml_10_tq{margin-left: $ten + $three_quarter;}
-.ml_11_tq{margin-left: $eleven + $three_quarter;}
-.ml_12_tq{margin-left: $twelve + $three_quarter;}
-.ml_13_tq{margin-left: $thirteen + $three_quarter;}
-.ml_14_tq{margin-left: $fourteen + $three_quarter;}
-.ml_15_tq{margin-left: $fifteen + $three_quarter;}
-.ml_16_tq{margin-left: $sixteen + $three_quarter;}
-.ml_17_tq{margin-left: $seventeen + $three_quarter;}
-.ml_18_tq{margin-left: $eighteen + $three_quarter;}
-.ml_19_tq{margin-left: $nineteen + $three_quarter;}
-.ml_20_tq{margin-left: $twenty + $three_quarter;}
+    .m_#{$hook}_tq {
+        margin: ($three_quarter + $hook);
+    }
+    .mt_#{$hook}_tq {
+        margin-top: ($three_quarter + $hook);
+    }
+    .mr_#{$hook}_tq {
+        margin-right: ($three_quarter + $hook);
+    }
+    .mb_#{$hook}_tq {
+        margin-bottom: ($three_quarter + $hook);
+    }
+    .ml_#{$hook}_tq {
+        margin-left: ($three_quarter + $hook);
+    }
+}
 

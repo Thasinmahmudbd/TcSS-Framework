@@ -1,5 +1,5 @@
-/* font awsome*/
-@import './fontawsome';
+/* font awesome*/
+@import './fontawesome';
 
 /* variables */
 @import './variables';
@@ -7,9 +7,11 @@
 
 /* elements */
 @import './navbar';
+@import './content';
 @import './shelf_menu';
 @import './title';
 @import './patterns';
+@import './scroll_bar';
 
 /* basics */
 @import './padding';

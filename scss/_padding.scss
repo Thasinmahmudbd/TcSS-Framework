@@ -1,492 +1,92 @@
-/*********************************************************/
-/*********************  ALL AROUND  **********************/
-/*********************************************************/
 
-/* paddings all around full */
-.p_0{padding: $zero;}
-.p_1{padding: $one;}
-.p_2{padding: $two;}
-.p_3{padding: $three;}
-.p_4{padding: $four;}
-.p_5{padding: $five;}
-.p_6{padding: $six;}
-.p_7{padding: $seven;}
-.p_8{padding: $eight;}
-.p_9{padding: $nine;}
-.p_10{padding: $ten;}
-.p_11{padding: $eleven;}
-.p_12{padding: $twelve;}
-.p_13{padding: $thirteen;}
-.p_14{padding: $fourteen;}
-.p_15{padding: $fifteen;}
-.p_16{padding: $sixteen;}
-.p_17{padding: $seventeen;}
-.p_18{padding: $eighteen;}
-.p_19{padding: $nineteen;}
-.p_20{padding: $twenty;}
+/* padding px */
 
-/* paddings all around quarter */
-.p_q{padding: $quarter;}
-.p_1_q{padding: $one + $quarter;}
-.p_2_q{padding: $two + $quarter;}
-.p_3_q{padding: $three + $quarter;}
-.p_4_q{padding: $four + $quarter;}
-.p_5_q{padding: $five + $quarter;}
-.p_6_q{padding: $six + $quarter;}
-.p_7_q{padding: $seven + $quarter;}
-.p_8_q{padding: $eight + $quarter;}
-.p_9_q{padding: $nine + $quarter;}
-.p_10_q{padding: $ten + $quarter;}
-.p_11_q{padding: $eleven + $quarter;}
-.p_12_q{padding: $twelve + $quarter;}
-.p_13_q{padding: $thirteen + $quarter;}
-.p_14_q{padding: $fourteen + $quarter;}
-.p_15_q{padding: $fifteen + $quarter;}
-.p_16_q{padding: $sixteen + $quarter;}
-.p_17_q{padding: $seventeen + $quarter;}
-.p_18_q{padding: $eighteen + $quarter;}
-.p_19_q{padding: $nineteen + $quarter;}
-.p_20_q{padding: $twenty + $quarter;}
+$pxlimit: 1000;
 
-/* paddings all around half */
-.p_h{padding: $half;}
-.p_1_h{padding: $one + $half;}
-.p_2_h{padding: $two + $half;}
-.p_3_h{padding: $three + $half;}
-.p_4_h{padding: $four + $half;}
-.p_5_h{padding: $five + $half;}
-.p_6_h{padding: $six + $half;}
-.p_7_h{padding: $seven + $half;}
-.p_8_h{padding: $eight + $half;}
-.p_9_h{padding: $nine + $half;}
-.p_10_h{padding: $ten + $half;}
-.p_11_h{padding: $eleven + $half;}
-.p_12_h{padding: $twelve + $half;}
-.p_13_h{padding: $thirteen + $half;}
-.p_14_h{padding: $fourteen + $half;}
-.p_15_h{padding: $fifteen + $half;}
-.p_16_h{padding: $sixteen + $half;}
-.p_17_h{padding: $seventeen + $half;}
-.p_18_h{padding: $eighteen + $half;}
-.p_19_h{padding: $nineteen + $half;}
-.p_20_h{padding: $twenty + $half;}
+@for $hook from 0 through $pxlimit {
+    .p_#{$hook}px {
+        padding: (0px + $hook);
+    }
+    .pt_#{$hook}px {
+        padding-top: (0px + $hook);
+    }
+    .pr_#{$hook}px {
+        padding-right: (0px + $hook);
+    }
+    .pb_#{$hook}px {
+        padding-bottom: (0px + $hook);
+    }
+    .pl_#{$hook}px {
+        padding-left: (0px + $hook);
+    }
+}
 
-/* paddings all around three quarter */
-.p_tq{padding: $three_quarter;}
-.p_1_tq{padding: $one + $three_quarter;}
-.p_2_tq{padding: $two + $three_quarter;}
-.p_3_tq{padding: $three + $three_quarter;}
-.p_4_tq{padding: $four + $three_quarter;}
-.p_5_tq{padding: $five + $three_quarter;}
-.p_6_tq{padding: $six + $three_quarter;}
-.p_7_tq{padding: $seven + $three_quarter;}
-.p_8_tq{padding: $eight + $three_quarter;}
-.p_9_tq{padding: $nine + $three_quarter;}
-.p_10_tq{padding: $ten + $three_quarter;}
-.p_11_tq{padding: $eleven + $three_quarter;}
-.p_12_tq{padding: $twelve + $three_quarter;}
-.p_13_tq{padding: $thirteen + $three_quarter;}
-.p_14_tq{padding: $fourteen + $three_quarter;}
-.p_15_tq{padding: $fifteen + $three_quarter;}
-.p_16_tq{padding: $sixteen + $three_quarter;}
-.p_17_tq{padding: $seventeen + $three_quarter;}
-.p_18_tq{padding: $eighteen + $three_quarter;}
-.p_19_tq{padding: $nineteen + $three_quarter;}
-.p_20_tq{padding: $twenty + $three_quarter;}
+/* padding rem */
 
+$remlimit: 100;
 
+@for $hook from 0 through $remlimit {
+    .p_#{$hook} {
+        padding: (0rem + $hook);
+    }
+    .pt_#{$hook} {
+        padding-top: (0rem + $hook);
+    }
+    .pr_#{$hook} {
+        padding-right: (0rem + $hook);
+    }
+    .pb_#{$hook} {
+        padding-bottom: (0rem + $hook);
+    }
+    .pl_#{$hook} {
+        padding-left: (0rem + $hook);
+    }
 
+    .p_#{$hook}_q {
+        padding: ($quarter + $hook);
+    }
+    .pt_#{$hook}_q {
+        padding-top: ($quarter + $hook);
+    }
+    .pr_#{$hook}_q {
+        padding-right: ($quarter + $hook);
+    }
+    .pb_#{$hook}_q {
+        padding-bottom: ($quarter + $hook);
+    }
+    .pl_#{$hook}_q {
+        padding-left: ($quarter + $hook);
+    }
 
-/*********************************************************/
-/*************************  TOP  *************************/
-/*********************************************************/
+    .p_#{$hook}_h {
+        padding: ($half + $hook);
+    }
+    .pt_#{$hook}_h {
+        padding-top: ($half + $hook);
+    }
+    .pr_#{$hook}_h {
+        padding-right: ($half + $hook);
+    }
+    .pb_#{$hook}_h {
+        padding-bottom: ($half + $hook);
+    }
+    .pl_#{$hook}_h {
+        padding-left: ($half + $hook);
+    }
 
-/* paddings top full */
-.pt_0{padding-top: $zero;}
-.pt_1{padding-top: $one;}
-.pt_2{padding-top: $two;}
-.pt_3{padding-top: $three;}
-.pt_4{padding-top: $four;}
-.pt_5{padding-top: $five;}
-.pt_6{padding-top: $six;}
-.pt_7{padding-top: $seven;}
-.pt_8{padding-top: $eight;}
-.pt_9{padding-top: $nine;}
-.pt_10{padding-top: $ten;}
-.pt_11{padding-top: $eleven;}
-.pt_12{padding-top: $twelve;}
-.pt_13{padding-top: $thirteen;}
-.pt_14{padding-top: $fourteen;}
-.pt_15{padding-top: $fifteen;}
-.pt_16{padding-top: $sixteen;}
-.pt_17{padding-top: $seventeen;}
-.pt_18{padding-top: $eighteen;}
-.pt_19{padding-top: $nineteen;}
-.pt_20{padding-top: $twenty;}
-
-/* paddings top quarter */
-.pt_q{padding-top: $quarter;}
-.pt_1_q{padding-top: $one + $quarter;}
-.pt_2_q{padding-top: $two + $quarter;}
-.pt_3_q{padding-top: $three + $quarter;}
-.pt_4_q{padding-top: $four + $quarter;}
-.pt_5_q{padding-top: $five + $quarter;}
-.pt_6_q{padding-top: $six + $quarter;}
-.pt_7_q{padding-top: $seven + $quarter;}
-.pt_8_q{padding-top: $eight + $quarter;}
-.pt_9_q{padding-top: $nine + $quarter;}
-.pt_10_q{padding-top: $ten + $quarter;}
-.pt_11_q{padding-top: $eleven + $quarter;}
-.pt_12_q{padding-top: $twelve + $quarter;}
-.pt_13_q{padding-top: $thirteen + $quarter;}
-.pt_14_q{padding-top: $fourteen + $quarter;}
-.pt_15_q{padding-top: $fifteen + $quarter;}
-.pt_16_q{padding-top: $sixteen + $quarter;}
-.pt_17_q{padding-top: $seventeen + $quarter;}
-.pt_18_q{padding-top: $eighteen + $quarter;}
-.pt_19_q{padding-top: $nineteen + $quarter;}
-.pt_20_q{padding-top: $twenty + $quarter;}
-
-/* paddings top half */
-.pt_h{padding-top: $half;}
-.pt_1_h{padding-top: $one + $half;}
-.pt_2_h{padding-top: $two + $half;}
-.pt_3_h{padding-top: $three + $half;}
-.pt_4_h{padding-top: $four + $half;}
-.pt_5_h{padding-top: $five + $half;}
-.pt_6_h{padding-top: $six + $half;}
-.pt_7_h{padding-top: $seven + $half;}
-.pt_8_h{padding-top: $eight + $half;}
-.pt_9_h{padding-top: $nine + $half;}
-.pt_10_h{padding-top: $ten + $half;}
-.pt_11_h{padding-top: $eleven + $half;}
-.pt_12_h{padding-top: $twelve + $half;}
-.pt_13_h{padding-top: $thirteen + $half;}
-.pt_14_h{padding-top: $fourteen + $half;}
-.pt_15_h{padding-top: $fifteen + $half;}
-.pt_16_h{padding-top: $sixteen + $half;}
-.pt_17_h{padding-top: $seventeen + $half;}
-.pt_18_h{padding-top: $eighteen + $half;}
-.pt_19_h{padding-top: $nineteen + $half;}
-.pt_20_h{padding-top: $twenty + $half;}
-
-/* paddings top three quarter */
-.pt_tq{padding-top: $three_quarter;}
-.pt_1_tq{padding-top: $one + $three_quarter;}
-.pt_2_tq{padding-top: $two + $three_quarter;}
-.pt_3_tq{padding-top: $three + $three_quarter;}
-.pt_4_tq{padding-top: $four + $three_quarter;}
-.pt_5_tq{padding-top: $five + $three_quarter;}
-.pt_6_tq{padding-top: $six + $three_quarter;}
-.pt_7_tq{padding-top: $seven + $three_quarter;}
-.pt_8_tq{padding-top: $eight + $three_quarter;}
-.pt_9_tq{padding-top: $nine + $three_quarter;}
-.pt_10_tq{padding-top: $ten + $three_quarter;}
-.pt_11_tq{padding-top: $eleven + $three_quarter;}
-.pt_12_tq{padding-top: $twelve + $three_quarter;}
-.pt_13_tq{padding-top: $thirteen + $three_quarter;}
-.pt_14_tq{padding-top: $fourteen + $three_quarter;}
-.pt_15_tq{padding-top: $fifteen + $three_quarter;}
-.pt_16_tq{padding-top: $sixteen + $three_quarter;}
-.pt_17_tq{padding-top: $seventeen + $three_quarter;}
-.pt_18_tq{padding-top: $eighteen + $three_quarter;}
-.pt_19_tq{padding-top: $nineteen + $three_quarter;}
-.pt_20_tq{padding-top: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/************************  RIGHT  ************************/
-/*********************************************************/
-
-/* paddings right full */
-.pr_0{padding-right: $zero;}
-.pr_1{padding-right: $one;}
-.pr_2{padding-right: $two;}
-.pr_3{padding-right: $three;}
-.pr_4{padding-right: $four;}
-.pr_5{padding-right: $five;}
-.pr_6{padding-right: $six;}
-.pr_7{padding-right: $seven;}
-.pr_8{padding-right: $eight;}
-.pr_9{padding-right: $nine;}
-.pr_10{padding-right: $ten;}
-.pr_11{padding-right: $eleven;}
-.pr_12{padding-right: $twelve;}
-.pr_13{padding-right: $thirteen;}
-.pr_14{padding-right: $fourteen;}
-.pr_15{padding-right: $fifteen;}
-.pr_16{padding-right: $sixteen;}
-.pr_17{padding-right: $seventeen;}
-.pr_18{padding-right: $eighteen;}
-.pr_19{padding-right: $nineteen;}
-.pr_20{padding-right: $twenty;}
-
-/* paddings right quarter */
-.pr_q{padding-right: $quarter;}
-.pr_1_q{padding-right: $one + $quarter;}
-.pr_2_q{padding-right: $two + $quarter;}
-.pr_3_q{padding-right: $three + $quarter;}
-.pr_4_q{padding-right: $four + $quarter;}
-.pr_5_q{padding-right: $five + $quarter;}
-.pr_6_q{padding-right: $six + $quarter;}
-.pr_7_q{padding-right: $seven + $quarter;}
-.pr_8_q{padding-right: $eight + $quarter;}
-.pr_9_q{padding-right: $nine + $quarter;}
-.pr_10_q{padding-right: $ten + $quarter;}
-.pr_11_q{padding-right: $eleven + $quarter;}
-.pr_12_q{padding-right: $twelve + $quarter;}
-.pr_13_q{padding-right: $thirteen + $quarter;}
-.pr_14_q{padding-right: $fourteen + $quarter;}
-.pr_15_q{padding-right: $fifteen + $quarter;}
-.pr_16_q{padding-right: $sixteen + $quarter;}
-.pr_17_q{padding-right: $seventeen + $quarter;}
-.pr_18_q{padding-right: $eighteen + $quarter;}
-.pr_19_q{padding-right: $nineteen + $quarter;}
-.pr_20_q{padding-right: $twenty + $quarter;}
-
-/* paddings right half */
-.pr_h{padding-right: $half;}
-.pr_1_h{padding-right: $one + $half;}
-.pr_2_h{padding-right: $two + $half;}
-.pr_3_h{padding-right: $three + $half;}
-.pr_4_h{padding-right: $four + $half;}
-.pr_5_h{padding-right: $five + $half;}
-.pr_6_h{padding-right: $six + $half;}
-.pr_7_h{padding-right: $seven + $half;}
-.pr_8_h{padding-right: $eight + $half;}
-.pr_9_h{padding-right: $nine + $half;}
-.pr_10_h{padding-right: $ten + $half;}
-.pr_11_h{padding-right: $eleven + $half;}
-.pr_12_h{padding-right: $twelve + $half;}
-.pr_13_h{padding-right: $thirteen + $half;}
-.pr_14_h{padding-right: $fourteen + $half;}
-.pr_15_h{padding-right: $fifteen + $half;}
-.pr_16_h{padding-right: $sixteen + $half;}
-.pr_17_h{padding-right: $seventeen + $half;}
-.pr_18_h{padding-right: $eighteen + $half;}
-.pr_19_h{padding-right: $nineteen + $half;}
-.pr_20_h{padding-right: $twenty + $half;}
-
-/* paddings right three quarter */
-.pr_tq{padding-right: $three_quarter;}
-.pr_1_tq{padding-right: $one + $three_quarter;}
-.pr_2_tq{padding-right: $two + $three_quarter;}
-.pr_3_tq{padding-right: $three + $three_quarter;}
-.pr_4_tq{padding-right: $four + $three_quarter;}
-.pr_5_tq{padding-right: $five + $three_quarter;}
-.pr_6_tq{padding-right: $six + $three_quarter;}
-.pr_7_tq{padding-right: $seven + $three_quarter;}
-.pr_8_tq{padding-right: $eight + $three_quarter;}
-.pr_9_tq{padding-right: $nine + $three_quarter;}
-.pr_10_tq{padding-right: $ten + $three_quarter;}
-.pr_11_tq{padding-right: $eleven + $three_quarter;}
-.pr_12_tq{padding-right: $twelve + $three_quarter;}
-.pr_13_tq{padding-right: $thirteen + $three_quarter;}
-.pr_14_tq{padding-right: $fourteen + $three_quarter;}
-.pr_15_tq{padding-right: $fifteen + $three_quarter;}
-.pr_16_tq{padding-right: $sixteen + $three_quarter;}
-.pr_17_tq{padding-right: $seventeen + $three_quarter;}
-.pr_18_tq{padding-right: $eighteen + $three_quarter;}
-.pr_19_tq{padding-right: $nineteen + $three_quarter;}
-.pr_20_tq{padding-right: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/***********************  BOTTOM  ************************/
-/*********************************************************/
-
-/* paddings bottom full */
-.pb_0{padding-bottom: $zero;}
-.pb_1{padding-bottom: $one;}
-.pb_2{padding-bottom: $two;}
-.pb_3{padding-bottom: $three;}
-.pb_4{padding-bottom: $four;}
-.pb_5{padding-bottom: $five;}
-.pb_6{padding-bottom: $six;}
-.pb_7{padding-bottom: $seven;}
-.pb_8{padding-bottom: $eight;}
-.pb_9{padding-bottom: $nine;}
-.pb_10{padding-bottom: $ten;}
-.pb_11{padding-bottom: $eleven;}
-.pb_12{padding-bottom: $twelve;}
-.pb_13{padding-bottom: $thirteen;}
-.pb_14{padding-bottom: $fourteen;}
-.pb_15{padding-bottom: $fifteen;}
-.pb_16{padding-bottom: $sixteen;}
-.pb_17{padding-bottom: $seventeen;}
-.pb_18{padding-bottom: $eighteen;}
-.pb_19{padding-bottom: $nineteen;}
-.pb_20{padding-bottom: $twenty;}
-
-/* paddings bottom quarter */
-.pb_q{padding-bottom: $quarter;}
-.pb_1_q{padding-bottom: $one + $quarter;}
-.pb_2_q{padding-bottom: $two + $quarter;}
-.pb_3_q{padding-bottom: $three + $quarter;}
-.pb_4_q{padding-bottom: $four + $quarter;}
-.pb_5_q{padding-bottom: $five + $quarter;}
-.pb_6_q{padding-bottom: $six + $quarter;}
-.pb_7_q{padding-bottom: $seven + $quarter;}
-.pb_8_q{padding-bottom: $eight + $quarter;}
-.pb_9_q{padding-bottom: $nine + $quarter;}
-.pb_10_q{padding-bottom: $ten + $quarter;}
-.pb_11_q{padding-bottom: $eleven + $quarter;}
-.pb_12_q{padding-bottom: $twelve + $quarter;}
-.pb_13_q{padding-bottom: $thirteen + $quarter;}
-.pb_14_q{padding-bottom: $fourteen + $quarter;}
-.pb_15_q{padding-bottom: $fifteen + $quarter;}
-.pb_16_q{padding-bottom: $sixteen + $quarter;}
-.pb_17_q{padding-bottom: $seventeen + $quarter;}
-.pb_18_q{padding-bottom: $eighteen + $quarter;}
-.pb_19_q{padding-bottom: $nineteen + $quarter;}
-.pb_20_q{padding-bottom: $twenty + $quarter;}
-
-/* paddings bottom half */
-.pb_h{padding-bottom: $half;}
-.pb_1_h{padding-bottom: $one + $half;}
-.pb_2_h{padding-bottom: $two + $half;}
-.pb_3_h{padding-bottom: $three + $half;}
-.pb_4_h{padding-bottom: $four + $half;}
-.pb_5_h{padding-bottom: $five + $half;}
-.pb_6_h{padding-bottom: $six + $half;}
-.pb_7_h{padding-bottom: $seven + $half;}
-.pb_8_h{padding-bottom: $eight + $half;}
-.pb_9_h{padding-bottom: $nine + $half;}
-.pb_10_h{padding-bottom: $ten + $half;}
-.pb_11_h{padding-bottom: $eleven + $half;}
-.pb_12_h{padding-bottom: $twelve + $half;}
-.pb_13_h{padding-bottom: $thirteen + $half;}
-.pb_14_h{padding-bottom: $fourteen + $half;}
-.pb_15_h{padding-bottom: $fifteen + $half;}
-.pb_16_h{padding-bottom: $sixteen + $half;}
-.pb_17_h{padding-bottom: $seventeen + $half;}
-.pb_18_h{padding-bottom: $eighteen + $half;}
-.pb_19_h{padding-bottom: $nineteen + $half;}
-.pb_20_h{padding-bottom: $twenty + $half;}
-
-/* paddings bottom three quarter */
-.pb_tq{padding-bottom: $three_quarter;}
-.pb_1_tq{padding-bottom: $one + $three_quarter;}
-.pb_2_tq{padding-bottom: $two + $three_quarter;}
-.pb_3_tq{padding-bottom: $three + $three_quarter;}
-.pb_4_tq{padding-bottom: $four + $three_quarter;}
-.pb_5_tq{padding-bottom: $five + $three_quarter;}
-.pb_6_tq{padding-bottom: $six + $three_quarter;}
-.pb_7_tq{padding-bottom: $seven + $three_quarter;}
-.pb_8_tq{padding-bottom: $eight + $three_quarter;}
-.pb_9_tq{padding-bottom: $nine + $three_quarter;}
-.pb_10_tq{padding-bottom: $ten + $three_quarter;}
-.pb_11_tq{padding-bottom: $eleven + $three_quarter;}
-.pb_12_tq{padding-bottom: $twelve + $three_quarter;}
-.pb_13_tq{padding-bottom: $thirteen + $three_quarter;}
-.pb_14_tq{padding-bottom: $fourteen + $three_quarter;}
-.pb_15_tq{padding-bottom: $fifteen + $three_quarter;}
-.pb_16_tq{padding-bottom: $sixteen + $three_quarter;}
-.pb_17_tq{padding-bottom: $seventeen + $three_quarter;}
-.pb_18_tq{padding-bottom: $eighteen + $three_quarter;}
-.pb_19_tq{padding-bottom: $nineteen + $three_quarter;}
-.pb_20_tq{padding-bottom: $twenty + $three_quarter;}
-
-
-
-
-/*********************************************************/
-/*************************  LEFT  ************************/
-/*********************************************************/
-
-/* paddings left full */
-.pl_0{padding-left: $zero;}
-.pl_1{padding-left: $one;}
-.pl_2{padding-left: $two;}
-.pl_3{padding-left: $three;}
-.pl_4{padding-left: $four;}
-.pl_5{padding-left: $five;}
-.pl_6{padding-left: $six;}
-.pl_7{padding-left: $seven;}
-.pl_8{padding-left: $eight;}
-.pl_9{padding-left: $nine;}
-.pl_10{padding-left: $ten;}
-.pl_11{padding-left: $eleven;}
-.pl_12{padding-left: $twelve;}
-.pl_13{padding-left: $thirteen;}
-.pl_14{padding-left: $fourteen;}
-.pl_15{padding-left: $fifteen;}
-.pl_16{padding-left: $sixteen;}
-.pl_17{padding-left: $seventeen;}
-.pl_18{padding-left: $eighteen;}
-.pl_19{padding-left: $nineteen;}
-.pl_20{padding-left: $twenty;}
-
-/* paddings left quarter */
-.pl_q{padding-left: $quarter;}
-.pl_1_q{padding-left: $one + $quarter;}
-.pl_2_q{padding-left: $two + $quarter;}
-.pl_3_q{padding-left: $three + $quarter;}
-.pl_4_q{padding-left: $four + $quarter;}
-.pl_5_q{padding-left: $five + $quarter;}
-.pl_6_q{padding-left: $six + $quarter;}
-.pl_7_q{padding-left: $seven + $quarter;}
-.pl_8_q{padding-left: $eight + $quarter;}
-.pl_9_q{padding-left: $nine + $quarter;}
-.pl_10_q{padding-left: $ten + $quarter;}
-.pl_11_q{padding-left: $eleven + $quarter;}
-.pl_12_q{padding-left: $twelve + $quarter;}
-.pl_13_q{padding-left: $thirteen + $quarter;}
-.pl_14_q{padding-left: $fourteen + $quarter;}
-.pl_15_q{padding-left: $fifteen + $quarter;}
-.pl_16_q{padding-left: $sixteen + $quarter;}
-.pl_17_q{padding-left: $seventeen + $quarter;}
-.pl_18_q{padding-left: $eighteen + $quarter;}
-.pl_19_q{padding-left: $nineteen + $quarter;}
-.pl_20_q{padding-left: $twenty + $quarter;}
-
-/* paddings left half */
-.pl_h{padding-left: $half;}
-.pl_1_h{padding-left: $one + $half;}
-.pl_2_h{padding-left: $two + $half;}
-.pl_3_h{padding-left: $three + $half;}
-.pl_4_h{padding-left: $four + $half;}
-.pl_5_h{padding-left: $five + $half;}
-.pl_6_h{padding-left: $six + $half;}
-.pl_7_h{padding-left: $seven + $half;}
-.pl_8_h{padding-left: $eight + $half;}
-.pl_9_h{padding-left: $nine + $half;}
-.pl_10_h{padding-left: $ten + $half;}
-.pl_11_h{padding-left: $eleven + $half;}
-.pl_12_h{padding-left: $twelve + $half;}
-.pl_13_h{padding-left: $thirteen + $half;}
-.pl_14_h{padding-left: $fourteen + $half;}
-.pl_15_h{padding-left: $fifteen + $half;}
-.pl_16_h{padding-left: $sixteen + $half;}
-.pl_17_h{padding-left: $seventeen + $half;}
-.pl_18_h{padding-left: $eighteen + $half;}
-.pl_19_h{padding-left: $nineteen + $half;}
-.pl_20_h{padding-left: $twenty + $half;}
-
-/* paddings left three quarter */
-.pl_tq{padding-left: $three_quarter;}
-.pl_1_tq{padding-left: $one + $three_quarter;}
-.pl_2_tq{padding-left: $two + $three_quarter;}
-.pl_3_tq{padding-left: $three + $three_quarter;}
-.pl_4_tq{padding-left: $four + $three_quarter;}
-.pl_5_tq{padding-left: $five + $three_quarter;}
-.pl_6_tq{padding-left: $six + $three_quarter;}
-.pl_7_tq{padding-left: $seven + $three_quarter;}
-.pl_8_tq{padding-left: $eight + $three_quarter;}
-.pl_9_tq{padding-left: $nine + $three_quarter;}
-.pl_10_tq{padding-left: $ten + $three_quarter;}
-.pl_11_tq{padding-left: $eleven + $three_quarter;}
-.pl_12_tq{padding-left: $twelve + $three_quarter;}
-.pl_13_tq{padding-left: $thirteen + $three_quarter;}
-.pl_14_tq{padding-left: $fourteen + $three_quarter;}
-.pl_15_tq{padding-left: $fifteen + $three_quarter;}
-.pl_16_tq{padding-left: $sixteen + $three_quarter;}
-.pl_17_tq{padding-left: $seventeen + $three_quarter;}
-.pl_18_tq{padding-left: $eighteen + $three_quarter;}
-.pl_19_tq{padding-left: $nineteen + $three_quarter;}
-.pl_20_tq{padding-left: $twenty + $three_quarter;}
-
+    .p_#{$hook}_tq {
+        padding: ($three_quarter + $hook);
+    }
+    .pt_#{$hook}_tq {
+        padding-top: ($three_quarter + $hook);
+    }
+    .pr_#{$hook}_tq {
+        padding-right: ($three_quarter + $hook);
+    }
+    .pb_#{$hook}_tq {
+        padding-bottom: ($three_quarter + $hook);
+    }
+    .pl_#{$hook}_tq {
+        padding-left: ($three_quarter + $hook);
+    }
+}

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- design -->
+    <link rel="stylesheet" href="./css/tcss.min.css">
+    <link rel="stylesheet" href="./prism/prism.css">
+
+    <!-- script -->
+    <script src="./prism/prism.js"></script>
+
+    <title>TcSS Mini [version 0.1]</title>
+    <!-- favicon 
+    <link rel="icon" type="image/png" href="../media/>-->
+
+</head>
+
+<body class="nunitoRegular ofHiddenX posRel scrlNone">
+
+
+
+
+
+
+
+
+
+
+
+<!--navbar start-->
+
+<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10">
+
+    <div class="nav bgSandyBrown w_75Per m_a">
+
+        <h1 class="txtLogo posAbs negTop_13 fSize_2"><a class="clrWhite txtDecorNone" href="index.html">TcSS</a></h1>
+
+        <span></span>
+        <span></span>
+
+        <div class="mainLinks">
+
+            <a class="mainLink clrWhite hoverEff_5" href="">Portfolio</a>
+            <a class="mainLink clrWhite hoverEff_5" href="colors.html">Colors</a>
+            <a class="mainLink clrWhite hoverEff_5" href="">TScRIPT</a>
+            <a class="mainLink clrWhite hoverEff_5" href="">TFrAMES</a>
+
+            <a class="hamburger" href=""><i class="fas fa-bars"></i></a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--navbar end-->
+
+
+
+
+
+
+
+<div class="largeGap p_1_h" id="intro"></div>
+
+
+
+
+<!--body start-->
+
+<div class="gridCol_2_size_7_3 gridGap_2 w_85Per m_a">
+
+
+    <div class="gridCol_2_size_1_9 gridGap_2">
+
+        <div class="posFix top_0 left_120 h_100Per">
+
+            <h2 class="titleL mt_112px">         
+                Tags
+            </h2>
+    
+            <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone">
+    
+                <a class="w_10 h_10 bgWhite clrBlack txtDecorNone nunitoBold transparentContent borRad_100 mt_20px fSize_tq txtCenter" href="./colors.html"><span>W</span></a>
+
+                <a class="w_10 h_10 bgForestGreen clrWhite txtDecorNone nunitoBold transparentContent borRad_100 mt_10px fSize_tq txtCenter" href="#greenAll"><span>G</span></a>
+    
+            </div>
+    
+        </div>
+
+        <span></span>
+
+        <!--colors start-->
+
+        <div>
+
+            <h2 class="titleC">124 Shades of White</h2>
+
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListWhite">
+
+                <!-- This slot holds, js generated previews for white colors -->
+
+            </div>
+
+            <div class="normGap pt_96px" id="greenAll"></div>
+
+            <h2 class="titleC">134 Shades of Green</h2>
+
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListGreen">
+
+                <!-- This slot holds, js generated previews for green colors -->
+
+            </div>
+
+        </div>
+
+        <!--colors end-->
+
+    </div>
+
+    <span></span>
+
+</div>
+
+
+
+
+
+
+<div class="gridCol_2_size_7_3 gridGap_2 w_75Per m_a">
+
+    <span></span>
+
+    <!--preview start-->
+
+    <div class="posFix top_0 right_110 w_25Per h_100Per">
+
+        <h2 class="titleR mt_112px">         
+            Details
+        </h2>
+
+        <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone" id="detailsList">
+
+            <!-- This slot holds, js generated details of previews for all colors -->
+
+        </div>
+
+    </div>
+
+    <!--preview end-->
+
+</div>
+
+<!--body end-->
+
+<script>
+
+// Details.
+    function clrDetail(clrName, txtClr){
+
+    // Creating HTML elements.
+    var containerDiv = document.createElement('div');
+    var mainDiv = document.createElement('div');
+        var colorDisplayP = document.createElement('p');
+        var subDiv = document.createElement('div');
+            var colorHeaderP = document.createElement('p');
+            var colorPre = document.createElement('pre');
+                var colorPreCode = document.createElement('code');
+            var bgHeaderP = document.createElement('p');
+            var bgPre = document.createElement('pre');
+                var bgPreCode = document.createElement('code');
+            var borHeaderP = document.createElement('p');
+            var borPre = document.createElement('pre');
+                var borPreCode = document.createElement('code');
+            var borTHeaderP = document.createElement('p');
+            var borTPre = document.createElement('pre');
+                var borTPreCode = document.createElement('code');
+            var borRHeaderP = document.createElement('p');
+            var borRPre = document.createElement('pre');
+                var borRPreCode = document.createElement('code');
+            var borBHeaderP = document.createElement('p');
+            var borBPre = document.createElement('pre');
+                var borBPreCode = document.createElement('code');
+            var borLHeaderP = document.createElement('p');
+            var borLPre = document.createElement('pre');
+                var borLPreCode = document.createElement('code');
+    var gapDiv = document.createElement('div');
+
+    // Adding class.
+    mainDiv.className = "pt_10px";
+        colorDisplayP.className = "transparentContent p_3 bg"+clrName+" txtCenter borRad_100 fSize_1 clr"+txtClr+" nunitoBold";
+            colorHeaderP.className = "nunitoBold";
+            colorPre.className = "language-html line-numbers";
+            bgHeaderP.className = "nunitoBold";
+            bgPre.className = "language-html line-numbers";
+            borHeaderP.className = "nunitoBold";
+            borPre.className = "language-html line-numbers";
+            borTHeaderP.className = "nunitoBold";
+            borTPre.className = "language-html line-numbers";
+            borRHeaderP.className = "nunitoBold";
+            borRPre.className = "language-html line-numbers";
+            borBHeaderP.className = "nunitoBold";
+            borBPre.className = "language-html line-numbers";
+            borLHeaderP.className = "nunitoBold";
+            borLPre.className = "language-html line-numbers";
+    gapDiv.className = "tinyGap p_112px";
+
+    //Adding ID.
+    mainDiv.id = clrName;
+
+    //Adding content.
+        colorDisplayP.innerText = clrName;
+            colorHeaderP.innerText = "Color:";
+                colorPreCode.innerText = "clr"+clrName;
+            bgHeaderP.innerText = "Background:";
+                bgPreCode.innerText = "bg"+clrName;
+            borHeaderP.innerText = "Border All Around:";
+                borPreCode.innerText = "borClr"+clrName;
+            borTHeaderP.innerText = "Border Top:";
+                borTPreCode.innerText = "borClrT"+clrName;
+            borRHeaderP.innerText = "Border Right:";
+                borRPreCode.innerText = "borClrR"+clrName;
+            borBHeaderP.innerText = "Border Bottom:";
+                borBPreCode.innerText = "borClrB"+clrName;
+            borLHeaderP.innerText = "Border Left:";
+                borLPreCode.innerText = "borClrL"+clrName;
+
+    //Appending child.
+    containerDiv.append(mainDiv, gapDiv);
+    mainDiv.append(colorDisplayP, subDiv);
+    subDiv.append(colorHeaderP, colorPre, bgHeaderP, bgPre, borHeaderP, borPre, borTHeaderP, borTPre, borRHeaderP, borRPre, borBHeaderP, borBPre, borLHeaderP, borLPre,);
+    colorPre.appendChild(colorPreCode);
+    bgPre.appendChild(bgPreCode);
+    borPre.appendChild(borPreCode);
+    borTPre.appendChild(borTPreCode);
+    borRPre.appendChild(borRPreCode);
+    borBPre.appendChild(borBPreCode);
+    borLPre.appendChild(borLPreCode);
+
+    return containerDiv;
+
+    }
+
+    function appendChildren(parent, children){
+        children.forEach(function (child){
+            parent.appendChild(child);
+        });
+    }
+
+    var myDetailsList = document.getElementById('detailsList');
+    var clrNames = [
+
+    // White 124 items--
+        clrDetail('White', 'Black'),
+        clrDetail('GhostWhite', 'Black'),
+        clrDetail('WhiteSmoke', 'Black'),
+        clrDetail('BabyPowder', 'Black'),
+        clrDetail('Snow', 'Black'),
+        clrDetail('Ivory', 'Black'),
+        clrDetail('FloralWhite', 'Black'),
+        clrDetail('Seashell', 'Black'),
+        clrDetail('Cornsilk', 'Black'),
+        clrDetail('OldLace', 'Black'),
+        clrDetail('Cream', 'Black'),
+        clrDetail('Beige', 'Black'),
+        clrDetail('Parchment', 'Black'),
+        clrDetail('AntiqueWhite', 'Black'),
+        clrDetail('Champagne', 'Black'),
+        clrDetail('Eggshell', 'Black'),
+        clrDetail('DutchWhite', 'Black'),
+        clrDetail('Bone', 'Black'),
+        clrDetail('Vanilla', 'Black'),
+        clrDetail('Flax', 'Black'),
+        clrDetail('NavajoWhite', 'Black'),
+        clrDetail('Alabaster', 'Black'),
+        clrDetail('Chiffon', 'Black'),
+        clrDetail('UnresolvedProblem', 'Black'),
+        clrDetail('OldWood', 'Black'),
+        clrDetail('RoseWhite', 'Black'),
+        clrDetail('VistaWhite', 'Black'),
+        clrDetail('LinkWhite', 'Black'),
+        clrDetail('Spring', 'Black'),
+        clrDetail('SnowDrift', 'Black'),
+        clrDetail('Peppermint', 'Black'),
+        clrDetail('Merino', 'Black'),
+        clrDetail('HalfAndHalf', 'Black'),
+        clrDetail('IslandSpice', 'Black'),
+        clrDetail('SoftPeach', 'Black'),
+        clrDetail('Harp', 'Black'),
+        clrDetail('TitanWhite', 'Black'),
+        clrDetail('AudienceAnger', 'Black'),
+        clrDetail('OrangeWhite', 'Black'),
+        clrDetail('CoughMixture', 'Black'),
+        clrDetail('AlbescentWhite', 'Black'),
+        clrDetail('Coconut', 'Black'),
+        clrDetail('PinkSalt', 'Black'),
+        clrDetail('Frost', 'Black'),
+        clrDetail('Linen', 'Black'),
+        clrDetail('Rice', 'Black'),
+        clrDetail('Daisy', 'Black'),
+        clrDetail('Powder', 'Black'),
+        clrDetail('Pearl', 'Black'),
+        clrDetail('ParisWhite', 'Black'),
+        clrDetail('CupCake', 'Black'),
+        clrDetail('WhiteDove', 'Black'),
+        clrDetail('WhiteWhisper', 'Black'),
+        clrDetail('Lexicon', 'Black'),
+        clrDetail('GreekVilla', 'Black'),
+        clrDetail('WhiteDiamond', 'Black'),
+        clrDetail('DecoratorWhite', 'Black'),
+        clrDetail('WinterWhite', 'Black'),
+        clrDetail('SpatialWhite', 'Black'),
+        clrDetail('HogBristleQuarter', 'Black'),
+        clrDetail('SimplyWhite', 'Black'),
+        clrDetail('OysterWhite', 'Black'),
+        clrDetail('WhiteOnWhite', 'Black'),
+        clrDetail('LexiconQuarter', 'Black'),
+        clrDetail('AliceBlue', 'Black'),
+        clrDetail('Honeydew', 'Black'),
+        clrDetail('MintCream', 'Black'),
+        clrDetail('Milk', 'Black'),
+        clrDetail('PomeloWhite', 'Black'),
+        clrDetail('AntiFlashWhite', 'Black'),
+        clrDetail('Magnolia', 'Black'),
+        clrDetail('Azure', 'Black'),
+        clrDetail('HuntingtonWhite', 'Black'),
+        clrDetail('AcadiaWhite', 'Black'),
+        clrDetail('Gainsboro', 'Black'),
+        clrDetail('Mercury', 'Black'),
+        clrDetail('LavenderBlush', 'Black'),
+        clrDetail('Isabelline', 'Black'),
+        clrDetail('Bubbles', 'Black'),
+        clrDetail('Glitter', 'Black'),
+        clrDetail('Platinum', 'Black'),
+        clrDetail('CosmicLatte', 'Black'),
+        clrDetail('BlanchedAlmond', 'Black'),
+        clrDetail('LightYellow', 'Black'),
+        clrDetail('NaturalWhite', 'Black'),
+        clrDetail('VividWhite', 'Black'),
+        clrDetail('WhiteWisp', 'Black'),
+        clrDetail('AzureishWhite', 'Black'),
+        clrDetail('Timberwolf', 'Black'),
+        clrDetail('PapayaWhip', 'Black'),
+        clrDetail('AntiqueWhiteUSA', 'Black'),
+        clrDetail('Cola', 'Black'),
+        clrDetail('AtriumWhite', 'Black'),
+        clrDetail('CascadingWhite', 'Black'),
+        clrDetail('CottonBall', 'Black'),
+        clrDetail('PhotonWhite', 'Black'),
+        clrDetail('WhiteHeat', 'Black'),
+        clrDetail('Whitewash', 'Black'),
+        clrDetail('ShadowWhite', 'Black'),
+        clrDetail('AbbeyWhite', 'Black'),
+        clrDetail('AcousticWhite', 'Black'),
+        clrDetail('AircraftWhite', 'Black'),
+        clrDetail('Ceramic', 'Black'),
+        clrDetail('CoconutButter', 'Black'),
+        clrDetail('AbstractWhite', 'Black'),
+        clrDetail('BrightWhite', 'Black'),
+        clrDetail('BrokenWhite', 'Black'),
+        clrDetail('BrilliantWhite', 'Black'),
+        clrDetail('CommercialWhite', 'Black'),
+        clrDetail('FeatherWhite', 'Black'),
+        clrDetail('SwanWhite', 'Black'),
+        clrDetail('PolarBear', 'Black'),
+        clrDetail('PaperWhite', 'Black'),
+        clrDetail('PacificPearl', 'Black'),
+        clrDetail('NightWhite', 'Black'),
+        clrDetail('DelicateWhite', 'Black'),
+        clrDetail('CoconutWhite', 'Black'),
+        clrDetail('CakeBatter', 'Black'),
+        clrDetail('WhiteSand', 'Black'),
+        clrDetail('StoneWhite', 'Black'),
+        clrDetail('WhiteChocolate', 'Black'),
+        clrDetail('RetroWhite', 'Black'),
+        clrDetail('HofWhite', 'Black'),
+        clrDetail('DimWhite', 'Black'),
+
+    // Green 134 items--
+        clrDetail('ForestGreen', 'White'),
+        clrDetail('Olive', 'White'),
+        clrDetail('HunterGreen', 'White'),
+        clrDetail('ArtichokeGreen', 'White'),
+        clrDetail('JungleGreen', 'White'),
+        clrDetail('TropicalRainforest', 'White'),
+        clrDetail('Amazon', 'White'),
+        clrDetail('DeepJungleGreen', 'White'),
+        clrDetail('MediumJungleGreen', 'White'),
+        clrDetail('DarkJungleGreen', 'White'),
+        clrDetail('MossGreen', 'White'),
+        clrDetail('MyrtleGreen', 'White'),
+        clrDetail('PineGreen', 'White'),
+        clrDetail('PersianGreen', 'White'),
+        clrDetail('EmeraldGreen', 'Black'),
+        clrDetail('NeonGreen', 'Black'),
+        clrDetail('SacramentoGreen', 'White'),
+        clrDetail('SeaGreen', 'White'),
+        clrDetail('SageGreen', 'Black'),
+        clrDetail('LimeGreen', 'Black'),
+        clrDetail('JadeGreen', 'White'),
+        clrDetail('FernGreen', 'White'),
+        clrDetail('LaurelGreen', 'Black'),
+        clrDetail('MintGreen', 'Black'),
+        clrDetail('TeaGreen', 'Black'),
+        clrDetail('ArmyGreen', 'White'),
+        clrDetail('KellyGreen', 'White'),
+        clrDetail('RussianGreen', 'White'),
+        clrDetail('ParisGreen', 'Black'),
+        clrDetail('PakistanGreen', 'White'),
+        clrDetail('MidnightGreen', 'White'),
+        clrDetail('IndiaGreen', 'White'),
+        clrDetail('HunterGreen', 'White'),
+        clrDetail('Celadon', 'Black'),
+        clrDetail('Avocado', 'White'),
+        clrDetail('Harlequin', 'Black'),
+        clrDetail('SpringGreen', 'Black'),
+        clrDetail('Kaitoke', 'White'),
+        clrDetail('ScreaminGreen', 'Black'),
+        clrDetail('Chateau', 'Black'),
+        clrDetail('DarkMossGreen', 'White'),
+        clrDetail('Swamp', 'Black'),
+        clrDetail('Mantis', 'Black'),
+        clrDetail('Fun', 'White'),
+        clrDetail('PantoneGreen', 'White'),
+        clrDetail('Viridian', 'White'),
+        clrDetail('ResedaGreen', 'White'),
+        clrDetail('Chetwode', 'Black'),
+        clrDetail('ShamrockGreen', 'White'),
+        clrDetail('Verdun', 'White'),
+        clrDetail('CastletonGreen', 'White'),
+        clrDetail('Gin', 'Black'),
+        clrDetail('GrannySmithApple', 'Black'),
+        clrDetail('BitterLime', 'Black'),
+        clrDetail('BrightMint', 'Black'),
+        clrDetail('BottleGreen', 'White'),
+        clrDetail('CadmiumGreen', 'White'),
+        clrDetail('CamouflageGreen', 'White'),
+        clrDetail('Pear', 'Black'),
+        clrDetail('DollarBill', 'Black'),
+        clrDetail('Inchworm', 'Black'),
+        clrDetail('Asparagus', 'White'),
+        clrDetail('CaribbeanGreen', 'Black'),
+        clrDetail('GoGreen', 'White'),
+        clrDetail('PhthaloGreen', 'White'),
+        clrDetail('NapierGreen', 'White'),
+        clrDetail('Feldgrau', 'White'),
+        clrDetail('GreenYellow', 'Black'),
+        clrDetail('Malachite', 'Black'),
+        clrDetail('RifleGreen', 'White'),
+        clrDetail('Volt', 'Black'),
+        clrDetail('BritishRacingGreen', 'White'),
+        clrDetail('Thyme', 'Black'),
+        clrDetail('Chartreuse', 'Black'),
+        clrDetail('CornGreen', 'White'),
+        clrDetail('ShrekGreen', 'Black'),
+        clrDetail('ChristmasGreen', 'White'),
+        clrDetail('IrishGreen', 'White'),
+        clrDetail('RoadSignGreen', 'White'),
+        clrDetail('LightsaberGreen', 'Black'),
+        clrDetail('GirlScoutGreen', 'White'),
+        clrDetail('TennisCourtGreen', 'White'),
+        clrDetail('SpringBud', 'Black'),
+        clrDetail('ChineseGreen', 'Black'),
+        clrDetail('ArcticLime', 'Black'),
+        clrDetail('Nyanza', 'Black'),
+        clrDetail('DarkLemonLime', 'Black'),
+        clrDetail('CrayolaYellowGreen', 'Black'),
+        clrDetail('MaximumGreen', 'White'),
+        clrDetail('VividLimeGreen', 'Black'),
+        clrDetail('Pistachio', 'Black'),
+        clrDetail('MediumSpringGreen', 'Black'),
+        clrDetail('SheenGreen', 'Black'),
+        clrDetail('LaSalleGreen', 'White'),
+        clrDetail('SpanishViridian', 'White'),
+        clrDetail('DartmouthGreen', 'White'),
+        clrDetail('PineNeedleColor', 'White'),
+        clrDetail('OliveDrab', 'White'),
+        clrDetail('LawnGreen', 'Black'),
+        clrDetail('Xanadu', 'White'),
+        clrDetail('DarkOliveGreen', 'White'),
+        clrDetail('DarkSeaGreen', 'Black'),
+        clrDetail('GreenMunsell', 'White'),
+        clrDetail('MughalGreen', 'White'),
+        clrDetail('JohnDeereGreen', 'White'),
+        clrDetail('OfficeGreen', 'White'),
+        clrDetail('Limerick', 'Black'),
+        clrDetail('MaxGreenYellow', 'Black'),
+        clrDetail('FrenchLime', 'Black'),
+        clrDetail('MediumSpringBud', 'Black'),
+        clrDetail('UFOGreen', 'Black'),
+        clrDetail('AcidGreen', 'Black'),
+        clrDetail('ChlorophyllGreen', 'Black'),
+        clrDetail('GreenLizard', 'Black'),
+        clrDetail('IguanaGreen', 'Black'),
+        clrDetail('KombuGreen', 'White'),
+        clrDetail('MiddleGreen', 'White'),
+        clrDetail('PaoloGreen', 'White'),
+        clrDetail('PullmanGreen', 'White'),
+        clrDetail('GreenScreen', 'White'),
+        clrDetail('AndroidGreen', 'Black'),
+        clrDetail('BitterLemon', 'Black'),
+        clrDetail('WageningenGreen', 'White'),
+        clrDetail('SapGreen', 'White'),
+        clrDetail('OldMossGreen', 'White'),
+        clrDetail('SlimyGreen', 'White'),
+        clrDetail('LightMalachite', 'Black'),
+        clrDetail('DarkSpringGreen', 'White'),
+        clrDetail('GuppieGreen', 'Black'),
+        clrDetail('AppleGreen', 'Black'),
+        clrDetail('DeepGreen', 'White'),
+        clrDetail('HookerGreen', 'White'),
+        clrDetail('MediumSeaGreen', 'Black'),
+        clrDetail('TurquoiseGreen', 'Black')
+
+    ];
+
+    appendChildren(myDetailsList, clrNames);
+
+
+
+
+// Shades.
+    function clrPreviews(clrName, txtClr){
+
+        // Creating HTML elements.
+        var previewAnchor = document.createElement('a');
+
+        // Adding class.
+        previewAnchor.className = "transparentContent p_3 curGrabbing mt_20px  txtDecorNone clr"+txtClr+" bg"+clrName+" w_30 h_30 txtCenter borRad_100 fSize_tq";
+
+        //Adding content.
+        previewAnchor.innerText = clrName;
+
+        //Adding link.
+        previewAnchor.setAttribute("href", "#"+clrName);
+
+        return previewAnchor;
+    }
+
+    var myPreviewListForWhite = document.getElementById('previewListWhite');
+    var whiteClrNames = [
+
+    // White 124 items--
+        clrPreviews('White', 'Black'),
+        clrPreviews('GhostWhite', 'Black'),
+        clrPreviews('WhiteSmoke', 'Black'),
+        clrPreviews('BabyPowder', 'Black'),
+        clrPreviews('Snow', 'Black'),
+        clrPreviews('Ivory', 'Black'),
+        clrPreviews('FloralWhite', 'Black'),
+        clrPreviews('Seashell', 'Black'),
+        clrPreviews('Cornsilk', 'Black'),
+        clrPreviews('OldLace', 'Black'),
+        clrPreviews('Cream', 'Black'),
+        clrPreviews('Beige', 'Black'),
+        clrPreviews('Parchment', 'Black'),
+        clrPreviews('AntiqueWhite', 'Black'),
+        clrPreviews('Champagne', 'Black'),
+        clrPreviews('Eggshell', 'Black'),
+        clrPreviews('DutchWhite', 'Black'),
+        clrPreviews('Bone', 'Black'),
+        clrPreviews('Vanilla', 'Black'),
+        clrPreviews('Flax', 'Black'),
+        clrPreviews('NavajoWhite', 'Black'),
+        clrPreviews('Alabaster', 'Black'),
+        clrPreviews('Chiffon', 'Black'),
+        clrPreviews('UnresolvedProblem', 'Black'),
+        clrPreviews('OldWood', 'Black'),
+        clrPreviews('RoseWhite', 'Black'),
+        clrPreviews('VistaWhite', 'Black'),
+        clrPreviews('LinkWhite', 'Black'),
+        clrPreviews('Spring', 'Black'),
+        clrPreviews('SnowDrift', 'Black'),
+        clrPreviews('Peppermint', 'Black'),
+        clrPreviews('Merino', 'Black'),
+        clrPreviews('HalfAndHalf', 'Black'),
+        clrPreviews('IslandSpice', 'Black'),
+        clrPreviews('SoftPeach', 'Black'),
+        clrPreviews('Harp', 'Black'),
+        clrPreviews('TitanWhite', 'Black'),
+        clrPreviews('AudienceAnger', 'Black'),
+        clrPreviews('OrangeWhite', 'Black'),
+        clrPreviews('CoughMixture', 'Black'),
+        clrPreviews('AlbescentWhite', 'Black'),
+        clrPreviews('Coconut', 'Black'),
+        clrPreviews('PinkSalt', 'Black'),
+        clrPreviews('Frost', 'Black'),
+        clrPreviews('Linen', 'Black'),
+        clrPreviews('Rice', 'Black'),
+        clrPreviews('Daisy', 'Black'),
+        clrPreviews('Powder', 'Black'),
+        clrPreviews('Pearl', 'Black'),
+        clrPreviews('ParisWhite', 'Black'),
+        clrPreviews('CupCake', 'Black'),
+        clrPreviews('WhiteDove', 'Black'),
+        clrPreviews('WhiteWhisper', 'Black'),
+        clrPreviews('Lexicon', 'Black'),
+        clrPreviews('GreekVilla', 'Black'),
+        clrPreviews('WhiteDiamond', 'Black'),
+        clrPreviews('DecoratorWhite', 'Black'),
+        clrPreviews('WinterWhite', 'Black'),
+        clrPreviews('SpatialWhite', 'Black'),
+        clrPreviews('HogBristleQuarter', 'Black'),
+        clrPreviews('SimplyWhite', 'Black'),
+        clrPreviews('OysterWhite', 'Black'),
+        clrPreviews('WhiteOnWhite', 'Black'),
+        clrPreviews('LexiconQuarter', 'Black'),
+        clrPreviews('AliceBlue', 'Black'),
+        clrPreviews('Honeydew', 'Black'),
+        clrPreviews('MintCream', 'Black'),
+        clrPreviews('Milk', 'Black'),
+        clrPreviews('PomeloWhite', 'Black'),
+        clrPreviews('AntiFlashWhite', 'Black'),
+        clrPreviews('Magnolia', 'Black'),
+        clrPreviews('Azure', 'Black'),
+        clrPreviews('HuntingtonWhite', 'Black'),
+        clrPreviews('AcadiaWhite', 'Black'),
+        clrPreviews('Gainsboro', 'Black'),
+        clrPreviews('Mercury', 'Black'),
+        clrPreviews('LavenderBlush', 'Black'),
+        clrPreviews('Isabelline', 'Black'),
+        clrPreviews('Bubbles', 'Black'),
+        clrPreviews('Glitter', 'Black'),
+        clrPreviews('Platinum', 'Black'),
+        clrPreviews('CosmicLatte', 'Black'),
+        clrPreviews('BlanchedAlmond', 'Black'),
+        clrPreviews('LightYellow', 'Black'),
+        clrPreviews('NaturalWhite', 'Black'),
+        clrPreviews('VividWhite', 'Black'),
+        clrPreviews('WhiteWisp', 'Black'),
+        clrPreviews('AzureishWhite', 'Black'),
+        clrPreviews('Timberwolf', 'Black'),
+        clrPreviews('PapayaWhip', 'Black'),
+        clrPreviews('AntiqueWhiteUSA', 'Black'),
+        clrPreviews('Cola', 'Black'),
+        clrPreviews('AtriumWhite', 'Black'),
+        clrPreviews('CascadingWhite', 'Black'),
+        clrPreviews('CottonBall', 'Black'),
+        clrPreviews('PhotonWhite', 'Black'),
+        clrPreviews('WhiteHeat', 'Black'),
+        clrPreviews('Whitewash', 'Black'),
+        clrPreviews('ShadowWhite', 'Black'),
+        clrPreviews('AbbeyWhite', 'Black'),
+        clrPreviews('AcousticWhite', 'Black'),
+        clrPreviews('AircraftWhite', 'Black'),
+        clrPreviews('Ceramic', 'Black'),
+        clrPreviews('CoconutButter', 'Black'),
+        clrPreviews('AbstractWhite', 'Black'),
+        clrPreviews('BrightWhite', 'Black'),
+        clrPreviews('BrokenWhite', 'Black'),
+        clrPreviews('BrilliantWhite', 'Black'),
+        clrPreviews('CommercialWhite', 'Black'),
+        clrPreviews('FeatherWhite', 'Black'),
+        clrPreviews('SwanWhite', 'Black'),
+        clrPreviews('PolarBear', 'Black'),
+        clrPreviews('PaperWhite', 'Black'),
+        clrPreviews('PacificPearl', 'Black'),
+        clrPreviews('NightWhite', 'Black'),
+        clrPreviews('DelicateWhite', 'Black'),
+        clrPreviews('CoconutWhite', 'Black'),
+        clrPreviews('CakeBatter', 'Black'),
+        clrPreviews('WhiteSand', 'Black'),
+        clrPreviews('StoneWhite', 'Black'),
+        clrPreviews('WhiteChocolate', 'Black'),
+        clrPreviews('RetroWhite', 'Black'),
+        clrPreviews('HofWhite', 'Black'),
+        clrPreviews('DimWhite', 'Black')
+
+    ];
+
+    appendChildren(myPreviewListForWhite, whiteClrNames);
+
+    var myPreviewListForGreen = document.getElementById('previewListGreen');
+    var greenClrNames = [
+
+    // Green 134 items--
+        clrPreviews('ForestGreen', 'White'),
+        clrPreviews('Olive', 'White'),
+        clrPreviews('HunterGreen', 'White'),
+        clrPreviews('ArtichokeGreen', 'White'),
+        clrPreviews('JungleGreen', 'White'),
+        clrPreviews('TropicalRainforest', 'White'),
+        clrPreviews('Amazon', 'White'),
+        clrPreviews('DeepJungleGreen', 'White'),
+        clrPreviews('MediumJungleGreen', 'White'),
+        clrPreviews('DarkJungleGreen', 'White'),
+        clrPreviews('MossGreen', 'White'),
+        clrPreviews('MyrtleGreen', 'White'),
+        clrPreviews('PineGreen', 'White'),
+        clrPreviews('PersianGreen', 'White'),
+        clrPreviews('EmeraldGreen', 'Black'),
+        clrPreviews('NeonGreen', 'Black'),
+        clrPreviews('SacramentoGreen', 'White'),
+        clrPreviews('SeaGreen', 'White'),
+        clrPreviews('SageGreen', 'Black'),
+        clrPreviews('LimeGreen', 'Black'),
+        clrPreviews('JadeGreen', 'White'),
+        clrPreviews('FernGreen', 'White'),
+        clrPreviews('LaurelGreen', 'Black'),
+        clrPreviews('MintGreen', 'Black'),
+        clrPreviews('TeaGreen', 'Black'),
+        clrPreviews('ArmyGreen', 'White'),
+        clrPreviews('KellyGreen', 'White'),
+        clrPreviews('RussianGreen', 'White'),
+        clrPreviews('ParisGreen', 'Black'),
+        clrPreviews('PakistanGreen', 'White'),
+        clrPreviews('MidnightGreen', 'White'),
+        clrPreviews('IndiaGreen', 'White'),
+        clrPreviews('HunterGreen', 'White'),
+        clrPreviews('Celadon', 'Black'),
+        clrPreviews('Avocado', 'White'),
+        clrPreviews('Harlequin', 'Black'),
+        clrPreviews('SpringGreen', 'Black'),
+        clrPreviews('Kaitoke', 'White'),
+        clrPreviews('ScreaminGreen', 'Black'),
+        clrPreviews('Chateau', 'Black'),
+        clrPreviews('DarkMossGreen', 'White'),
+        clrPreviews('Swamp', 'Black'),
+        clrPreviews('Mantis', 'Black'),
+        clrPreviews('Fun', 'White'),
+        clrPreviews('PantoneGreen', 'White'),
+        clrPreviews('Viridian', 'White'),
+        clrPreviews('ResedaGreen', 'White'),
+        clrPreviews('Chetwode', 'Black'),
+        clrPreviews('ShamrockGreen', 'White'),
+        clrPreviews('Verdun', 'White'),
+        clrPreviews('CastletonGreen', 'White'),
+        clrPreviews('Gin', 'Black'),
+        clrPreviews('GrannySmithApple', 'Black'),
+        clrPreviews('BitterLime', 'Black'),
+        clrPreviews('BrightMint', 'Black'),
+        clrPreviews('BottleGreen', 'White'),
+        clrPreviews('CadmiumGreen', 'White'),
+        clrPreviews('CamouflageGreen', 'White'),
+        clrPreviews('Pear', 'Black'),
+        clrPreviews('DollarBill', 'Black'),
+        clrPreviews('Inchworm', 'Black'),
+        clrPreviews('Asparagus', 'White'),
+        clrPreviews('CaribbeanGreen', 'Black'),
+        clrPreviews('GoGreen', 'White'),
+        clrPreviews('PhthaloGreen', 'White'),
+        clrPreviews('NapierGreen', 'White'),
+        clrPreviews('Feldgrau', 'White'),
+        clrPreviews('GreenYellow', 'Black'),
+        clrPreviews('Malachite', 'Black'),
+        clrPreviews('RifleGreen', 'White'),
+        clrPreviews('Volt', 'Black'),
+        clrPreviews('BritishRacingGreen', 'White'),
+        clrPreviews('Thyme', 'Black'),
+        clrPreviews('Chartreuse', 'Black'),
+        clrPreviews('CornGreen', 'White'),
+        clrPreviews('ShrekGreen', 'Black'),
+        clrPreviews('ChristmasGreen', 'White'),
+        clrPreviews('IrishGreen', 'White'),
+        clrPreviews('RoadSignGreen', 'White'),
+        clrPreviews('LightsaberGreen', 'Black'),
+        clrPreviews('GirlScoutGreen', 'White'),
+        clrPreviews('TennisCourtGreen', 'White'),
+        clrPreviews('SpringBud', 'Black'),
+        clrPreviews('ChineseGreen', 'Black'),
+        clrPreviews('ArcticLime', 'Black'),
+        clrPreviews('Nyanza', 'Black'),
+        clrPreviews('DarkLemonLime', 'Black'),
+        clrPreviews('CrayolaYellowGreen', 'Black'),
+        clrPreviews('MaximumGreen', 'White'),
+        clrPreviews('VividLimeGreen', 'Black'),
+        clrPreviews('Pistachio', 'Black'),
+        clrPreviews('MediumSpringGreen', 'Black'),
+        clrPreviews('SheenGreen', 'Black'),
+        clrPreviews('LaSalleGreen', 'White'),
+        clrPreviews('SpanishViridian', 'White'),
+        clrPreviews('DartmouthGreen', 'White'),
+        clrPreviews('PineNeedleColor', 'White'),
+        clrPreviews('OliveDrab', 'White'),
+        clrPreviews('LawnGreen', 'Black'),
+        clrPreviews('Xanadu', 'White'),
+        clrPreviews('DarkOliveGreen', 'White'),
+        clrPreviews('DarkSeaGreen', 'Black'),
+        clrPreviews('GreenMunsell', 'White'),
+        clrPreviews('MughalGreen', 'White'),
+        clrPreviews('JohnDeereGreen', 'White'),
+        clrPreviews('OfficeGreen', 'White'),
+        clrPreviews('Limerick', 'Black'),
+        clrPreviews('MaxGreenYellow', 'Black'),
+        clrPreviews('FrenchLime', 'Black'),
+        clrPreviews('MediumSpringBud', 'Black'),
+        clrPreviews('UFOGreen', 'Black'),
+        clrPreviews('AcidGreen', 'Black'),
+        clrPreviews('ChlorophyllGreen', 'Black'),
+        clrPreviews('GreenLizard', 'Black'),
+        clrPreviews('IguanaGreen', 'Black'),
+        clrPreviews('KombuGreen', 'White'),
+        clrPreviews('MiddleGreen', 'White'),
+        clrPreviews('PaoloGreen', 'White'),
+        clrPreviews('PullmanGreen', 'White'),
+        clrPreviews('GreenScreen', 'White'),
+        clrPreviews('AndroidGreen', 'Black'),
+        clrPreviews('BitterLemon', 'Black'),
+        clrPreviews('WageningenGreen', 'White'),
+        clrPreviews('SapGreen', 'White'),
+        clrPreviews('OldMossGreen', 'White'),
+        clrPreviews('SlimyGreen', 'White'),
+        clrPreviews('LightMalachite', 'Black'),
+        clrPreviews('DarkSpringGreen', 'White'),
+        clrPreviews('GuppieGreen', 'Black'),
+        clrPreviews('AppleGreen', 'Black'),
+        clrPreviews('DeepGreen', 'White'),
+        clrPreviews('HookerGreen', 'White'),
+        clrPreviews('MediumSeaGreen', 'Black'),
+        clrPreviews('TurquoiseGreen', 'Black')
+
+    ];
+
+    appendChildren(myPreviewListForGreen, greenClrNames);
+
+</script>
+
+</body>
+</html>

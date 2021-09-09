@@ -1,88 +1,25 @@
 /* width */
-.w{
-    &_0Per{width: 0%;}
-    &_5Per{width: 5%;}
-    &_10Per{width: 10%;}
-    &_15Per{width: 15%;}
-    &_20Per{width: 20%;}
-    &_25Per{width: 25%;}
-    &_30Per{width: 30%;}
-    &_35Per{width: 35%;}
-    &_40Per{width: 40%;}
-    &_45Per{width: 45%;}
-    &_50Per{width: 50%;}
-    &_55Per{width: 55%;}
-    &_60Per{width: 60%;}
-    &_65Per{width: 65%;}
-    &_70Per{width: 70%;}
-    &_75Per{width: 75%;}
-    &_80Per{width: 80%;}
-    &_85Per{width: 85%;}
-    &_90Per{width: 90%;}
-    &_95Per{width: 95%;}
-    &_100Per{width: 100%;}
 
-    &_0vw{width: 0vw;}
-    &_5vw{width: 5vw;}
-    &_10vw{width: 10vw;}
-    &_15vw{width: 15vw;}
-    &_20vw{width: 20vw;}
-    &_25vw{width: 25vw;}
-    &_30vw{width: 30vw;}
-    &_35vw{width: 35vw;}
-    &_40vw{width: 40vw;}
-    &_45vw{width: 45vw;}
-    &_50vw{width: 50vw;}
-    &_55vw{width: 55vw;}
-    &_60vw{width: 60vw;}
-    &_65vw{width: 65vw;}
-    &_70vw{width: 70vw;}
-    &_75vw{width: 75vw;}
-    &_80vw{width: 80vw;}
-    &_85vw{width: 85vw;}
-    &_90vw{width: 90vw;}
-    &_95vw{width: 95vw;}
-    &_100vw{width: 100vw;}
+    $limit: 100;
 
-    &_0{width: $px_0;}
-    &_5{width: $px_5;}
-    &_10{width: $px_10;}
-    &_15{width: $px_15;}
-    &_20{width: $px_20;}
-    &_25{width: $px_25;}
-    &_30{width: $px_30;}
-    &_35{width: $px_35;}
-    &_40{width: $px_40;}
-    &_45{width: $px_45;}
-    &_50{width: $px_50;}
-    &_55{width: $px_55;}
-    &_60{width: $px_60;}
-    &_65{width: $px_65;}
-    &_70{width: $px_70;}
-    &_75{width: $px_75;}
-    &_80{width: $px_80;}
-    &_85{width: $px_85;}
-    &_90{width: $px_90;}
-    &_95{width: $px_95;}
-    &_100{width: $px_100;}
-    &_125{width: $px_100 + $px_25;}
-    &_150{width: $px_100 + $px_50;}
-    &_175{width: $px_100 + $px_75;}
-    &_200{width: $px_100 + $px_100;}
-    &_225{width: $px_100 + $px_100 + $px_25;}
-    &_250{width: $px_100 + $px_100 + $px_50;}
-    &_275{width: $px_100 + $px_100 + $px_75;}
-    &_300{width: $px_100 + $px_100 + $px_100;}
-    &_325{width: $px_100 + $px_100 + $px_100 + $px_25;}
-    &_350{width: $px_100 + $px_100 + $px_100 + $px_50;}
-    &_375{width: $px_100 + $px_100 + $px_100 + $px_75;}
-    &_400{width: $px_100 + $px_100 + $px_100 + $px_100;}
-    &_425{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_450{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_475{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_500{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-    &_525{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_25;}
-    &_550{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_50;}
-    &_575{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_75;}
-    &_600{width: $px_100 + $px_100 + $px_100 + $px_100 + $px_100 + $px_100;}
-}
+    @for $hook from 0 through $limit {
+        .w_#{$hook}Per {
+            width: (0% + $hook);
+        }
+
+        .maxW_#{$hook}Per {
+            max-width: (0% + $hook);
+        }
+
+        .w_#{$hook}vw {
+            width: (0vw + $hook);
+        }
+    }
+
+    $pxLimit: 1000;
+
+    @for $hook from 0 through $pxLimit {
+        .w_#{$hook} {
+            width: (0px + $hook);
+        }
+    }

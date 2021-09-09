@@ -1,0 +1,9 @@
+.transparentContent{
+    display: grid;
+    align-content: center;
+    justify-content:center;
+    padding: 1rem;
+    background-color: $transparent;
+    list-style: none;
+    box-shadow:01px 0px 15px -5px #bbb;
+}
