@@ -1,140 +1,34 @@
-/* border size all */
-.borSize{
-    &_0{border: $px_0;}
-    &_1{border: $px_1;}
-    &_2{border: $px_2;}
-    &_3{border: $px_3;}
-    &_4{border: $px_4;}
-    &_5{border: $px_5;}
-    &_6{border: $px_6;}
-    &_7{border: $px_7;}
-    &_8{border: $px_8;}
-    &_9{border: $px_9;}
-    &_10{border: $px_10;}
-    &_11{border: $px_11;}
-    &_12{border: $px_12;}
-    &_13{border: $px_13;}
-    &_14{border: $px_14;}
-    &_15{border: $px_15;}
-    &_16{border: $px_16;}
-    &_17{border: $px_17;}
-    &_18{border: $px_18;}
-    &_19{border: $px_19;}
-    &_20{border: $px_20;}
+/* border size */
+$pxlimit: 1000;
+
+@for $hook from 0 through $pxlimit {
+    .borSize_#{$hook} {
+        border: (0px + $hook);
+        border-style: solid;
+        border-color: #000;
+    }
+    .borSizeT_#{$hook} {
+        border-top: (0px + $hook);
+        border-top-style: solid;
+        border-top-color: #000;
+    }
+    .borSizeR_#{$hook} {
+        border-right: (0px + $hook);
+        border-right-style: solid;
+        border-right-color: #000;
+    }
+    .borSizeB_#{$hook} {
+        border-bottom: (0px + $hook);
+        border-bottom-style: solid;
+        border-bottom-color: #000;
+    }
+    .borSizeL_#{$hook} {
+        border-left: (0px + $hook);
+        border-left-style: solid;
+        border-left-color: #000;
+    }
 }
 
-
-
-
-/* border size top */
-.borSizeT{
-    &_0{border-top: $px_0;}
-    &_1{border-top: $px_1;}
-    &_2{border-top: $px_2;}
-    &_3{border-top: $px_3;}
-    &_4{border-top: $px_4;}
-    &_5{border-top: $px_5;}
-    &_6{border-top: $px_6;}
-    &_7{border-top: $px_7;}
-    &_8{border-top: $px_8;}
-    &_9{border-top: $px_9;}
-    &_10{border-top: $px_10;}
-    &_11{border-top: $px_11;}
-    &_12{border-top: $px_12;}
-    &_13{border-top: $px_13;}
-    &_14{border-top: $px_14;}
-    &_15{border-top: $px_15;}
-    &_16{border-top: $px_16;}
-    &_17{border-top: $px_17;}
-    &_18{border-top: $px_18;}
-    &_19{border-top: $px_19;}
-    &_20{border-top: $px_20;}
-}
-
-
-
-
-/* border size right */
-.borSizeR{
-    &_0{border-right: $px_0;}
-    &_1{border-right: $px_1;}
-    &_2{border-right: $px_2;}
-    &_3{border-right: $px_3;}
-    &_4{border-right: $px_4;}
-    &_5{border-right: $px_5;}
-    &_6{border-right: $px_6;}
-    &_7{border-right: $px_7;}
-    &_8{border-right: $px_8;}
-    &_9{border-right: $px_9;}
-    &_10{border-right: $px_10;}
-    &_11{border-right: $px_11;}
-    &_12{border-right: $px_12;}
-    &_13{border-right: $px_13;}
-    &_14{border-right: $px_14;}
-    &_15{border-right: $px_15;}
-    &_16{border-right: $px_16;}
-    &_17{border-right: $px_17;}
-    &_18{border-right: $px_18;}
-    &_19{border-right: $px_19;}
-    &_20{border-right: $px_20;}
-}
-
-
-
-
-/* border size bottom */
-.borSizeB{
-    &_0{border-bottom: $px_0;}
-    &_1{border-bottom: $px_1;}
-    &_2{border-bottom: $px_2;}
-    &_3{border-bottom: $px_3;}
-    &_4{border-bottom: $px_4;}
-    &_5{border-bottom: $px_5;}
-    &_6{border-bottom: $px_6;}
-    &_7{border-bottom: $px_7;}
-    &_8{border-bottom: $px_8;}
-    &_9{border-bottom: $px_9;}
-    &_10{border-bottom: $px_10;}
-    &_11{border-bottom: $px_11;}
-    &_12{border-bottom: $px_12;}
-    &_13{border-bottom: $px_13;}
-    &_14{border-bottom: $px_14;}
-    &_15{border-bottom: $px_15;}
-    &_16{border-bottom: $px_16;}
-    &_17{border-bottom: $px_17;}
-    &_18{border-bottom: $px_18;}
-    &_19{border-bottom: $px_19;}
-    &_20{border-bottom: $px_20;}
-}
-
-
-
-
-
-/* border size left */
-.borSizeL{
-    &_0{border-left: $px_0;}
-    &_1{border-left: $px_1;}
-    &_2{border-left: $px_2;}
-    &_3{border-left: $px_3;}
-    &_4{border-left: $px_4;}
-    &_5{border-left: $px_5;}
-    &_6{border-left: $px_6;}
-    &_7{border-left: $px_7;}
-    &_8{border-left: $px_8;}
-    &_9{border-left: $px_9;}
-    &_10{border-left: $px_10;}
-    &_11{border-left: $px_11;}
-    &_12{border-left: $px_12;}
-    &_13{border-left: $px_13;}
-    &_14{border-left: $px_14;}
-    &_15{border-left: $px_15;}
-    &_16{border-left: $px_16;}
-    &_17{border-left: $px_17;}
-    &_18{border-left: $px_18;}
-    &_19{border-left: $px_19;}
-    &_20{border-left: $px_20;}
-}
 
 
 
@@ -2270,194 +2164,45 @@
 
 
 
-/* border radius all */
-.borRad{
-    &_5{border-radius: $px_5;}
-    &_10{border-radius: $px_10;}
-    &_15{border-radius: $px_15;}
-    &_20{border-radius: $px_20;}
-    &_25{border-radius: $px_25;}
-    &_30{border-radius: $px_30;}
-    &_35{border-radius: $px_35;}
-    &_40{border-radius: $px_40;}
-    &_45{border-radius: $px_45;}
-    &_50{border-radius: $px_50;}
-    &_55{border-radius: $px_55;}
-    &_60{border-radius: $px_60;}
-    &_65{border-radius: $px_65;}
-    &_70{border-radius: $px_70;}
-    &_75{border-radius: $px_75;}
-    &_80{border-radius: $px_80;}
-    &_85{border-radius: $px_85;}
-    &_90{border-radius: $px_90;}
-    &_95{border-radius: $px_95;}
-    &_100{border-radius: $px_100;}
-
-    &_10Per{border-radius: 10%;}
-    &_20Per{border-radius: 20%;}
-    &_30Per{border-radius: 30%;}
-    &_40Per{border-radius: 40%;}
-    &_50Per{border-radius: 50%;}
-    &_60Per{border-radius: 60%;}
-    &_70Per{border-radius: 70%;}
-    &_80Per{border-radius: 80%;}
-    &_90Per{border-radius: 90%;}
-    &_100Per{border-radius: 100%;}
+/* border radius */
+@for $hook from 0 through $pxlimit {
+    .borRad_#{$hook} {
+        border-radius: (0px + $hook);
+    }
+    .borRadTL_#{$hook} {
+        border-top-left-radius: (0px + $hook);
+    }
+    .borRadTR_#{$hook} {
+        border-top-right-radius: (0px + $hook);
+    }
+    .borRadBL_#{$hook} {
+        border-bottom-left-radius: (0px + $hook);
+    }
+    .borRadBR_#{$hook} {
+        border-bottom-right-radius: (0px + $hook);
+    }
 }
 
+$perlimit: 100;
 
-
-
-/* border radius top */
-.borRadT{
-    &_5{border-radius: $px_5 $px_0 $px_0 $px_0;}
-    &_10{border-radius: $px_10 $px_0 $px_0 $px_0;}
-    &_15{border-radius: $px_15 $px_0 $px_0 $px_0;}
-    &_20{border-radius: $px_20 $px_0 $px_0 $px_0;}
-    &_25{border-radius: $px_25 $px_0 $px_0 $px_0;}
-    &_30{border-radius: $px_30 $px_0 $px_0 $px_0;}
-    &_35{border-radius: $px_35 $px_0 $px_0 $px_0;}
-    &_40{border-radius: $px_40 $px_0 $px_0 $px_0;}
-    &_45{border-radius: $px_45 $px_0 $px_0 $px_0;}
-    &_50{border-radius: $px_50 $px_0 $px_0 $px_0;}
-    &_55{border-radius: $px_55 $px_0 $px_0 $px_0;}
-    &_60{border-radius: $px_60 $px_0 $px_0 $px_0;}
-    &_65{border-radius: $px_65 $px_0 $px_0 $px_0;}
-    &_70{border-radius: $px_70 $px_0 $px_0 $px_0;}
-    &_75{border-radius: $px_75 $px_0 $px_0 $px_0;}
-    &_80{border-radius: $px_80 $px_0 $px_0 $px_0;}
-    &_85{border-radius: $px_85 $px_0 $px_0 $px_0;}
-    &_90{border-radius: $px_90 $px_0 $px_0 $px_0;}
-    &_95{border-radius: $px_95 $px_0 $px_0 $px_0;}
-    &_100{border-radius: $px_100 $px_0 $px_0 $px_0;}
-
-    &_10Per{border-radius: 10% 0% 0% 0%;}
-    &_20Per{border-radius: 20% 0% 0% 0%;}
-    &_30Per{border-radius: 30% 0% 0% 0%;}
-    &_40Per{border-radius: 40% 0% 0% 0%;}
-    &_50Per{border-radius: 50% 0% 0% 0%;}
-    &_60Per{border-radius: 60% 0% 0% 0%;}
-    &_70Per{border-radius: 70% 0% 0% 0%;}
-    &_80Per{border-radius: 80% 0% 0% 0%;}
-    &_90Per{border-radius: 90% 0% 0% 0%;}
-    &_100Per{border-radius: 100% 0% 0% 0%;}
+@for $hook from 0 through $perlimit {
+    .borRad_#{$hook}Per {
+        border-radius: (0% + $hook);
+    }
+    .borRadTL_#{$hook}Per {
+        border-top-left-radius: (0% + $hook);
+    }
+    .borRadTR_#{$hook}Per {
+        border-top-right-radius: (0% + $hook);
+    }
+    .borRadBL_#{$hook}Per {
+        border-bottom-left-radius: (0% + $hook);
+    }
+    .borRadBR_#{$hook}Per {
+        border-bottom-right-radius: (0% + $hook);
+    }
 }
 
-
-
-
-/* border radius right */
-.borRadR{
-    &_5{border-radius: $px_0 $px_5 $px_0 $px_0;}
-    &_10{border-radius: $px_0 $px_10 $px_0 $px_0;}
-    &_15{border-radius: $px_0 $px_15 $px_0 $px_0;}
-    &_20{border-radius: $px_0 $px_20 $px_0 $px_0;}
-    &_25{border-radius: $px_0 $px_25 $px_0 $px_0;}
-    &_30{border-radius: $px_0 $px_30 $px_0 $px_0;}
-    &_35{border-radius: $px_0 $px_35 $px_0 $px_0;}
-    &_40{border-radius: $px_0 $px_40 $px_0 $px_0;}
-    &_45{border-radius: $px_0 $px_45 $px_0 $px_0;}
-    &_50{border-radius: $px_0 $px_50 $px_0 $px_0;}
-    &_55{border-radius: $px_0 $px_55 $px_0 $px_0;}
-    &_60{border-radius: $px_0 $px_60 $px_0 $px_0;}
-    &_65{border-radius: $px_0 $px_65 $px_0 $px_0;}
-    &_70{border-radius: $px_0 $px_70 $px_0 $px_0;}
-    &_75{border-radius: $px_0 $px_75 $px_0 $px_0;}
-    &_80{border-radius: $px_0 $px_80 $px_0 $px_0;}
-    &_85{border-radius: $px_0 $px_85 $px_0 $px_0;}
-    &_90{border-radius: $px_0 $px_90 $px_0 $px_0;}
-    &_95{border-radius: $px_0 $px_95 $px_0 $px_0;}
-    &_100{border-radius: $px_0 $px_100 $px_0 $px_0;}
-
-    &_10Per{border-radius: 0% 10% 0% 0%;}
-    &_20Per{border-radius: 0% 20% 0% 0%;}
-    &_30Per{border-radius: 0% 30% 0% 0%;}
-    &_40Per{border-radius: 0% 40% 0% 0%;}
-    &_50Per{border-radius: 0% 50% 0% 0%;}
-    &_60Per{border-radius: 0% 60% 0% 0%;}
-    &_70Per{border-radius: 0% 70% 0% 0%;}
-    &_80Per{border-radius: 0% 80% 0% 0%;}
-    &_90Per{border-radius: 0% 90% 0% 0%;}
-    &_100Per{border-radius: 0% 100% 0% 0%;}
-}
-
-
-
-
-
-/* border radius bottom */
-.borRadB{
-    &_5{border-radius: $px_0 $px_0 $px_5 $px_0;}
-    &_10{border-radius: $px_0 $px_0 $px_10 $px_0;}
-    &_15{border-radius: $px_0 $px_0 $px_15 $px_0;}
-    &_20{border-radius: $px_0 $px_0 $px_20 $px_0;}
-    &_25{border-radius: $px_0 $px_0 $px_25 $px_0;}
-    &_30{border-radius: $px_0 $px_0 $px_30 $px_0;}
-    &_35{border-radius: $px_0 $px_0 $px_35 $px_0;}
-    &_40{border-radius: $px_0 $px_0 $px_40 $px_0;}
-    &_45{border-radius: $px_0 $px_0 $px_45 $px_0;}
-    &_50{border-radius: $px_0 $px_0 $px_50 $px_0;}
-    &_55{border-radius: $px_0 $px_0 $px_55 $px_0;}
-    &_60{border-radius: $px_0 $px_0 $px_60 $px_0;}
-    &_65{border-radius: $px_0 $px_0 $px_65 $px_0;}
-    &_70{border-radius: $px_0 $px_0 $px_70 $px_0;}
-    &_75{border-radius: $px_0 $px_0 $px_75 $px_0;}
-    &_80{border-radius: $px_0 $px_0 $px_80 $px_0;}
-    &_85{border-radius: $px_0 $px_0 $px_85 $px_0;}
-    &_90{border-radius: $px_0 $px_0 $px_90 $px_0;}
-    &_95{border-radius: $px_0 $px_0 $px_95 $px_0;}
-    &_100{border-radius: $px_0 $px_0 $px_100 $px_0;}
-
-    &_10Per{border-radius: 0% 0% 10% 0%;}
-    &_20Per{border-radius: 0% 0% 20% 0%;}
-    &_30Per{border-radius: 0% 0% 30% 0%;}
-    &_40Per{border-radius: 0% 0% 40% 0%;}
-    &_50Per{border-radius: 0% 0% 50% 0%;}
-    &_60Per{border-radius: 0% 0% 60% 0%;}
-    &_70Per{border-radius: 0% 0% 70% 0%;}
-    &_80Per{border-radius: 0% 0% 80% 0%;}
-    &_90Per{border-radius: 0% 0% 90% 0%;}
-    &_100Per{border-radius: 0% 0% 100% 0%;}
-}
-
-
-
-
-
-/* border radius left */
-.borRadL{
-    &_5{border-radius: $px_0 $px_0 $px_0 $px_5;}
-    &_10{border-radius: $px_0 $px_0 $px_0 $px_10;}
-    &_15{border-radius: $px_0 $px_0 $px_0 $px_15;}
-    &_20{border-radius: $px_0 $px_0 $px_0 $px_20;}
-    &_25{border-radius: $px_0 $px_0 $px_0 $px_25;}
-    &_30{border-radius: $px_0 $px_0 $px_0 $px_30;}
-    &_35{border-radius: $px_0 $px_0 $px_0 $px_35;}
-    &_40{border-radius: $px_0 $px_0 $px_0 $px_40;}
-    &_45{border-radius: $px_0 $px_0 $px_0 $px_45;}
-    &_50{border-radius: $px_0 $px_0 $px_0 $px_50;}
-    &_55{border-radius: $px_0 $px_0 $px_0 $px_55;}
-    &_60{border-radius: $px_0 $px_0 $px_0 $px_60;}
-    &_65{border-radius: $px_0 $px_0 $px_0 $px_65;}
-    &_70{border-radius: $px_0 $px_0 $px_0 $px_70;}
-    &_75{border-radius: $px_0 $px_0 $px_0 $px_75;}
-    &_80{border-radius: $px_0 $px_0 $px_0 $px_80;}
-    &_85{border-radius: $px_0 $px_0 $px_0 $px_85;}
-    &_90{border-radius: $px_0 $px_0 $px_0 $px_90;}
-    &_95{border-radius: $px_0 $px_0 $px_0 $px_95;}
-    &_100{border-radius: $px_0 $px_0 $px_0 $px_100;}
-
-    &_10Per{border-radius: 0% 0% 0% 10%;}
-    &_20Per{border-radius: 0% 0% 0% 20%;}
-    &_30Per{border-radius: 0% 0% 0% 30%;}
-    &_40Per{border-radius: 0% 0% 0% 40%;}
-    &_50Per{border-radius: 0% 0% 0% 50%;}
-    &_60Per{border-radius: 0% 0% 0% 60%;}
-    &_70Per{border-radius: 0% 0% 0% 70%;}
-    &_80Per{border-radius: 0% 0% 0% 80%;}
-    &_90Per{border-radius: 0% 0% 0% 90%;}
-    &_100Per{border-radius: 0% 0% 0% 100%;}
-}
 
 
 

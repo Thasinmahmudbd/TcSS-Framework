@@ -12,6 +12,7 @@
 
     <!-- script -->
     <script src="./prism/prism.js"></script>
+    <script src="./scripts/loader.js"></script>
 
     <title>TcSS Mini [version 0.1]</title>
     <!-- favicon 
@@ -24,12 +25,24 @@
 
 
 
+<!--Pre loader start-->
+
+    <div class="w_60 h_100vh m_a gridRow_3_size_1 alignContentCenter justifyContentCenter" id="loader">
+
+        <span></span>
+
+        <img src="https://gifimage.net/wp-content/uploads/2017/11/fire-animation-gif-10.gif" width="60px" height="100px" alt="">
+
+        <span></span>
+
+    </div>
+
+<!--Pre loader end-->
 
 
 
 
-
-
+<div class="opacity_0_0" id="content">
 
 <!--navbar start-->
 
@@ -74,55 +87,89 @@
 
 <div class="gridCol_2_size_3_7 gridGap_2 w_75Per m_a">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--shelf menu start-->
 
-    <div class="displayBlock">
+    <div class="displayBlock posFix left_200 w_22Per h_100Per">
 
-        <div class="shelfOrange">
+        <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone">
 
-            <a href="#intro" class="shelfOrangeBtn" >Introduction</a>
-            <a href="#basic" class="shelfOrangeBtn" >Basic</a>
+            <div class="shelfOrange">
 
-                    <a href="#padding" class="shelfOrangeSubBtn" >Padding</a>
-                    <a href="#paddingTop" class="shelfOrangeSubBtn" >Padding Top</a>
-                    <a href="#paddingRight" class="shelfOrangeSubBtn" >Padding Right</a>
-                    <a href="#paddingBottom" class="shelfOrangeSubBtn" >Padding Bottom</a>
-                    <a href="#paddingLeft" class="shelfOrangeSubBtn" >Padding Left</a>
+                <a href="./index.html" class="shelfOrangeBtn" >Introduction</a>
+                <a href="#basic" class="shelfOrangeBtn" >Basic</a>
 
-                    <span class="smallGap"></span>
+                        <a href="#padding" class="shelfOrangeSubBtn" >Padding</a>
+                        <a href="#paddingTop" class="shelfOrangeSubBtn" >Padding Top</a>
+                        <a href="#paddingRight" class="shelfOrangeSubBtn" >Padding Right</a>
+                        <a href="#paddingBottom" class="shelfOrangeSubBtn" >Padding Bottom</a>
+                        <a href="#paddingLeft" class="shelfOrangeSubBtn" >Padding Left</a>
 
-                    <a href="#margin" class="shelfOrangeSubBtn" >Margin</a>
-                    <a href="#marginTop" class="shelfOrangeSubBtn" >Margin Top</a>
-                    <a href="#marginRight" class="shelfOrangeSubBtn" >Margin Right</a>
-                    <a href="#marginBottom" class="shelfOrangeSubBtn" >Margin Bottom</a>
-                    <a href="#marginLeft" class="shelfOrangeSubBtn" >Margin Left</a>
-                    <a href="#marginAuto" class="shelfOrangeSubBtn" >Margin Auto</a>
+                        <span class="smallGap"></span>
 
-                    <a href="#" class="shelfOrangeSubBtn" ></a>
-                    <a href="#" class="shelfOrangeSubBtn" ></a>
-                    <a href="#" class="shelfOrangeSubBtn" ></a>
+                        <a href="#margin" class="shelfOrangeSubBtn" >Margin</a>
+                        <a href="#marginTop" class="shelfOrangeSubBtn" >Margin Top</a>
+                        <a href="#marginRight" class="shelfOrangeSubBtn" >Margin Right</a>
+                        <a href="#marginBottom" class="shelfOrangeSubBtn" >Margin Bottom</a>
+                        <a href="#marginLeft" class="shelfOrangeSubBtn" >Margin Left</a>
+                        <a href="#marginAuto" class="shelfOrangeSubBtn" >Margin Auto</a>
 
-            <a href="#nav" class="shelfOrangeBtn" >Navbar</a>
-                    <a href="#logo" class="shelfOrangeSubBtn" >Logo</a>
-                    <a href="#searchBar" class="shelfOrangeSubBtn" >Search Bar</a>
-                    <a href="#navBtnMain" class="shelfOrangeSubBtn" >Nav Buttons (Main)</a>
-                    <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
-                    <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
+                        <span class="smallGap"></span>
 
+                        <a href="#border" class="shelfOrangeSubBtn" >Border</a>
+                        <a href="#borderSize" class="shelfOrangeSubBtn" >Border Size</a>
+                        <a href="#borderSizeTop" class="shelfOrangeSubBtn" >Border Size Top</a>
+                        <a href="#borderSizeRight" class="shelfOrangeSubBtn" >Border Size Right</a>
+                        <a href="#borderSizeBottom" class="shelfOrangeSubBtn" >Border Size Bottom</a>
+                        <a href="#borderSizeLeft" class="shelfOrangeSubBtn" >Border Size Left</a>
+                        <a href="#borderStyle" class="shelfOrangeSubBtn" >Border Style</a>
+                        <a href="#borderRadius" class="shelfOrangeSubBtn" >Border Radius</a>
+                        <a href="#borderRadiusTL" class="shelfOrangeSubBtn" >Border Radius Top Left</a>
+                        <a href="#borderRadiusTR" class="shelfOrangeSubBtn" >Border Radius Top Right</a>
+                        <a href="#borderRadiusBL" class="shelfOrangeSubBtn" >Border Radius Bottom Left</a>
+                        <a href="#borderRadiusBR" class="shelfOrangeSubBtn" >Border Radius Bottom Right</a>
+                        <a href="#borderColor" class="shelfOrangeSubBtn" >Border Color</a>
+                        <a href="#borderNone" class="shelfOrangeSubBtn" >Border None</a>
+                        <a href="#borderOnly" class="shelfOrangeSubBtn" >Border Only</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#fonts" class="shelfOrangeSubBtn" >Fonts</a>
+                        <a href="#fontWeight" class="shelfOrangeSubBtn" >Font Weight</a>
+                        <a href="#fontSize" class="shelfOrangeSubBtn" >Font Size</a>
+                        <a href="#txtClr" class="shelfOrangeSubBtn" >Text Color</a>
+                        <a href="#txtAlign" class="shelfOrangeSubBtn" >Text Alignment</a>
+                        <a href="#txtDecor" class="shelfOrangeSubBtn" >Text Decoration</a>
+                        <a href="#txtOverflow" class="shelfOrangeSubBtn" >Text Overflow</a>
+                        <a href="#txtTransform" class="shelfOrangeSubBtn" >Text Transform</a>
+                        <a href="#lineHeight" class="shelfOrangeSubBtn" >Line Height</a>
+                        <a href="#whiteSpace" class="shelfOrangeSubBtn" >White Space</a>
+                        <a href="#selectionBlock" class="shelfOrangeSubBtn" >Selection Block</a>
+                        <a href="#modes" class="shelfOrangeSubBtn" >Modes</a>
+                        <a href="#txtlink" class="shelfOrangeSubBtn" >Link</a>
+                        <a href="#highlight" class="shelfOrangeSubBtn" >Highlight</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#positions" class="shelfOrangeSubBtn" >Positions</a>
+                        <a href="#position_mover" class="shelfOrangeSubBtn" >Top, Right, Bottom, Left</a>
+                        <a href="#neg_mover" class="shelfOrangeSubBtn" >Negative T, R, B, L</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#display" class="shelfOrangeSubBtn" >Display</a>
+
+                        <span class="smallGap"></span>
+
+                <a href="#nav" class="shelfOrangeBtn" >Navbar</a>
+                        <a href="#logo" class="shelfOrangeSubBtn" >Logo</a>
+                        <a href="#searchBar" class="shelfOrangeSubBtn" >Search Bar</a>
+                        <a href="#navBtnMain" class="shelfOrangeSubBtn" >Nav Buttons (Main)</a>
+                        <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
+                        <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
+
+                <span class="normGap p_50px"></span>
+
+            </div>
 
         </div>
 
@@ -130,16 +177,13 @@
 
     <!--shelf menu end-->
 
+    <span></span>
 
+</div>
 
+<div class="gridCol_2_size_3_7 gridGap_2 w_75Per m_a">
 
-
-
-
-
-
-
-
+    <span></span>
 
     <!--content start-->
 
@@ -197,7 +241,7 @@
 
         <div>
 
-            <div class="largeGap p_1_h" id="basic"></div>
+            <div class="largeGap p_2_q" id="basic"></div>
 
             <h2 class="titleL">Basic</h2>
 
@@ -205,30 +249,24 @@
 
     <!-- padding all around-->
 
-            <div class="largeGap p_1_h" id="padding"></div>
+            <div class="largeGap p_2_q" id="padding"></div>
 
             <li class="subTitleL">Padding:</li>
 
-            <p class="txtJustify lineHeight_1_7">You can add padding all around your markup using <span class="highlightBlack">class="p_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b>. The unit is <b>"rem"</b> unit.</p>
+            <p class="txtJustify lineHeight_1_7">You can add padding all around your markup using <span class="highlightBlack">class="p_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100)</b> for <b>"rem"</b> unit & <b>(0-1000)</b> for <b>"pixel"</b> unit. You have to specify which unit you are using. By default it is in rem unit, in-order to use pixel unit type <b>px</b> after integer value.</p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
-                    &lt;div class="p_0"> &lt;/div> //this div has 0 rem padding all around.
-                    &lt;div class="p_1"> &lt;/div> //this div has 1 rem padding all around.
-                    &lt;div class="p_2"> &lt;/div> //this div has 2 rem padding all around.
-                    ......
-                    ......
-                    &lt;div class="p_18"> &lt;/div> //this div has 18 rem padding all around.
-                    &lt;div class="p_19"> &lt;/div> //this div has 19 rem padding all around.
-                    &lt;div class="p_20"> &lt;/div> //this div has 20 rem padding all around.
+                    &lt;div class="p_5px"> &lt;/div> //this div has 5 px padding all around.
+                    &lt;div class="p_5"> &lt;/div> //this div has 5 rem padding all around.
 
                 </code>
 
             </pre>
 
-            <p class="txtJustify lineHeight_1_7">For floating values we can use <b>_q, _h, _tq</b> which are respectively adding <b>.25, .50, .75</b> to the integer value of <span class="highlightBlack">#</span> After adding floating point extensions the classes will look something like these <span class="highlightBlack">class="p_#_q"</span> <span class="highlightBlack">class="p_#_h"</span> <span class="highlightBlack">class="p_#_tq"</span>
+            <p class="txtJustify lineHeight_1_7">For floating values we can use <b>_q, _h, _tq</b> which are respectively adding <b>.25, .50, .75</b> to the integer value of <span class="highlightBlack">#</span> After adding floating point extensions the classes will look something like these <span class="highlightBlack">class="p_#_q"</span> <span class="highlightBlack">class="p_#_h"</span> <span class="highlightBlack">class="p_#_tq"</span> Note that this is only available for rem unit.
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -246,7 +284,7 @@
 
     <!-- padding top -->
 
-            <div class="largeGap p_1_h" id="paddingTop"></div>
+            <div class="largeGap p_2_q" id="paddingTop"></div>
 
             <li class="subTitleL">Padding Top:</li>
 
@@ -256,6 +294,7 @@
 
                 <code>
 
+                    &lt;div class="pt_5px"> &lt;/div> //this div has 5 px padding on top.
                     &lt;div class="pt_5"> &lt;/div> //this div has 5 rem padding on top.
                     &lt;div class="pt_5_q"> &lt;/div> //this div has 5.25 rem padding on top.
                     &lt;div class="pt_5_h"> &lt;/div> //this div has 5.5 rem padding on top.
@@ -269,7 +308,7 @@
 
     <!-- padding right -->
 
-            <div class="largeGap p_1_h" id="paddingRight"></div>
+            <div class="largeGap p_2_q" id="paddingRight"></div>
 
             <li class="subTitleL">Padding Right:</li>
 
@@ -279,6 +318,7 @@
 
                 <code>
 
+                    &lt;div class="pr_5px"> &lt;/div> //this div has 5 px padding on the right.
                     &lt;div class="pr_5"> &lt;/div> //this div has 5 rem padding on the right.
                     &lt;div class="pr_5_q"> &lt;/div> //this div has 5.25 rem padding on the right.
                     &lt;div class="pr_5_h"> &lt;/div> //this div has 5.5 rem padding on the right.
@@ -292,7 +332,7 @@
 
     <!-- padding bottom -->
 
-            <div class="largeGap p_1_h" id="paddingBottom"></div>
+            <div class="largeGap p_2_q" id="paddingBottom"></div>
 
             <li class="subTitleL">Padding Bottom:</li>
 
@@ -302,6 +342,7 @@
 
                 <code>
 
+                    &lt;div class="pb_5px"> &lt;/div> //this div has 5 px padding on the bottom.
                     &lt;div class="pb_5"> &lt;/div> //this div has 5 rem padding on the bottom.
                     &lt;div class="pb_5_q"> &lt;/div> //this div has 5.25 rem padding on the bottom.
                     &lt;div class="pb_5_h"> &lt;/div> //this div has 5.5 rem padding on the bottom.
@@ -315,7 +356,7 @@
 
     <!-- padding left -->
 
-            <div class="largeGap p_1_h" id="paddingLeft"></div>
+            <div class="largeGap p_2_q" id="paddingLeft"></div>
 
             <li class="subTitleL">Padding Left:</li>
 
@@ -325,6 +366,7 @@
 
                 <code>
 
+                    &lt;div class="pl_5px"> &lt;/div> //this div has 5 px padding on the left.
                     &lt;div class="pl_5"> &lt;/div> //this div has 5 rem padding on the left.
                     &lt;div class="pl_5_q"> &lt;/div> //this div has 5.25 rem padding on the left.
                     &lt;div class="pl_5_h"> &lt;/div> //this div has 5.5 rem padding on the left.
@@ -348,24 +390,18 @@
 
     <!-- margin all around-->
 
-            <div class="largeGap p_1_h" id="margin"></div>
+            <div class="largeGap p_2_q" id="margin"></div>
 
             <li class="subTitleL">Margin:</li>
 
-            <p class="txtJustify lineHeight_1_7">You can add margin all around your markup using <span class="highlightBlack">class="m_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b>. The unit is <b>"rem"</b> unit.</p>
+            <p class="txtJustify lineHeight_1_7">You can add margin all around your markup using <span class="highlightBlack">class="m_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100)</b> for <b>"rem"</b> unit & <b>(0-1000)</b> for <b>"px"</b> unit. You have to specify which unit you are using. By default it is in rem unit, in-order to use pixel unit type <b>px</b> after integer value.</p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
-                    &lt;div class="m_0"> &lt;/div> //this div has 0 rem margin all around.
-                    &lt;div class="m_1"> &lt;/div> //this div has 1 rem margin all around.
-                    &lt;div class="m_2"> &lt;/div> //this div has 2 rem margin all around.
-                    ......
-                    ......
-                    &lt;div class="m_18"> &lt;/div> //this div has 18 rem margin all around.
-                    &lt;div class="m_19"> &lt;/div> //this div has 19 rem margin all around.
-                    &lt;div class="m_20"> &lt;/div> //this div has 20 rem margin all around.
+                    &lt;div class="m_5px"> &lt;/div> //this div has 5 px margin all around.
+                    &lt;div class="m_5"> &lt;/div> //this div has 5 rem margin all around.
 
                 </code>
 
@@ -389,7 +425,7 @@
 
     <!-- margin top -->
 
-            <div class="largeGap p_1_h" id="marginTop"></div>
+            <div class="largeGap p_2_q" id="marginTop"></div>
 
             <li class="subTitleL">Margin Top:</li>
 
@@ -399,6 +435,7 @@
 
                 <code>
 
+                    &lt;div class="mt_5px"> &lt;/div> //this div has 5 px margin on top.
                     &lt;div class="mt_5"> &lt;/div> //this div has 5 rem margin on top.
                     &lt;div class="mt_5_q"> &lt;/div> //this div has 5.25 rem margin on top.
                     &lt;div class="mt_5_h"> &lt;/div> //this div has 5.5 rem margin on top.
@@ -412,7 +449,7 @@
 
     <!-- margin right -->
 
-            <div class="largeGap p_1_h" id="marginRight"></div>
+            <div class="largeGap p_2_q" id="marginRight"></div>
 
             <li class="subTitleL">Margin Right:</li>
 
@@ -422,6 +459,7 @@
 
                 <code>
 
+                    &lt;div class="mr_5px"> &lt;/div> //this div has 5 px margin on the right.
                     &lt;div class="mr_5"> &lt;/div> //this div has 5 rem margin on the right.
                     &lt;div class="mr_5_q"> &lt;/div> //this div has 5.25 rem margin on the right.
                     &lt;div class="mr_5_h"> &lt;/div> //this div has 5.5 rem margin on the right.
@@ -435,16 +473,17 @@
 
     <!-- margin bottom -->
 
-            <div class="largeGap p_1_h" id="marginBottom"></div>
+            <div class="largeGap p_2_q" id="marginBottom"></div>
 
             <li class="subTitleL">Margin Bottom:</li>
 
-            <p class="txtJustify lineHeight_1_7">You can add margin on the right side of your markup using <span class="highlightBlack">class="mb_#"</span></p>
+            <p class="txtJustify lineHeight_1_7">You can add margin on the bottom side of your markup using <span class="highlightBlack">class="mb_#"</span></p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
+                    &lt;div class="mb_5px"> &lt;/div> //this div has 5 px margin on the bottom.
                     &lt;div class="mb_5"> &lt;/div> //this div has 5 rem margin on the bottom.
                     &lt;div class="mb_5_q"> &lt;/div> //this div has 5.25 rem margin on the bottom.
                     &lt;div class="mb_5_h"> &lt;/div> //this div has 5.5 rem margin on the bottom.
@@ -458,7 +497,7 @@
 
     <!-- margin left -->
 
-            <div class="largeGap p_1_h" id="marginLeft"></div>
+            <div class="largeGap p_2_q" id="marginLeft"></div>
 
             <li class="subTitleL">Margin Left:</li>
 
@@ -468,6 +507,7 @@
 
                 <code>
 
+                    &lt;div class="ml_5px"> &lt;/div> //this div has 5 px margin on the left.
                     &lt;div class="ml_5"> &lt;/div> //this div has 5 rem margin on the left.
                     &lt;div class="ml_5_q"> &lt;/div> //this div has 5.25 rem margin on the left.
                     &lt;div class="ml_5_h"> &lt;/div> //this div has 5.5 rem margin on the left.
@@ -481,7 +521,7 @@
 
     <!-- margin auto -->
 
-            <div class="largeGap p_1_h" id="marginAuto"></div>
+            <div class="largeGap p_2_q" id="marginAuto"></div>
 
             <li class="subTitleL">Margin Auto:</li>
 
@@ -501,6 +541,906 @@
 
 
 
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- Border -->
+
+            <div class="largeGap p_2_q" id="border"></div>
+
+            <li class="subTitleL">Border:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add borders to your markup using some pre fixed classes. You'll need to specify the <b>size, color and style</b> of the border.</p>
+
+    <!-- border end -->
+
+    <!-- border size all around-->
+
+            <div class="largeGap p_2_q" id="borderSize"></div>
+
+            <li class="subTitleL">Border Size:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can set border size for your markup using <span class="highlightBlack">class="borSize_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-1000)</b>. Only <b>"px"</b> unit is supported, no need to mention unit. Also note that if you only use this class and no other border prefixed classes, you'll get a <b>black solid border all around</b> with the <b>selected size.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borSize_5"> &lt;/div> //this div has 5 px border all around.
+
+                </code>
+
+            </pre>
+
+    <!-- border size all around end -->
+
+    <!-- border size top -->
+
+            <div class="largeGap p_2_q" id="borderSizeTop"></div>
+
+            <li class="subTitleL">Border Size Top:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add border on top of your markup using <span class="highlightBlack">class="borSizeT_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borSizeT_5"> &lt;/div> //this div has 5 px border on top.
+
+                </code>
+
+            </pre>
+
+    <!-- border size top end -->
+
+    <!-- border size right -->
+
+            <div class="largeGap p_2_q" id="borderSizeRight"></div>
+
+            <li class="subTitleL">Border Size Right:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add border on the right side of your markup using <span class="highlightBlack">class="borSizeR_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borSizeR_5"> &lt;/div> //this div has 5 px border on the right.
+
+                </code>
+
+            </pre>
+
+    <!-- border size right end -->
+
+    <!-- border size bottom -->
+
+            <div class="largeGap p_2_q" id="borderSizeBottom"></div>
+
+            <li class="subTitleL">Border Bottom:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add border on the bottom side of your markup using <span class="highlightBlack">class="borSizeB_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borSizeB_5px"> &lt;/div> //this div has 5 px border on the bottom.
+
+                </code>
+
+            </pre>
+
+    <!-- border size bottom end -->
+
+    <!-- border size left -->
+
+            <div class="largeGap p_2_q" id="borderSizeLeft"></div>
+
+            <li class="subTitleL">Border Size Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add border on the left side of your markup using <span class="highlightBlack">class="borSizeL_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borSizeL_5px"> &lt;/div> //this div has 5 px border on the left.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_5_size_1 gridGap_1">
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">All</p>
+                    <p class="p_1 borSizeT_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Top</p>
+                    <p class="p_1 borSizeR_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Right</p>
+                    <p class="p_1 borSizeB_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Bottom</p>
+                    <p class="p_1 borSizeL_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Left</p>
+                </div>
+            </div>
+
+    <!-- border size left end -->
+
+    <!-- border style -->
+
+            <div class="largeGap p_2_q" id="borderStyle"></div>
+
+            <li class="subTitleL">Border Style:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add style to your border using <span class="highlightBlack">class="borStyle#"</span> here <span class="highlightBlack">#</span> is a placeholder for the styles name.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleSolid"> &lt;/div> //this will make border solid. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleDashed"> &lt;/div> //this will make border dashed. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleDotted"> &lt;/div> //this will make border dotted. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleDouble"> &lt;/div> //this will make border doubled. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleGroove"> &lt;/div> //this will make border grooved. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleRidge"> &lt;/div> //this will make border Ridge. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleInset"> &lt;/div> //this will set border inside. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleOutset"> &lt;/div> //this will set border outside. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleHidden"> &lt;/div> //this will hide border. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="borStyleUnset"> &lt;/div> //this will unset border. </code> </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_8_size_1 gridGap_1">
+                    <p class="p_1 borSize_2 borStyleSolid txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Solid</p>
+                    <p class="p_1 borSize_2 borStyleDashed txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dashed</p>
+                    <p class="p_1 borSize_2 borStyleDotted txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dotted</p>
+                    <p class="p_1 borSize_2 borStyleDouble txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Double</p>
+                    <p class="p_1 borSize_2 borStyleGroove txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Groove</p>
+                    <p class="p_1 borSize_2 borStyleRidge txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Ridge</p>
+                    <p class="p_1 borSize_2 borStyleInset txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Inset</p>
+                    <p class="p_1 borSize_2 borStyleOutset txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Outset</p>
+                </div>
+            </div>
+
+    <!-- border style end -->
+
+    <!-- border radius all around-->
+
+            <div class="largeGap p_2_q" id="borderRadius"></div>
+
+            <li class="subTitleL">Border Radius:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can set border radius for your markup using <span class="highlightBlack">class="borRad_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-1000)</b> for px unit & <b>(0-100)</b> for % unit. <b>"Per"</b> needs to be mentioned when using % unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borRad_5"> &lt;/div> //this border has a radius of 100 px all around.
+                    &lt;div class="borRad_5Per"> &lt;/div> //this border has a radius of 100 % all around.
+
+                </code>
+
+            </pre>
+
+    <!-- border radius all around end -->
+
+    <!-- border radius top left -->
+
+            <div class="largeGap p_2_q" id="borderRadiusTL"></div>
+
+            <li class="subTitleL">Border Radius Top Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change radius of the top left side of your markup using <span class="highlightBlack">class="borRadTL_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borRadTL_5"> &lt;/div> //this div has a radius of 5 px on the top left.
+
+                </code>
+
+            </pre>
+
+    <!-- border radius top end -->
+
+    <!-- border radius top right -->
+
+            <div class="largeGap p_2_q" id="borderRadiusTR"></div>
+
+            <li class="subTitleL">Border Radius Top Right:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change radius of the top right side of your markup using <span class="highlightBlack">class="borRadTR_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borRadTR_5"> &lt;/div> //this div has a radius of 5 px on the top right.
+
+                </code>
+
+            </pre>
+
+    <!-- border radius top right end -->
+
+    <!-- border radius bottom left -->
+
+            <div class="largeGap p_2_q" id="borderRadiusBL"></div>
+
+            <li class="subTitleL">Border Radius Bottom Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change radius of the bottom left side of your markup using <span class="highlightBlack">class="borRadBL_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borRadBL_5"> &lt;/div> //this div has a radius of 5 px on the bottom left.
+
+                </code>
+
+            </pre>
+
+    <!-- border radius bottom left end -->
+
+    <!-- border radius bottom right-->
+
+            <div class="largeGap p_2_q" id="borderRadiusBR"></div>
+
+            <li class="subTitleL">Border Radius Bottom Right:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change radius of the bottom right side of your markup using <span class="highlightBlack">class="borRadBR_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borRadBR_5"> &lt;/div> //this div has a radius of 5 px on the bottom right.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_5_size_1 gridGap_1">
+                    <p class="p_1 borRad_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">All</p>
+                    <p class="p_1 borRadTL_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top Left</p>
+                    <p class="p_1 borRadTR_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top Right</p>
+                    <p class="p_1 borRadBL_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Bottom Left</p>
+                    <p class="p_1 borRadBR_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Bottom Right</p>
+                </div>
+            </div>
+
+    <!-- border radius bottom Right end -->
+
+    <!-- border color-->
+
+            <div class="largeGap p_2_q" id="borderColor"></div>
+
+            <li class="subTitleL">Border Color:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change border color using <span class="highlightBlack">class="borClr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="./colors.html">Colors</a>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borClrGold"> &lt;/div> //this border is Golden.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_2_size_2_8 gridGap_1">
+                    <p class="p_1 borSize_5 borClrGold txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Ex</p>
+                    <p class=""><b class="clrDanger">Note:</b> You need to set the size first in order to use border colors.</p>
+                </div>
+            </div>
+
+    <!-- border color end -->
+
+    <!-- border none-->
+
+            <div class="largeGap p_2_q" id="borderNone"></div>
+
+            <li class="subTitleL">Border None:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can remove border from all or any particular side using <span class="highlightBlack">class="borNone#"</span> here <span class="highlightBlack">#</span> is a placeholder for selected side. All around border removal hold no value for <b>#</b>, for top border removal <b>#</b> is <b>T</b>, for right <b>R</b>, for bottom <b>B</b>, for left <b>L</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borNone"> &lt;/div> //borders removed from all sides.
+                    &lt;div class="borNoneT"> &lt;/div> //borders removed from top.
+                    &lt;div class="borNoneR"> &lt;/div> //borders removed from right.
+                    &lt;div class="borNoneB"> &lt;/div> //borders removed from bottom.
+                    &lt;div class="borNoneL"> &lt;/div> //borders removed from left.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="gridCol_5_size_1 gridGap_1">
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNone bgAlabaster">All</p>
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneT bgAlabaster">Top</p>
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneR bgAlabaster">Right</p>
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneB bgAlabaster">Bottom</p>
+                    <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneL bgAlabaster">Left</p>
+                </div>
+                <p class=""><b class="clrDanger">Note:</b> This class is only useful if there is an existing border beforehand.</p>
+            </div>
+
+    <!-- border none end -->
+
+    <!-- only border -->
+
+            <div class="largeGap p_2_q" id="borderOnly"></div>
+
+            <li class="subTitleL">Border Only:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can keep border to a particular side and remove borders from other sides using <span class="highlightBlack">class="borOnly#"</span> here <span class="highlightBlack">#</span> is a placeholder for selected side. For top border removal <b>#</b> is <b>T</b>, for right <b>R</b>, for bottom <b>B</b>, for left <b>L</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="borOnlyT"> &lt;/div> //border added to top and removed from other sides.
+                    &lt;div class="borOnlyR"> &lt;/div> //border added to right and removed from other sides.
+                    &lt;div class="borOnlyB"> &lt;/div> //border added to bottom and removed from other sides.
+                    &lt;div class="borOnlyL"> &lt;/div> //border added to left and removed from other sides.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="gridCol_4_size_1 gridGap_1">
+                    <p class="p_1  borOnlyT borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top</p>
+                    <p class="p_1  borOnlyR borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Right</p>
+                    <p class="p_1  borOnlyB borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Bottom</p>
+                    <p class="p_1  borOnlyL borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Left</p>
+                </div>
+                <p class=""><b class="clrDanger">Note:</b> This class is only useful if there is an existing border beforehand.</p>
+            </div>
+
+    <!-- only border end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- fonts -->
+
+            <div class="largeGap p_2_q" id="fonts"></div>
+
+            <li class="subTitleL">Fonts:</li>
+
+            <p class="txtJustify lineHeight_1_7">This framework currently supports <b>6</b> fonts. They are: </p>
+
+            <table width="100%" class="txtCenter borSize_2 borClrBrilliantWhite p_2px">
+                <tr>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="16%">Fonts</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Default</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Thin</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Light</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Regular</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Medium</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Bold</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Bolder</th>
+                </tr>
+                <tr>
+                    <td class="txtCenter p_0_h" width="16%">Nunito</td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">OpenSans</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter p_0_h" width="16%">Roboto</td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">Lato</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter p_0_h" width="16%">Montserrat</td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                </tr>
+                <tr>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">MonteCarlo</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                </tr>
+            </table>
+
+            <p class="txtJustify lineHeight_1_7">To use defaults, simply type in the font in <b>camelCase</b>. Example: type <span class="highlightBlack">class="openSans"</span> to use the default OpenSans font.</p>
+
+            <div class="gridCol_2_size_1">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="nunito"> &lt;/p></code></pre>
+
+                <p class="ml_1 nunito alignSelfCenter">This is default version of nunito.</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="openSans"> &lt;/p></code></pre>
+
+                <p class="ml_1 openSans alignSelfCenter">This is default version of openSans.</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="roboto"> &lt;/p></code></pre>
+
+                <p class="ml_1 roboto alignSelfCenter">This is default version of roboto.</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="lato"> &lt;/p></code></pre>
+
+                <p class="ml_1 lato alignSelfCenter">This is default version of lato.</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="montserrat"> &lt;/p></code></pre>
+
+                <p class="ml_1 montserrat alignSelfCenter">This is default version of montserrat.</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="monteCarlo"> &lt;/p></code></pre>
+
+                <p class="ml_1 monteCarlo alignSelfCenter">This is default version of monteCarlo.</p>
+
+            </div>
+
+    <!-- fonts end -->
+
+    <!-- font weight -->
+
+            <div class="largeGap p_2_q" id="fontWeight"></div>
+
+            <li class="subTitleL">Font Weight:</li>
+
+            <p class="txtJustify lineHeight_1_7">To add font weights use <span class="highlightBlack">class="{fontName}#"</span> here replace <b>{fontName}</b> with supported font name & <b>#</b> with supported font weight. List of supported weights are given <a href="#fonts" class="link">above</a>. An example of this is:</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="latoBold"> &lt;/p> This is bold version of lato.
+
+                </code>
+
+            </pre>
+
+    <!-- font weight end -->
+
+    <!-- font size -->
+
+            <div class="largeGap p_2_q" id="fontSize"></div>
+
+            <li class="subTitleL">Font Size:</li>
+
+            <p class="txtJustify lineHeight_1_7">To declare font size use <span class="highlightBlack">class="fSize_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100)</b> for <b>"rem"</b> unit & <b>(0-500)</b> for <b>"pixel"</b> unit. You have to specify which unit you are using. By default it is in rem unit, in-order to use pixel unit type <b>px</b> after integer value.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="fSize_5"> &lt;/p> //this paragraph has a font size of 5 rem.
+                    &lt;p class="fSize_5px"> &lt;/p> //this paragraph has a font size of 5 px.
+
+                </code>
+
+            </pre>
+
+    <!-- font size end -->
+
+    <!-- text color-->
+
+            <div class="largeGap p_2_q" id="txtClr"></div>
+
+            <li class="subTitleL">Text Color:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change text color using <span class="highlightBlack">class="clr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="./colors.html">Colors</a>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="clrGoGreen"> &lt;/p> //this paragraph is Green.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <p class="nunitoBold">Example:
+                <span class="p_1 clrGoGreen fSize_1">I am written in green.</span></p>
+            </div>
+
+    <!-- text color end -->
+
+    <!-- text align -->
+
+            <div class="largeGap p_2_q" id="txtAlign"></div>
+
+            <li class="subTitleL">Text Alignment:</li>
+
+            <p class="txtJustify lineHeight_1_7">In-order to align text use <span class="highlightBlack">class="txt#"</span> here <span class="highlightBlack">#</span> is a placeholder for alignment, such as <b>center, left, right, justify.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="txtCenter"> &lt;/p> //text inside this paragraph is aligned center.
+                    &lt;p class="txtRight"> &lt;/p> //text inside this paragraph is aligned right.
+                    &lt;p class="txtLeft"> &lt;/p> //text inside this paragraph is aligned left.
+                    &lt;p class="txtJustify"> &lt;/p> //text inside this paragraph is aligned justify.
+
+                </code>
+
+            </pre>
+
+    <!-- text align end -->
+
+    <!-- text decoration -->
+
+            <div class="largeGap p_2_q" id="txtDecor"></div>
+
+            <li class="subTitleL">Text Decoration:</li>
+
+            <p class="txtJustify lineHeight_1_7">In-order to decorate text use <span class="highlightBlack">class="txtDecor#"</span> here <span class="highlightBlack">#</span> is a placeholder for decoration, such as <b>underline, line through, dotted, dashed, etc.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="txtDecorDashed"> &lt;/p> //this paragraph is dashed.
+                    &lt;p class="txtDecorDotted"> &lt;/p> //this paragraph is dotted.
+                    &lt;p class="txtDecorUnderline"> &lt;/p> //this paragraph is underlined.
+                    &lt;p class="txtDecorLineThrough"> &lt;/p> //this paragraph is line through.
+                    &lt;p class="txtDecorOverline"> &lt;/p> //this paragraph is overline.
+                    &lt;p class="txtDecorWavy"> &lt;/p> //this paragraph is wavy.
+                    &lt;p class="txtDecorNone"> &lt;/p> //this paragraph is none.
+
+                </code>
+
+            </pre>
+
+    <!-- text decoration end -->
+
+    <!-- text overflow -->
+
+            <div class="largeGap p_2_q" id="txtOverflow"></div>
+
+            <li class="subTitleL">Text Overflow:</li>
+
+            <p class="txtJustify lineHeight_1_7">To tackle text overflow use <span class="highlightBlack">class="overflow"</span> this will prevent text overflow.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="overflow"> &lt;/p> //this paragraph will not overflow.
+
+                </code>
+
+            </pre>
+
+    <!-- text overflow end -->
+    
+    <!-- text transform -->
+
+            <div class="largeGap p_2_q" id="txtTransform"></div>
+
+            <li class="subTitleL">Text Transform:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can capitalize text or do uppercase and lowercase.</p>
+
+            <div class="gridCol_2_size_7_3">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="capitalize"> this is an example &lt;/p></code></pre>
+
+                <p class="capitalize alignSelfCenter ml_1"> this is an example</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="uppercase"> this is an example &lt;/p></code></pre>
+
+                <p class="uppercase alignSelfCenter ml_1"> this is an example</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="lowercase"> This IS aN ExamPle &lt;/p></code></pre>
+
+                <p class="lowercase alignSelfCenter ml_1"> This IS aN ExamPle</p>
+
+            </div>
+
+    <!-- text transform end -->
+
+    <!-- line height -->
+
+            <div class="largeGap p_2_q" id="lineHeight"></div>
+
+            <li class="subTitleL">Line Height:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can set Line height using <span class="highlightBlack">class="lineHeight_#_#"</span> here both <span class="highlightBlack">#</span> are placeholders for integer values.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                
+                <code>
+                    
+                    &lt;p class="lineHeight_1_2"> &lt;/p> //Here line height is 1.2.
+                
+                </code>
+            
+            </pre>
+
+    <!-- line height end -->
+
+    <!-- white space -->
+
+            <div class="largeGap p_2_q" id="whiteSpace"></div>
+
+            <li class="subTitleL">White Space:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can set white-space using <span class="highlightBlack">class="#WS"</span> here <span class="highlightBlack">#</span> is a placeholder for white space options, such as <b>pre, normal, noWrap</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                
+                <code>
+                    
+                    &lt;p class="normalWS"> &lt;/p> //Here white-space is normal.
+                
+                </code>
+            
+            </pre>
+
+    <!-- white space end -->
+    
+    <!-- selection block -->
+
+            <div class="largeGap p_2_q" id="selectionBlock"></div>
+
+            <li class="subTitleL">Selection Block:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can block selection using <span class="highlightBlack">class="blockSelect"</span></p>
+
+            <div class="gridCol_2_size_7_3">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="blockSelect"> Try to select me &lt;/p></code></pre>
+
+                <p class="blockSelect alignSelfCenter ml_1">Try to select me</p>
+
+            </div>
+
+    <!-- selection block end -->
+    
+    <!-- mode -->
+
+            <div class="largeGap p_2_q" id="modes"></div>
+
+            <li class="subTitleL">Modes:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change modes. </p>
+
+            <div class="gridCol_2_size_7_3">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="horModeTb"> Horizontal &lt;/p></code></pre>
+
+                <p class="horModeTb ml_1 alignSelfCenter">Horizontal</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="verModeLr"> Vertical 1 &lt;/p></code></pre>
+
+                <p class="verModeLr ml_1 txtCenter">Vertical 1</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;p class="verModeRl"> Vertical 2 &lt;/p></code></pre>
+
+                <p class="verModeRl ml_1 txtCenter">Vertical 2</p>
+
+            </div>
+
+    <!-- mode end -->
+        
+    <!-- link -->
+
+            <div class="largeGap p_2_q" id="txtlink"></div>
+
+            <li class="subTitleL">Link:</li>
+
+            <p class="txtJustify lineHeight_1_7">To style a link in paragraph use <span class="highlightBlack">class="link"</span>. </p>
+
+            <div class="gridCol_2_size_7_3">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="link" href="#"> click me &lt;/a></code></pre>
+
+                <a href="#txtlink" class="link ml_1 alignSelfCenter">click me</a>
+
+            </div>
+
+    <!-- link end -->
+
+    <!-- highlights -->
+
+            <div class="largeGap p_2_q" id="highlight"></div>
+
+            <li class="subTitleL">Highlights:</li>
+
+            <p class="txtJustify lineHeight_1_7">To highlight a specific portion of a paragraph use <span class="highlightBlack">class="highlight#"</span> here <span class="highlightBlack">#</span> is a placeholder. You can use <b>Success, Danger, Alert, Link or Black</b>  instead of <b>#.</b></p>
+
+            <div class="gridCol_2_size_7_3">
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="highlightBlack"> This portion is highlighted &lt;/a></code></pre>
+
+                <p class="highlightBlack ml_1 txtCenter alignSelfCenter">This portion is highlighted</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="highlightSuccess"> This portion is highlighted &lt;/a></code></pre>
+
+                <p class="highlightSuccess ml_1 txtCenter alignSelfCenter">This portion is highlighted</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="highlightDanger"> This portion is highlighted &lt;/a></code></pre>
+
+                <p class="highlightDanger ml_1 txtCenter alignSelfCenter">This portion is highlighted</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="highlightAlert"> This portion is highlighted &lt;/a></code></pre>
+
+                <p class="highlightAlert ml_1 txtCenter alignSelfCenter">This portion is highlighted</p>
+
+                <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"><code>&lt;a class="highlightLink"> This portion is highlighted &lt;/a></code></pre>
+
+                <p class="highlightLink ml_1 txtCenter alignSelfCenter">This portion is highlighted</p>
+
+            </div>
+
+    <!-- highlights end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- positions -->
+
+            <div class="largeGap p_2_q" id="positions"></div>
+
+            <li class="subTitleL">Positions:</li>
+
+            <p class="txtJustify lineHeight_1_7">To declare position of an element use <span class="highlightBlack">class="pos#"</span> here <span class="highlightBlack">#</span> is a placeholder for <b>Rel, Abs, Fix, Stat, Stik.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="posRel"> position of this div is relative &lt;/div>
+                </code>
+            </pre>
+
+    <!-- positions end -->
+
+    <!-- Top, Right, Bottom, Left -->
+
+            <div class="largeGap p_2_q" id="position_mover"></div>
+
+            <li class="subTitleL">Top, Right, Bottom, Left:</li>
+
+            <p class="txtJustify lineHeight_1_7">Move fixed or absolute positioned elements around using <span class="highlightBlack">class="top_#"</span> <span class="highlightBlack">class="right_#"</span> <span class="highlightBlack">class="bottom_#"</span> <span class="highlightBlack">class="left_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value which has a range of <b>(0-1000)</b> px.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="top_10"> 10px from top &lt;/div>
+                </code>
+            </pre>
+
+    <!-- Top, Right, Bottom, Left end -->
+
+    <!-- neg t r b l -->
+
+            <div class="largeGap p_2_q" id="neg_mover"></div>
+
+            <li class="subTitleL">Negative T, R, B, L:</li>
+
+            <p class="txtJustify lineHeight_1_7">To use negative values use <span class="highlightBlack">class="negTop_#"</span> <span class="highlightBlack">class="negRight_#"</span> <span class="highlightBlack">class="negBottom_#"</span> <span class="highlightBlack">class="negLeft_#"</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="negTop_10"> negative 10px from top &lt;/div>
+                </code>
+            </pre>
+
+    <!-- neg t r b l end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- display -->
+
+            <div class="largeGap p_2_q" id="display"></div>
+
+            <li class="subTitleL">Display:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set display of an element use <span class="highlightBlack">class="dis#"</span> here <span class="highlightBlack">#</span> is a placeholder for <b>Block, Inline, InlineBlock, Table, Grid, Flex, None.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="disBlock"> display of this div is block &lt;/div>
+                </code>
+            </pre>
+
+    <!-- display end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
 
 
 
@@ -527,7 +1467,7 @@
 
         <div>
 
-            <div class="largeGap p_1_h" id="nav"></div>
+            <div class="largeGap p_2_q" id="nav"></div>
 
             <h2 class="titleL">Navbar</h2>
 
@@ -547,7 +1487,7 @@
 
     <!-- logo start -->
             
-            <div class="largeGap p_1_h" id="logo"></div>
+            <div class="largeGap p_2_q" id="logo"></div>
 
             <div class="largeGap"></div>
 
@@ -629,7 +1569,7 @@
 
     <!-- search bar start -->
 
-            <div class="largeGap p_1_h" id="searchBar"></div>
+            <div class="largeGap p_2_q" id="searchBar"></div>
 
             <div class="largeGap"></div>
 
@@ -706,7 +1646,7 @@
 
     <!-- main nav btn start -->
 
-            <div class="largeGap p_1_h" id="navBtnMain"></div>
+            <div class="largeGap p_2_q" id="navBtnMain"></div>
 
             <div class="largeGap"></div>
 
@@ -756,7 +1696,7 @@
 
     <!-- sub nav btn start -->
 
-            <div class="largeGap p_1_h" id="navBtnSub"></div>
+            <div class="largeGap p_2_q" id="navBtnSub"></div>
 
             <div class="largeGap"></div>
 
@@ -818,7 +1758,7 @@
 
     <!-- hamburger btn start -->
 
-            <div class="largeGap p_1_h" id="hamBtn"></div>
+            <div class="largeGap p_2_q" id="hamBtn"></div>
 
             <div class="largeGap"></div>
 
@@ -867,6 +1807,9 @@
 </div>
 
 <!--body end-->
+
+</div>
+
 
 </body>
 </html>
