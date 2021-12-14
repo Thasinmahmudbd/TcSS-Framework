@@ -1,0 +1,8 @@
+body:after{
+    content: url('https://drive.google.com/file/d/1nNnQddTvha1i5l_3VhmOQokcwzxEsWKu/view?usp=sharing'); ///media/watermark/tcssWatermark.gif
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: $transparent;
+    z-index: 100000;
+}
