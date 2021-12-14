@@ -174,37 +174,18 @@
 .gridGap{
     &_q{
         display:grid;
-        grid-gap: $quarter;
+        gap: $quarter;
     }
     &_h{
         display:grid;
-        grid-gap: $half;
+        gap: $half;
     }
     &_tq{
         display:grid;
-        grid-gap: $three_quarter;
-    }
-    &_1{
-        display:grid;
-        grid-gap: $one;
-    }
-    &_2{
-        display:grid;
-        grid-gap: $two;
-    }
-    &_3{
-        display:grid;
-        grid-gap: $three;
-    }
-    &_4{
-        display:grid;
-        grid-gap: $four;
-    }
-    &_5{
-        display:grid;
-        grid-gap: $five;
+        gap: $three_quarter;
     }
 }
+
 
 
 
@@ -213,35 +194,15 @@
 .gridRowGap{
     &_q{
         display:grid;
-        grid-row-gap: $quarter;
+        row-gap: $quarter;
     }
     &_h{
         display:grid;
-        grid-row-gap: $half;
+        row-gap: $half;
     }
     &_tq{
         display:grid;
-        grid-row-gap: $three_quarter;
-    }
-    &_1{
-        display:grid;
-        grid-row-gap: $one;
-    }
-    &_2{
-        display:grid;
-        grid-row-gap: $two;
-    }
-    &_3{
-        display:grid;
-        grid-row-gap: $three;
-    }
-    &_4{
-        display:grid;
-        grid-row-gap: $four;
-    }
-    &_5{
-        display:grid;
-        grid-row-gap: $five;
+        row-gap: $three_quarter;
     }
 }
 
@@ -254,38 +215,34 @@
 .gridColGap{
     &_q{
         display:grid;
-        grid-column-gap: $quarter;
+        column-gap: $quarter;
     }
     &_h{
         display:grid;
-        grid-column-gap: $half;
+        column-gap: $half;
     }
     &_tq{
         display:grid;
-        grid-column-gap: $three_quarter;
-    }
-    &_1{
-        display:grid;
-        grid-column-gap: $one;
-    }
-    &_2{
-        display:grid;
-        grid-column-gap: $two;
-    }
-    &_3{
-        display:grid;
-        grid-column-gap: $three;
-    }
-    &_4{
-        display:grid;
-        grid-column-gap: $four;
-    }
-    &_5{
-        display:grid;
-        grid-column-gap: $five;
+        column-gap: $three_quarter;
     }
 }
 
 
 
 
+$gaplimit: 100;
+
+@for $hook from 0 through $gaplimit {
+    .gridGap_#{$hook} {
+        display:grid;
+        gap: (0rem + $hook);
+    }
+    .gridRowGap_#{$hook} {
+        display:grid;
+        row-gap: (0rem + $hook);
+    }
+    .gridColGap_#{$hook} {
+        display:grid;
+        column-gap: (0rem + $hook);
+    }
+}

@@ -1,5 +1,9 @@
 /* display */
-.disFlex{display:flex;}
+.disFlex{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
 
 
@@ -43,3 +47,25 @@
 
 
 
+
+$perlimit: 100;
+
+@for $hook from 0 through $perlimit {
+    .basis_#{$hook} {
+        flex-basis: (0% + $hook);
+    }
+}
+
+$orderlimit: 20;
+
+@for $hook from 0 through $orderlimit {
+    .flexOrder_#{$hook} {
+        order: (0 + $hook);
+    }
+}
+
+@for $hook from 0 through $orderlimit {
+    .flex_#{$hook} {
+        flex: (0 + $hook);
+    }
+}
