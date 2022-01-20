@@ -167,6 +167,17 @@
                         <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
                         <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
 
+                        <span class="smallGap"></span>
+
+                <a href="#table" class="shelfOrangeBtn" >Table</a>
+                        <a href="#tableBasic" class="shelfOrangeSubBtn" >Basic</a>
+                        <a href="#tableClassic" class="shelfOrangeSubBtn" >Classic</a>
+                        <a href="#tableCalendar" class="shelfOrangeSubBtn" >Calendar</a>
+                        <a href="#tableModern" class="shelfOrangeSubBtn" >Modern</a>
+                        <a href="#tableStacked" class="shelfOrangeSubBtn" >Stacked</a>
+                        <a href="#tableShredded" class="shelfOrangeSubBtn" >Shredded</a>
+                        <a href="#tableZigZag" class="shelfOrangeSubBtn" >Zig Zag</a>
+
                 <span class="normGap p_50px"></span>
 
             </div>
@@ -1787,9 +1798,1035 @@
 
         </div>
 
+        <div class="largeGap p_5_h"></div>
+
 <!-- navbar description end -->
 
 
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+<!-- table start -->
+
+        <div>
+
+            <div class="largeGap p_2_q" id="table"></div>
+
+            <h2 class="titleL">Table</h2>
+
+            <p class="txtJustify lineHeight_1_7">To access tables using provided classes a proper table structure is needed. This will not work if table is constructed using div tags instead of table tags. Types of table that can be created:</p>
+
+
+
+    <!--basic start-->
+
+            <div class="largeGap p_2_q" id="tableBasic"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Basic:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 4 basic tables. In order to access basic tables, use <span class="highlightBlack">class="tableBasic#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black, Blue  and Dark. <span class="highlightBlack">#</span> can also be null.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableBasic pinPoint">//pinPoint is experimental and will only be functional with this class.
+                        &lt;tr>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (Basic):</b>
+
+                    <table class="tableBasic pinPoint">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(BasicBlue):</b>
+
+                    <table class="tableBasicBlue">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(BasicBlack):</b>
+
+                    <table class="tableBasicBlack">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(BasicDark):</b>
+
+                    <table class="tableBasicDark">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--basic end-->
+
+
+
+
+
+    <!--classic start-->
+
+            <div class="largeGap p_2_q" id="tableClassic"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Classic:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 2 classic tables. In order to access classic tables, use <span class="highlightBlack">class="tableClassic#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black & Blue. <span class="highlightBlack">#</span> can not be null.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableClassicBlack">
+                        &lt;tr>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (ClassicBlack):</b>
+
+                    <table class="tableClassicBlack">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(ClassicBlue):</b>
+
+                    <table class="tableClassicBlue">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--classic end-->
+
+
+
+
+
+    <!--calendar start-->
+
+            <div class="largeGap p_2_q" id="tableCalendar"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Calender:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 2 calendar tables. In order to access calender tables, use <span class="highlightBlack">class="tableCalendar#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black & Blue. <span class="highlightBlack">#</span> can not be null.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableCalendarBlack">
+                        &lt;tr>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (CalendarBlack):</b>
+
+                    <table class="tableCalendarBlack">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(CalendarBlue):</b>
+
+                    <table class="tableCalendarBlue">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--calendar end-->
+
+
+
+
+
+    <!--modern start-->
+
+            <div class="largeGap p_2_q" id="tableModern"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Modern:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 2 modern tables. In order to access modern tables, use <span class="highlightBlack">class="tableModern#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black & Blue. <span class="highlightBlack">#</span> can not be null. width attribute is required for this class.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableModernBlack">
+                        &lt;tr>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (ModernBlack):</b>
+
+                    <table class="tableModernBlack">
+                        <tr>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(ModernBlue):</b>
+
+                    <table class="tableModernBlue">
+                        <tr>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--modern end-->
+
+
+
+
+
+    <!--stacked start-->
+
+            <div class="largeGap p_2_q" id="tableStacked"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Stacked:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 2 stacked tables. In order to access stacked tables, use <span class="highlightBlack">class="tableStacked#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black & Blue. <span class="highlightBlack">#</span> can not be null.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableStackedBlack">
+                        &lt;tr>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                            &lt;th>header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                            &lt;td>data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (StackedBlack):</b>
+
+                    <table class="tableStackedBlack">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(StackedBlue):</b>
+
+                    <table class="tableStackedBlue">
+                        <tr>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                            <th>header</th>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                        <tr>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                            <td>data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--stacked end-->
+
+
+
+
+
+    <!--shredder start-->
+
+            <div class="largeGap p_2_q" id="tableShredded"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Shredded:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are 2 shredded tables. In order to access shredded tables, use <span class="highlightBlack">class="tableShredded#"</span> Here <span class="highlightBlack">#</span> is a placeholder for Black & Blue. <span class="highlightBlack">#</span> can not be null. width attribute is required for this class.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableShreddedBlack">
+                        &lt;tr>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview (ShreddedBlack):</b>
+
+                    <table class="tableShreddedBlack">
+                        <tr>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div>
+                    <b>(ShreddedBlue):</b>
+
+                    <table class="tableShreddedBlue">
+                        <tr>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--shredded end-->
+
+
+
+
+
+    <!--zig zag start-->
+
+            <div class="largeGap p_2_q" id="tableZigZag"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Zig Zag:</li>
+
+            <p class="txtJustify lineHeight_1_7">There's only 1 zig zag tables. In order to access zigzag table, use <span class="highlightBlack">class="tableZigZag"</span> width attribute is required for this class.</p>
+
+            <pre data-start="2" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;table class="tableZigZag">
+                        &lt;tr>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                            &lt;th width="25%">header&lt;/th>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                            &lt;td width="25%">data&lt;/td>
+                        &lt;/tr>
+                    &lt;/table>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1 gridCol_2_size_1 gridRowGap_5 justifyItemsCenter mt_5_h">
+
+                <div>
+                    <b>Preview:</b>
+
+                    <table class="tableZigZag">
+                        <tr>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                            <th width="25%">header</th>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                        <tr>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                            <td width="25%">data</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+    <!--zig zag end-->
+
+        </div>
+
+        <div class="largeGap p_5_h"></div>
+
+<!-- table end -->
+
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
 
 
 
