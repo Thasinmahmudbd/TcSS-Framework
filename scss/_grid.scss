@@ -47,43 +47,9 @@
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    &_2_size_1_9{
-        display:grid;
-        grid-template-columns: 1fr 9fr;
-    }
-    &_2_size_2_8{
-        display:grid;
-        grid-template-columns: 2fr 8fr;
-    }
-    &_2_size_3_7{
-        display:grid;
-        grid-template-columns: 3fr 7fr;
-    }
-    &_2_size_4_6{
-        display:grid;
-        grid-template-columns: 4fr 6fr;
-    }
-    &_2_size_5_5{
-        display:grid;
-        grid-template-columns: 5fr 5fr;
-    }
-    &_2_size_6_4{
-        display:grid;
-        grid-template-columns: 6fr 4fr;
-    }
-    &_2_size_7_3{
-        display:grid;
-        grid-template-columns: 7fr 3fr;
-    }
-    &_2_size_8_2{
-        display:grid;
-        grid-template-columns: 8fr 2fr;
-    }
-    &_2_size_9_1{
-        display:grid;
-        grid-template-columns: 9fr 1fr;
-    }
 }
+
+
 
 
 
@@ -130,43 +96,372 @@
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    &_2_size_1_9{
-        display:grid;
-        grid-template-rows: 1fr 9fr;
-    }
-    &_2_size_2_8{
-        display:grid;
-        grid-template-rows: 2fr 8fr;
-    }
-    &_2_size_3_7{
-        display:grid;
-        grid-template-rows: 3fr 7fr;
-    }
-    &_2_size_4_6{
-        display:grid;
-        grid-template-rows: 4fr 6fr;
-    }
-    &_2_size_5_5{
-        display:grid;
-        grid-template-rows: 5fr 5fr;
-    }
-    &_2_size_6_4{
-        display:grid;
-        grid-template-rows: 6fr 4fr;
-    }
-    &_2_size_7_3{
-        display:grid;
-        grid-template-rows: 7fr 3fr;
-    }
-    &_2_size_8_2{
-        display:grid;
-        grid-template-rows: 8fr 2fr;
-    }
-    &_2_size_9_1{
-        display:grid;
-        grid-template-rows: 9fr 1fr;
-    }
 }
+
+
+
+
+/* grid-template-columns, grid-template-rows (2_size) dynamic */
+
+$lim1: 9;
+$hook2: 9;
+
+@for $hook1 from 1 through $lim1 {
+    .gridCol_2_size_#{$hook1}_#{$hook2} {
+        display:grid;
+        grid-template-columns: (0fr + $hook1) (0fr + $hook2);
+    }
+    .gridRow_2_size_#{$hook1}_#{$hook2} {
+        display:grid;
+        grid-template-rows: (0fr + $hook1) (0fr + $hook2);
+    }
+    $hook2: $hook2 - 1;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (3_size) dynamic */
+
+$lim1: 8;
+$lim2: 8;
+$hook3: 8;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        .gridCol_3_size_#{$hook1}_#{$hook2}_#{$hook3} {
+            display:grid;
+            grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3);
+        }
+        .gridRow_3_size_#{$hook1}_#{$hook2}_#{$hook3} {
+            display:grid;
+            grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3);
+        }
+        $hook3: $hook3 - 1;
+    }
+    $lim2: $lim2 - 1;
+    $hook3: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (4_size) dynamic */
+
+$lim1: 7;
+$lim2: 7;
+$lim3: 7;
+$hook4: 7;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            .gridCol_4_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4} {
+                display:grid;
+                grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4);
+            }
+            .gridRow_4_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4} {
+                display:grid;
+                grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4);
+            }
+            $hook4: $hook4 - 1;
+        }
+        $lim3: $lim3 - 1;
+        $hook4: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook4: $lim2;
+    $lim3: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (5_size) dynamic */
+
+$lim1: 6;
+$lim2: 6;
+$lim3: 6;
+$lim4: 6;
+$hook5: 6;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            @for $hook4 from 1 through $lim4{
+                .gridCol_5_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5} {
+                    display:grid;
+                    grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5);
+                }
+                .gridRow_5_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5} {
+                    display:grid;
+                    grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5);
+                }
+                $hook5: $hook5 - 1;
+            }
+            $lim4: $lim4 - 1;
+            $hook5: $lim4;
+        }
+        $lim3: $lim3 - 1;
+        $hook5: $lim3;
+        $lim4: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook5: $lim2;
+    $lim3: $lim2;
+    $lim4: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (6_size) dynamic */
+
+$lim1: 5;
+$lim2: 5;
+$lim3: 5;
+$lim4: 5;
+$lim5: 5;
+$hook6: 5;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            @for $hook4 from 1 through $lim4{
+                @for $hook5 from 1 through $lim5{
+                    .gridCol_6_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6} {
+                        display:grid;
+                        grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6);
+                    }
+                    .gridRow_6_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6} {
+                        display:grid;
+                        grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6);
+                    }
+                    $hook6: $hook6 - 1;
+                }
+                $lim5: $lim5 - 1;
+                $hook6: $lim5;
+            }
+            $lim4: $lim4 - 1;
+            $hook6: $lim4;
+            $lim5: $lim4;
+        }
+        $lim3: $lim3 - 1;
+        $hook6: $lim3;
+        $lim4: $lim3;
+        $lim5: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook6: $lim2;
+    $lim3: $lim2;
+    $lim4: $lim2;
+    $lim5: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (7_size) dynamic */
+
+$lim1: 4;
+$lim2: 4;
+$lim3: 4;
+$lim4: 4;
+$lim5: 4;
+$lim6: 4;
+$hook7: 4;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            @for $hook4 from 1 through $lim4{
+                @for $hook5 from 1 through $lim5{
+                    @for $hook6 from 1 through $lim6{
+                        .gridCol_7_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7} {
+                            display:grid;
+                            grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7);
+                        }
+                        .gridRow_7_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7} {
+                            display:grid;
+                            grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7);
+                        }
+                        $hook7: $hook7 - 1;
+                    }
+                    $lim6: $lim6 - 1;
+                    $hook7: $lim6;
+                }
+                $lim5: $lim5 - 1;
+                $hook7: $lim5;
+                $lim6: $lim5;
+            }
+            $lim4: $lim4 - 1;
+            $hook7: $lim4;
+            $lim5: $lim4;
+            $lim6: $lim4;
+        }
+        $lim3: $lim3 - 1;
+        $hook7: $lim3;
+        $lim4: $lim3;
+        $lim5: $lim3;
+        $lim6: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook7: $lim2;
+    $lim3: $lim2;
+    $lim4: $lim2;
+    $lim5: $lim2;
+    $lim6: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (8_size) dynamic */
+
+$lim1: 3;
+$lim2: 3;
+$lim3: 3;
+$lim4: 3;
+$lim5: 3;
+$lim6: 3;
+$lim7: 3;
+$hook8: 3;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            @for $hook4 from 1 through $lim4{
+                @for $hook5 from 1 through $lim5{
+                    @for $hook6 from 1 through $lim6{
+                        @for $hook7 from 1 through $lim7{
+                            .gridCol_8_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8} {
+                                display:grid;
+                                grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8);
+                            }
+                            .gridRow_8_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8} {
+                                display:grid;
+                                grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8);
+                            }
+                            $hook8: $hook8 - 1;
+                        }
+                        $lim7: $lim7 - 1;
+                        $hook8: $lim7;
+                    }
+                    $lim6: $lim6 - 1;
+                    $hook8: $lim6;
+                    $lim7: $lim6;
+                }
+                $lim5: $lim5 - 1;
+                $hook8: $lim5;
+                $lim6: $lim5;
+                $lim7: $lim5;
+            }
+            $lim4: $lim4 - 1;
+            $hook8: $lim4;
+            $lim5: $lim4;
+            $lim6: $lim4;
+            $lim7: $lim4;
+        }
+        $lim3: $lim3 - 1;
+        $hook8: $lim3;
+        $lim4: $lim3;
+        $lim5: $lim3;
+        $lim6: $lim3;
+        $lim7: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook8: $lim2;
+    $lim3: $lim2;
+    $lim4: $lim2;
+    $lim5: $lim2;
+    $lim6: $lim2;
+    $lim7: $lim2;
+}
+
+
+
+
+
+/* grid-template-columns, grid-template-rows more than (9_size) dynamic */
+
+$lim1: 2;
+$lim2: 2;
+$lim3: 2;
+$lim4: 2;
+$lim5: 2;
+$lim6: 2;
+$lim7: 2;
+$lim8: 2;
+$hook9: 2;
+
+@for $hook1 from 1 through $lim1 {
+    @for $hook2 from 1 through $lim2{
+        @for $hook3 from 1 through $lim3{
+            @for $hook4 from 1 through $lim4{
+                @for $hook5 from 1 through $lim5{
+                    @for $hook6 from 1 through $lim6{
+                        @for $hook7 from 1 through $lim7{
+                            @for $hook8 from 1 through $lim8{
+                                .gridCol_9_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8}_#{$hook9} {
+                                    display:grid;
+                                    grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8) (0fr + $hook9);
+                                }
+                                .gridRow_9_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8}_#{$hook9} {
+                                    display:grid;
+                                    grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8) (0fr + $hook9);
+                                }
+                                $hook9: $hook9 - 1;
+                            }
+                            $lim8: $lim8 - 1;
+                            $hook9: $lim8;
+                        }
+                        $lim7: $lim7 - 1;
+                        $hook9: $lim7;
+                        $lim8: $lim7;
+                    }
+                    $lim6: $lim6 - 1;
+                    $hook9: $lim6;
+                    $lim7: $lim6;
+                    $lim8: $lim6;
+                }
+                $lim5: $lim5 - 1;
+                $hook9: $lim5;
+                $lim6: $lim5;
+                $lim7: $lim5;
+                $lim8: $lim5;
+            }
+            $lim4: $lim4 - 1;
+            $hook9: $lim4;
+            $lim5: $lim4;
+            $lim6: $lim4;
+            $lim7: $lim4;
+            $lim8: $lim4;
+        }
+        $lim3: $lim3 - 1;
+        $hook9: $lim3;
+        $lim4: $lim3;
+        $lim5: $lim3;
+        $lim6: $lim3;
+        $lim7: $lim3;
+        $lim8: $lim3;
+    }
+    $lim2: $lim2 - 1;
+    $hook9: $lim2;
+    $lim3: $lim2;
+    $lim4: $lim2;
+    $lim5: $lim2;
+    $lim6: $lim2;
+    $lim7: $lim2;
+    $lim8: $lim2;
+}
+
+
 
 
 

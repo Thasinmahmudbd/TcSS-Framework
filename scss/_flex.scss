@@ -56,7 +56,7 @@ $perlimit: 100;
     }
 }
 
-$orderlimit: 20;
+$orderlimit: 100;
 
 @for $hook from 0 through $orderlimit {
     .flexOrder_#{$hook} {
