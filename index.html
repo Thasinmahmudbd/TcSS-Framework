@@ -8,12 +8,14 @@
 
     <!-- design -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Thasinmahmudbd/TcSS-Framework@latest/dist/css/tcss.min.css">
+    <!--<link rel="stylesheet" href="dist/css/tcss.min.css">-->
     <link rel="stylesheet" href="dist/prism/prism.css">
 
     <!-- script -->
     <script defer src="dist/prism/prism.js"></script>
     <script defer src="dist/scripts/loader.js"></script>
     <script defer src="dist/scripts/responsive.js"></script>
+    <script defer src="dist/scripts/scripts.js"></script>
 
     <title>TcSS Mini [version 0.1]</title>
     <!-- favicon 
@@ -51,19 +53,17 @@
 
     <div class="nav bgSandyBrown w_75Per m_a">
 
-        <h1 class="txtLogo posAbs negTop_13 fSize_2"><a class="clrWhite txtDecorNone disGrid alignSelfCenter" href="index.html">TcSS</a></h1>
+        <p class="txtLogo clrWhite"><!--<a class="clrWhite txtDecorNone disGrid alignSelfCenter" href="index.html">TcSS</a>{ posAbs negTop_13 fSize_2}-->TcSS</p>
 
-        <span></span>
         <span></span>
 
         <div class="mainLinks">
 
+            <a class="mainLink clrWhite hoverEff_5" href="">TjS</a>
             <a class="mainLink clrWhite hoverEff_5" href="">Portfolio</a>
             <a class="mainLink clrWhite hoverEff_5" href="colors.html">Colors</a>
-            <a class="mainLink clrWhite hoverEff_5" href="">TScRIPT</a>
-            <a class="mainLink clrWhite hoverEff_5" href="">TFrAMES</a>
 
-            <a class="hamburger" href=""><i class="fas fa-bars"></i></a>
+            <a class="hamburger clrWhite" href="#" onclick="navRightSlideO()"><i class="fas fa-bars"></i></a>
 
         </div>
 
@@ -71,7 +71,23 @@
 
 </div>
 
+<!-- The overlay -->
+<div id="overlayHook" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+
+    <!-- Overlay content -->
+    <div class="overlayLinks">
+        <a href="index.html">Home</a>
+        <a href="colors.html">Colors</a>
+        <a href="#">TjS</a>
+        <a href="#" class="closeLink" onclick="navRightSlideC()"><i class="fas fa-times"></i></a>
+    </div>
+
+</div>
+
 <!--navbar end-->
+
 
 
 
@@ -2881,6 +2897,7 @@
 <!--body end-->
 
 </div>
+
 
 
 </body>

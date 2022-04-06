@@ -71,6 +71,17 @@ window.onload = function(event){
         var element5 = document.getElementById("Grid_Fixing_Col2");
         element5.classList.remove("disBlock");
         element5.classList.add("gridCol_2_size_3_7", "gridGap_2");
+
+        var element6 = document.getElementById("introRes");
+        element6.classList.remove("gridCol_1_size_1");
+        element6.classList.add("gridCol_2_size_2_8", "gridGap_1");
+
+        var element7 = document.getElementById("introPic");
+        element7.classList.remove("w_40Per", "m_a");
+
+        var element8 = document.getElementById("verTagRes");
+        element8.classList.remove("gridCol_1_size_1");
+        element8.classList.add("gridCol_2_size_9_1");
         
     }
 
