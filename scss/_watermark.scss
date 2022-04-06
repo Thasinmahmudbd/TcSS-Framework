@@ -14,6 +14,7 @@ body::after{
     animation: watermark 20s forwards;
     animation-iteration-count: infinite;
     z-index: 100000;
+    overflow-x: hidden;
 }
 
 /*body::before{

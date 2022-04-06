@@ -31,10 +31,26 @@ window.onresize = function(event) {
             var element7 = document.getElementById("introPic");
             element7.classList.add("w_40Per", "m_a");
 
-            var element8 = document.getElementById("verTagRes");
-            element8.classList.remove("gridCol_2_size_9_1");
-            element8.classList.add("gridCol_1_size_1");
-    
+            if(event.currentTarget.outerWidth < 350){
+
+                var element8 = document.getElementById("verTagRes");
+                element8.classList.remove("gridCol_2_size_9_1");
+                element8.classList.add("gridCol_1_size_1");
+
+                var element9 = document.getElementById("verNumRes");
+                element9.classList.remove("txtRight");
+
+            }else{
+
+                var element8 = document.getElementById("verTagRes");
+                element8.classList.remove("gridCol_1_size_1");
+                element8.classList.add("gridCol_2_size_9_1");
+
+                var element9 = document.getElementById("verNumRes");
+                element9.classList.add("txtRight");
+
+            }
+
         }else{
 
             var element6 = document.getElementById("introRes");
@@ -47,6 +63,9 @@ window.onresize = function(event) {
             var element8 = document.getElementById("verTagRes");
             element8.classList.remove("gridCol_1_size_1");
             element8.classList.add("gridCol_2_size_9_1");
+
+            var element9 = document.getElementById("verNumRes");
+            element9.classList.add("txtRight");
 
         }
 
@@ -82,6 +101,9 @@ window.onresize = function(event) {
         var element8 = document.getElementById("verTagRes");
         element8.classList.remove("gridCol_1_size_1");
         element8.classList.add("gridCol_2_size_9_1");
+
+        var element9 = document.getElementById("verNumRes");
+        element9.classList.add("txtRight");
 
     }
     

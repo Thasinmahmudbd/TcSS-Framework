@@ -49,9 +49,9 @@
 
 <!--navbar start-->
 
-<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10">
+<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10 ofHidden">
 
-    <div class="nav bgSandyBrown w_75Per m_a">
+    <div class="nav bgSandyBrown w_75Per m_a ofHidden">
 
         <p class="txtLogo clrWhite"><!--<a class="clrWhite txtDecorNone disGrid alignSelfCenter" href="index.html">TcSS</a>{ posAbs negTop_13 fSize_2}-->TcSS</p>
 
@@ -231,7 +231,7 @@
 
             <div class="gridCol_2_size_9_1" id="verTagRes">
                 <p class="m_0"><b class="fSize_1_h">Hi,</b> welcome to the framework,</p>
-                <a class="txtRight txtDecorNone" href=""><b class="highlightSuccess"> v 0.1</b></a>
+                <a class="txtRight txtDecorNone" href="" id="verNumRes"><b class="highlightSuccess"> v 0.1</b></a>
             </div>
 
             <!--<img class="justifySelfCenter" src="../media/logo.jpg" alt="TcSS" width="50%">-->
@@ -1010,76 +1010,76 @@
 
             <p class="txtJustify lineHeight_1_7">This framework currently supports <b>6</b> fonts. They are: </p>
 
-            <table width="100%" class="txtCenter borSize_2 borClrBrilliantWhite p_2px">
+            <table width="100%" class="txtCenter borSize_2 borClrBrilliantWhite p_2px resTable">
                 <tr>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="16%">Fonts</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Default</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Thin</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Light</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Regular</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Medium</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Bold</th>
-                    <th class="txtCenter p_0_h bgBrilliantWhite" width="12%">Bolder</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Fonts" width="16%">Fonts</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Default" width="12%">Default</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Thin" width="12%">Thin</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Light" width="12%">Light</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Regular" width="12%">Regular</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Medium" width="12%">Medium</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Bold" width="12%">Bold</th>
+                    <th class="txtCenter p_0_h bgBrilliantWhite resHeaderItem" data-label="Bolder" width="12%">Bolder</th>
                 </tr>
-                <tr>
-                    <td class="txtCenter p_0_h" width="16%">Nunito</td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter p_0_h resData" data-label="Fonts" width="16%">Nunito</td>
+                    <td class="txtCenter p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Light" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
                 </tr>
-                <tr>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">OpenSans</td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Fonts" width="16%">OpenSans</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Light" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
                 </tr>
-                <tr>
-                    <td class="txtCenter p_0_h" width="16%">Roboto</td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter p_0_h resData" data-label="Fonts" width="16%">Roboto</td>
+                    <td class="txtCenter p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Light" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
                 </tr>
-                <tr>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">Lato</td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Fonts" width="16%">Lato</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Light" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
                 </tr>
-                <tr>
-                    <td class="txtCenter p_0_h" width="16%">Montserrat</td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
-                    <td class="txtCenter p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter p_0_h resData" data-label="Fonts" width="16%">Montserrat</td>
+                    <td class="txtCenter p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Light" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-check-circle clrSuccess"></i></th>
+                    <td class="txtCenter p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
                 </tr>
-                <tr>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="16%">MonteCarlo</td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
-                    <td class="txtCenter bgBrilliantWhite p_0_h" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                <tr class="resRow">
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Fonts" width="16%">MonteCarlo</td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Default" width="12%"><i class="fas fa-check-circle clrSuccess"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Thin" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Light" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Regular" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Medium" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bold" width="12%"><i class="fas fa-times-circle clrDanger"></i></th>
+                    <td class="txtCenter bgBrilliantWhite p_0_h resData" data-label="Bolder" width="12%"><i class="fas fa-times-circle clrDanger"></i></td>
                 </tr>
             </table>
 
