@@ -1,4 +1,4 @@
-window.onload = function(event){
+window.onresize = function(event) {
 
     if(event.currentTarget.outerWidth < 1440){
 
@@ -71,10 +71,7 @@ window.onload = function(event){
         var element5 = document.getElementById("Grid_Fixing_Col2");
         element5.classList.remove("disBlock");
         element5.classList.add("gridCol_2_size_3_7", "gridGap_2");
-        
+
     }
-
-    document.getElementById('loader').style.display="none";
-    document.getElementById('content').style.opacity="1";
-
-};
+    
+}

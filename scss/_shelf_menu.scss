@@ -5,6 +5,9 @@
         grid-gap: $quarter;
         border-right: 5px solid $sandyBrown;
         text-align: right;
+        @media screen and (max-width: $tablet) {
+            display: none;
+        }
     &Btn{
         text-decoration: none;
         margin: 0rem .2rem;

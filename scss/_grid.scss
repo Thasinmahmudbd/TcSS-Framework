@@ -14,38 +14,65 @@
     &_2_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_3_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_4_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_5_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_6_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_7_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_8_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_9_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     &_10_size_1{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -63,38 +90,65 @@
     &_2_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_3_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_4_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_5_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_6_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_7_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_8_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_9_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     &_10_size_1{
         display:grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
 }
 
@@ -110,10 +164,16 @@ $hook2: 9;
     .gridCol_2_size_#{$hook1}_#{$hook2} {
         display:grid;
         grid-template-columns: (0fr + $hook1) (0fr + $hook2);
+        @media only screen and (max-width: $tablet) {
+            grid-template-columns: 1fr;
+        }
     }
     .gridRow_2_size_#{$hook1}_#{$hook2} {
         display:grid;
         grid-template-rows: (0fr + $hook1) (0fr + $hook2);
+        @media only screen and (max-width: $tablet) {
+            grid-template-rows: 1fr;
+        }
     }
     $hook2: $hook2 - 1;
 }
@@ -133,10 +193,16 @@ $hook3: 8;
         .gridCol_3_size_#{$hook1}_#{$hook2}_#{$hook3} {
             display:grid;
             grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3);
+            @media only screen and (max-width: $tablet) {
+                grid-template-columns: 1fr;
+            }
         }
         .gridRow_3_size_#{$hook1}_#{$hook2}_#{$hook3} {
             display:grid;
             grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3);
+            @media only screen and (max-width: $tablet) {
+                grid-template-rows: 1fr;
+            }
         }
         $hook3: $hook3 - 1;
     }
@@ -161,10 +227,16 @@ $hook4: 7;
             .gridCol_4_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4} {
                 display:grid;
                 grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4);
+                @media only screen and (max-width: $tablet) {
+                    grid-template-columns: 1fr;
+                }
             }
             .gridRow_4_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4} {
                 display:grid;
                 grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4);
+                @media only screen and (max-width: $tablet) {
+                    grid-template-rows: 1fr;
+                }
             }
             $hook4: $hook4 - 1;
         }
@@ -195,10 +267,16 @@ $hook5: 6;
                 .gridCol_5_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5} {
                     display:grid;
                     grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5);
+                    @media only screen and (max-width: $tablet) {
+                        grid-template-columns: 1fr;
+                    }
                 }
                 .gridRow_5_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5} {
                     display:grid;
                     grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5);
+                    @media only screen and (max-width: $tablet) {
+                        grid-template-rows: 1fr;
+                    }
                 }
                 $hook5: $hook5 - 1;
             }
@@ -236,10 +314,16 @@ $hook6: 5;
                     .gridCol_6_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6} {
                         display:grid;
                         grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6);
+                        @media only screen and (max-width: $tablet) {
+                            grid-template-columns: 1fr;
+                        }
                     }
                     .gridRow_6_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6} {
                         display:grid;
                         grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6);
+                        @media only screen and (max-width: $tablet) {
+                            grid-template-rows: 1fr;
+                        }
                     }
                     $hook6: $hook6 - 1;
                 }
@@ -285,10 +369,16 @@ $hook7: 4;
                         .gridCol_7_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7} {
                             display:grid;
                             grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7);
+                            @media only screen and (max-width: $tablet) {
+                                grid-template-columns: 1fr;
+                            }
                         }
                         .gridRow_7_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7} {
                             display:grid;
                             grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7);
+                            @media only screen and (max-width: $tablet) {
+                                grid-template-rows: 1fr;
+                            }
                         }
                         $hook7: $hook7 - 1;
                     }
@@ -343,10 +433,16 @@ $hook8: 3;
                             .gridCol_8_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8} {
                                 display:grid;
                                 grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8);
+                                @media only screen and (max-width: $tablet) {
+                                    grid-template-columns: 1fr;
+                                }
                             }
                             .gridRow_8_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8} {
                                 display:grid;
                                 grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8);
+                                @media only screen and (max-width: $tablet) {
+                                    grid-template-rows: 1fr;
+                                }
                             }
                             $hook8: $hook8 - 1;
                         }
@@ -411,10 +507,16 @@ $hook9: 2;
                                 .gridCol_9_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8}_#{$hook9} {
                                     display:grid;
                                     grid-template-columns: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8) (0fr + $hook9);
+                                    @media only screen and (max-width: $tablet) {
+                                        grid-template-columns: 1fr;
+                                    }
                                 }
                                 .gridRow_9_size_#{$hook1}_#{$hook2}_#{$hook3}_#{$hook4}_#{$hook5}_#{$hook6}_#{$hook7}_#{$hook8}_#{$hook9} {
                                     display:grid;
                                     grid-template-rows: (0fr + $hook1) (0fr + $hook2) (0fr + $hook3) (0fr + $hook4) (0fr + $hook5) (0fr + $hook6) (0fr + $hook7) (0fr + $hook8) (0fr + $hook9);
+                                    @media only screen and (max-width: $tablet) {
+                                        grid-template-rows: 1fr;
+                                    }
                                 }
                                 $hook9: $hook9 - 1;
                             }
@@ -540,4 +642,23 @@ $gaplimit: 100;
         display:grid;
         column-gap: (0rem + $hook);
     }
+}
+
+
+
+
+/* responsive */
+
+@media only screen and (max-width: $pc) {
+
+.resCOL{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.resROW{
+    display:grid;
+    grid-template-rows: 1fr;
+}
+
 }
