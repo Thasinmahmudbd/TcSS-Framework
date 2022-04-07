@@ -219,3 +219,11 @@
 
 }
 
+.delOnScBel1400{
+
+    @media only screen and (max-width: $devScreenSizeLim) {
+        display:none;
+    }
+
+}
+

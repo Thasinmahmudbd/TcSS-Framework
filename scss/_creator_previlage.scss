@@ -1,0 +1,32 @@
+/* pigment */
+
+@media only screen and (max-width: 1400px) {
+    
+    .pigment{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:2px;
+        padding:0;
+        margin:0;
+    }
+    
+    .pigment > a{
+        width: 5px;
+        height: 5px;
+        padding: .5rem;
+        border: 1px solid $black;
+        font-size: 1px;
+        color: transparent;
+        margin:0;
+        gap:2px;
+        border-radius: 0px;
+        transition: 500ms ease-in-out;
+    }
+    
+    .pigment > a:hover{
+        box-shadow: 5px 10px 10px -1px #000000a5;
+        transition: 500ms ease-in-out;
+    }
+
+}

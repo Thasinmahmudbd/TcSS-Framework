@@ -8,11 +8,13 @@
 
     <!-- design -->
     <link rel="stylesheet" href="https://raw.githack.com/Thasinmahmudbd/TcSS-Framework/Thasin/dist/css/tcss.min.css">
+    <!--<link rel="stylesheet" href="dist/css/tcss.min.css">-->
     <link rel="stylesheet" href="dist/prism/prism.css">
 
     <!-- script -->
     <script defer src="dist/prism/prism.js"></script>
-    <!--<script defer src="dist/scripts/loader.js"></script>-->
+    <script defer src="dist/scripts/pigmentApp.js"></script>
+    <script defer src="dist/scripts/scripts.js"></script>
 
     <title>TcSS Mini [version 0.1]</title>
     <!-- favicon 
@@ -53,9 +55,9 @@
 
 <!--navbar start-->
 
-<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10">
+<div class="bgSandyBrown posFix w_100Per top_0 zIndex_10 ofHidden">
 
-    <div class="nav bgSandyBrown w_75Per m_a">
+    <div class="nav bgSandyBrown w_75Per m_a ofHidden">
 
         <h1 class="txtLogo posAbs negTop_13 fSize_2"><a class="clrWhite txtDecorNone" href="index.html">TcSS</a></h1>
 
@@ -68,10 +70,25 @@
             <a class="mainLink clrWhite hoverEff_5" href="">Portfolio</a>
             <a class="mainLink clrWhite hoverEff_5" href="index.html">Home</a>
 
-            <a class="hamburger" href=""><i class="fas fa-bars"></i></a>
+            <a class="hamburger clrWhite" href="#" onclick="navRightSlideO()"><i class="fas fa-bars"></i></a>
 
         </div>
 
+    </div>
+
+</div>
+
+<!-- The overlay -->
+<div id="overlayHook" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+
+    <!-- Overlay content -->
+    <div class="overlayLinks">
+        <a href="index.html">Home</a>
+        <a href="colors.html">Colors</a>
+        <a href="#">TjS</a>
+        <a href="#" class="closeLink" onclick="navRightSlideC()"><i class="fas fa-times"></i></a>
     </div>
 
 </div>
@@ -91,12 +108,12 @@
 
 <!--body start-->
 
-<div class="gridCol_2_size_7_3 gridGap_2 w_85Per m_a">
+<div class="gridCol_2_size_7_3 gridGap_2 w_85Per m_a" id="palletBody">
 
 
-    <div class="gridCol_2_size_1_9 gridGap_2">
+    <div class="gridCol_2_size_1_9 gridGap_2" id="palletBody2">
 
-        <div class="posFix top_0 left_120 h_100Per">
+        <div class="posFix top_0 left_120 h_100Per delOnScBel1400">
 
             <h2 class="titleL mt_112px">         
                 Tags
@@ -124,11 +141,11 @@
 
         <!--colors start-->
 
-        <div>
+        <div id="setScroll">
 
-            <h2 class="titleC">124 Shades of White</h2>
+            <h2 class="titleC delOnScBel1400">124 Shades of White</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListWhite">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListWhite">
 
                 <!-- This slot holds, js generated previews for white colors -->
 
@@ -140,9 +157,9 @@
 
             <div class="normGap pt_96px" id="blackAll"></div>
 
-            <h2 class="titleC">134 Shades of Black</h2>
+            <h2 class="titleC delOnScBel1400">134 Shades of Black</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListBlack">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListBlack">
 
                 <!-- This slot holds, js generated previews for black colors -->
 
@@ -154,9 +171,9 @@
 
             <div class="normGap pt_96px" id="greenAll"></div>
 
-            <h2 class="titleC">134 Shades of Green</h2>
+            <h2 class="titleC delOnScBel1400">134 Shades of Green</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListGreen">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListGreen">
 
                 <!-- This slot holds, js generated previews for green colors -->
 
@@ -168,9 +185,9 @@
 
             <div class="normGap pt_96px" id="purpleAll"></div>
 
-            <h2 class="titleC">134 Shades of Purple</h2>
+            <h2 class="titleC delOnScBel1400">134 Shades of Purple</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListPurple">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListPurple">
 
                 <!-- This slot holds, js generated previews for green colors -->
 
@@ -182,9 +199,9 @@
 
             <div class="normGap pt_96px" id="yellowAll"></div>
 
-            <h2 class="titleC">145 Shades of Purple</h2>
+            <h2 class="titleC delOnScBel1400">145 Shades of Purple</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListYellow">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListYellow">
 
                 <!-- This slot holds, js generated previews for green colors -->
 
@@ -196,9 +213,9 @@
 
             <div class="normGap pt_96px" id="brownAll"></div>
 
-            <h2 class="titleC">128 Shades of Brown</h2>
+            <h2 class="titleC delOnScBel1400">128 Shades of Brown</h2>
 
-            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab" id="previewListBrown">
+            <div class="disGrid gridCol_5_size_1 gridGap_h justifyItemsCenter curGrab pigment" id="previewListBrown">
 
                 <!-- This slot holds, js generated previews for green colors -->
 
@@ -225,9 +242,9 @@
 
     <!--preview start-->
 
-    <div class="posFix top_0 right_110 w_25Per h_100Per">
+    <div class="posFix top_0 right_110 w_25Per h_100Per" id="detailList">
 
-        <h2 class="titleR mt_112px">         
+        <h2 class="titleR mt_112px" id="detailHeader">         
             Details
         </h2>
 
@@ -282,7 +299,7 @@
 
     // Adding class.
     mainDiv.className = "pt_10px";
-        colorDisplayP.className = "transparentContent p_3 bg"+clrName+" txtCenter borRad_100 fSize_1 clr"+txtClr+" nunitoBold";
+        colorDisplayP.className = "transparentContent p_3 bg"+clrName+" txtCenter borRad_100 fSize_1 clr"+txtClr+" nunitoBold delOnScBel1400";
             colorHeaderP.className = "nunitoBold";
             colorPre.className = "language-html line-numbers";
             bgHeaderP.className = "nunitoBold";
