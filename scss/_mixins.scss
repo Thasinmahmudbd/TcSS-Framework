@@ -68,3 +68,16 @@
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
+
+
+
+/* frame mixin */
+@mixin frMsT_1{
+    display:block;
+    height: fit-content;
+    padding:1rem;
+    @include png;
+    @media only screen and (max-width: $mobile) {
+        padding:.5rem;
+    }
+}
