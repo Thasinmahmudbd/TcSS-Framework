@@ -8,7 +8,7 @@
 
     <!-- design -->
     <link rel="stylesheet" href="https://rawcdn.githack.com/Thasinmahmudbd/TcSS-Framework/65ea11a436aa231c8d04677cc544cfdb39c9c30c/dist/css/tcss.min.css">
-    <!--<link rel="stylesheet" href="dist/css/tcss.min.css">-->
+    <!-- <link rel="stylesheet" href="dist/css/tcss.min.css"> -->
     <link rel="stylesheet" href="dist/prism/prism.css">
 
     <!-- script -->
@@ -171,10 +171,42 @@
                         <a href="#positions" class="shelfOrangeSubBtn" >Positions</a>
                         <a href="#position_mover" class="shelfOrangeSubBtn" >Top, Right, Bottom, Left</a>
                         <a href="#neg_mover" class="shelfOrangeSubBtn" >Negative T, R, B, L</a>
+                        <a href="#z_indexing" class="shelfOrangeSubBtn" >Index-Z</a>
 
                         <span class="smallGap"></span>
 
                         <a href="#display" class="shelfOrangeSubBtn" >Display</a>
+                        <a href="#height" class="shelfOrangeSubBtn" >Height</a>
+                        <a href="#width" class="shelfOrangeSubBtn" >Width</a>
+                        <a href="#opacity" class="shelfOrangeSubBtn" >Opacity</a>
+                        <a href="#background" class="shelfOrangeSubBtn" >Background</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#grid" class="shelfOrangeSubBtn" >Grid</a>
+                        <a href="#col_template" class="shelfOrangeSubBtn" >Column Template</a>
+                        <a href="#row_template" class="shelfOrangeSubBtn" >Row Template</a>
+                        <a href="#grid_gap" class="shelfOrangeSubBtn" >Grid Gap</a>
+                        <a href="#responsive_grid" class="shelfOrangeSubBtn" >Responsive Grid</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#flex" class="shelfOrangeSubBtn" >Flex</a>
+                        <a href="#flex_direction" class="shelfOrangeSubBtn" >Direction</a>
+                        <a href="#flex_wrap" class="shelfOrangeSubBtn" >Wrap</a>
+                        <a href="#flex_basis" class="shelfOrangeSubBtn" >Basis</a>
+                        <a href="#flex_order" class="shelfOrangeSubBtn" >Order</a>
+                        <a href="#flex_flex" class="shelfOrangeSubBtn" >Grow & Shrink</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#alignment" class="shelfOrangeSubBtn" >Alignment</a>
+                        <a href="#justification" class="shelfOrangeSubBtn" >Justification</a>
+
+                        <span class="smallGap"></span>
+                        
+                        <a href="#object_fit" class="shelfOrangeSubBtn" >Object Fit</a>
+                        <a href="#object_pos" class="shelfOrangeSubBtn" >Object Position</a>
 
                         <span class="smallGap"></span>
 
@@ -777,7 +809,7 @@
             <!-- preview -->
             <div class="m_1">
                 <b>Example:</b>
-                <div class="disGrid gridCol_5_size_1 gridGap_1">
+                <div class="disGrid gridCol_5_size_1 gridGap_1 resCOL--pc">
                     <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">All</p>
                     <p class="p_1 borSizeT_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Top</p>
                     <p class="p_1 borSizeR_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Right</p>
@@ -819,7 +851,7 @@
             <!-- preview -->
             <div class="m_1">
                 <b>Example:</b>
-                <div class="disGrid gridCol_8_size_1 gridGap_1">
+                <div class="disGrid gridCol_8_size_1 gridGap_1 resCOL--pc">
                     <p class="p_1 borSize_2 borStyleSolid txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Solid</p>
                     <p class="p_1 borSize_2 borStyleDashed txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dashed</p>
                     <p class="p_1 borSize_2 borStyleDotted txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dotted</p>
@@ -935,7 +967,7 @@
             <!-- preview -->
             <div class="m_1">
                 <b>Example:</b>
-                <div class="disGrid gridCol_5_size_1 gridGap_1">
+                <div class="disGrid gridCol_5_size_1 gridGap_1 resCOL--pc">
                     <p class="p_1 borRad_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">All</p>
                     <p class="p_1 borRadTL_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top Left</p>
                     <p class="p_1 borRadTR_100 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top Right</p>
@@ -952,7 +984,7 @@
 
             <li class="subTitleL">Border Color:</li>
 
-            <p class="txtJustify lineHeight_1_7">You can change border color using <span class="highlightBlack">class="borClr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="./colors.html">Colors</a>.</p>
+            <p class="txtJustify lineHeight_1_7">You can change border color using <span class="highlightBlack">class="borClr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="colors.html">Colors</a>.</p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -1000,7 +1032,7 @@
             <!-- preview -->
             <div class="m_1">
                 <b>Example:</b>
-                <div class="gridCol_5_size_1 gridGap_1">
+                <div class="gridCol_5_size_1 gridGap_1 resCOL--pc">
                     <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNone bgAlabaster">All</p>
                     <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneT bgAlabaster">Top</p>
                     <p class="p_1 borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold borNoneR bgAlabaster">Right</p>
@@ -1036,7 +1068,7 @@
             <!-- preview -->
             <div class="m_1">
                 <b>Example:</b>
-                <div class="gridCol_4_size_1 gridGap_1">
+                <div class="gridCol_4_size_1 gridGap_1 resCOL--pc">
                     <p class="p_1  borOnlyT borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Top</p>
                     <p class="p_1  borOnlyR borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Right</p>
                     <p class="p_1  borOnlyB borSize_5 txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold bgAlabaster">Bottom</p>
@@ -1217,7 +1249,7 @@
 
             <li class="subTitleL">Text Color:</li>
 
-            <p class="txtJustify lineHeight_1_7">You can change text color using <span class="highlightBlack">class="clr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="./colors.html">Colors</a>.</p>
+            <p class="txtJustify lineHeight_1_7">You can change text color using <span class="highlightBlack">class="clr#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="colors.html">Colors</a>.</p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
@@ -1527,6 +1559,24 @@
     <!-- neg t r b l end -->
 
 
+    <!-- z indexing -->
+
+            <div class="largeGap p_2_q" id="z_indexing"></div>
+
+            <li class="subTitleL">Index-Z:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set <b>Z</b> index use <span class="highlightBlack ">class="zIndex#s_#v"</span> here <span class="highlightBlack">#s</span> is a placeholder for index status. It can be <b>"Neg"</b> or <b>"Null".</b> <span class="highlightBlack">#v</span> is a placeholder for an integer value, which has a range of (0-20).</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="zIndex_1">  &lt;/div>
+                    &lt;div class="zIndexNeg_1">  &lt;/div>
+                </code>
+            </pre>
+
+    <!-- z indexing end -->
+
+
 
 
 <!--#######################################################-->
@@ -1551,6 +1601,583 @@
             </pre>
 
     <!-- display end -->
+
+
+    <!-- height -->
+
+            <div class="largeGap p_2_q" id="height"></div>
+
+            <li class="subTitleL">Height:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set height use <span class="highlightBlack ">class="h_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-1000)</b> for <b>"px"</b> unit & <b>(0-100)</b> for <b>"percentage"</b> and <b>"vh"</b> unit. You have to specify which unit you are using. By default it is in pixel unit, in-order to use percentage unit type <b>Per</b> and in-order to use viewport height unit type <b>vh</b> after integer value.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="h_10"> height 10px &lt;/div>
+                    &lt;div class="h_10Per"> height 10% &lt;/div>
+                    &lt;div class="h_10vh"> height 10vh &lt;/div>
+                </code>
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To set max height use <span class="highlightBlack ">class="maxH_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="maxH_10"> maximum height 10px &lt;/div>
+                    &lt;div class="maxH_10Per"> maximum height 10% &lt;/div>
+                    &lt;div class="maxH_10vh"> maximum height 10vh &lt;/div>
+                </code>
+            </pre>
+
+    <!-- height end -->
+
+
+    <!-- width -->
+
+            <div class="largeGap p_2_q" id="width"></div>
+
+            <li class="subTitleL">Width:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set width use <span class="highlightBlack ">class="w_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-1000)</b> for <b>"px"</b> unit & <b>(0-100)</b> for <b>"percentage"</b> and <b>"vw"</b> unit. You have to specify which unit you are using. By default it is in pixel unit, in-order to use percentage unit type <b>Per</b> and in-order to use viewport width unit type <b>vw</b> after integer value.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="w_10"> width 10px &lt;/div>
+                    &lt;div class="w_10Per"> width 10% &lt;/div>
+                    &lt;div class="w_10vh"> width 10vh &lt;/div>
+                </code>
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To set max width use <span class="highlightBlack ">class="maxW_#"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="maxW_10"> maximum width 10px &lt;/div>
+                    &lt;div class="maxW_10Per"> maximum width 10% &lt;/div>
+                    &lt;div class="maxW_10vw"> maximum width 10vh &lt;/div>
+                </code>
+            </pre>
+
+    <!-- width end -->
+
+
+    <!-- opacity -->
+
+            <div class="largeGap p_2_q" id="opacity"></div>
+
+            <li class="subTitleL">Opacity:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set opacity use <span class="highlightBlack ">class="opacity_#i_#f"</span> here <span class="highlightBlack">#i</span> is a placeholder for an binary value, which has a range of <b>(0-1)</b> and <span class="highlightBlack">#f</span> is a placeholder for an integer value, which has a range of <b>(0-9)</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="opacity_0_0"> opacity is 0% &lt;/div>
+                    &lt;div class="opacity_0_5"> opacity is 50% &lt;/div>
+                    &lt;div class="opacity_1_0"> opacity is 100% &lt;/div>
+                </code>
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To make something invisible use <span class="highlightBlack ">class="invisible"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="invisible"> John Cena. &lt;/div>
+                </code>
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To make something visible use <span class="highlightBlack ">class="visible"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="visible"> visible content. &lt;/div>
+                </code>
+            </pre>
+
+    <!-- opacity end -->
+
+
+    
+    <!-- background color-->
+
+            <div class="largeGap p_2_q" id="background"></div>
+
+            <li class="subTitleL">Background:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can change background color using <span class="highlightBlack">class="bg#"</span> here <span class="highlightBlack">#</span> is a placeholder for the color. To see all the available colors go to <a class="link" href="colors.html">Colors</a>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;p class="bgGold"> &lt;/p> //this paragraph background is Green.
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <p class="nunitoBold">Example:
+                <span class="p_1 clrBlack bgGold fSize_1">My background is Golden.</span></p>
+            </div>
+
+    <!-- background end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- grid -->
+
+            <div class="largeGap p_2_q" id="grid"></div>
+
+            <li class="subTitleL">Grid:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set display to grid use <span class="highlightBlack">class="disGrid"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="disGrid"> display of this div is grid &lt;/div>
+                </code>
+            </pre>
+
+    <!-- grid end -->
+
+
+    <!-- grid column -->
+
+            <div class="largeGap p_2_q" id="col_template"></div>
+
+            <li class="subTitleL">Column Template:</li>
+
+            < class="txtJustify lineHeight_1_7">To set column template use <span class="highlightBlack">class="gridCol_#c_size_#s_#s_...._#s"</span> here <span class="highlightBlack">#c</span> is a placeholder for an integer value, which has a range of <b>(1-10)</b>. This represents the number of columns in grid. <span class="highlightBlack">#s</span> is a placeholder for an integer value, which has a range of <b>(1-9)</b>. This represents the sizes of columns respectively. </p>
+
+            <p class=""><b class="clrDanger">Note:</b> While allocating multiple column sizes(#s), make sure that summation of #s = 10.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="gridCol_5_size_1"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                        &lt;p> Box 03 &lt;/p>
+                        &lt;p> Box 04 &lt;/p>
+                        &lt;p> Box 05 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="gridCol_5_size_1 gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 03</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 04</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 05</p>
+            </div>
+            <!-- example end -->
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="gridCol_2_size_7_3"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                        &lt;p> Box 03 &lt;/p>
+                        &lt;p> Box 04 &lt;/p>
+                        &lt;p> Box 05 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="gridCol_2_size_7_3 gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 03</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 04</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 05</p>
+            </div>
+            <!-- example end -->
+
+    <!-- grid column end -->
+
+
+    <!-- grid row -->
+
+            <div class="largeGap p_2_q" id="row_template"></div>
+
+            <li class="subTitleL">Row Template:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set row template use <span class="highlightBlack">class="gridRow_#c_size_#s_#s_...._#s"</span> here <span class="highlightBlack">#c</span> is a placeholder for an integer value, which has a range of <b>(1-10)</b>. This represents the number of rows in grid. <span class="highlightBlack">#s</span> is a placeholder for an integer value, which has a range of <b>(1-9)</b>. This represents the sizes of rows respectively.</p>
+
+            <p class=""><b class="clrDanger">Note:</b> While allocating multiple row sizes(#s), make sure that summation of #s = 10.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="gridRow_5_size_1"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                        &lt;p> Box 03 &lt;/p>
+                        &lt;p> Box 04 &lt;/p>
+                        &lt;p> Box 05 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="gridRow_5_size_1 gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 03</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 04</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 05</p>
+            </div>
+            <!-- example end -->
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="gridRow_2_size_7_3"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="gridRow_2_size_7_3 gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+            </div>
+            <!-- example end -->
+
+    <!-- grid column end -->
+
+
+    <!-- grid gap -->
+
+            <div class="largeGap p_2_q" id="grid_gap"></div>
+
+            <li class="subTitleL">Grid Gap:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set grid gap use <span class="highlightBlack ">class="grid(#t)Gap_#s"</span> here <span class="highlightBlack">#t</span> is a placeholder for gap type. It can be <b>"Col, Row"</b> or <b>"Null".</b> <span class="highlightBlack">#s</span> is a placeholder for an integer value, which has a range of <b>(0-100)</b> for <b>"rem"</b> unit.</p>
+
+            <p class="txtJustify lineHeight_1_7">For floating values we can use <b>_q, _h, _tq</b> which are respectively <b>0.25, 0.50, 0.75</b>. Floating value pointers will replace <span class="highlightBlack">#s</span>.
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="gridGap_2"> gap between grid rows and columns are 2rem &lt;/div>
+                    &lt;div class="gridColGap_2"> gap between grid columns are 2rem, rows undefined. &lt;/div>
+                    &lt;div class="gridRowGap_2"> gap between grid rows are 2rem, columns undefined.&lt;/div>
+                </code>
+            </pre>
+
+    <!-- grid gap end -->
+
+
+    <!-- grid responsiveness -->
+
+            <div class="largeGap p_2_q" id="responsive_grid"></div>
+
+            <li class="subTitleL">Responsive Grid:</li>
+
+            <p class="txtJustify lineHeight_1_7">By default basic grid classes are responsive to mobile. To make grid classes even more responsive use <span class="highlightBlack ">class="res#t--#d"</span> here <span class="highlightBlack">#t</span> is a placeholder for gap type. It can be <b>"COL"</b> or <b>"ROW".</b> <span class="highlightBlack">#d</span> is a placeholder for device. </p>It can be <b>"mobile, tablet"</b> or <b>"pc".</b> 
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="resCOL--tablet"> responsive columns in tablet device.&lt;/div>
+                    &lt;div class="resROW--tablet"> responsive rows in tablet device. &lt;/div>
+                </code>
+            </pre>
+
+    <!-- grid responsiveness end -->
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- flex -->
+
+            <div class="largeGap p_2_q" id="flex"></div>
+
+            <li class="subTitleL">Flex:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set display to flex use <span class="highlightBlack">class="disFlex"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="disFlex"> display of this div is Flex &lt;/div>
+                </code>
+            </pre>
+
+    <!-- flex end -->
+
+
+    <!-- flex direction -->
+
+            <div class="largeGap p_2_q" id="flex_direction"></div>
+
+            <li class="subTitleL">Direction:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set flex direction use <span class="highlightBlack">class="flexDir#d"</span> here <span class="highlightBlack">#d</span> is a placeholder for direction. It can be <b>"Col, RevCol, Row, RevRow"</b> or <b>"Unset".</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexDirCol"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="disFlex flexDirCol gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+            </div>
+            <!-- example end -->
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexDirRevCol"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="disFlex flexDirRevCol gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+            </div>
+            <!-- example end -->
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexDirRow"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                        &lt;p> Box 03 &lt;/p>
+                        &lt;p> Box 04 &lt;/p>
+                        &lt;p> Box 05 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="disFlex flexDirRow gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 03</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 04</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 05</p>
+            </div>
+            <!-- example end -->
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexDirRevRow"> 
+                        &lt;p> Box 01 &lt;/p>
+                        &lt;p> Box 02 &lt;/p>
+                        &lt;p> Box 03 &lt;/p>
+                        &lt;p> Box 04 &lt;/p>
+                        &lt;p> Box 05 &lt;/p>
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b></p>
+
+            <div class="disFlex flexDirRevRow gridGap_h mt_1 mb_1">
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 01</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 02</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 03</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 04</p>
+                <p class="bgAbbeyWhite p_12px txtCenter m_0">Box 05</p>
+            </div>
+            <!-- example end -->
+
+    <!-- flex direction end -->
+
+
+    <!-- flex wrap -->
+
+            <div class="largeGap p_2_q" id="flex_wrap"></div>
+
+            <li class="subTitleL">Wrap:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set flex wrap use <span class="highlightBlack">class="flex#Wrap"</span> here <span class="highlightBlack">#</span> is a placeholder for direction. It can be <b>"No, Rev"</b> or <b>"Null".</b></p>
+
+            <p class=""><b class="clrDanger">Note:</b> By default flex is set to flex wrap.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexWrap"> &lt;/div>
+                    &lt;div class="flexNoWrap"> &lt;/div>
+                    &lt;div class="flexRevWrap"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- flex wrap end -->
+
+
+    <!-- flex basis -->
+
+            <div class="largeGap p_2_q" id="flex_basis"></div>
+
+            <li class="subTitleL">Basis:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set flex basis use <span class="highlightBlack ">class="basis_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100).</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="basis_1">  &lt;/div>
+                </code>
+            </pre>
+
+    <!-- flex basis end -->
+
+
+    <!-- flex order -->
+
+            <div class="largeGap p_2_q" id="flex_order"></div>
+
+            <li class="subTitleL">Order:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set flex order use <span class="highlightBlack ">class="flexOrder_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100).</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flexOrder_1">  &lt;/div>
+                </code>
+            </pre>
+
+    <!-- flex order end -->
+
+
+    <!-- flex -->
+
+            <div class="largeGap p_2_q" id="flex_flex"></div>
+
+            <li class="subTitleL">Grow & Shrink:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set flex grow and shrink elements use <span class="highlightBlack ">class="flex_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100).</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="flex_1">  &lt;/div>
+                </code>
+            </pre>
+
+    <!-- flex end -->
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- alignment -->
+
+            <div class="largeGap p_2_q" id="alignment"></div>
+
+            <li class="subTitleL">Alignment:</li>
+
+            <p class="txtJustify lineHeight_1_7">To use alignment on an element use <span class="highlightBlack">class="align#m#n"</span> here <span class="highlightBlack">#m</span> is a placeholder for align area. It can be <b>"Content, Self"</b> or <b>"Items"</b> and here <span class="highlightBlack">#n</span> is a placeholder for align type. It can be <b>"Start, FlexStart, Center, End, FlexEnd, SpaceAround, SpaceBetween, SpaceEvenly, Stretch, Baseline, Auto, Normal"</b> or <b>"Unset"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="alignContentCenter"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- alignment end -->
+
+    <!-- justification -->
+
+            <div class="largeGap p_2_q" id="justification"></div>
+
+            <li class="subTitleL">Justification:</li>
+
+            <p class="txtJustify lineHeight_1_7">To use justification on an element use <span class="highlightBlack">class="justify#m#n"</span> here <span class="highlightBlack">#m</span> is a placeholder for align area. It can be <b>"Content, Self"</b> or <b>"Items"</b> and here <span class="highlightBlack">#n</span> is a placeholder for align type. It can be <b>"Start, FlexStart, Center, End, FlexEnd, SpaceAround, SpaceBetween, SpaceEvenly, Stretch, Baseline, Auto, Normal"</b> or <b>"Unset"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="justifyContentCenter"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- justification end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- object fit -->
+
+            <div class="largeGap p_2_q" id="object_fit"></div>
+
+            <li class="subTitleL">Object Fit:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set object fit in images/videos use <span class="highlightBlack">class="obj#"</span> here <span class="highlightBlack">#</span> is a placeholder for fit type. It can be <b>"Fill, Contain, Cover, ScaleDown"</b> or <b>"None"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="objFill"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- object fit end -->
+
+    <!-- object position -->
+
+            <div class="largeGap p_2_q" id="object_pos"></div>
+
+            <li class="subTitleL">Object Position:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set object position use <span class="highlightBlack">class="objPos_#_px_#_px"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-100)</b> for <b>"px"</b> & <b>"per</b> unit. To use negative values type <b>"n-"</b> before unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="objPos_10_n-px_0_per"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- object position -->
 
 
 
@@ -1837,31 +2464,6 @@
                 </code>
 
             </pre>
-
-            <!-- preview -->
-            <div class="m_1">
-                <b>Preview:</b>
-
-                <div class="nav">
-                    <p class="txtLogo">TcSS</p>
-                    <form class="searchBar" action="">
-                        <input class="searchField" type="text">
-                        <button class="searchBtn clrWhite" type="input">
-                            <i class="fas fa-search"></i>
-                        </button>                   
-                    </form>
-                    <div class="mainLinks">
-                        <div class="dropDown">
-                            <a class="mainLink" href="">main 3</a>
-                            <div class="subLinks">
-                                <a class="subLink" href="#">sub 1</a>
-                                <a class="subLink" href="#">sub 2</a>
-                                <a class="subLink" href="#">sub 3</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
     <!-- sub nav btn end -->
 

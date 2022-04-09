@@ -3,3 +3,68 @@
 .objContain{object-fit: contain}
 .objCover{object-fit: cover;}
 .objScaleDown{object-fit: scale-down;}
+.objNone{object-fit: none;}
+
+/* object fit */
+$limit: 100;
+
+@for $hook from 0 through $limit {
+    @for $hook1 from 0 through $limit {
+        .objPos{
+            &_#{$hook}_px_#{$hook1}_px {
+                object-position: (0px + $hook) (0px + $hook1);
+            }
+            &_#{$hook}_n-px_#{$hook1}_px {
+                object-position: (0px - $hook) (0px + $hook1);
+            }
+            &_#{$hook}_px_#{$hook1}_n-px {
+                object-position: (0px + $hook) (0px - $hook1);
+            }
+            &_#{$hook}_n-px_#{$hook1}_n-px {
+                object-position: (0px - $hook) (0px - $hook1);
+            }
+
+            &_#{$hook}_per_#{$hook1}_per {
+                object-position: (0% + $hook) (0% + $hook1);
+            }
+            &_#{$hook}_n_per_#{$hook1}_per {
+                object-position: (0% - $hook) (0% + $hook1);
+            }
+            &_#{$hook}_per_#{$hook1}_n_per {
+                object-position: (0% + $hook) (0% - $hook1);
+            }
+            &_#{$hook}_n_per_#{$hook1}_n_per {
+                object-position: (0% - $hook) (0% - $hook1);
+            }
+
+            &_#{$hook}_px_#{$hook1}_per {
+                object-position: (0px + $hook) (0% + $hook1);
+            }
+            &_#{$hook}_per_#{$hook1}_px {
+                object-position: (0% + $hook) (0px + $hook1);
+            }
+
+            &_#{$hook}_n_px_#{$hook1}_per {
+                object-position: (0px - $hook) (0% + $hook1);
+            }
+            &_#{$hook}_n_per_#{$hook1}_px {
+                object-position: (0% - $hook) (0px + $hook1);
+            }
+
+
+            &_#{$hook}_px_#{$hook1}_n_per {
+                object-position: (0px + $hook) (0% - $hook1);
+            }
+            &_#{$hook}_per_#{$hook1}_n_px {
+                object-position: (0% + $hook) (0px - $hook1);
+            }
+
+            &_#{$hook}_n_px_#{$hook1}_n_per {
+                object-position: (0px + $hook) (0% - $hook1);
+            }
+            &_#{$hook}_n_per_#{$hook1}_n_px {
+                object-position: (0% - $hook) (0px - $hook1);
+            }
+        }
+    }
+}

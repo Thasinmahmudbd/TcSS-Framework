@@ -280,6 +280,23 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* frame type 2 */
 
 .fr2{
@@ -306,13 +323,15 @@
             width: 300px;
             height: calc(100% - 60px);
             position:fixed;
-            left:0;
+            left:0px;
             z-index: 5;
             margin-top: 60px;
             overflow-y: scroll;
             @include png;
-            @media only screen and (max-width: $mobile) {
-                padding:.5rem;
+            transition: 500ms ease-in-out;
+            @media only screen and (max-width: $pc) {
+                left: -400px;
+                transition: 500ms ease-in-out;
             }
 
             & > ul{
@@ -363,6 +382,9 @@
         grid-template-columns: 1fr 300px;
         gap: 1rem;
         padding: 0rem 1rem 1rem 1rem;
+        @media only screen and (max-width: $pc) {
+            display:block;
+        }
         @media only screen and (max-width: $mobile) {
             padding:.5rem;
         }
@@ -370,6 +392,13 @@
             & > div{
                 margin-top: 60px;
                 padding: 1rem;
+            }
+
+            & > span{
+                @media only screen and (max-width: $pc) {
+                    display:none;
+                    transition: 500ms ease-in-out;
+                }
             }
     
         }
@@ -390,6 +419,9 @@
         grid-template-columns: 300px 1fr;
         gap: 1rem;
         padding: 0rem 1rem 1rem 1rem;
+        @media only screen and (max-width: $pc) {
+            display:block;
+        }
         @media only screen and (max-width: $mobile) {
             padding:.5rem;
         }
@@ -397,6 +429,13 @@
             & > div{
                 margin-top: 60px;
                 padding: 1rem;
+            }
+
+            & > span{
+                @media only screen and (max-width: $pc) {
+                    display:none;
+                    transition: 500ms ease-in-out;
+                }
             }
 
         }
@@ -407,13 +446,15 @@
             width: 300px;
             height: calc(100% - 60px);
             position:fixed;
-            right:0;
+            right:0px;
             z-index: 5;
             margin-top: 60px;
             overflow-y: scroll;
             @include png;
-            @media only screen and (max-width: $mobile) {
-                padding:.5rem;
+            transition: 500ms ease-in-out;
+            @media only screen and (max-width: $pc) {
+                right: -400px;
+                transition: 500ms ease-in-out;
             }
     
             & > ul{
