@@ -7,45 +7,52 @@ function clrDetail(clrName, txtClr){
         var colorDisplayP = document.createElement('p');
         var subDiv = document.createElement('div');
             var colorHeaderP = document.createElement('p');
-            var colorPre = document.createElement('pre');
-                var colorPreCode = document.createElement('code');
+            var colorPre = document.createElement('p');
+
             var bgHeaderP = document.createElement('p');
-            var bgPre = document.createElement('pre');
-                var bgPreCode = document.createElement('code');
+            var bgPre = document.createElement('p');
+
             var borHeaderP = document.createElement('p');
-            var borPre = document.createElement('pre');
-                var borPreCode = document.createElement('code');
+            var borPre = document.createElement('p');
+
             var borTHeaderP = document.createElement('p');
-            var borTPre = document.createElement('pre');
-                var borTPreCode = document.createElement('code');
+            var borTPre = document.createElement('p');
+
             var borRHeaderP = document.createElement('p');
-            var borRPre = document.createElement('pre');
-                var borRPreCode = document.createElement('code');
+            var borRPre = document.createElement('p');
+
             var borBHeaderP = document.createElement('p');
-            var borBPre = document.createElement('pre');
-                var borBPreCode = document.createElement('code');
+            var borBPre = document.createElement('p');
+
             var borLHeaderP = document.createElement('p');
-            var borLPre = document.createElement('pre');
-                var borLPreCode = document.createElement('code');
+            var borLPre = document.createElement('p');
+
     var gapDiv = document.createElement('div');
 
     // Adding class.
     mainDiv.className = "pt_10px";
         colorDisplayP.className = "transparentContent p_3 bg"+clrName+" txtCenter borRad_100 fSize_1 clr"+txtClr+" nunitoBold delOnScBel1400";
             colorHeaderP.className = "nunitoBold";
-            colorPre.className = "language-html line-numbers";
+            colorPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             bgHeaderP.className = "nunitoBold";
-            bgPre.className = "language-html line-numbers";
+            bgPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             borHeaderP.className = "nunitoBold";
-            borPre.className = "language-html line-numbers";
+            borPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             borTHeaderP.className = "nunitoBold";
-            borTPre.className = "language-html line-numbers";
+            borTPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             borRHeaderP.className = "nunitoBold";
-            borRPre.className = "language-html line-numbers";
+            borRPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             borBHeaderP.className = "nunitoBold";
-            borBPre.className = "language-html line-numbers";
+            borBPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
             borLHeaderP.className = "nunitoBold";
-            borLPre.className = "language-html line-numbers";
+            borLPre.className = "bgGlossyBlack p_12px clrWhite borRad_5 curCopy hoverCopy";
+
     gapDiv.className = "tinyGap p_112px";
 
     //Adding ID.
@@ -54,35 +61,29 @@ function clrDetail(clrName, txtClr){
     //Adding content.
         colorDisplayP.innerText = clrName;
             colorHeaderP.innerText = "Color:";
-                colorPreCode.innerText = "clr"+clrName;
+                colorPre.innerText = "clr"+clrName;
             bgHeaderP.innerText = "Background:";
-                bgPreCode.innerText = "bg"+clrName;
+                bgPre.innerText = "bg"+clrName;
             borHeaderP.innerText = "Border All Around:";
-                borPreCode.innerText = "borClr"+clrName;
+                borPre.innerText = "borClr"+clrName;
             borTHeaderP.innerText = "Border Top:";
-                borTPreCode.innerText = "borClrT"+clrName;
+                borTPre.innerText = "borClrT"+clrName;
             borRHeaderP.innerText = "Border Right:";
-                borRPreCode.innerText = "borClrR"+clrName;
+                borRPre.innerText = "borClrR"+clrName;
             borBHeaderP.innerText = "Border Bottom:";
-                borBPreCode.innerText = "borClrB"+clrName;
+                borBPre.innerText = "borClrB"+clrName;
             borLHeaderP.innerText = "Border Left:";
-                borLPreCode.innerText = "borClrL"+clrName;
+                borLPre.innerText = "borClrL"+clrName;
+
 
     //Appending child.
     containerDiv.append(mainDiv, gapDiv);
     mainDiv.append(colorDisplayP, subDiv);
     subDiv.append(colorHeaderP, colorPre, bgHeaderP, bgPre, borHeaderP, borPre, borTHeaderP, borTPre, borRHeaderP, borRPre, borBHeaderP, borBPre, borLHeaderP, borLPre,);
-    colorPre.appendChild(colorPreCode);
-    bgPre.appendChild(bgPreCode);
-    borPre.appendChild(borPreCode);
-    borTPre.appendChild(borTPreCode);
-    borRPre.appendChild(borRPreCode);
-    borBPre.appendChild(borBPreCode);
-    borLPre.appendChild(borLPreCode);
 
     return containerDiv;
 
-    }
+    } 
 
     function appendChildren(parent, children){
         children.forEach(function (child){
@@ -913,3 +914,19 @@ function clrDetail(clrName, txtClr){
     ];
 
     appendChildren(myDetailsList, clrNames);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

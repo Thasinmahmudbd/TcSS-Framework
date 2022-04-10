@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TcSS color picker will let you browse through an enormous gallery of colors present in the framework. It will also generate the necessary classes to use any selected color.">
+    <meta name="keywords" content="tcss, TcSS, tcss colors, colors tcss, tcss color pallets, color guide, framework colors, color picker app, color picker, colour picker, pick color">
+    <meta name="author" content="Thasin Mahmud">
+
+    <!-- title -->
+    <title>TcSS Mini-Color Picker [v 0.1]</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- design -->
-    <link rel="stylesheet" href="https://rawcdn.githack.com/Thasinmahmudbd/TcSS-Framework/7a7899208eb336fcee40994179d1f9359fb7ba18/dist/css/tcss.min.css">
-    <!--<link rel="stylesheet" href="dist/css/tcss.min.css">-->
+    <!-- <link rel="stylesheet" href="https://rawcdn.githack.com/Thasinmahmudbd/TcSS-Framework/7a7899208eb336fcee40994179d1f9359fb7ba18/dist/css/tcss.min.css"> -->
+    <link rel="stylesheet" href="dist/css/tcss.min.css">
     <link rel="stylesheet" href="dist/prism/prism.css">
 
     <!-- script -->
     <script defer src="dist/scripts/scripts.js"></script>
-
-    <title>TcSS Mini [version 0.1]</title>
-    <!-- favicon 
-    <link rel="icon" type="image/png" href="../media/>-->
 
 </head>
 
@@ -57,9 +63,8 @@
 
     <div class="nav bgSandyBrown w_75Per m_a ofHidden">
 
-        <h1 class="txtLogo posAbs negTop_13 fSize_2"><a class="clrWhite txtDecorNone" href="index.html">TcSS</a></h1>
+        <p class="txtLogo clrWhite">TcSS</p>
 
-        <span></span>
         <span></span>
 
         <div class="mainLinks">
@@ -285,7 +290,8 @@ window.addEventListener("load", function() {
     colorPallets.src="dist/scripts/colorPallets.js";
 
     document.body.appendChild(colorDetails);
-    //document.body.appendChild(prism);
+    // copy text...
+    document.querySelectorAll('.target').forEach(el=>el.onclick=_=>doCopy(el))
     document.body.appendChild(colorPallets);
 });
 

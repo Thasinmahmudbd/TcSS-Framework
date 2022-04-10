@@ -30,3 +30,46 @@
     }
 
 }
+
+
+.hoverCopy:hover{
+    transition: 200ms ease-in-out;
+    position: relative;
+}
+
+.hoverCopy:hover::after{
+    content: "Copy?";
+    font-size: 12px;
+    margin: .5rem .5rem;
+    right:10px;
+    color: $BrightYellow;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 7.5px;
+    transition: 200ms ease-in-out;
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 9px;
+        top: 7px;
+    }
+}
+
+.hoverCopy:hover::before{
+    content: "--";
+    font-size: 12px;
+    margin: .5rem 0rem;
+    right:10px;
+    color: $sky;
+    font-weight: bold;
+    position: absolute;
+    right: 53px;
+    top: 7.5px;
+    transition: 200ms ease-in-out;
+
+    @media only screen and (max-width: $tablet) {
+        font-size: 9px;
+        right: 43px;
+        top: 7px;
+    }
+}
