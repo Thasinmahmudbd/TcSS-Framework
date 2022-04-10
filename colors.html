@@ -277,10 +277,15 @@ window.addEventListener("load", function() {
     colorDetails.src="dist/scripts/colorDetails.js";
 
     //Collecting color pallets to append in template.
+    const prism=document.createElement("script");
+    prism.src="dist/prism/prism.js";
+
+    //Collecting color pallets to append in template.
     const colorPallets=document.createElement("script");
     colorPallets.src="dist/scripts/colorPallets.js";
 
     document.body.appendChild(colorDetails);
+    document.body.appendChild(prism);
     document.body.appendChild(colorPallets);
 });
 
