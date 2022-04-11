@@ -174,10 +174,24 @@
 
                         <span class="smallGap"></span>
 
+                        <a href="#outline" class="shelfOrangeSubBtn" >Outline</a>
+                        <a href="#outline_width" class="shelfOrangeSubBtn" >Outline Width</a>
+                        <a href="#outline_offset" class="shelfOrangeSubBtn" >Outline Offset</a>
+                        <a href="#outline_style" class="shelfOrangeSubBtn" >Outline Style</a>
+                        <a href="#outline_color" class="shelfOrangeSubBtn" >Outline Color</a>
+
+
+                        <span class="smallGap"></span>
+
                         <a href="#positions" class="shelfOrangeSubBtn" >Positions</a>
                         <a href="#position_mover" class="shelfOrangeSubBtn" >Top, Right, Bottom, Left</a>
                         <a href="#neg_mover" class="shelfOrangeSubBtn" >Negative T, R, B, L</a>
                         <a href="#z_indexing" class="shelfOrangeSubBtn" >Index-Z</a>
+
+                        <span class="smallGap"></span>
+
+                        <a href="#li_position" class="shelfOrangeSubBtn" >List Position</a>
+                        <a href="#li_type" class="shelfOrangeSubBtn" >List Type</a>
 
                         <span class="smallGap"></span>
 
@@ -1516,6 +1530,139 @@
 
 
 
+    <!-- outline -->
+
+            <div class="largeGap p_2_q" id="outline"></div>
+
+            <li class="subTitleL">Outline:</li>
+
+            <p class="txtJustify lineHeight_1_7">You can add outline all around your markup using. Keep in mind outline and border are not the same.</p>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_2_size_3_7 gridGap_1 resCOL--pc">
+                    <p class="p_1 olWidth_4 olOffset_2 olStyleSolid olClrDanger borStyleSolid borClrGoGreen txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">lorem ipsum</p>
+                    <p class="p_1 disGrid alignContentCenter nunito">Here the red is outline and green is border.</p>
+                </div>
+            </div>
+
+    <!-- outline end -->
+
+    <!-- outline width -->
+
+            <div class="largeGap p_2_q" id="outline_width"></div>
+
+            <li class="subTitleL">Outline Width</li>
+
+            <p class="txtJustify lineHeight_1_7">To set grid gap use <span class="highlightBlack ">class="olWidth_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b> for <b>"px"</b> unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="olWidth_1"> outline width is 1px. &lt;/div>
+                </code>
+            </pre>
+
+    <!-- outline width end -->
+
+    <!-- outline offset -->
+
+            <div class="largeGap p_2_q" id="outline_offset"></div>
+
+            <li class="subTitleL">Outline Offset</li>
+
+            <p class="txtJustify lineHeight_1_7">To set grid gap use <span class="highlightBlack ">class="olOffset_#"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-20)</b> for <b>"px"</b> unit.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="olOffset_1"> outline offset is 1px. &lt;/div>
+                    &lt;div class="olOffset_5"> outline offset is 1px. &lt;/div>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_3_size_2_2_6 gridGap_1 resCOL--pc">
+                    <p class="p_1 olWidth_4 olClrDanger olStyleSolid olOffset_1 borStyleSolid borClrGoGreen txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Offset 1</p>
+                    <p class="p_1 olWidth_4 olClrDanger olStyleSolid olOffset_5 borStyleSolid borClrGoGreen txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Offset 5</p>
+                    <p class="p_1 disGrid alignContentCenter nunito">Here the red is outline and green is border.</p>
+                </div>
+            </div>
+
+    <!-- outline offset end -->
+
+    <!-- outline style -->
+
+            <div class="largeGap p_2_q" id="outline_style"></div>
+
+            <li class="subTitleL">Outline Style:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set outline style: use <span class="highlightBlack ">class="olStyle#t"</span> here <span class="highlightBlack">#t</span> is a placeholder for gap type. It can be <b>"Dotted, Dashed, Double, Groove, Solid, Ridge, Inset, Outset, Hidden"</b> or <b>"Unset"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleSolid"> &lt;/div> //this will make outline solid. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleDashed"> &lt;/div> //this will make outline dashed. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleDotted"> &lt;/div> //this will make outline dotted. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleDouble"> &lt;/div> //this will make outline doubled. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleGroove"> &lt;/div> //this will make outline grooved. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleRidge"> &lt;/div> //this will make outline Ridge. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleInset"> &lt;/div> //this will set outline inside. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleOutset"> &lt;/div> //this will set outline outside. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleHidden"> &lt;/div> //this will hide outline. </code> </pre>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers"> <code> &lt;div class="olStyleUnset"> &lt;/div> //this will unset outline. </code> </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Example:</b>
+                <div class="disGrid gridCol_8_size_1 gridGap_1 resCOL--pc">
+                    <p class="p_1 olWidth_1 olStyleSolid txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Solid</p>
+                    <p class="p_1 olWidth_1 olStyleDashed txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dashed</p>
+                    <p class="p_1 olWidth_1 olStyleDotted txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Dotted</p>
+                    <p class="p_1 olWidth_1 olStyleDouble txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Double</p>
+                    <p class="p_1 olWidth_1 olStyleGroove txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Groove</p>
+                    <p class="p_1 olWidth_1 olStyleRidge txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Ridge</p>
+                    <p class="p_1 olWidth_1 olStyleInset txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Inset</p>
+                    <p class="p_1 olWidth_1 olStyleOutset txtCenter fSize_0_tq disGrid alignContentCenter nunitoBold">Outset</p>
+                </div>
+            </div>
+
+    <!-- outline style end -->
+
+    <!-- outline color -->
+
+            <div class="largeGap p_2_q" id="outline_color"></div>
+
+            <li class="subTitleL">Outline Color:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set outline color use <span class="highlightBlack ">class="olClr#"</span> here <span class="highlightBlack">#</span> is a placeholder for color name. This class has a limited number of colors only they are <b>"White,PureBlack, Gray, Dark, DarkGray, DarkAsh, DarkBlue, Sky, Danger, Success, Alert"</b> & <b>"Gold".</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="olClrSuccess"> outline color is now green. &lt;/div>
+                </code>
+            </pre>
+
+    <!-- outline color end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
     <!-- positions -->
 
             <div class="largeGap p_2_q" id="positions"></div>
@@ -1581,6 +1728,127 @@
             </pre>
 
     <!-- z indexing end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+    <!-- list position -->
+
+            <div class="largeGap p_2_q" id="li_position"></div>
+
+            <li class="subTitleL">List Position:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set position of an list use <span class="highlightBlack">class="list#"</span> here <span class="highlightBlack">#</span> is a placeholder for position marker, which are <b>"In"</b> & <b>"Out"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;li class="listIn"> position of list is inside &lt;/li>
+                    &lt;li class="listOut"> position of list is outside &lt;/li>
+                </code>
+            </pre>
+
+    <!-- list positions end -->
+
+    <!-- list type -->
+
+            <div class="largeGap p_2_q" id="li_type"></div>
+
+            <li class="subTitleL">List Type:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set type of an list use <span class="highlightBlack">class="list#"</span> here <span class="highlightBlack">#</span> is a placeholder for type, which are <b>"Disc, Armenian, Circle, Square, Dec, DecFrom_0, Georgian, LowerAlpha, LowerGreek, LowerLatin, LowerRoman, UpperAlpha, UpperLatin, UpperRoman, None"</b> & <b>"Unset"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;li class="listCircle"> type of list is circle &lt;/li>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="gridCol_4_size_1">
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDisc">Dics</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDisc">Dics</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listArmenian">Armenian</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listArmenian">Armenian</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listCircle">Circle</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listCircle">Circle</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listSquare">Square</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listSquare">Square</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDec">Dec</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDec">Dec</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDecFrom_0">DecFrom_0</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listDecFrom_0">DecFrom_0</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listGeorgian">Georgian</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listGeorgian">Georgian</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerAlpha">LowerAlpha</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerAlpha">LowerAlpha</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerGreek">LowerGreek</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerGreek">LowerGreek</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerLatin">LowerLatin</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerLatin">LowerLatin</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerRoman">LowerRoman</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listLowerRoman">LowerRoman</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperAlpha">UpperAlpha</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperAlpha">UpperAlpha</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperLatin">UpperLatin</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperLatin">UpperLatin</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperRoman">UpperRoman</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listUpperRoman">UpperRoman</li>
+                </ul>
+
+                <ul class="m_1 olClrDark olStyleSolid olWidth_3">
+                    <li class="nunitoBold p_h clrBlack fSize_1 listNone">None</li>
+                    <li class="nunitoBold p_h clrBlack fSize_1 listNone">None</li>
+                </ul>
+            </div>
+
+    <!-- list positions end -->
 
 
 
@@ -1762,7 +2030,7 @@
 
             <li class="subTitleL">Column Template:</li>
 
-            < class="txtJustify lineHeight_1_7">To set column template use <span class="highlightBlack">class="gridCol_#c_size_#s_#s_...._#s"</span> here <span class="highlightBlack">#c</span> is a placeholder for an integer value, which has a range of <b>(1-10)</b>. This represents the number of columns in grid. <span class="highlightBlack">#s</span> is a placeholder for an integer value, which has a range of <b>(1-9)</b>. This represents the sizes of columns respectively. </p>
+            <p class="txtJustify lineHeight_1_7">To set column template use <span class="highlightBlack">class="gridCol_#c_size_#s_#s_...._#s"</span> here <span class="highlightBlack">#c</span> is a placeholder for an integer value, which has a range of <b>(1-10)</b>. This represents the number of columns in grid. <span class="highlightBlack">#s</span> is a placeholder for an integer value, which has a range of <b>(1-9)</b>. This represents the sizes of columns respectively. </p>
 
             <p class=""><b class="clrDanger">Note:</b> While allocating multiple column sizes(#s), make sure that summation of #s = 10.</p>
 
