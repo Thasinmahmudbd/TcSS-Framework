@@ -67,6 +67,21 @@
     grid-auto-flow: column;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+    background-color: #fff;
+}
+
+
+
+
+/* ver scroller mixin */
+@mixin vscrlrMix{
+    display:grid;
+    gap: .5rem;
+    padding:.5rem 0rem;
+    grid-auto-flow: row;
+    overflow-y: auto;
+    overscroll-behavior-inline: contain;
+    background-color: #fff;
 }
 
 

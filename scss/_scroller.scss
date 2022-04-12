@@ -1,4 +1,4 @@
-/* scrolling */
+/* horizontal scrolling */
 
 .hScrlr_{
     &0{
@@ -94,4 +94,49 @@ $pxlimit: 1000;
     .hScrlrPFix_#{$hook}px {
         scroll-padding-inline: (0px + $hook);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* vertical scrolling */
+
+$pxlimit2: 2000;
+
+@for $hook from 100 through $pxlimit2 {
+
+    .vScrlr_#{$hook}{
+            @include vscrlrMix;
+            height: (0px + $hook);
+        }
+
+    $hook: $hook + 50;
+}
+
+.vScrlrElm{
+    display: grid;
+    grid-template-rows: min-content;
+    gap: .2rem;
+    padding:.5rem;
+    @include png;
+    border-radius: 2px;
+    box-shadow: 5px 10px 10px -10px #000000a5;
+    transition: 500ms ease-in-out;
 }

@@ -1,0 +1,324 @@
+/* toolbar set up */
+
+.toolbar{
+    display:grid;
+    grid-template-columns: 55px 1fr 55px;
+    position:fixed;
+    bottom: 0px;
+    width: 100vw;
+    z-index: 10;
+    height: calc(20px + 2rem);
+}
+
+
+//////////////////////////////////////////////* left side */
+
+//////////////////* window */
+
+.tb_window{
+    padding: 1rem;
+    position: relative;
+    background-color: #dddccc;
+
+    & > a{
+        display: grid;
+        font-size: 24px;
+        text-decoration: none;
+        list-style: none;
+        justify-self: center;
+        align-self: center;
+        color: #383838;
+}
+
+    & > div > a{
+            padding: 1rem;
+            background-color: #ccc;
+            height: 100px;
+            text-decoration: none;
+            list-style: none;
+            color: #383838;
+            @media only screen and (max-width: $tablet) {
+                height: auto;
+                padding: .5rem;
+            }
+    }
+
+}
+
+.tb-W-popUp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    position: absolute;
+    z-index: 9;
+    bottom: -2000px;
+    width: 500px;
+    left: 0px;
+    @media only screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+        width: 100px;
+    }
+}
+
+.tb-W-popUp{
+    & > a:nth-child(10){
+        display: none;
+    }
+    & > a:nth-child(11){
+        display: none;
+    }
+    & > a:nth-child(12){
+        display: none;
+    }
+    & > a:nth-child(13){
+        display: none;
+    }
+    & > a:nth-child(14){
+        display: none;
+    }
+    & > a:nth-child(15){
+        display: none;
+    }
+    & > a:nth-child(16){
+        display: none;
+    }
+    & > a:nth-child(17){
+        display: none;
+    }
+    & > a:nth-child(18){
+        display: none;
+    }
+    & > a:nth-child(19){
+        display: none;
+    }
+    & > a:nth-child(20){
+        display: none;
+    }
+    & > a:nth-child(21){
+        display: none;
+    }
+    & > a:nth-child(22){
+        display: none;
+    }
+    & > a:nth-child(23){
+        display: none;
+    }
+    & > a:nth-child(24){
+        display: none;
+    }
+    & > a:nth-child(25){
+        display: none;
+    }
+    & > a:nth-child(26){
+        display: none;
+    }
+    & > a:nth-child(27){
+        display: none;
+    }
+    & > a:nth-child(28){
+        display: none;
+    }
+    & > a:nth-child(29){
+        display: none;
+    }
+    & > a:nth-child(30){
+        display: none;
+    }
+    & > a:nth-child(31){
+        display: none;
+    }
+    & > a:nth-child(32){
+        display: none;
+    }
+    & > a:nth-child(33){
+        display: none;
+    }
+    & > a:nth-child(34){
+        display: none;
+    }
+    & > a:nth-child(35){
+        display: none;
+    }
+    & > a:nth-child(36){
+        display: none;
+    }
+    & > a:nth-child(37){
+        display: none;
+    }
+    & > a:nth-child(38){
+        display: none;
+    }
+    & > a:nth-child(39){
+        display: none;
+    }
+    & > a:nth-child(40){
+        display: none;
+    }
+}
+
+.tb_window:hover .tb-W-popUp{
+    bottom: calc(20px + 2rem);
+}
+
+
+
+
+
+
+
+//////////////////* slider left */
+
+.tb_sliderL{
+    padding: 1rem;
+    position: relative;
+    background-color: #dddccc;
+
+    & > a{
+        display: grid;
+        font-size: 24px;
+        text-decoration: none;
+        list-style: none;
+        justify-self: center;
+        align-self: center;
+        color: #383838;
+    }
+
+    & > div {
+        padding: 1rem;
+        background-color: #ccc;
+        text-decoration: none;
+        list-style: none;
+        color: #383838;
+        @media only screen and (max-width: $tablet) {
+            padding: .5rem;
+        }
+
+        & > a{
+            display: grid;
+            font-size: 1rem;
+            text-decoration: none;
+            list-style: none;
+            color: #383838;
+        }
+    }
+
+}
+
+.tb-S-slideL{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    position: absolute;
+    z-index: 9;
+    height: auto;
+    max-height: 400px;
+    overflow-y:auto;
+    left: -2000px;
+    width: 300px;
+    bottom: calc(20px + 2rem);
+    transition: 300ms ease-out;
+    @media only screen and (max-width: $mobile) {
+        width: calc(100vw - 1rem);
+    }
+}
+
+.tb_sliderL:hover .tb-S-slideL{
+    left: 0px;
+    transition: 300ms ease-in;
+}
+
+
+
+
+
+
+
+//////////////////////////////////////////////* middle side */
+
+//////////////////* middle */
+
+.tb_middle{
+    background-color: #dddccc;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    display: flex;
+    flex-direction: row;
+    & > a{
+        padding: 1rem;
+        text-decoration: none;
+        list-style: none;
+        color: #383838;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+//////////////////////////////////////////////* right side */
+
+//////////////////* slider right */
+
+.tb_sliderR{
+    padding: 1rem;
+    position: relative;
+    background-color: #dddccc;
+
+    & > a{
+        display: grid;
+        font-size: 24px;
+        text-decoration: none;
+        list-style: none;
+        justify-self: center;
+        align-self: center;
+        color: #383838;
+    }
+
+    & > div {
+        padding: 1rem;
+        background-color: #ccc;
+        text-decoration: none;
+        list-style: none;
+        color: #383838;
+        @media only screen and (max-width: $tablet) {
+            padding: .5rem;
+        }
+
+        & > a{
+            display: grid;
+            font-size: 1rem;
+            text-decoration: none;
+            list-style: none;
+            color: #383838;
+            text-align: right;
+        }
+    }
+
+}
+
+.tb-S-slideR{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    position: absolute;
+    z-index: 9;
+    height: auto;
+    max-height: 400px;
+    overflow-y:auto;
+    right: -2000px;
+    width: 300px;
+    bottom: calc(20px + 2rem);
+    transition: 300ms ease-out;
+    @media only screen and (max-width: $mobile) {
+        width: calc(100vw - 1rem);
+    }
+}
+
+.tb_sliderR:hover .tb-S-slideR{
+    right: 0px;
+    transition: 300ms ease-in;
+}
