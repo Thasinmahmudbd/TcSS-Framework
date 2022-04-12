@@ -229,6 +229,13 @@
                         <a href="#object_pos" class="shelfOrangeSubBtn" >Object Position</a>
 
                         <span class="smallGap"></span>
+                        
+                        <a href="#overflow" class="shelfOrangeSubBtn" >Overflow</a>
+                        <a href="#page_break" class="shelfOrangeSubBtn" >Page Break</a>
+                        <a href="#scroll" class="shelfOrangeSubBtn" >Scroll</a>
+                        <a href="#cursor" class="shelfOrangeSubBtn" >Cursor</a>
+
+                        <span class="smallGap"></span>
 
                 <a href="#nav" class="shelfOrangeBtn" >Navbar</a>
                         <a href="#logo" class="shelfOrangeSubBtn" >Logo</a>
@@ -2451,7 +2458,7 @@
                 </code>
             </pre>
 
-    <!-- object position -->
+    <!-- object position end -->
 
 
 
@@ -2460,6 +2467,122 @@
 <!--#######################################################-->
 <!--#######################################################-->
 
+
+
+
+    <!-- overflow -->
+
+            <div class="largeGap p_2_q" id="overflow"></div>
+
+            <li class="subTitleL">Overflow:</li>
+
+            <p class="txtJustify lineHeight_1_7">To adjust overflow use <span class="highlightBlack">class="of#"</span> here <span class="highlightBlack">#</span> is a placeholder for flow type. It can be <b>"Scroll, Auto, Visible, HiddenX, ScrollX, AutoX, VisibleX, HiddenY, ScrollY, AutoY, VisibleY"</b> or <b>"Hidden"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="ofVisible"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- overflow end -->
+
+    <!-- page break -->
+
+            <div class="largeGap p_2_q" id="page_break"></div>
+
+            <li class="subTitleL">Page Break:</li>
+
+            <p class="txtJustify lineHeight_1_7">To break page after use <span class="highlightBlack">class="pageBrkA"</span> & to break page before use <span class="highlightBlack">class="pageBrkB"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="pageBrkA"> &lt;/div>
+                    &lt;div class="pageBrkB"> &lt;/div>
+                </code>
+            </pre>
+
+    <!-- page break end -->
+
+    <!-- scroll -->
+
+            <div class="largeGap p_2_q" id="scroll"></div>
+
+            <li class="subTitleL">Scroll:</li>
+
+            <p class="txtJustify lineHeight_1_7">By default scroll is set to smooth scroll. If by default smooth scroll is not activated use <span class="highlightBlack">class="smoothScroll"</span> to reset page.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;html class="smoothScroll"> &lt;/html>
+                </code>
+            </pre>
+
+    <!-- scroll end -->
+
+    <!-- cursor -->
+
+            <div class="largeGap p_2_q" id="cursor"></div>
+
+            <li class="subTitleL">Cursor:</li>
+
+            <p class="txtJustify lineHeight_1_7">To set cursor use <span class="highlightBlack">class="cur#"</span> here <span class="highlightBlack">#</span> is a placeholder for cursor type. It can be <b>"Alias, AllScroll, Auto, Cell, ContextMenu, ColResize, Copy, CrossHair, Default, EResize, EwResize, Grab, Grabbing, Help, Move, NResize, NeResize, NeswResize, NsResize, NwResize, NwseResize, NoDrop, NotAllowed, Pointer, Progress, RowResize, SResize, SeResize, SwResize, Txt, WResize, Wait, ZoomIn, ZoomOut"</b> or <b>"None"</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="curPointer"> &lt;/div>
+                </code>
+            </pre>
+
+            <!-- example -->
+            <p class="mt_1"><b>Example:</b> Hover over to see cursor shifts.</p>
+
+            <div class="disFlex flexDirRow gridGap_h mt_1 mb_1">
+                <p class="bgDark clrWhite p_12px txtCenter m_0 curAlias">Alias</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curAllScroll">AllScroll</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curAuto">Auto</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curCell">Cell</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curContextMenu">ContextMenu</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curColResize">ColResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curCopy">Copy</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curCrossHair">CrossHair</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curDefault">Default</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curEResize">EResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curEwResize">EwResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curGrab">Grab</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curGrabbing">Grabbing</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curHelp">Help</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curMove">Move</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNResize">NResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNeResize">NeResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNeswResize">NeswResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNsResize">NsResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNwResize">NwResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNwseResize">NwseResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNoDrop">NoDrop</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNotAllowed">NotAllowed</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curPointer">Pointer</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curProgress">Progress</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curRowResize">RowResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curSResize">SResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curSeResize">SeResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curSwResize">SwResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curTxt">Txt</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curWResize">WResize</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curWait">Wait</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curZoomIn">ZoomIn</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curZoomOut">ZoomOut</p>
+                <p class="bgDark clrWhite  p_12px txtCenter m_0 curNone">None</p>
+            </div>
+            <!-- example end -->
+
+    <!-- cursor end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
 
 
 
@@ -3828,6 +3951,54 @@
 <!--body end-->
 
 </div>
+
+
+
+
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+
+
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "102488762264096");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+</script>
+
+<!-- Your SDK code -->
+<script>
+    
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v13.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
+<!-------------------------------------------------------->
 
 
 

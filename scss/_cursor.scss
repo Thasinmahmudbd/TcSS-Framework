@@ -1,36 +1,38 @@
 /* cursor */
-.curAlias {cursor: alias;}
-.curAllScroll {cursor: all-scroll;}
-.curAuto {cursor: auto;}
-.curCell {cursor: cell;}
-.curContextMenu {cursor: context-menu;}
-.curColResize {cursor: col-resize;}
-.curCopy {cursor: copy;}
-.curCrossHair {cursor: crosshair;}
-.curDefault {cursor: default;}
-.curEResize {cursor: e-resize;}
-.curEwResize {cursor: ew-resize;}
-.curGrab {cursor: grab;}
-.curGrabbing {cursor: grabbing;}
-.curHelp {cursor: help;}
-.curMove {cursor: move;}
-.curNResize {cursor: n-resize;}
-.curNeResize {cursor: ne-resize;}
-.curNeswResize {cursor: nesw-resize;}
-.curNsResize {cursor: ns-resize;}
-.curNwResize {cursor: nw-resize;}
-.curNwseResize {cursor: nwse-resize;}
-.curNoDrop {cursor: no-drop;}
-.curNone {cursor: none;}
-.curNotAllowed {cursor: not-allowed;}
-.curPointer {cursor: pointer;}
-.curProgress {cursor: progress;}
-.curRowResize {cursor: row-resize;}
-.curSResize {cursor: s-resize;}
-.curSeResize {cursor: se-resize;}
-.curSwResize {cursor: sw-resize;}
-.curTxt {cursor: text;}
-.curWResize {cursor: w-resize;}
-.curWait {cursor: wait;}
-.curZoomIn {cursor: zoom-in;}
-.curZoomOut {cursor: zoom-out;}
+.cur{
+    &Alias {cursor: alias;}
+    &AllScroll {cursor: all-scroll;}
+    &Auto {cursor: auto;}
+    &Cell {cursor: cell;}
+    &ContextMenu {cursor: context-menu;}
+    &ColResize {cursor: col-resize;}
+    &Copy {cursor: copy;}
+    &CrossHair {cursor: crosshair;}
+    &Default {cursor: default;}
+    &EResize {cursor: e-resize;}
+    &EwResize {cursor: ew-resize;}
+    &Grab {cursor: grab;}
+    &Grabbing {cursor: grabbing;}
+    &Help {cursor: help;}
+    &Move {cursor: move;}
+    &NResize {cursor: n-resize;}
+    &NeResize {cursor: ne-resize;}
+    &NeswResize {cursor: nesw-resize;}
+    &NsResize {cursor: ns-resize;}
+    &NwResize {cursor: nw-resize;}
+    &NwseResize {cursor: nwse-resize;}
+    &NoDrop {cursor: no-drop;}
+    &None {cursor: none;}
+    &NotAllowed {cursor: not-allowed;}
+    &Pointer {cursor: pointer;}
+    &Progress {cursor: progress;}
+    &RowResize {cursor: row-resize;}
+    &SResize {cursor: s-resize;}
+    &SeResize {cursor: se-resize;}
+    &SwResize {cursor: sw-resize;}
+    &Txt {cursor: text;}
+    &WResize {cursor: w-resize;}
+    &Wait {cursor: wait;}
+    &ZoomIn {cursor: zoom-in;}
+    &ZoomOut {cursor: zoom-out;}
+}
