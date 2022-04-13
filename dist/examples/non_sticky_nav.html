@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Non Sticky Navbar - TcSS</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/tcss.min.css">
+    <link rel="stylesheet" href="../prism/prism.css">
+
+    <!-- script -->
+    <script defer src="../prism/prism.js"></script>
+
+</head>
+
+
+<body class="nunitoRegular">
+
+    <div class="nav">
+
+        <p class="txtLogo">TcSS</p>
+
+        <form class="searchBar" action="">
+
+            <input class="searchField" type="text">
+            <button class="searchBtn" type="input"><i class="fas fa-search"></i></button>
+
+        </form>
+
+        <div class="mainLinks">
+
+            <a class="mainLink" href="">main 1</a>
+
+            <div class="dropDown">
+                <a class="mainLink" href="">main 2</a>
+                <div class="subLinks">
+                    <a class="subLink" href="#">sub 1</a>
+                    <a class="subLink" href="#">sub 2</a>
+                    <a class="subLink" href="#">sub 3</a>
+                </div>
+            </div> 
+
+            <a class="mainLink" href="">main 3</a>
+            <a class="mainLink" href="">main 4</a>
+            <a class="mainLink" href="">main 5</a>
+
+            <div class="dropDown">
+                <a class="mainLink" href="">main 6</a>
+                <div class="subLinks">
+                    <a class="subLink" href="#">sub 4</a>
+                    <a class="subLink" href="#">sub 5</a>
+                    <a class="subLink" href="#">sub 6</a>
+                </div>
+            </div> 
+
+            <a class="hamburger" href=""><i class="fas fa-bars"></i></a>
+
+        </div>
+
+    </div>
+
+    <p class="m_2 txtJustify">This is the default on sticky navbar that you will get initially. However every thing is customizable by using custom classes of the framework. check the basic section to learn about them. <br> You can even write your own css if you want, doing so will overwrite prefixed classes without any problems. Enjoy &#128522;.</p>
+
+    <div class="w_80Per m_a">
+
+        <p class="txtJustify"><b>Full code:</b></p>
+
+        <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+            <code>
+
+                &lt;div class="nav">
+
+                    &lt;p class="txtLogo">TcSS&lt;/p>
+            
+                    &lt;form class="searchBar" action="">
+            
+                        &lt;input class="searchField" type="text">
+                        &lt;button class="searchBtn" type="input">&lt;i class="fas fa-search">&lt;/i>&lt;/button>
+            
+                    &lt;/form>
+            
+                    &lt;div class="mainLinks">
+            
+                        &lt;a class="mainLink" href="">main 1&lt;/a>
+            
+                        &lt;div class="dropDown">
+                            &lt;a class="mainLink" href="">main 2&lt;/a>
+                            &lt;div class="subLinks">
+                                &lt;a class="subLink" href="#">sub 1&lt;/a>
+                                &lt;a class="subLink" href="#">sub 2&lt;/a>
+                                &lt;a class="subLink" href="#">sub 3&lt;/a>
+                                &lt;/div>
+                        &lt;/div> 
+            
+                        &lt;a class="mainLink" href="">main 3&lt;/a>
+                        &lt;a class="mainLink" href="">main 4&lt;/a>
+                        &lt;a class="mainLink" href="">main 5&lt;/a>
+            
+                        &lt;div class="dropDown">
+                            &lt;a class="mainLink" href="">main 6&lt;/a>
+                            &lt;div class="subLinks">
+                                &lt;a class="subLink" href="#">sub 4&lt;/a>
+                                &lt;a class="subLink" href="#">sub 5&lt;/a>
+                                &lt;a class="subLink" href="#">sub 6&lt;/a>
+                            &lt;/div>
+                        &lt;/div> 
+            
+                        &lt;a class="hamburger" href="">&lt;i class="fas fa-bars">&lt;/i>&lt;/a>
+            
+                    &lt;/div>
+            
+                &lt;/div>
+
+            </code>
+
+        </pre>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -10,6 +10,7 @@
     background-color: #dddccc;
     transition: 200ms ease-in;
     overflow: hidden;
+    transition: 200ms ease-out;
     @media only screen and (max-width: 1000px) {
         grid-template-columns: 100px 1fr 100px;
         transition: 200ms ease-in;
@@ -243,13 +244,18 @@
     grid-template-columns: 100px 1fr 2fr;
     width: calc(100vw - 10rem);
     position: fixed;
+    top: 0;
     z-index: 10;
     width: 100%;
     margin: auto;
     height: 60px;
     background-color: #dddccc;
     box-shadow: 0px 5px 10px 0px #3b3838a0;
-    transition: 300ms ease-in;
+    transition: 200ms ease-out;
+    @media only screen and (max-width: 1000px) {
+        grid-template-columns: 100px 1fr 100px;
+        transition: 200ms ease-in;
+    }
 }
 
 .mainLinks_2 {

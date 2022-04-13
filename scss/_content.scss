@@ -1,9 +1,161 @@
 .transparentContent{
     display: grid;
     align-content: center;
-    justify-content:center;
+    justify-content: center;
     padding: 1rem;
+    margin: 0px;
     background-color: $transparent;
     list-style: none;
     box-shadow:01px 0px 15px -5px #bbb;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+}
+
+.boxContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+}
+
+.roundedBoxContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    border-radius: 10px;
+    background-color: #dddccc;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+}
+
+.puzzleContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    border-width: 1rem;
+    border-style: dashed;
+    border-color: #fff;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+}
+
+.smallPuzzleContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    border-width: .5rem;
+    border-style: dashed;
+    border-color: #fff;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+}
+
+.dotListContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    position: relative;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+
+    &:before{
+        content: "";
+        padding: 8px;
+        background-color: #383838;
+        border-radius: 100%;
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.cubeListContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    position: relative;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+
+    &:before{
+        content: "";
+        padding: 8px;
+        background-color: #383838;
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.diceListContent{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0px;
+    list-style: none;
+    background-color: #dddccc;
+    position: relative;
+    border-radius: 10px;
+    @media only screen and (max-width: $tablet) {
+        padding: .5rem;
+    }
+
+    &:before{
+        content: "";
+        padding: 8px;
+        background-color: #383838;
+        position: absolute;
+        left: -32px;
+        top: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 5px;
+    }
+    &:after{
+        content: "";
+        padding: 4px;
+        background-color: #dddccc;
+        position: absolute;
+        left: -26px;
+        top: 6px;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+    }
 }

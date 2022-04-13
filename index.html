@@ -17,8 +17,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- design -->
-    <link rel="stylesheet" href="https://rawcdn.githack.com/Thasinmahmudbd/TcSS-Framework/7a7899208eb336fcee40994179d1f9359fb7ba18/dist/css/tcss.min.css">
-    <!-- <link rel="stylesheet" href="dist/css/tcss.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://rawcdn.githack.com/Thasinmahmudbd/TcSS-Framework/7a7899208eb336fcee40994179d1f9359fb7ba18/dist/css/tcss.min.css"> -->
+    <link rel="stylesheet" href="dist/css/tcss.min.css"> 
     <link rel="stylesheet" href="dist/prism/prism.css">
 
     <!-- script -->
@@ -242,6 +242,7 @@
                         <a href="#searchBar" class="shelfOrangeSubBtn" >Search Bar</a>
                         <a href="#navBtnMain" class="shelfOrangeSubBtn" >Nav Buttons (Main)</a>
                         <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
+                        <a href="#navBtnSubEx" class="shelfOrangeSubBtn" >Nav Buttons (Extra)</a>
                         <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
 
                         <span class="smallGap"></span>
@@ -2612,13 +2613,27 @@
 
             <h2 class="titleL">Navbar</h2>
 
-            <p class="txtJustify lineHeight_1_7">This is a customizable Navigation bar, consisting of three important sections, which are logo, search bar & navigation buttons. The default is pretty bland, but customization is possible using the <a class="link" href="#basic">Basic</a> classes. In order to access navbar, use <span class="highlightBlack">class="nav"</span></p>
+            <p class="txtJustify lineHeight_1_7">There are two basic types of navigation bars, one being <b>non sticky</b> & the other being <b>sticky</b>. Inside them consists three important sections, which are logo, search bar & navigation buttons. The defaults are pretty bland, but customization is possible using the <a class="link" href="#basic">Basic</a> classes.</p>
+            
+            <p> In order to access <b>non sticky</b> navbar, use <span class="highlightBlack">class="nav"</span></p>
 
             <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
-                    &lt;div class="nav"> //navbar start
+                    &lt;div class="nav"> &lt;!--Non sticky navbar start.-->
+
+                </code>
+
+            </pre>
+
+            <p> In order to access <b>sticky</b> navbar, use <span class="highlightBlack">class="navType_2"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="navType_2"> &lt;!--Sticky navbar start.-->
 
                 </code>
 
@@ -2727,6 +2742,7 @@
                     &lt;form class="searchBar" action="">
                 
                         &lt;input class="searchField" type="text">
+
                         &lt;button class="searchBtn clrWhite" type="input">
                             &lt;i class="fas fa-search">&lt;/i>
                         &lt;/button>
@@ -2793,14 +2809,17 @@
 
             <li class="subTitleL">Nav Buttons (Main):</li>
 
-            <p class="txtJustify lineHeight_1_7">In order to access div that holds all the main buttons, use <span class="highlightBlack">class="mainLinks"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink"</span></p>
+            <!-- non sticky -->
 
-            <pre data-start="3" style="white-space:pre-wrap;" class="language-html line-numbers">
+            <p class="txtJustify lineHeight_1_7">In order to access div that holds all the main buttons for the <b>non sticky,</b> version use <span class="highlightBlack">class="mainLinks"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink"</span></p>
+
+            <pre data-start="12" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
-                    &lt;div class="mainLinks"> //main links start
-                
+                    &lt;!--Main links for non sticky.-->
+                    &lt;div class="mainLinks"> &lt;!--Main links start.-->
+
                         &lt;a class="mainLink" href="">main 1&lt;/a>
                         &lt;a class="mainLink" href="">main 2&lt;/a>
 
@@ -2827,6 +2846,37 @@
                 </div>
             </div>
 
+            <!-- sticky -->
+
+            <p class="txtJustify lineHeight_1_7">In order to access div that holds all the main buttons for the <b>sticky,</b> version use <span class="highlightBlack">class="mainLinks_2"</span> to put style on a single button, use <span class="highlightBlack">class="mainLink_2"</span></p>
+
+            <pre data-start="12" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;!--Main links for sticky.-->
+                    &lt;div class="mainLinks_2"> &lt;!--Main links start.-->
+
+                        &lt;div class="mainLink_2"> 
+                            &lt;a href="#">main 1&lt;/a> 
+                        &lt;/div>
+
+                        &lt;div class="mainLink_2"> 
+                            &lt;a href="#">main 2&lt;/a> 
+                        &lt;/div>
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <p>Preview generation is not possible. <a class="link" href="#">Click here</a> to see the full navbar.</p>
+
+            </div>
+
     <!-- main nav btn end -->
 
 
@@ -2843,20 +2893,50 @@
 
             <li class="subTitleL" id="navBtnSub">Nav Buttons (Sub):</li>
 
-            <p class="txtJustify lineHeight_1_7">Sub buttons will always be contained by a main button. They will only appear when container main button is hovered. <span class="highlightBlack">class="dropDown"</span> is used for positioning. In order to access div that holds all the sub buttons, use <span class="highlightBlack">class="subLinks"</span> to put style on a single button, use <span class="highlightBlack">class="subLink"</span></p>
+            <p class="txtJustify lineHeight_1_7">Sub buttons will always be contained by a main button. They will only appear when container main button is hovered. <span class="highlightBlack">class="dropDown"</span> is used for positioning, it is only used in non sticky nav. In order to access div that holds all the sub buttons for non sticky nav, use <span class="highlightBlack">class="subLinks"</span> to put style on a single button, use <span class="highlightBlack">class="subLink"</span></p>
 
-            <pre data-start="7" style="white-space:pre-wrap;" class="language-html line-numbers">
+            <p class=""><b class="clrDanger">Note:</b> Fixing the position of non sticky nav bar will will lead to unresponsive sub buttons.</p>
+
+            <pre data-start="17" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
-
+                    &lt;!--Sub links for non sticky.-->
                     &lt;div class="dropDown">
+
                         &lt;a class="mainLink" href="">main 3&lt;/a>
-                        &lt;div class="subLinks">
+
+                        &lt;div class="subLinks"> &lt;!--Sub links start.-->
                             &lt;a class="subLink" href="#">sub 1&lt;/a>
                             &lt;a class="subLink" href="#">sub 2&lt;/a>
                             &lt;a class="subLink" href="#">sub 3&lt;/a>
-                        &lt;/div>
+                        &lt;/div> &lt;!--Sub links end.-->
+
                     &lt;/div> 
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">In order to access div that holds all the sub buttons for sticky nav, use <span class="highlightBlack">class="subLinks_2"</span> to put style on a single button, use <span class="highlightBlack">class="subLink_2"</span></p>
+
+            <pre data-start="22" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;!--Sub links for sticky.-->
+                    &lt;div class="mainLink_2">
+
+                        &lt;a href="#">main 3
+
+                            &lt;div class=" subLinks_2"> &lt;!--Sub links start.-->
+                                &lt;a class="subLink_2" href="#">sub 1&lt;/a>
+                                &lt;a class="subLink_2" href="#">sub 2&lt;/a>
+                                &lt;a class="subLink_2" href="#">sub 3&lt;/a>
+                            &lt;/div> &lt;!--Sub links end.-->
+
+                        &lt;/a>
+
+                    &lt;/div>
 
                 </code>
 
@@ -2864,6 +2944,60 @@
 
     <!-- sub nav btn end -->
 
+
+
+
+
+
+
+    <!-- more sub nav btn start -->
+
+            <div class="largeGap p_2_q" id="navBtnSubEx"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL" id="navBtnSub">Nav Buttons (Extra):</li>
+
+            <p class="txtJustify lineHeight_1_7">Extra button section is a section that contains additional buttons. This section will only appear when container sub button section is hovered. In order to access div that holds extra sub buttons, use <span class="highlightBlack">class="exSubLinks_2"</span> to put style on a single button, use <span class="highlightBlack">class="exSubLink_2"</span></p>
+
+            <p class=""><b class="clrDanger">Note:</b> This is unique to <b>sticky</b> navigation bar.</p>
+
+            <pre data-start="36" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                        &lt;!--Extra links for sticky.-->
+                        &lt;div class="mainLink_2">
+
+                            &lt;a   href="#">main 4
+
+                                &lt;div class=" subLinks_2">
+
+                                    &lt;a class="subLink_2" href="#">sub 1
+
+                                        &lt;div class="exSubLinks_2"> &lt;!--Extra links start.-->
+                                            &lt;a class="exSubLink_2" href="#">extra sub 1&lt;/a>
+                                            &lt;a class="exSubLink_2" href="#">extra sub 2&lt;/a>
+                                            &lt;a class="exSubLink_2" href="#">extra sub 3&lt;/a>
+                                        &lt;/div> &lt;!--Extra links end.-->
+
+                                    &lt;/a>
+                                    &lt;a class="subLink_2" href="#">sub 2&lt;/a>
+                                    &lt;a class="subLink_2" href="#">sub 3&lt;/a>
+
+                                &lt;/div> 
+
+                            &lt;/a>
+
+                        &lt;/div> 
+
+                    &lt;/div>  &lt;!--Main links end.-->
+
+                </code>
+
+            </pre>
+
+    <!-- sub sub nav btn end -->
 
 
 
@@ -2882,15 +3016,34 @@
 
             <p class="txtJustify lineHeight_1_7">Hamburger menu button will appear only when screen size is bellow 1000px. In order to access hamburger menu buttons, use <span class="highlightBlack">class="hamburger"</span></p>
 
-            <pre data-start="15" style="white-space:pre-wrap;" class="language-html line-numbers">
+            <pre data-start="29" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+                            &lt;!--Hamburger btn for non sticky.-->
+                            &lt;a class="hamburger" href="">&lt;i class="fas fa-bars">&lt;/i>&lt;/a>
+                
+                        &lt;/div> &lt;!--Main links end.-->
+                
+                    &lt;/div> &lt;!--Non sticky navbar end.-->
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">Copy the portion below if your using <b>sticky</b> nav.</p>
+
+            <pre data-start="62" style="white-space:pre-wrap;" class="language-html line-numbers">
 
                 <code>
 
+                        &lt;!--Hamburger btn for sticky.-->    
+                        &lt;div class="mainLinks"> &lt;!--Main links start.-->
+
                             &lt;a class="hamburger" href="">&lt;i class="fas fa-bars">&lt;/i>&lt;/a>
-                
-                    &lt;/div> //main links end
-                
-                    &lt;/div> //navbar end
+
+                        &lt;/div> &lt;!--Main links end.-->
+
+                    &lt;/div> &lt;!--Sticky navbar end.-->
 
                 </code>
 
@@ -2898,8 +3051,13 @@
 
     <!-- hamburger btn end -->
 
-            <!-- full preview -->
-            <a target="_blank" href="navbar.html" class="txtDecorNone clrBlue">Click me to see full preview</a>
+            <!-- preview -->
+            <!-- preview -->
+            <div class="m_1">
+
+                <p><b>Preview:</b> Click on <a target="_blank" href="dist/examples/non_sticky_nav.html" class="link">non sticky</a> or <a target="_blank" href="dist/examples/sticky_nav.html" class="link">sticky</a> to see preview.</p>
+
+            </div>
 
         </div>
 

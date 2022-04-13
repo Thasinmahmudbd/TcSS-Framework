@@ -126,3 +126,26 @@
      clrDetail('MarsBrown', 'White'),
      clrDetail('MediumBrown', 'White'),
      clrDetail('MojaveDesert', 'Black')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
