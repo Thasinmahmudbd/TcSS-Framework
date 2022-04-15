@@ -96,3 +96,43 @@
         padding:.5rem;
     }
 }
+
+
+
+/* form */
+@mixin formType_1{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+@mixin formType_2{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 5px;
+}
+
+    /* label */
+    @mixin labelBasic{
+        font-weight: bold;
+        text-decoration: none;
+        align-self: center;
+    }
+
+    /* input:focus */
+    @mixin inputFocBasic{
+        border-bottom: 2px solid inherit;
+        box-shadow: none;
+        outline: none;
+    }
+
+     /* disable */
+    @mixin disable{
+        background: repeating-linear-gradient(
+            45deg,
+            #ed3030,
+            #ed3030 10px,
+            #cd2727 10px,
+            #cd2727 20px
+        );
+    }

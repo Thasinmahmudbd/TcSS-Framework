@@ -10,3 +10,123 @@
     background-size:20px 20px;    
     background-position:0 0, 10px 0, 10px -10px, 0px 10px;
 }
+
+.shade{
+    background: repeating-linear-gradient(
+        45deg,
+        #eeefff,
+        #eeefff 10px,
+        #808080 10px,
+        #808080 20px
+    );
+
+    &White{
+        background: repeating-linear-gradient(
+            45deg,
+            #fff,
+            #fff 10px,
+            #eeefff 10px,
+            #eeefff 20px
+        );
+    }
+
+    &Green{
+        background: repeating-linear-gradient(
+            45deg,
+            #4DED30,
+            #4DED30 10px,
+            #27cd27 10px,
+            #27cd27 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #69fd53 10px,
+                #69fd53 20px
+            );
+        }
+    }
+
+    &Red{
+        background: repeating-linear-gradient(
+            45deg,
+            #ed3030,
+            #ed3030 10px,
+            #cd2727 10px,
+            #cd2727 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #fd5353 10px,
+                #fd5353 20px
+            );
+        }
+    }
+
+    &Blue{
+        background: repeating-linear-gradient(
+            45deg,
+            #3050ed,
+            #3050ed 10px,
+            #272acd 10px,
+            #272acd 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #535efd 10px,
+                #535efd 20px
+            );
+        }
+    }
+
+    &Yellow{
+        background: repeating-linear-gradient(
+            45deg,
+            #e7ed30,
+            #e7ed30 10px,
+            #bfcd27 10px,
+            #bfcd27 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #fdf253 10px,
+                #fdf253 20px
+            );
+        }
+    }
+
+    &Black{
+        background: repeating-linear-gradient(
+            45deg,
+            #1d1d1c,
+            #1d1d1c 10px,
+            #464644 10px,
+            #464644 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #464644 10px,
+                #464644 20px   
+            );
+        }
+    }
+}
