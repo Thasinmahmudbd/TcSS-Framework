@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Rampart One
-- Font Author: Copyright 2020 The Rampart Project Authors (https://github.com/fontworks-fonts/Rampart/)
-- Font Source: http://fonts.gstatic.com/s/rampartone/v5/K2F1fZFGl_JSR1tAWNG9R6qgLS76ZHOM.ttf
+- Font Title: Averia Sans Libre
+- Font Author: Copyright (c) 2011, Dan Sayers (i@iotic.com), with Reserved Font Name 'Averia' and 'Averia Libre'.
+- Font Source: http://fonts.gstatic.com/s/averiasanslibre/v11/ga6SaxZG_G5OvCf_rt7FH3B6BHLMEd31N6cQJZP1LmD9.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
