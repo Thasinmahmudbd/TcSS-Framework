@@ -289,8 +289,8 @@
         & > label{
             @include labelBasic;
             position: absolute;
-            top: calc(50% - 2.5px);
-            left: 15px;
+            top: calc(50% - 1.5px);
+            left: 10px;
             transform: translateY(-50%);
             transition: 500ms ease-in;
             pointer-events: none;
@@ -1202,13 +1202,12 @@
 
         & > input{
             position: absolute;
-            left: 0;
-            top: 4px;
-            padding: 1rem .5rem;
+            left: 0px;
+            top: 2px;
+            padding: 1rem .5rem 1rem 2.5rem;
             border-left: 110px solid transparent;
             border-radius: 15px;
             font-family: inherit;
-            font-size: inherit;
             cursor: pointer;
 
             &[type=file]::file-selector-button {
