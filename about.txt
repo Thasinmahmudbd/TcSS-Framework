@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rampart One
+- Font Author: Copyright 2020 The Rampart Project Authors (https://github.com/fontworks-fonts/Rampart/)
+- Font Source: http://fonts.gstatic.com/s/rampartone/v5/K2F1fZFGl_JSR1tAWNG9R6qgLS76ZHOM.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
