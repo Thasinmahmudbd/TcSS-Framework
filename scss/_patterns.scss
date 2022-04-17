@@ -2,14 +2,389 @@
 
 .png{
     background-image:
-    linear-gradient(45deg, #808080 25%, #ffffff 25%), 
-    linear-gradient(-45deg, #808080 25%, #ffffff 25%),
-    linear-gradient(45deg, #ffffff 75%, #808080 75%),
+    linear-gradient(45deg, #808080 25%, transparent 25%), 
+    linear-gradient(-45deg, #808080 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #808080 75%),
+    linear-gradient(-45deg, #ffffff 75%, #808080 75%);
+
+    background-size:20px 20px;    
+    background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+    &Light{
+        background-image:
+        linear-gradient(45deg, #eeefff 25%, transparent 25%), 
+        linear-gradient(-45deg, #eeefff 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #eeefff 75%),
+        linear-gradient(-45deg, #ffffff 75%, #eeefff 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+
+    &Green{
+        background-image:
+        linear-gradient(45deg, #4DED30 25%, transparent 25%), 
+        linear-gradient(-45deg, #4DED30 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #4DED30 75%),
+        linear-gradient(-45deg, #ffffff 75%, #4DED30 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #69fd53 25%, transparent 25%), 
+            linear-gradient(-45deg, #69fd53 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #69fd53 75%),
+            linear-gradient(-45deg, #ffffff 75%, #69fd53 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Red{
+        background-image:
+        linear-gradient(45deg, #ed3030 25%, transparent 25%), 
+        linear-gradient(-45deg, #ed3030 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ed3030 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ed3030 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #fd5353 25%, transparent 25%), 
+            linear-gradient(-45deg, #fd5353 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #fd5353 75%),
+            linear-gradient(-45deg, #ffffff 75%, #fd5353 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Blue{
+        background-image:
+        linear-gradient(45deg, #3050ed 25%, transparent 25%), 
+        linear-gradient(-45deg, #3050ed 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3050ed 75%),
+        linear-gradient(-45deg, #ffffff 75%, #3050ed 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #535efd 25%, transparent 25%), 
+            linear-gradient(-45deg, #535efd 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #535efd 75%),
+            linear-gradient(-45deg, #ffffff 75%, #535efd 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Yellow{
+        background-image:
+        linear-gradient(45deg, #e7ed30 25%, transparent 25%), 
+        linear-gradient(-45deg, #e7ed30 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #e7ed30 75%),
+        linear-gradient(-45deg, #ffffff 75%, #e7ed30 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #fdf253 25%, transparent 25%), 
+            linear-gradient(-45deg, #fdf253 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #fdf253 75%),
+            linear-gradient(-45deg, #ffffff 75%, #fdf253 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Black{
+        background-image:
+        linear-gradient(45deg, #1d1d1c 25%, transparent 25%), 
+        linear-gradient(-45deg, #1d1d1c 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #1d1d1c 75%),
+        linear-gradient(-45deg, #ffffff 75%, #1d1d1c 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #464644 25%, transparent 25%), 
+            linear-gradient(-45deg, #464644 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #464644 75%),
+            linear-gradient(-45deg, #ffffff 75%, #464644 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Orange{
+        background-image:
+        linear-gradient(45deg, #ff9100 25%, transparent 25%), 
+        linear-gradient(-45deg, #ff9100 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ff9100 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ff9100 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #efa23c 25%, transparent 25%), 
+            linear-gradient(-45deg, #efa23c 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #efa23c 75%),
+            linear-gradient(-45deg, #ffffff 75%, #efa23c 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+
+    &Purple{
+        background-image:
+        linear-gradient(45deg, #ff00ea 25%, transparent 25%), 
+        linear-gradient(-45deg, #ff00ea 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ff00ea 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ff00ea 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #f250e4 25%, transparent 25%), 
+            linear-gradient(-45deg, #f250e4 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #f250e4 75%),
+            linear-gradient(-45deg, #ffffff 75%, #f250e4 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 0 10px, 10px -10px, -10px 0px;
+        }
+    }
+}
+
+
+.checkBoard{
+    background-image:
+    linear-gradient(45deg, #000000 25%, transparent 25%), 
+    linear-gradient(-45deg, #000000 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #000000 75%),
+    linear-gradient(-45deg, #ffffff 75%, #000000 75%);
+
+    background-size:50px 50px;    
+    background-position:0 0, 0 25px, 25px -25px, -25px 0px;
+}
+
+
+
+
+
+
+
+
+/* box */
+
+.box{
+    background-image:
+    linear-gradient(45deg, #808080 25%, transparent 25%), 
+    linear-gradient(-45deg, #808080 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #808080 75%),
     linear-gradient(-45deg, #ffffff 75%, #808080 75%);
 
     background-size:20px 20px;    
     background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+    &Light{
+        background-image:
+        linear-gradient(45deg, #eeefff 25%, transparent 25%), 
+        linear-gradient(-45deg, #eeefff 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #eeefff 75%),
+        linear-gradient(-45deg, #ffffff 75%, #eeefff 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+    }
+
+    &Green{
+        background-image:
+        linear-gradient(45deg, #4DED30 25%, transparent 25%), 
+        linear-gradient(-45deg, #4DED30 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #4DED30 75%),
+        linear-gradient(-45deg, #ffffff 75%, #4DED30 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #69fd53 25%, transparent 25%), 
+            linear-gradient(-45deg, #69fd53 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #69fd53 75%),
+            linear-gradient(-45deg, #ffffff 75%, #69fd53 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Red{
+        background-image:
+        linear-gradient(45deg, #ed3030 25%, transparent 25%), 
+        linear-gradient(-45deg, #ed3030 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ed3030 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ed3030 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #fd5353 25%, transparent 25%), 
+            linear-gradient(-45deg, #fd5353 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #fd5353 75%),
+            linear-gradient(-45deg, #ffffff 75%, #fd5353 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Blue{
+        background-image:
+        linear-gradient(45deg, #3050ed 25%, transparent 25%), 
+        linear-gradient(-45deg, #3050ed 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #3050ed 75%),
+        linear-gradient(-45deg, #ffffff 75%, #3050ed 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #535efd 25%, transparent 25%), 
+            linear-gradient(-45deg, #535efd 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #535efd 75%),
+            linear-gradient(-45deg, #ffffff 75%, #535efd 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Yellow{
+        background-image:
+        linear-gradient(45deg, #e7ed30 25%, transparent 25%), 
+        linear-gradient(-45deg, #e7ed30 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #e7ed30 75%),
+        linear-gradient(-45deg, #ffffff 75%, #e7ed30 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #fdf253 25%, transparent 25%), 
+            linear-gradient(-45deg, #fdf253 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #fdf253 75%),
+            linear-gradient(-45deg, #ffffff 75%, #fdf253 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Black{
+        background-image:
+        linear-gradient(45deg, #1d1d1c 25%, transparent 25%), 
+        linear-gradient(-45deg, #1d1d1c 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #1d1d1c 75%),
+        linear-gradient(-45deg, #ffffff 75%, #1d1d1c 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #464644 25%, transparent 25%), 
+            linear-gradient(-45deg, #464644 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #464644 75%),
+            linear-gradient(-45deg, #ffffff 75%, #464644 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Orange{
+        background-image:
+        linear-gradient(45deg, #ff9100 25%, transparent 25%), 
+        linear-gradient(-45deg, #ff9100 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ff9100 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ff9100 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #efa23c 25%, transparent 25%), 
+            linear-gradient(-45deg, #efa23c 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #efa23c 75%),
+            linear-gradient(-45deg, #ffffff 75%, #efa23c 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
+
+    &Purple{
+        background-image:
+        linear-gradient(45deg, #ff00ea 25%, transparent 25%), 
+        linear-gradient(-45deg, #ff00ea 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ff00ea 75%),
+        linear-gradient(-45deg, #ffffff 75%, #ff00ea 75%);
+    
+        background-size:20px 20px;    
+        background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+
+        &Light{
+            background-image:
+            linear-gradient(45deg, #f250e4 25%, transparent 25%), 
+            linear-gradient(-45deg, #f250e4 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #f250e4 75%),
+            linear-gradient(-45deg, #ffffff 75%, #f250e4 75%);
+        
+            background-size:20px 20px;    
+            background-position:0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* shades */
 
 .shade{
     background: repeating-linear-gradient(
@@ -20,7 +395,7 @@
         #808080 20px
     );
 
-    &White{
+    &Light{
         background: repeating-linear-gradient(
             45deg,
             #fff,
@@ -126,6 +501,1576 @@
                 #ffffff 10px,
                 #464644 10px,
                 #464644 20px   
+            );
+        }
+    }
+
+    &Orange{
+        background: repeating-linear-gradient(
+            45deg,
+            #ff9100,
+            #ff9100 10px,
+            #efa23c 10px,
+            #efa23c 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #efa23c 10px,
+                #efa23c 20px   
+            );
+        }
+    }
+
+    &Purple{
+        background: repeating-linear-gradient(
+            45deg,
+            #ff00ea,
+            #ff00ea 10px,
+            #f250e4 10px,
+            #f250e4 20px
+        );
+
+        &Light{
+            background: repeating-linear-gradient(
+                45deg,
+                #ffffff,
+                #ffffff 10px,
+                #f250e4 10px,
+                #f250e4 20px   
+            );
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ruby */ 
+
+.ruby{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-size: 53px 53px;
+    background-image: radial-gradient(
+        transparent 28px,
+        #ffffff 28px,
+        #ffffff 32px,
+        transparent 32px
+    );
+
+    &Green{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #4DED30 28px,
+            #4DED30 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #69fd53 28px,
+                #69fd53 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Red{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #ed3030 28px,
+            #ed3030 32px,
+            transparent 32px
+        );
+        
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #fd5353 28px,
+                #fd5353 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Blue{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #3050ed 28px,
+            #3050ed 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #535efd 28px,
+                #535efd 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Yellow{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #e7ed30 28px,
+            #e7ed30 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #fdf253 28px,
+                #fdf253 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Black{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #1d1d1c 28px,
+            #1d1d1c 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #464644 28px,
+                #464644 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Orange{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #ff9100 28px,
+            #ff9100 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #efa23c 28px,
+                #efa23c 32px,
+                transparent 32px
+            );
+        }
+    }
+
+    &Purple{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 53px 53px;
+        background-image: radial-gradient(
+            transparent 28px,
+            #ff00ea 28px,
+            #ff00ea 32px,
+            transparent 32px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 53px 53px;
+            background-image: radial-gradient(
+                transparent 28px,
+                #f250e4 28px,
+                #f250e4 32px,
+                transparent 32px
+            );
+        }
+    }
+}
+
+
+
+
+
+
+
+/* clover */
+
+.clover{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-size: 48px 48px;
+    background-image: radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    ),
+    radial-gradient(
+        transparent 20px,
+        #ffffff 20px,
+        #ffffff 24px,
+        transparent 24px
+    );
+    background-position: 0 0, 24px 24px;
+
+    &Green{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #4DED30 20px,
+            #4DED30 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #4DED30 20px,
+            #4DED30 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #69fd53 20px,
+                #69fd53 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #69fd53 20px,
+                #69fd53 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Red{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #ed3030 20px,
+            #ed3030 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #ed3030 20px,
+            #ed3030 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #fd5353 20px,
+                #fd5353 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #fd5353 20px,
+                #fd5353 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Blue{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #3050ed 20px,
+            #3050ed 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #3050ed 20px,
+            #3050ed 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #535efd 20px,
+                #535efd 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #535efd 20px,
+                #535efd 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Yellow{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #e7ed30 20px,
+            #e7ed30 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #e7ed30 20px,
+            #e7ed30 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #fdf253 20px,
+                #fdf253 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #fdf253 20px,
+                #fdf253 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Black{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #000000 20px,
+            #000000 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #000000 20px,
+            #000000 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #464644 20px,
+                #464644 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #464644 20px,
+                #464644 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Orange{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #ff9100 20px,
+            #ff9100 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #ff9100 20px,
+            #ff9100 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #efa23c 20px,
+                #efa23c 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #efa23c 20px,
+                #efa23c 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+
+    &Purple{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 48px 48px;
+        background-image: radial-gradient(
+            transparent 20px,
+            #ff00ea 20px,
+            #ff00ea 24px,
+            transparent 24px
+        ),
+        radial-gradient(
+            transparent 20px,
+            #ff00ea 20px,
+            #ff00ea 24px,
+            transparent 24px
+        );
+        background-position: 0 0, 24px 24px;
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 48px 48px;
+            background-image: radial-gradient(
+                transparent 20px,
+                #f250e4 20px,
+                #f250e4 24px,
+                transparent 24px
+            ),
+            radial-gradient(
+                transparent 20px,
+                #f250e4 20px,
+                #f250e4 24px,
+                transparent 24px
+            );
+            background-position: 0 0, 24px 24px;
+        }
+    }
+}
+
+
+
+
+
+
+
+/* rainbow */
+
+.rainbow{
+    padding: 0;
+    margin: 0;
+    background-color: #eeefff;
+    background-size: 56px 56px;
+    background-image: 
+    linear-gradient(
+        135deg,
+        transparent 55%,
+        #eeefff 55%
+    ),
+    radial-gradient(
+        transparent 6px,
+        #ffffff 6px,
+        #ffffff 10px,
+        transparent 10px,
+        transparent 15px,
+        #ffffff 15px,
+        #ffffff 19px,
+        transparent 19px,
+        transparent 24px,
+        #ffffff 24px,
+        #ffffff 28px,
+        transparent 28px
+    );
+
+    &Green{
+        padding: 0;
+        margin: 0;
+        background-color: #4DED30;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #4DED30 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #69fd53;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #69fd53 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Red{
+        padding: 0;
+        margin: 0;
+        background-color: #ed3030;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #ed3030 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #fd5353;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #fd5353 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Blue{
+        padding: 0;
+        margin: 0;
+        background-color: #3050ed;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #3050ed 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #535efd;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #535efd 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Yellow{
+        padding: 0;
+        margin: 0;
+        background-color: #e7ed30;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #e7ed30 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #fdf253;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #fdf253 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Black{
+        padding: 0;
+        margin: 0;
+        background-color: #1d1d1c;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #1d1d1c 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #464644;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #464644 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Purple{
+        padding: 0;
+        margin: 0;
+        background-color: #ff00ea;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #ff00ea 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #f250e4;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #f250e4 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Orange{
+        padding: 0;
+        margin: 0;
+        background-color: #ff9100;
+        background-size: 56px 56px;
+        background-image: 
+        linear-gradient(
+            135deg,
+            transparent 55%,
+            #ff9100 55%
+        ),
+        radial-gradient(
+            transparent 6px,
+            #ffffff 6px,
+            #ffffff 10px,
+            transparent 10px,
+            transparent 15px,
+            #ffffff 15px,
+            #ffffff 19px,
+            transparent 19px,
+            transparent 24px,
+            #ffffff 24px,
+            #ffffff 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: #efa23c;
+            background-size: 56px 56px;
+            background-image: 
+            linear-gradient(
+                135deg,
+                transparent 55%,
+                #efa23c 55%
+            ),
+            radial-gradient(
+                transparent 6px,
+                #ffffff 6px,
+                #ffffff 10px,
+                transparent 10px,
+                transparent 15px,
+                #ffffff 15px,
+                #ffffff 19px,
+                transparent 19px,
+                transparent 24px,
+                #ffffff 24px,
+                #ffffff 28px,
+                transparent 28px
+            );
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* target */
+
+.target{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    background-size: 56px 56px;
+    background-image: 
+    radial-gradient(
+        transparent 6px,
+        #ffffff 6px,
+        #ffffff 10px,
+        transparent 10px,
+        transparent 15px,
+        #ffffff 15px,
+        #ffffff 19px,
+        transparent 19px,
+        transparent 24px,
+        #ffffff 24px,
+        #ffffff 28px,
+        transparent 28px
+    );
+
+    &Green{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #4DED30 6px,
+            #4DED30 10px,
+            transparent 10px,
+            transparent 15px,
+            #4DED30 15px,
+            #4DED30 19px,
+            transparent 19px,
+            transparent 24px,
+            #4DED30 24px,
+            #4DED30 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #69fd53 6px,
+                #69fd53 10px,
+                transparent 10px,
+                transparent 15px,
+                #69fd53 15px,
+                #69fd53 19px,
+                transparent 19px,
+                transparent 24px,
+                #69fd53 24px,
+                #69fd53 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Red{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #ed3030 6px,
+            #ed3030 10px,
+            transparent 10px,
+            transparent 15px,
+            #ed3030 15px,
+            #ed3030 19px,
+            transparent 19px,
+            transparent 24px,
+            #ed3030 24px,
+            #ed3030 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #fd5353 6px,
+                #fd5353 10px,
+                transparent 10px,
+                transparent 15px,
+                #fd5353 15px,
+                #fd5353 19px,
+                transparent 19px,
+                transparent 24px,
+                #fd5353 24px,
+                #fd5353 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Blue{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #3050ed 6px,
+            #3050ed 10px,
+            transparent 10px,
+            transparent 15px,
+            #3050ed 15px,
+            #3050ed 19px,
+            transparent 19px,
+            transparent 24px,
+            #3050ed 24px,
+            #3050ed 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #535efd 6px,
+                #535efd 10px,
+                transparent 10px,
+                transparent 15px,
+                #535efd 15px,
+                #535efd 19px,
+                transparent 19px,
+                transparent 24px,
+                #535efd 24px,
+                #535efd 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Yellow{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #e7ed30 6px,
+            #e7ed30 10px,
+            transparent 10px,
+            transparent 15px,
+            #e7ed30 15px,
+            #e7ed30 19px,
+            transparent 19px,
+            transparent 24px,
+            #e7ed30 24px,
+            #e7ed30 28px,
+            transparent 28px
+        );
+
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #fdf253 6px,
+                #fdf253 10px,
+                transparent 10px,
+                transparent 15px,
+                #fdf253 15px,
+                #fdf253 19px,
+                transparent 19px,
+                transparent 24px,
+                #fdf253 24px,
+                #fdf253 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Black{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #000000 6px,
+            #000000 10px,
+            transparent 10px,
+            transparent 15px,
+            #000000 15px,
+            #000000 19px,
+            transparent 19px,
+            transparent 24px,
+            #000000 24px,
+            #000000 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #464644 6px,
+                #464644 10px,
+                transparent 10px,
+                transparent 15px,
+                #464644 15px,
+                #464644 19px,
+                transparent 19px,
+                transparent 24px,
+                #464644 24px,
+                #464644 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Orange{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #ff9100 6px,
+            #ff9100 10px,
+            transparent 10px,
+            transparent 15px,
+            #ff9100 15px,
+            #ff9100 19px,
+            transparent 19px,
+            transparent 24px,
+            #ff9100 24px,
+            #ff9100 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #efa23c 6px,
+                #efa23c 10px,
+                transparent 10px,
+                transparent 15px,
+                #efa23c 15px,
+                #efa23c 19px,
+                transparent 19px,
+                transparent 24px,
+                #efa23c 24px,
+                #efa23c 28px,
+                transparent 28px
+            );
+        }
+    }
+
+    &Purple{
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        background-size: 56px 56px;
+        background-image: 
+        radial-gradient(
+            transparent 6px,
+            #ff00ea 6px,
+            #ff00ea 10px,
+            transparent 10px,
+            transparent 15px,
+            #ff00ea 15px,
+            #ff00ea 19px,
+            transparent 19px,
+            transparent 24px,
+            #ff00ea 24px,
+            #ff00ea 28px,
+            transparent 28px
+        );
+        &Light{
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            background-size: 56px 56px;
+            background-image: 
+            radial-gradient(
+                transparent 6px,
+                #f250e4 6px,
+                #f250e4 10px,
+                transparent 10px,
+                transparent 15px,
+                #f250e4 15px,
+                #f250e4 19px,
+                transparent 19px,
+                transparent 24px,
+                #f250e4 24px,
+                #f250e4 28px,
+                transparent 28px
+            );
+        }
+    }
+}
+
+
+
+
+
+
+/* net */
+
+.net{
+
+    background-color: transparent;
+    background-size: 50px 50px;
+    background-image: radial-gradient(
+        #ffffff 15%,
+        transparent 15%
+    ),linear-gradient(
+        45deg,
+        transparent 48%, #ffffff 48%,
+        #ffffff 52%, transparent 52%
+    ),linear-gradient(
+        135deg,
+        transparent 48%, #ffffff 48%,
+        #ffffff 52%, transparent 52%
+    );
+
+    &Black{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #000000 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #000000 48%,
+            #000000 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #000000 48%,
+            #000000 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #464644 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #464644 48%,
+                #464644 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #464644 48%,
+                #464644 52%, transparent 52%
+            );
+        }
+    }
+
+    &Red{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #ed3030 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #ed3030 48%,
+            #ed3030 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #ed3030 48%,
+            #ed3030 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #fd5353 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #fd5353 48%,
+                #fd5353 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #fd5353 48%,
+                #fd5353 52%, transparent 52%
+            );
+        }
+    }
+
+    &Green{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #4DED30 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #4DED30 48%,
+            #4DED30 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #4DED30 48%,
+            #4DED30 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #69fd53 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #69fd53 48%,
+                #69fd53 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #69fd53 48%,
+                #69fd53 52%, transparent 52%
+            );
+        }
+    }
+
+    &Yellow{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #e7ed30 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #e7ed30 48%,
+            #e7ed30 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #e7ed30 48%,
+            #e7ed30 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #fdf253 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #fdf253 48%,
+                #fdf253 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #fdf253 48%,
+                #fdf253 52%, transparent 52%
+            );
+        }
+    }
+
+    &Orange{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #ff9100 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #ff9100 48%,
+            #ff9100 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #ff9100 48%,
+            #ff9100 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #efa23c 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #efa23c 48%,
+                #efa23c 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #efa23c 48%,
+                #efa23c 52%, transparent 52%
+            );
+        }
+    }
+
+    &Purple{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #ff00ea 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #ff00ea 48%,
+            #ff00ea 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #ff00ea 48%,
+            #ff00ea 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #f250e4 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #f250e4 48%,
+                #f250e4 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #f250e4 48%,
+                #f250e4 52%, transparent 52%
+            );
+        }
+    }
+
+    &Blue{
+        background-color: transparent;
+        background-size: 50px 50px;
+        background-image: radial-gradient(
+            #3050ed 15%,
+            transparent 15%
+        ),linear-gradient(
+            45deg,
+            transparent 48%, #3050ed 48%,
+            #3050ed 52%, transparent 52%
+        ),linear-gradient(
+            135deg,
+            transparent 48%, #3050ed 48%,
+            #3050ed 52%, transparent 52%
+        );
+
+        &Light{
+            background-color: transparent;
+            background-size: 50px 50px;
+            background-image: radial-gradient(
+                #535efd 15%,
+                transparent 15%
+            ),linear-gradient(
+                45deg,
+                transparent 48%, #535efd 48%,
+                #535efd 52%, transparent 52%
+            ),linear-gradient(
+                135deg,
+                transparent 48%, #535efd 48%,
+                #535efd 52%, transparent 52%
             );
         }
     }

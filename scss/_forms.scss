@@ -1210,7 +1210,7 @@
             font-family: inherit;
             cursor: pointer;
 
-            &[type=file]::file-selector-button {
+            &[type=file] {
                 display:none;
             }
         }
