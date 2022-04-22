@@ -10,6 +10,18 @@
     background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
+/* lighter png pattern creation */
+@mixin pngLight {
+    background-image:
+    linear-gradient(45deg, #eeefff 25%, transparent 25%), 
+    linear-gradient(-45deg, #eeefff 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #eeefff 75%),
+    linear-gradient(-45deg, #ffffff 75%, #eeefff 75%);
+
+    background-size:20px 20px;    
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
 
 
 /* title mixin */
@@ -91,7 +103,7 @@
     display:block;
     height: fit-content;
     padding:1rem;
-    @include png;
+    @include pngLight;
     @media only screen and (max-width: $mobile) {
         padding:.5rem;
     }
