@@ -361,7 +361,7 @@
             z-index: 5;
             margin-top: 60px;
             overflow-y: scroll;
-            @include png;
+            @include pngLight;
             transition: 500ms ease-in-out;
             @media only screen and (max-width: $pc) {
                 left: -400px;
@@ -484,7 +484,7 @@
             z-index: 5;
             margin-top: 60px;
             overflow-y: scroll;
-            @include png;
+            @include pngLight;
             transition: 500ms ease-in-out;
             @media only screen and (max-width: $pc) {
                 right: -400px;

@@ -73,3 +73,13 @@
         top: 7px;
     }
 }
+
+
+
+/* hovers */
+
+.hoverFix{
+    &AxisZ:hover{
+        z-index: 500;
+    }
+}

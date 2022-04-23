@@ -148,3 +148,56 @@
 
 
 
+&lt;div class="fr2">
+
+        &lt;div class="fr2Ls_1">
+    
+            &lt;ul>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 1&lt;/a>
+                    &lt;ul>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 1&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 2&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 3&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 4&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 5&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 2&lt;/a>
+                    &lt;ul>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 1&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 2&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 3&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 4&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 5&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 3&lt;/a>
+                    &lt;ul>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 1&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 2&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 3&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 4&lt;/a>&lt;/li>
+                        &lt;li>&lt;a class="fr2Ls_btn" href="#">Sub nav 5&lt;/a>&lt;/li>
+                    &lt;/ul>
+                &lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 4&lt;/a>&lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 5&lt;/a>&lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 6&lt;/a>&lt;/li>
+                &lt;li>&lt;a class="fr2Ls_btn" href="#">Main nav 7&lt;/a>&lt;/li>
+            &lt;/ul>
+        
+        &lt;/div>
+    
+        &lt;div class="fr2Rs_1">
+    
+            &lt;span>
+                &lt;p>This portion acts as a gap filler when built in navigation bars are used.&lt;/p>
+            &lt;/span>
+    
+            &lt;div>
+                &lt;p>This is the main body container. You can add various content here.&lt;/p>
+            &lt;/div>
+        
+        &lt;/div>
+    
+    &lt;/div>

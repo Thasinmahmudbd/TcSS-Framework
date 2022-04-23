@@ -114,7 +114,7 @@
 
     <!--shelf menu start-->
 
-    <div class="disBlock posFix left_200 w_22Per h_100Per" id="peak_a_boo">
+    <div class="disBlock posFix left_200 w_22Per h_100Per hoverFixAxisZ" id="peak_a_boo">
 
         <div class="ofScrollY h_100Per pr_10px pl_10px scrlNone">
 
@@ -246,6 +246,17 @@
                         <a href="#navBtnSub" class="shelfOrangeSubBtn" >Nav Buttons (Sub)</a>
                         <a href="#navBtnSubEx" class="shelfOrangeSubBtn" >Nav Buttons (Extra)</a>
                         <a href="#hamBtn" class="shelfOrangeSubBtn" >Hamburger Menu Button</a>
+
+                        <span class="smallGap"></span>
+
+                <a href="#frames" class="shelfOrangeBtn" >Frames</a>
+                        <a href="#frame1" class="shelfOrangeSubBtn" >Frame 01</a>
+                        <a href="#frame1main" class="shelfOrangeSubBtn" >Main Section</a>
+                        <a href="#frame1middle" class="shelfOrangeSubBtn" >Middle Section</a>
+                        <a href="#frame1footer" class="shelfOrangeSubBtn" >Footer Section</a>
+                        <a href="#frame2" class="shelfOrangeSubBtn" >Frame 02</a>
+                        <a href="#frame2sidebar" class="shelfOrangeSubBtn" >Side Bar</a>
+                        <a href="#frame2content" class="shelfOrangeSubBtn" >Content Container</a>
 
                         <span class="smallGap"></span>
 
@@ -3092,6 +3103,354 @@
         <div class="largeGap p_5_h"></div>
 
 <!-- navbar description end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+<!-- frames start -->
+
+        <div>
+
+            <div class="largeGap p_2_q" id="frames"></div>
+
+            <h2 class="titleL">Frames</h2>
+
+            <p class="txtJustify lineHeight_1_7">Frames are built-in structures that are responsive by default. Using frames will minimizes the design time massively. The default frames are pretty bland, but customization is possible using the <a class="link" href="#basic">Basic</a> classes.</p>
+
+
+
+    <!-- frame 1 start -->
+            
+            <div class="largeGap p_2_q" id="frame1"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Frame 01:</li>
+
+            <p class="txtJustify lineHeight_1_7">This frame is divided into 3 sections which are <b>main, middle </b>& <b>footer</b>. In order to access this frame, use <span class="highlightBlack">class="fr"</span></p>
+
+            <p class="txtJustify lineHeight_1_7"><b class="clrDanger">Note:</b> An empty span tag is required inside the <span class="highlightBlack">"fr"</span> classed div. This will act as an filler behind the navbar assuming navbar is being used. The span tag is unnecessary if navbar is not applied.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr"> &lt;!--Starting: frame no.1-->
+
+                    &lt;span> &lt;!--Gap balancer for nav-->
+                        This portion goes behind the navbar as a gap filler.
+                    &lt;/span>
+
+                </code>
+
+            </pre>
+
+    <!-- frame 1 end -->
+
+
+
+
+    <!-- main section start -->
+
+            <div class="largeGap p_2_q" id="frame1main"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Main Section:</li>
+
+            <p class="txtJustify lineHeight_1_7">This section is the very top section of the frame which will act as a content container. To create main section on frame 1, use <span class="highlightBlack">class="frTs_1"</span></p>
+
+            <p class="txtJustify lineHeight_1_7"><b class="clrDanger">Note:</b> Multiple main sections can be added all over the frame.</p>
+
+            <pre data-start="7" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="frTs_1"> &lt;!--Starting: main section-->
+                        &lt;p>
+                            This is the main section.
+                        &lt;/p>
+                    &lt;/div> &lt;!--Ending: main section-->
+
+                </code>
+
+            </pre>
+
+    <!-- main section end -->
+
+
+
+
+
+    <!-- middle section start -->
+
+            <div class="largeGap p_2_q" id="frame1middle"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Middle Section:</li>
+
+            <p class="txtJustify lineHeight_1_7">There are multiple templates in middle section. To create middle section on frame 1, use <span class="highlightBlack">class="frMs_#"</span> here <span class="highlightBlack">#</span> is a placeholder for section type. Supported section types are <b>"1, 1_1, 2_1, 1_2, 3_1, 1_3, 1_1_1, R100px_1, 1_R100px, 1_s2"</b> & <b>"s2_1"</b></p>
+
+            <p class="txtJustify lineHeight_1_7"><b class="clrDanger">Note:</b> All the templates are by default responsive.</p>
+
+            <pre data-start="12" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="frMs_1_1"> &lt;!--Starting: mid section-->
+
+                        &lt;div>  &lt;!--Starting: mid section - left-->
+                            &lt;p>
+                                Middle section type: 1 - left part.
+                            &lt;/p>
+                        &lt;/div> &lt;!--Ending: mid section - left-->
+
+                        &lt;div> &lt;!--Starting: mid section - right-->
+                            &lt;p>
+                                Middle section type: 1 - right part.
+                            &lt;/p>
+                        &lt;/div> &lt;!--Ending: mid section - right-->
+
+                    &lt;/div> &lt;!--Ending: mid section-->
+
+                </code>
+
+            </pre>
+
+    <!-- middle section end -->
+
+
+
+
+
+
+    <!-- footer section start -->
+
+            <div class="largeGap p_2_q" id="frame1footer"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Footer Section:</li>
+
+            <p class="txtJustify lineHeight_1_7">To create footer section on frame 1, use <span class="highlightBlack">class="frBs_1"</span></p>
+
+            <pre data-start="28" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="frBs_1"> &lt;!--Starting: footer section-->
+                        &lt;p>
+                            This is the footer section.
+                        &lt;/p>
+                    &lt;/div> &lt;!--Ending: footer section-->
+
+                    &lt;/div> &lt;!--Ending: frame no.1-->
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+
+                <p><b>Preview:</b> Click <a target="_blank" href="dist/examples/frame_1.html" class="link">here</a> to see a full preview of frame 1.</p>
+
+            </div>
+
+    <!-- footer section end -->
+
+
+
+
+
+    <!-- frame 2 start -->
+            
+            <div class="largeGap p_2_q" id="frame2"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Frame 02:</li>
+
+            <p class="txtJustify lineHeight_1_7">This frame is divided into 2 sections which are <b>side bar</b> & <b>content container</b>. In order to access this frame, use <span class="highlightBlack">class="fr2"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr2"> &lt;!--Starting: frame no.2-->
+
+                </code>
+
+            </pre>
+
+    <!-- frame 2 end -->
+
+
+
+
+
+    <!-- side bar start -->
+            
+            <div class="largeGap p_2_q" id="frame2sidebar"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Side Bar:</li>
+
+            <p class="txtJustify lineHeight_1_7">Side bar can be on the left or the right depending on the class used. To implement side bar on the left, use <span class="highlightBlack">class="fr2Ls_1"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr2Ls_1"> &lt;!--Starting: left side - fixed-->
+                        
+                        &lt;ul> &lt;!--Starting: side panel - main links-->
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 1&lt;/a>
+                                &lt;ul> &lt;!--Starting: side panel - sub links-->
+                                    &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo sub nav 1&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo sub nav 2&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo sub nav 3&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo sub nav 4&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo sub nav 5&lt;/a>&lt;/li>
+                                &lt;/ul> &lt;!--Ending: side panel - sub links-->
+                            &lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 2&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 3&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 4&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 5&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 6&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Ls_btn" href="#">Demo main nav 7&lt;/a>&lt;/li>
+                        &lt;/ul> &lt;!--Ending: side panel - main links-->
+                            
+                    &lt;/div> &lt;!--Ending: left side - fixed-->
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To implement side bar on the right, use <span class="highlightBlack">class="fr2Rs_2"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr2Rs_2"> &lt;!--Starting: right side - fixed-->
+                        
+                        &lt;ul> &lt;!--Starting: side panel - main links-->
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 1&lt;/a>
+                                &lt;ul> &lt;!--Starting: side panel - sub links-->
+                                    &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo sub nav 1&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo sub nav 2&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo sub nav 3&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo sub nav 4&lt;/a>&lt;/li>
+                                    &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo sub nav 5&lt;/a>&lt;/li>
+                                &lt;/ul> &lt;!--Ending: side panel - sub links-->
+                            &lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 2&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 3&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 4&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 5&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 6&lt;/a>&lt;/li>
+                            &lt;li>&lt;a class="fr2Rs_btn" href="#">Demo main nav 7&lt;/a>&lt;/li>
+                        &lt;/ul> &lt;!--Ending: side panel - main links-->
+                            
+                    &lt;/div> &lt;!--Ending: right side - fixed-->
+                        
+                    &lt;/div> &lt;!--Ending: frame no.2-->
+
+                </code>
+
+            </pre>
+
+    <!-- side bar end -->
+
+
+
+
+
+    <!-- content container start -->
+            
+            <div class="largeGap p_2_q" id="frame2content"></div>
+
+            <div class="largeGap"></div>
+
+            <li class="subTitleL">Content Container:</li>
+
+            <p class="txtJustify lineHeight_1_7">Content container can be on the left or the right depending on the class used. To implement content container on the left, use <span class="highlightBlack">class="fr2Ls_2"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr2Ls_2"> &lt;!--Starting: left side - scrollable-->
+
+                        &lt;div> &lt;!--Content container-->
+                            &lt;p>This is the main body container. You can add various content here.&lt;/p>
+                        &lt;/div>
+                                
+                        &lt;span> &lt;!--Gap balancer for nav-->
+                            &lt;p>Gap for navbar.&lt;/p>
+                        &lt;/span>
+                            
+                    &lt;/div> &lt;!--Ending: left side - scrollable-->
+
+                </code>
+
+            </pre>
+
+            <p class="txtJustify lineHeight_1_7">To implement content container on the right, use <span class="highlightBlack">class="fr2Rs_2"</span></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+
+                <code>
+
+                    &lt;div class="fr2Rs_1"> &lt;!--Starting: right side - scrollable-->
+                        
+                        &lt;span> &lt;!--Gap balancer for nav-->
+                            &lt;p>Gap for navbar.&lt;/p>
+                        &lt;/span>
+                        
+                        &lt;div> &lt;!--Content container-->
+                            &lt;p>This is the main body container. You can add various content here.&lt;/p>
+                        &lt;/div>
+                            
+                    &lt;/div> &lt;!--Ending: right side - scrollable-->
+                        
+                    &lt;/div> &lt;!--Ending: frame no.2-->
+
+                </code>
+
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+
+                <p><b>Preview:</b> Click <a target="_blank" href="dist/examples/frame_2_t1.html" class="link">here</a> to see a full preview of frame 2.</p>
+
+            </div>
+
+    <!-- content container end -->
+
+
+
+
+
+        </div>
+
+        <div class="largeGap p_5_h"></div>
+
+<!-- frames end -->
 
 
 
