@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Toolbar - TcSS</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/tcss.min.css">
+    <link rel="stylesheet" href="../prism/prism.css">
+
+    <!-- script -->
+    <script defer src="../prism/prism.js"></script>
+
+</head>
+<body class="nunitoRegular">
+
+
+    <div class="w_90Per m_a gridCol_2_size_1 gridGap_1 mb_5">
+
+        <div>
+            <p>This preview is for the built in toolbar. To access the full toolbar copy this code ----></p>
+
+            <p>Contents of toolbar</p>
+
+            <ol class="lineHeight_1_8">
+                <li>Left side:
+                    <ul>
+                        <li>Window pop up on hover <b>Line (5-22).</b></li>
+                        <li>Slider on hover <b>Line (27-54).</b></li>
+                    </ul>
+                </li>
+
+                <li>Middle side:
+                    <ul>
+                        <li>Horizontal icon scroller <b>Line (59-94).</b></li>
+                    </ul>
+                </li>
+
+                <li>Right side:
+                    <ul>
+                        <li>Slider on hover <b>Line (99-126).</b></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+            <code>
+
+                &lt;div class="toolbar">   
+
+                    &lt;!--section left-->
+
+                    &lt;!--windows popup-->
+                    &lt;div class="tb_window">
+                        &lt;a href="#">
+                            &lt;i class="fa-solid fa-grip">&lt;/i>
+                        &lt;/a>
+                        &lt;div class="tb-W-popUp">
+                            &lt;a href="">Section 1&lt;/a>
+                            &lt;a href="">Section 2&lt;/a>
+                            &lt;a href="">Section 3&lt;/a>
+                            &lt;a href="">Section 4&lt;/a>
+                            &lt;a href="">Section 5&lt;/a>
+                            &lt;a href="">Section 6&lt;/a>
+                            &lt;a href="">Section 7&lt;/a>
+                            &lt;a href="">Section 8&lt;/a>
+                            &lt;a href="">Section 9&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;!--windows popup end-->
+
+
+
+
+                    &lt;!--slider left -->
+                    &lt;!-- &lt;div class="tb_sliderL">
+                        &lt;a href="#">
+                            &lt;i class="fa-solid fa-square-caret-right">&lt;/i>
+                        &lt;/a>
+                        &lt;div class="tb-S-slideL">
+                            &lt;a href="">1&lt;/a>
+                            &lt;a href="">2&lt;/a>
+                            &lt;a href="">3&lt;/a>
+                            &lt;a href="">4&lt;/a>
+                            &lt;a href="">5&lt;/a>
+                            &lt;a href="">6&lt;/a>
+                            &lt;a href="">7&lt;/a>
+                            &lt;a href="">8&lt;/a>
+                            &lt;a href="">9&lt;/a>
+                            &lt;a href="">10&lt;/a>
+                            &lt;a href="">11&lt;/a>
+                            &lt;a href="">12&lt;/a>
+                            &lt;a href="">13&lt;/a>
+                            &lt;a href="">14&lt;/a>
+                            &lt;a href="">15&lt;/a>
+                            &lt;a href="">16&lt;/a>
+                            &lt;a href="">17&lt;/a>
+                            &lt;a href="">18&lt;/a>
+                            &lt;a href="">19&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;!--slider left end-->
+
+
+
+
+                    &lt;!--section middle-->
+                    &lt;div class="tb_middle">
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                        &lt;a href="">Icon&lt;/a>
+                    &lt;/div>
+                    &lt;!--section middle end-->
+
+
+
+
+                    &lt;!--slider right-->
+                    &lt;div class="tb_sliderR">
+                        &lt;a href="#">
+                            &lt;i class="fa-solid fa-square-caret-left">&lt;/i>
+                        &lt;/a>
+                        &lt;div class="tb-S-slideR">
+                            &lt;a href="">1&lt;/a>
+                            &lt;a href="">2&lt;/a>
+                            &lt;a href="">3&lt;/a>
+                            &lt;a href="">4&lt;/a>
+                            &lt;a href="">5&lt;/a>
+                            &lt;a href="">6&lt;/a>
+                            &lt;a href="">7&lt;/a>
+                            &lt;a href="">8&lt;/a>
+                            &lt;a href="">9&lt;/a>
+                            &lt;a href="">10&lt;/a>
+                            &lt;a href="">11&lt;/a>
+                            &lt;a href="">12&lt;/a>
+                            &lt;a href="">13&lt;/a>
+                            &lt;a href="">14&lt;/a>
+                            &lt;a href="">15&lt;/a>
+                            &lt;a href="">16&lt;/a>
+                            &lt;a href="">17&lt;/a>
+                            &lt;a href="">18&lt;/a>
+                            &lt;a href="">19&lt;/a>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;!--slider right end-->
+
+                &lt;/div>
+
+            </code>
+        </pre>
+
+    </div>
+
+
+
+    <div class="toolbar">   
+
+        <!--section left-->
+
+        <!--windows popup-->
+        <div class="tb_window">
+            <a href="#"><i class="fa-solid fa-grip"></i></a>
+            <div class="tb-W-popUp">
+                <a href="">Section 1</a>
+                <a href="">Section 2</a>
+                <a href="">Section 3</a>
+                <a href="">Section 4</a>
+                <a href="">Section 5</a>
+                <a href="">Section 6</a>
+                <a href="">Section 7</a>
+                <a href="">Section 8</a>
+                <a href="">Section 9</a>
+            </div>
+        </div>
+        <!--windows popup end-->
+
+        <!--slider left -->
+        <!-- <div class="tb_sliderL">
+            <a href="#"><i class="fa-solid fa-square-caret-right"></i></a>
+            <div class="tb-S-slideL">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href="">11</a>
+                <a href="">12</a>
+                <a href="">13</a>
+                <a href="">14</a>
+                <a href="">15</a>
+                <a href="">16</a>
+                <a href="">17</a>
+                <a href="">18</a>
+                <a href="">19</a>
+            </div>
+        </div>
+        <!--slider left end-->
+
+
+
+
+        <!--section middle-->
+        <div class="tb_middle">
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+            <a href="">Icon</a>
+        </div>
+        <!--section middle end-->
+
+
+
+
+        <!--slider right-->
+        <div class="tb_sliderR">
+            <a href="#"><i class="fa-solid fa-square-caret-left"></i></a>
+            <div class="tb-S-slideR">
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href="">11</a>
+                <a href="">12</a>
+                <a href="">13</a>
+                <a href="">14</a>
+                <a href="">15</a>
+                <a href="">16</a>
+                <a href="">17</a>
+                <a href="">18</a>
+                <a href="">19</a>
+            </div>
+        </div>
+        <!--slider right end-->
+
+    </div>
+
+</body>
+</html>
