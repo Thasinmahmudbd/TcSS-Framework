@@ -284,6 +284,15 @@
 
                         <span class="smallGap"></span>
 
+                <a href="#scroller" class="shelfOrangeBtn" >Scroller</a>
+                        <a href="#vertical" class="shelfOrangeSubBtn" >Vertical</a>
+                        <a href="#horizontal" class="shelfOrangeSubBtn" >Horizontal</a>
+                        <a href="#scrollerElm" class="shelfOrangeSubBtn" >Scroller Element</a>
+                        <a href="#scrollSnap" class="shelfOrangeSubBtn" >Scroll Snapping</a>
+                        <a href="#scrollFix" class="shelfOrangeSubBtn" >Scroll Fix</a>
+
+                        <span class="smallGap"></span>
+
                 <a href="#patterns" class="shelfOrangeBtn" >Patterns</a>
                         <a href="#png" class="shelfOrangeSubBtn" >Png</a>
                         <a href="#box" class="shelfOrangeSubBtn" >Box</a>
@@ -5651,7 +5660,208 @@
 
 
 
-<!-- form start -->
+<!-- scroller -->  
+
+
+            <div class="largeGap p_2_q" id="scroller"></div>
+
+            <li class="subTitleL">Scroller:</li>
+
+            <p class="txtJustify lineHeight_1_7">Scrollers are built in scrollable areas. There are <b>2</b> types of scrollers based on scroll direction. They are <b>Vertical & Horizontal</b>.</p>
+
+
+
+    <!-- vertical -->
+
+            <div class="largeGap p_2_q" id="vertical"></div>
+
+            <li class="subTitleL">Vertical Scroller:</li>
+
+            <p class="txtJustify lineHeight_1_7">Enable Vertical Scroller by using <span class="highlightBlack ">class="vScrlr_#"</span> here <span class="highlightBlack">#</span> is a placeholder for scroller height. It is an integer value, which has a range of <b>{(100+n)<=2000}</b>. Here the unit is px & <b>n=50.</b></p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="vScrlr_100">
+
+                        &lt;div class="vScrlrElm">Content 1&lt;/div>
+                        &lt;div class="vScrlrElm">Content 2&lt;/div>
+                        &lt;div class="vScrlrElm">Content 3&lt;/div>
+                        &lt;div class="vScrlrElm">Content 4&lt;/div>
+                        &lt;div class="vScrlrElm">Content 5&lt;/div>
+
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="vScrlr_100">
+
+                    <div class="vScrlrElm bgAbbeyWhite">Content 1</div>
+                    <div class="vScrlrElm bgAbbeyWhite">Content 2</div>
+                    <div class="vScrlrElm bgAbbeyWhite">Content 3</div>
+                    <div class="vScrlrElm bgAbbeyWhite">Content 4</div>
+                    <div class="vScrlrElm bgAbbeyWhite">Content 5</div>
+            
+                </div>
+            </div>
+
+    <!-- vertical end -->
+
+
+    <!-- horizontal -->
+
+            <div class="largeGap p_2_q" id="horizontal"></div>
+
+            <li class="subTitleL">Horizontal Scroller:</li>
+
+            <p class="txtJustify lineHeight_1_7">Enable Vertical Scroller by using <span class="highlightBlack ">class="vScrlr_#"</span> here <span class="highlightBlack">#</span> is a placeholder for visible content box on screen. It is an integer value, which has a range of <b>(0-10)</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="hScrlr_4">
+
+                        &lt;div class="hScrlrElm">Content 1&lt;/div>
+                        &lt;div class="hScrlrElm">Content 2&lt;/div>
+                        &lt;div class="hScrlrElm">Content 3&lt;/div>
+                        &lt;div class="hScrlrElm">Content 4&lt;/div>
+                        &lt;div class="hScrlrElm">Content 5&lt;/div>
+
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="hScrlr_4">
+
+                    <div class="hScrlrElm bgAbbeyWhite">Content 1</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 2</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 3</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 4</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 5</div>
+            
+                </div>
+            </div>
+
+            <p class="txtJustify lineHeight_1_7"><b class="clrDanger">Note:</b> Images can be added. Added image will receive default style.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="hScrlr_4">
+
+                        &lt;div class="hScrlrElm">
+                            &lt;img src="file location" alt=""> 
+                            &lt;p>Content 1&lt;/p>
+                        &lt;/div>
+
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="hScrlr_4">
+
+                    <div class="hScrlrElm bgAbbeyWhite"><img src="media/Thasin.jpg" alt=""> <p>Content 1</p></div>
+                    <div class="hScrlrElm bgAbbeyWhite"><img src="media/Thasin.jpg" alt=""> <p>Content 2</p></div>
+                    <div class="hScrlrElm bgAbbeyWhite"><img src="media/Thasin.jpg" alt=""> <p>Content 3</p></div>
+                    <div class="hScrlrElm bgAbbeyWhite"><img src="media/Thasin.jpg" alt=""> <p>Content 4</p></div>
+                    <div class="hScrlrElm bgAbbeyWhite"><img src="media/Thasin.jpg" alt=""> <p>Content 5</p></div>
+                
+                </div>
+            </div>
+
+            <p class="txtJustify lineHeight_1_7"><b class="clrDanger">Note:</b> Background colors were added separately. Color used <b>'bgAbbeyWhite'</b>.</p>
+
+    <!-- horizontal end -->
+
+
+
+    <!-- scroller elements -->
+
+            <div class="largeGap p_2_q" id="scrollerElm"></div>
+
+            <li class="subTitleL">Scroller Elements:</li>
+
+            <p class="txtJustify lineHeight_1_7">Scroller elements are tags in side scroller div tag. Make scroller elements by using <span class="highlightBlack ">class="#ScrlrElm"</span> here <span class="highlightBlack">#</span> is a placeholder for scroller type. It can be <b>v or h</b>.</p>
+
+    <!-- scroller elements end -->
+
+
+
+    <!-- scroll snap -->
+
+            <div class="largeGap p_2_q" id="scrollSnap"></div>
+
+            <li class="subTitleL">Scroll Snap:</li>
+
+            <p class="txtJustify lineHeight_1_7">To add scroll snap use <span class="highlightBlack ">class="snapInline"</span> this will only work with horizontal scroll</b>.</p>
+
+            <pre data-start="1" style="white-space:pre-wrap;" class="language-html line-numbers">
+                <code>
+                    &lt;div class="hScrlr_4 snapInline">
+
+                        &lt;div class="hScrlrElm">Content 1&lt;/div>
+                        &lt;div class="hScrlrElm">Content 2&lt;/div>
+                        &lt;div class="hScrlrElm">Content 3&lt;/div>
+                        &lt;div class="hScrlrElm">Content 4&lt;/div>
+                        &lt;div class="hScrlrElm">Content 5&lt;/div>
+
+                    &lt;/div>
+                </code>
+            </pre>
+
+            <!-- preview -->
+            <div class="m_1">
+                <b>Preview:</b>
+
+                <div class="hScrlr_4 snapInline">
+
+                    <div class="hScrlrElm bgAbbeyWhite">Content 1</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 2</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 3</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 4</div>
+                    <div class="hScrlrElm bgAbbeyWhite">Content 5</div>
+            
+                </div>
+            </div>
+
+    <!-- scroll snap end -->
+
+
+
+    <!-- scroll fix -->
+
+            <div class="largeGap p_2_q" id="scrollFix"></div>
+
+            <li class="subTitleL">Scroll Fix:</li>
+
+            <p class="txtJustify lineHeight_1_7">To implement scroll fix use <span class="highlightBlack ">class="hScrlrPFix_#px"</span> here <span class="highlightBlack">#</span> is a placeholder for an integer value, which has a range of <b>(0-1000)</b>. This will only work with horizontal scroll</b>.</p>
+
+    <!-- scroll fix end -->
+
+<!-- scroller end -->
+
+
+
+
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+<!--#######################################################-->
+
+
+
+
+<!-- pattern start -->
 
         <div>
 
@@ -6251,7 +6461,7 @@
 
         <div class="largeGap p_5_h"></div>
 
-<!-- form end -->
+<!-- pattern end -->
 
 
 

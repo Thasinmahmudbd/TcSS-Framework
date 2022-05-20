@@ -94,6 +94,8 @@ $pxlimit: 1000;
     .hScrlrPFix_#{$hook}px {
         scroll-padding-inline: (0px + $hook);
     }
+
+    $hook: $hook + 1;
 }
 
 
