@@ -12152,6 +12152,1472 @@ body {
   }
 }
 
+/* display */
+.disFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* flex-direction */
+.flexDirRow {
+  flex-direction: row;
+}
+.flexDirRevRow {
+  flex-direction: row-reverse;
+}
+.flexDirCol {
+  flex-direction: column;
+}
+.flexDirRevCol {
+  flex-direction: column-reverse;
+}
+.flexDirUnset {
+  flex-direction: unset;
+}
+
+/* wrap */
+.flexWrap {
+  flex-wrap: wrap;
+}
+.flexNoWrap {
+  flex-wrap: nowrap;
+}
+.flexRevWrap {
+  flex-wrap: wrap-reverse;
+}
+
+.basis_0 {
+  flex-basis: 0%;
+}
+
+.basis_1 {
+  flex-basis: 1%;
+}
+
+.basis_2 {
+  flex-basis: 2%;
+}
+
+.basis_3 {
+  flex-basis: 3%;
+}
+
+.basis_4 {
+  flex-basis: 4%;
+}
+
+.basis_5 {
+  flex-basis: 5%;
+}
+
+.basis_6 {
+  flex-basis: 6%;
+}
+
+.basis_7 {
+  flex-basis: 7%;
+}
+
+.basis_8 {
+  flex-basis: 8%;
+}
+
+.basis_9 {
+  flex-basis: 9%;
+}
+
+.basis_10 {
+  flex-basis: 10%;
+}
+
+.basis_11 {
+  flex-basis: 11%;
+}
+
+.basis_12 {
+  flex-basis: 12%;
+}
+
+.basis_13 {
+  flex-basis: 13%;
+}
+
+.basis_14 {
+  flex-basis: 14%;
+}
+
+.basis_15 {
+  flex-basis: 15%;
+}
+
+.basis_16 {
+  flex-basis: 16%;
+}
+
+.basis_17 {
+  flex-basis: 17%;
+}
+
+.basis_18 {
+  flex-basis: 18%;
+}
+
+.basis_19 {
+  flex-basis: 19%;
+}
+
+.basis_20 {
+  flex-basis: 20%;
+}
+
+.basis_21 {
+  flex-basis: 21%;
+}
+
+.basis_22 {
+  flex-basis: 22%;
+}
+
+.basis_23 {
+  flex-basis: 23%;
+}
+
+.basis_24 {
+  flex-basis: 24%;
+}
+
+.basis_25 {
+  flex-basis: 25%;
+}
+
+.basis_26 {
+  flex-basis: 26%;
+}
+
+.basis_27 {
+  flex-basis: 27%;
+}
+
+.basis_28 {
+  flex-basis: 28%;
+}
+
+.basis_29 {
+  flex-basis: 29%;
+}
+
+.basis_30 {
+  flex-basis: 30%;
+}
+
+.basis_31 {
+  flex-basis: 31%;
+}
+
+.basis_32 {
+  flex-basis: 32%;
+}
+
+.basis_33 {
+  flex-basis: 33%;
+}
+
+.basis_34 {
+  flex-basis: 34%;
+}
+
+.basis_35 {
+  flex-basis: 35%;
+}
+
+.basis_36 {
+  flex-basis: 36%;
+}
+
+.basis_37 {
+  flex-basis: 37%;
+}
+
+.basis_38 {
+  flex-basis: 38%;
+}
+
+.basis_39 {
+  flex-basis: 39%;
+}
+
+.basis_40 {
+  flex-basis: 40%;
+}
+
+.basis_41 {
+  flex-basis: 41%;
+}
+
+.basis_42 {
+  flex-basis: 42%;
+}
+
+.basis_43 {
+  flex-basis: 43%;
+}
+
+.basis_44 {
+  flex-basis: 44%;
+}
+
+.basis_45 {
+  flex-basis: 45%;
+}
+
+.basis_46 {
+  flex-basis: 46%;
+}
+
+.basis_47 {
+  flex-basis: 47%;
+}
+
+.basis_48 {
+  flex-basis: 48%;
+}
+
+.basis_49 {
+  flex-basis: 49%;
+}
+
+.basis_50 {
+  flex-basis: 50%;
+}
+
+.basis_51 {
+  flex-basis: 51%;
+}
+
+.basis_52 {
+  flex-basis: 52%;
+}
+
+.basis_53 {
+  flex-basis: 53%;
+}
+
+.basis_54 {
+  flex-basis: 54%;
+}
+
+.basis_55 {
+  flex-basis: 55%;
+}
+
+.basis_56 {
+  flex-basis: 56%;
+}
+
+.basis_57 {
+  flex-basis: 57%;
+}
+
+.basis_58 {
+  flex-basis: 58%;
+}
+
+.basis_59 {
+  flex-basis: 59%;
+}
+
+.basis_60 {
+  flex-basis: 60%;
+}
+
+.basis_61 {
+  flex-basis: 61%;
+}
+
+.basis_62 {
+  flex-basis: 62%;
+}
+
+.basis_63 {
+  flex-basis: 63%;
+}
+
+.basis_64 {
+  flex-basis: 64%;
+}
+
+.basis_65 {
+  flex-basis: 65%;
+}
+
+.basis_66 {
+  flex-basis: 66%;
+}
+
+.basis_67 {
+  flex-basis: 67%;
+}
+
+.basis_68 {
+  flex-basis: 68%;
+}
+
+.basis_69 {
+  flex-basis: 69%;
+}
+
+.basis_70 {
+  flex-basis: 70%;
+}
+
+.basis_71 {
+  flex-basis: 71%;
+}
+
+.basis_72 {
+  flex-basis: 72%;
+}
+
+.basis_73 {
+  flex-basis: 73%;
+}
+
+.basis_74 {
+  flex-basis: 74%;
+}
+
+.basis_75 {
+  flex-basis: 75%;
+}
+
+.basis_76 {
+  flex-basis: 76%;
+}
+
+.basis_77 {
+  flex-basis: 77%;
+}
+
+.basis_78 {
+  flex-basis: 78%;
+}
+
+.basis_79 {
+  flex-basis: 79%;
+}
+
+.basis_80 {
+  flex-basis: 80%;
+}
+
+.basis_81 {
+  flex-basis: 81%;
+}
+
+.basis_82 {
+  flex-basis: 82%;
+}
+
+.basis_83 {
+  flex-basis: 83%;
+}
+
+.basis_84 {
+  flex-basis: 84%;
+}
+
+.basis_85 {
+  flex-basis: 85%;
+}
+
+.basis_86 {
+  flex-basis: 86%;
+}
+
+.basis_87 {
+  flex-basis: 87%;
+}
+
+.basis_88 {
+  flex-basis: 88%;
+}
+
+.basis_89 {
+  flex-basis: 89%;
+}
+
+.basis_90 {
+  flex-basis: 90%;
+}
+
+.basis_91 {
+  flex-basis: 91%;
+}
+
+.basis_92 {
+  flex-basis: 92%;
+}
+
+.basis_93 {
+  flex-basis: 93%;
+}
+
+.basis_94 {
+  flex-basis: 94%;
+}
+
+.basis_95 {
+  flex-basis: 95%;
+}
+
+.basis_96 {
+  flex-basis: 96%;
+}
+
+.basis_97 {
+  flex-basis: 97%;
+}
+
+.basis_98 {
+  flex-basis: 98%;
+}
+
+.basis_99 {
+  flex-basis: 99%;
+}
+
+.basis_100 {
+  flex-basis: 100%;
+}
+
+.flexOrder_0 {
+  order: 0;
+}
+
+.flexOrder_1 {
+  order: 1;
+}
+
+.flexOrder_2 {
+  order: 2;
+}
+
+.flexOrder_3 {
+  order: 3;
+}
+
+.flexOrder_4 {
+  order: 4;
+}
+
+.flexOrder_5 {
+  order: 5;
+}
+
+.flexOrder_6 {
+  order: 6;
+}
+
+.flexOrder_7 {
+  order: 7;
+}
+
+.flexOrder_8 {
+  order: 8;
+}
+
+.flexOrder_9 {
+  order: 9;
+}
+
+.flexOrder_10 {
+  order: 10;
+}
+
+.flexOrder_11 {
+  order: 11;
+}
+
+.flexOrder_12 {
+  order: 12;
+}
+
+.flexOrder_13 {
+  order: 13;
+}
+
+.flexOrder_14 {
+  order: 14;
+}
+
+.flexOrder_15 {
+  order: 15;
+}
+
+.flexOrder_16 {
+  order: 16;
+}
+
+.flexOrder_17 {
+  order: 17;
+}
+
+.flexOrder_18 {
+  order: 18;
+}
+
+.flexOrder_19 {
+  order: 19;
+}
+
+.flexOrder_20 {
+  order: 20;
+}
+
+.flexOrder_21 {
+  order: 21;
+}
+
+.flexOrder_22 {
+  order: 22;
+}
+
+.flexOrder_23 {
+  order: 23;
+}
+
+.flexOrder_24 {
+  order: 24;
+}
+
+.flexOrder_25 {
+  order: 25;
+}
+
+.flexOrder_26 {
+  order: 26;
+}
+
+.flexOrder_27 {
+  order: 27;
+}
+
+.flexOrder_28 {
+  order: 28;
+}
+
+.flexOrder_29 {
+  order: 29;
+}
+
+.flexOrder_30 {
+  order: 30;
+}
+
+.flexOrder_31 {
+  order: 31;
+}
+
+.flexOrder_32 {
+  order: 32;
+}
+
+.flexOrder_33 {
+  order: 33;
+}
+
+.flexOrder_34 {
+  order: 34;
+}
+
+.flexOrder_35 {
+  order: 35;
+}
+
+.flexOrder_36 {
+  order: 36;
+}
+
+.flexOrder_37 {
+  order: 37;
+}
+
+.flexOrder_38 {
+  order: 38;
+}
+
+.flexOrder_39 {
+  order: 39;
+}
+
+.flexOrder_40 {
+  order: 40;
+}
+
+.flexOrder_41 {
+  order: 41;
+}
+
+.flexOrder_42 {
+  order: 42;
+}
+
+.flexOrder_43 {
+  order: 43;
+}
+
+.flexOrder_44 {
+  order: 44;
+}
+
+.flexOrder_45 {
+  order: 45;
+}
+
+.flexOrder_46 {
+  order: 46;
+}
+
+.flexOrder_47 {
+  order: 47;
+}
+
+.flexOrder_48 {
+  order: 48;
+}
+
+.flexOrder_49 {
+  order: 49;
+}
+
+.flexOrder_50 {
+  order: 50;
+}
+
+.flexOrder_51 {
+  order: 51;
+}
+
+.flexOrder_52 {
+  order: 52;
+}
+
+.flexOrder_53 {
+  order: 53;
+}
+
+.flexOrder_54 {
+  order: 54;
+}
+
+.flexOrder_55 {
+  order: 55;
+}
+
+.flexOrder_56 {
+  order: 56;
+}
+
+.flexOrder_57 {
+  order: 57;
+}
+
+.flexOrder_58 {
+  order: 58;
+}
+
+.flexOrder_59 {
+  order: 59;
+}
+
+.flexOrder_60 {
+  order: 60;
+}
+
+.flexOrder_61 {
+  order: 61;
+}
+
+.flexOrder_62 {
+  order: 62;
+}
+
+.flexOrder_63 {
+  order: 63;
+}
+
+.flexOrder_64 {
+  order: 64;
+}
+
+.flexOrder_65 {
+  order: 65;
+}
+
+.flexOrder_66 {
+  order: 66;
+}
+
+.flexOrder_67 {
+  order: 67;
+}
+
+.flexOrder_68 {
+  order: 68;
+}
+
+.flexOrder_69 {
+  order: 69;
+}
+
+.flexOrder_70 {
+  order: 70;
+}
+
+.flexOrder_71 {
+  order: 71;
+}
+
+.flexOrder_72 {
+  order: 72;
+}
+
+.flexOrder_73 {
+  order: 73;
+}
+
+.flexOrder_74 {
+  order: 74;
+}
+
+.flexOrder_75 {
+  order: 75;
+}
+
+.flexOrder_76 {
+  order: 76;
+}
+
+.flexOrder_77 {
+  order: 77;
+}
+
+.flexOrder_78 {
+  order: 78;
+}
+
+.flexOrder_79 {
+  order: 79;
+}
+
+.flexOrder_80 {
+  order: 80;
+}
+
+.flexOrder_81 {
+  order: 81;
+}
+
+.flexOrder_82 {
+  order: 82;
+}
+
+.flexOrder_83 {
+  order: 83;
+}
+
+.flexOrder_84 {
+  order: 84;
+}
+
+.flexOrder_85 {
+  order: 85;
+}
+
+.flexOrder_86 {
+  order: 86;
+}
+
+.flexOrder_87 {
+  order: 87;
+}
+
+.flexOrder_88 {
+  order: 88;
+}
+
+.flexOrder_89 {
+  order: 89;
+}
+
+.flexOrder_90 {
+  order: 90;
+}
+
+.flexOrder_91 {
+  order: 91;
+}
+
+.flexOrder_92 {
+  order: 92;
+}
+
+.flexOrder_93 {
+  order: 93;
+}
+
+.flexOrder_94 {
+  order: 94;
+}
+
+.flexOrder_95 {
+  order: 95;
+}
+
+.flexOrder_96 {
+  order: 96;
+}
+
+.flexOrder_97 {
+  order: 97;
+}
+
+.flexOrder_98 {
+  order: 98;
+}
+
+.flexOrder_99 {
+  order: 99;
+}
+
+.flexOrder_100 {
+  order: 100;
+}
+
+.flex_0 {
+  flex: 0;
+}
+
+.flex_1 {
+  flex: 1;
+}
+
+.flex_2 {
+  flex: 2;
+}
+
+.flex_3 {
+  flex: 3;
+}
+
+.flex_4 {
+  flex: 4;
+}
+
+.flex_5 {
+  flex: 5;
+}
+
+.flex_6 {
+  flex: 6;
+}
+
+.flex_7 {
+  flex: 7;
+}
+
+.flex_8 {
+  flex: 8;
+}
+
+.flex_9 {
+  flex: 9;
+}
+
+.flex_10 {
+  flex: 10;
+}
+
+.flex_11 {
+  flex: 11;
+}
+
+.flex_12 {
+  flex: 12;
+}
+
+.flex_13 {
+  flex: 13;
+}
+
+.flex_14 {
+  flex: 14;
+}
+
+.flex_15 {
+  flex: 15;
+}
+
+.flex_16 {
+  flex: 16;
+}
+
+.flex_17 {
+  flex: 17;
+}
+
+.flex_18 {
+  flex: 18;
+}
+
+.flex_19 {
+  flex: 19;
+}
+
+.flex_20 {
+  flex: 20;
+}
+
+.flex_21 {
+  flex: 21;
+}
+
+.flex_22 {
+  flex: 22;
+}
+
+.flex_23 {
+  flex: 23;
+}
+
+.flex_24 {
+  flex: 24;
+}
+
+.flex_25 {
+  flex: 25;
+}
+
+.flex_26 {
+  flex: 26;
+}
+
+.flex_27 {
+  flex: 27;
+}
+
+.flex_28 {
+  flex: 28;
+}
+
+.flex_29 {
+  flex: 29;
+}
+
+.flex_30 {
+  flex: 30;
+}
+
+.flex_31 {
+  flex: 31;
+}
+
+.flex_32 {
+  flex: 32;
+}
+
+.flex_33 {
+  flex: 33;
+}
+
+.flex_34 {
+  flex: 34;
+}
+
+.flex_35 {
+  flex: 35;
+}
+
+.flex_36 {
+  flex: 36;
+}
+
+.flex_37 {
+  flex: 37;
+}
+
+.flex_38 {
+  flex: 38;
+}
+
+.flex_39 {
+  flex: 39;
+}
+
+.flex_40 {
+  flex: 40;
+}
+
+.flex_41 {
+  flex: 41;
+}
+
+.flex_42 {
+  flex: 42;
+}
+
+.flex_43 {
+  flex: 43;
+}
+
+.flex_44 {
+  flex: 44;
+}
+
+.flex_45 {
+  flex: 45;
+}
+
+.flex_46 {
+  flex: 46;
+}
+
+.flex_47 {
+  flex: 47;
+}
+
+.flex_48 {
+  flex: 48;
+}
+
+.flex_49 {
+  flex: 49;
+}
+
+.flex_50 {
+  flex: 50;
+}
+
+.flex_51 {
+  flex: 51;
+}
+
+.flex_52 {
+  flex: 52;
+}
+
+.flex_53 {
+  flex: 53;
+}
+
+.flex_54 {
+  flex: 54;
+}
+
+.flex_55 {
+  flex: 55;
+}
+
+.flex_56 {
+  flex: 56;
+}
+
+.flex_57 {
+  flex: 57;
+}
+
+.flex_58 {
+  flex: 58;
+}
+
+.flex_59 {
+  flex: 59;
+}
+
+.flex_60 {
+  flex: 60;
+}
+
+.flex_61 {
+  flex: 61;
+}
+
+.flex_62 {
+  flex: 62;
+}
+
+.flex_63 {
+  flex: 63;
+}
+
+.flex_64 {
+  flex: 64;
+}
+
+.flex_65 {
+  flex: 65;
+}
+
+.flex_66 {
+  flex: 66;
+}
+
+.flex_67 {
+  flex: 67;
+}
+
+.flex_68 {
+  flex: 68;
+}
+
+.flex_69 {
+  flex: 69;
+}
+
+.flex_70 {
+  flex: 70;
+}
+
+.flex_71 {
+  flex: 71;
+}
+
+.flex_72 {
+  flex: 72;
+}
+
+.flex_73 {
+  flex: 73;
+}
+
+.flex_74 {
+  flex: 74;
+}
+
+.flex_75 {
+  flex: 75;
+}
+
+.flex_76 {
+  flex: 76;
+}
+
+.flex_77 {
+  flex: 77;
+}
+
+.flex_78 {
+  flex: 78;
+}
+
+.flex_79 {
+  flex: 79;
+}
+
+.flex_80 {
+  flex: 80;
+}
+
+.flex_81 {
+  flex: 81;
+}
+
+.flex_82 {
+  flex: 82;
+}
+
+.flex_83 {
+  flex: 83;
+}
+
+.flex_84 {
+  flex: 84;
+}
+
+.flex_85 {
+  flex: 85;
+}
+
+.flex_86 {
+  flex: 86;
+}
+
+.flex_87 {
+  flex: 87;
+}
+
+.flex_88 {
+  flex: 88;
+}
+
+.flex_89 {
+  flex: 89;
+}
+
+.flex_90 {
+  flex: 90;
+}
+
+.flex_91 {
+  flex: 91;
+}
+
+.flex_92 {
+  flex: 92;
+}
+
+.flex_93 {
+  flex: 93;
+}
+
+.flex_94 {
+  flex: 94;
+}
+
+.flex_95 {
+  flex: 95;
+}
+
+.flex_96 {
+  flex: 96;
+}
+
+.flex_97 {
+  flex: 97;
+}
+
+.flex_98 {
+  flex: 98;
+}
+
+.flex_99 {
+  flex: 99;
+}
+
+.flex_100 {
+  flex: 100;
+}
+
+/* align content */
+.alignContentStart {
+  align-content: start;
+}
+.alignContentFlexStart {
+  align-content: flex-start;
+}
+.alignContentCenter {
+  align-content: center;
+}
+.alignContentEnd {
+  align-content: end;
+}
+.alignContentFlexEnd {
+  align-content: flex-end;
+}
+.alignContentSpaceAround {
+  align-content: space-around;
+}
+.alignContentSpaceBetween {
+  align-content: space-between;
+}
+.alignContentSpaceEvenly {
+  align-content: space-evenly;
+}
+.alignContentStretch {
+  align-content: stretch;
+}
+.alignContentBaseline {
+  align-content: baseline;
+}
+.alignContentAuto {
+  align-content: auto;
+}
+.alignContentNormal {
+  align-content: normal;
+}
+.alignContentUnset {
+  align-content: unset;
+}
+
+/* align self */
+.alignSelfStart {
+  align-self: start;
+}
+.alignSelfFlexStart {
+  align-self: flex-start;
+}
+.alignSelfCenter {
+  align-self: center;
+}
+.alignSelfEnd {
+  align-self: end;
+}
+.alignSelfFlexEnd {
+  align-self: flex-end;
+}
+.alignSelfStretch {
+  align-self: stretch;
+}
+.alignSelfBaseline {
+  align-self: baseline;
+}
+.alignSelfAuto {
+  align-self: auto;
+}
+.alignSelfNormal {
+  align-self: normal;
+}
+.alignSelfUnset {
+  align-self: unset;
+}
+
+/* align item */
+.alignItemsStart {
+  align-items: start;
+}
+.alignItemsFlexStart {
+  align-items: flex-start;
+}
+.alignItemsCenter {
+  align-items: center;
+}
+.alignItemsEnd {
+  align-items: end;
+}
+.alignItemsFlexEnd {
+  align-items: flex-end;
+}
+.alignItemsStretch {
+  align-items: stretch;
+}
+.alignItemsBaseline {
+  align-items: baseline;
+}
+.alignItemsNormal {
+  align-items: normal;
+}
+.alignItemsUnset {
+  align-items: unset;
+}
+
+/* justify content */
+.justifyContentStart {
+  justify-content: start;
+}
+.justifyContentFlexStart {
+  justify-content: flex-start;
+}
+.justifyContentCenter {
+  justify-content: center;
+}
+.justifyContentEnd {
+  justify-content: end;
+}
+.justifyContentFlexEnd {
+  justify-content: flex-end;
+}
+.justifyContentLeft {
+  justify-items: left;
+}
+.justifyContentRight {
+  justify-items: right;
+}
+.justifyContentSpaceAround {
+  justify-content: space-around;
+}
+.justifyContentSpaceBetween {
+  justify-content: space-between;
+}
+.justifyContentSpaceEvenly {
+  justify-content: space-evenly;
+}
+.justifyContentStretch {
+  justify-content: stretch;
+}
+.justifyContentNormal {
+  justify-content: normal;
+}
+.justifyContentUnset {
+  justify-content: unset;
+}
+
+/* justify self */
+.justifySelfStart {
+  justify-self: start;
+}
+.justifySelfFlexStart {
+  justify-self: flex-start;
+}
+.justifySelfCenter {
+  justify-self: center;
+}
+.justifySelfEnd {
+  justify-self: end;
+}
+.justifySelfFlexEnd {
+  justify-self: flex-end;
+}
+.justifySelfLeft {
+  justify-items: left;
+}
+.justifySelfRight {
+  justify-items: right;
+}
+.justifySelfStretch {
+  justify-self: stretch;
+}
+.justifySelfBaseline {
+  justify-self: baseline;
+}
+.justifySelfAuto {
+  justify-self: auto;
+}
+.justifySelfNormal {
+  justify-self: normal;
+}
+.justifySelfUnset {
+  justify-self: unset;
+}
+
+/* justify item */
+.justifyItemsStart {
+  justify-items: start;
+}
+.justifyItemsFlexStart {
+  justify-items: flex-start;
+}
+.justifyItemsCenter {
+  justify-items: center;
+}
+.justifyItemsEnd {
+  justify-items: end;
+}
+.justifyItemsFlexEnd {
+  justify-items: flex-end;
+}
+.justifyItemsLeft {
+  justify-items: left;
+}
+.justifyItemsRight {
+  justify-items: right;
+}
+.justifyItemsStretch {
+  justify-items: stretch;
+}
+.justifyItemsBaseline {
+  justify-items: baseline;
+}
+.justifyItemsAuto {
+  justify-items: auto;
+}
+.justifyItemsNormal {
+  justify-items: normal;
+}
+.justifyItemsUnset {
+  justify-items: unset;
+}
+
 /* Responsiveness */
 /* Responsiveness */
 /***********************************************************************************/

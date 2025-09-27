@@ -1,0 +1,26 @@
+/* primary reset */
+body{
+    padding:0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+
+/* font awesome*/
+@import './fontawesome';
+
+/* variables */
+@import './variables';
+@import './mixins';
+//@import './watermark';
+
+
+/* basics */
+@import './padding';
+@import './margin';
+@import './fonts';
+@import './list';
+@import './overflow';
+@import './page_break';
+
+
+

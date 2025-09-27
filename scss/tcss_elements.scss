@@ -1,0 +1,39 @@
+/* primary reset */
+body{
+    padding:0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+
+/* font awesome*/
+@import './fontawesome';
+
+/* variables */
+@import './variables';
+@import './mixins';
+//@import './watermark';
+
+/* elements */
+@import './frames';
+@import './navbar';
+@import './content';
+@import './shelf_menu';
+@import './title';
+@import './patterns';
+@import './scroll_bar';
+@import './table';
+@import './scroller';
+@import './forms';
+@import './toolbar';
+
+/* Responsiveness */
+@import './responsiveness';
+
+
+
+/* reset */
+html{
+    scroll-behavior: smooth;
+}
+
+

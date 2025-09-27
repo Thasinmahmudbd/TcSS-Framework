@@ -1,0 +1,27 @@
+/* primary reset */
+body{
+    padding:0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+
+/* variables */
+@import './variables';
+@import './mixins';
+//@import './watermark';
+
+
+@import './position';
+@import './scroll';
+@import './width';
+@import './height';
+@import './display';
+@import './gap';
+
+
+/* reset */
+html{
+    scroll-behavior: smooth;
+}
+
+
